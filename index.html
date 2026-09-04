@@ -1270,6 +1270,10 @@ renderDryingRooms=function(){
 const _renderStorageFacilitiesV524=renderStorageFacilities;
 renderStorageFacilities=function(){_renderStorageFacilitiesV524();renderDryingRooms()};
 
+// v0.5.24: keep the rare-earth raw-material order panel after supplier UI overrides.
+const _renderLotsV524=renderLots;
+renderLots=function(){_renderLotsV524();renderRareRaw()};
+
 // ===== v0.5.23 clean-factory/R-equipment recovery + bulk line purchase =====
 function bulkMachineTypesV523(line){
   const p=ProductDefs[line?.product];if(!p)return[];
