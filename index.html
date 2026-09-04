@@ -1266,6 +1266,10 @@ renderDryingRooms=function(){
   document.getElementById('dryingRooms').innerHTML=`<div class="linehead" style="margin-bottom:9px"><label style="min-width:180px"><small>表示・設置先工場</small><select id="dryingRoomFactory">${state.factory.sites.map(f=>`<option value="${f.id}" ${f.id===fid?'selected':''}>${f.name}</option>`).join('')}</select></label><div style="display:flex;gap:6px;align-items:center">${typeBadge}<span class="deliverybadge ${managed?'done':''}">${rooms.length?`${rooms.length}室｜${managed?compactNum(cap)+'乾燥負荷/日':'停止中'}`:'この工場は未設置'}</span></div></div><div class="riskhint"><b>${factoryName(fid)}</b>｜${useText}<br>有効能力 ${num(cap)}乾燥負荷/日｜全社乾燥室管理 ${mgr}/${req}人<br><small>1室につき管理人2人が必要　別工場のラインには効果なし${clean?'｜レアアースは乾燥負荷10.0のため能力を10倍消費':''}</small></div><div class="dryroomgrid">${DryingRoomDefs.map(d=>`<div class="dryroom"><b>${clean?'🧼 ':''}${d.name}</b><small style="display:block;color:var(--muted)">能力 ${num(d.capacity)}乾燥負荷/日｜電気 ${yen(d.electricity)}/日｜管理2人</small><button class="secondary" data-build-drying-room="${d.id}" style="width:100%;margin-top:7px">${factoryName(fid)}に増設 ${yen(d.cost)}</button></div>`).join('')}</div>${rooms.length?`<div class="note" style="margin-top:8px">${factoryName(fid)}の保有：${rooms.map(r=>DryingRoomDefs.find(d=>d.id===Number(r.gradeId))?.name||`DR${r.gradeId}`).join(' / ')}</div>`:''}`;
 };
 
+// v0.5.24: later storage UI overrides must still render the central drying-room cards.
+const _renderStorageFacilitiesV524=renderStorageFacilities;
+renderStorageFacilities=function(){_renderStorageFacilitiesV524();renderDryingRooms()};
+
 // ===== v0.5.23 clean-factory/R-equipment recovery + bulk line purchase =====
 function bulkMachineTypesV523(line){
   const p=ProductDefs[line?.product];if(!p)return[];
