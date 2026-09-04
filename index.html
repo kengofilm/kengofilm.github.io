@@ -4,6 +4,9 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
 <title>どろだんご工場 v0.5.17</title>
+<script>
+try{const t=localStorage.getItem('dorodango-factory-theme');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){document.documentElement.dataset.theme='light'}
+</script>
 <style>
 :root{--bg:#f5f0e6;--paper:#fffdf8;--ink:#3d3933;--muted:#7c746a;--mud:#8c6b51;--mud2:#5f4938;--line:#ded5c8;--soft:#f0e8dc;--green:#55755a;--yellow:#efd888;--red:#a6584f;--blue:#5c7485;--shadow:0 8px 24px rgba(70,55,40,.08)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at top,#fffaf0,var(--bg) 55%);color:var(--ink);font-family:ui-rounded,"Hiragino Maru Gothic ProN","Yu Gothic",system-ui,sans-serif}button,select,input{font:inherit}button{border:0;border-radius:12px;padding:10px 13px;cursor:pointer;background:var(--mud2);color:#fff;font-weight:800}button.secondary{background:#eee6da;color:var(--ink)}button.blue{background:var(--blue)}button.danger{background:#9b6a64}button:disabled{opacity:.42;cursor:not-allowed}select,input[type=number]{border:1px solid var(--line);border-radius:10px;padding:8px;background:#fff;color:var(--ink);width:100%}
@@ -72,6 +75,31 @@ table{width:100%;border-collapse:collapse;font-size:11px}th{color:var(--muted);f
 
 /* v0.5.24 graded drying-room restoration + v0.5.23 bulk machine purchase */
 .bulkbuybox{margin:10px 0;padding:10px;border:1px solid var(--line);border-radius:13px;background:#f7f1e8}.bulkbuyrow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center}.bulkbuyrow select{min-width:0}.recoverybox{margin:10px 0;padding:10px;border:1px solid #e6b8b1;border-radius:13px;background:#fff2ef}.recoverybox .bulkbuyrow{margin-top:8px}@media(max-width:600px){.bulkbuyrow{grid-template-columns:1fr}.bulkbuyrow button{width:100%}}
+
+/* Night-friendly dark theme */
+.theme-toggle{flex:0 0 auto;width:38px;height:38px;padding:0;display:grid;place-items:center;font-size:18px;border:1px solid var(--line);box-shadow:0 3px 10px rgba(45,35,26,.08)}
+html[data-theme="dark"]{color-scheme:dark;--bg:#11110f;--paper:#1d1c19;--ink:#eeeae2;--muted:#b8b0a5;--mud:#b78d6b;--mud2:#765943;--line:#403c36;--soft:#292620;--green:#8fbd91;--yellow:#d4b85e;--red:#dd8b80;--blue:#86a8bf;--shadow:0 8px 24px rgba(0,0,0,.32)}
+html[data-theme="dark"] body{background:radial-gradient(circle at top,#27231d,var(--bg) 58%);color:var(--ink)}
+html[data-theme="dark"] .sticky{background:rgba(17,17,15,.94);border-bottom-color:#39352f}
+html[data-theme="dark"] :is(.card,.linecard,.machine,.lot,.inquiry,.contract,.rankcard,.loan,.report,.statement,.pnlbox,.supplier,.storagecard,.qstat,.inventorymini,.invquickitem,.storagemeter,.stocksummary,.warehousebox,.officecard,.managercard,.overseascard,.devproject,.keyaccount,.assetrow){background:#1d1c19;color:var(--ink);border-color:var(--line)}
+html[data-theme="dark"] :is(.metric,.linestat,.fin,.inqmeta div,.sadtext,.bulkbuybox,.rangebox,.benefit,.corpstat>div,.statusbox){background:#292620;color:var(--ink)}
+html[data-theme="dark"] :is(select,input,textarea){background:#151513!important;color:var(--ink)!important;border-color:#4c4740!important}
+html[data-theme="dark"] :is(button.secondary,.tab){background:#34302a;color:var(--ink)}
+html[data-theme="dark"] :is(.tab.active,button:not(.secondary):not(.danger):not(.blue)){color:#fff}
+html[data-theme="dark"] :is(.bar,.inventoryStack){background:#302c26;border-color:#4a443d}
+html[data-theme="dark"] :is(td,.staffrow,.debtrow,.contractfoldbody,.stmtrow){border-color:#37332e}
+html[data-theme="dark"] :is(.loadpill,.deliverybadge,.pill){background:#34302a;color:#ddd7ce}
+html[data-theme="dark"] :is(.riskhint,.forecast,.quotehint,.shipmentnext){background:#262b22;border-color:#46513f;color:#dfe8d9}
+html[data-theme="dark"] :is(.warning,.accountwarn,.recoverybox){background:#352321;border-color:#68433e;color:#f0d7d2}
+html[data-theme="dark"] :is(.marketmsg,.lot.selected,.contract.warn){background:#332e1d;color:#f0e4b8}
+html[data-theme="dark"] :is(.contract.done,.supplier.selected){background:#202a20}
+html[data-theme="dark"] :is(.contract.failed,.supplier.disrupted){background:#322120}
+html[data-theme="dark"] .rankflag{background:rgba(29,28,25,.94);border-color:#4b453d;color:var(--ink)}
+html[data-theme="dark"] .hero{background:#171817;border-color:#393a36;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+html[data-theme="dark"] .factoryscene{filter:brightness(.62) saturate(.78)}
+html[data-theme="dark"] .toast{background:#ebe5db;color:#1b1916}
+html[data-theme="dark"] a{color:#9ec7df}
+@media(max-width:820px){.theme-toggle{width:32px;height:32px;font-size:15px}}
 </style>
 </head>
 <body>
@@ -88,6 +116,7 @@ table{width:100%;border-collapse:collapse;font-size:11px}th{color:var(--muted);f
       <div class="qstat"><small>総保管</small><b id="warehouseTop">0/0kg</b></div>
     </div>
     <div class="timecontrols"><button id="nextDay">+1日</button><button id="nextWeek">+7日</button><button id="nextMonth" class="secondary">+1月</button></div>
+    <button id="themeToggle" class="secondary theme-toggle" type="button" aria-label="ダークモードに切り替え" title="ダークモードに切り替え">🌙</button>
   </div>
   <div class="inventorymini">
     <div class="inventoryminihead"><b>📦 在庫・倉庫</b><span id="inventoryMiniText">使用 0 / 0kg　空き 0kg</span></div>
@@ -1367,6 +1396,11 @@ bindDynamic=function(){
 
 const _renderV518=render;render=function(){ensureV518State();_renderV518();const dataNote=document.querySelector('#panel-company .card:last-child .note');if(dataNote&&dataNote.textContent.includes('v0.5.'))dataNote.textContent='v0.5.24：DR1〜DR5復元＋クリーン工場のレアアース乾燥室対応';document.title=`${state.companyName||'どろだんご工場'}｜泥団子メーカー v0.5.24`};
 render();
+
+const themeToggle=document.getElementById('themeToggle');
+function syncThemeToggle(){const dark=document.documentElement.dataset.theme==='dark';themeToggle.textContent=dark?'☀️':'🌙';themeToggle.setAttribute('aria-label',dark?'ライトモードに切り替え':'ダークモードに切り替え');themeToggle.title=themeToggle.getAttribute('aria-label')}
+themeToggle.onclick=()=>{const next=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=next;try{localStorage.setItem('dorodango-factory-theme',next)}catch(e){}syncThemeToggle()};
+syncThemeToggle();
 
 document.getElementById('exportSave').onclick=exportSaveBackup;
 document.getElementById('importSave').onclick=()=>document.getElementById('importSaveFile').click();
