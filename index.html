@@ -312,7 +312,7 @@ const ProductDefs={
  shiny:{name:'ツヤツヤ泥団子',emoji:'✨',basePrice:650,packageCost:7,materialUsage:1.10,storage:1.10,baseDemand:80,loads:{kneader:1.05,roller:1.05,dryer:1.60,polisher:2,packer:1}},
  mini:{name:'ミニ泥団子',emoji:'⚪',basePrice:120,packageCost:2,materialUsage:.45,storage:.45,baseDemand:220,loads:{kneader:.45,roller:.50,dryer:.50,polisher:0,packer:.50}}
 };
-const MachineTypes={kneader:{name:'こね機',emoji:'🌀',baseCapacity:270,baseWorkers:2,basePrice:160000,baseElectricity:900,baseSpace:14},roller:{name:'丸め機',emoji:'⚙️',baseCapacity:243,baseWorkers:2,basePrice:220000,baseElectricity:1100,baseSpace:16},dryer:{name:'乾燥機',emoji:'☀️',baseCapacity:203,baseWorkers:1.5,basePrice:280000,baseElectricity:1500,baseSpace:20},polisher:{name:'磨き機',emoji:'✨',baseCapacity:162,baseWorkers:1.5,basePrice:320000,baseElectricity:1300,baseSpace:18},packer:{name:'箱詰め設備',emoji:'📦',baseCapacity:0,baseWorkers:0,basePrice:0,baseElectricity:0,baseSpace:0}};
+const MachineTypes={kneader:{name:'こね機',emoji:'🌀',baseCapacity:200,baseWorkers:2,basePrice:160000,baseElectricity:900,baseSpace:14},roller:{name:'丸め機',emoji:'⚙️',baseCapacity:200,baseWorkers:2,basePrice:220000,baseElectricity:1100,baseSpace:16},dryer:{name:'乾燥機',emoji:'☀️',baseCapacity:200,baseWorkers:1.5,basePrice:280000,baseElectricity:1500,baseSpace:20},polisher:{name:'磨き機',emoji:'✨',baseCapacity:200,baseWorkers:1.5,basePrice:320000,baseElectricity:1300,baseSpace:18},packer:{name:'箱詰め設備',emoji:'📦',baseCapacity:0,baseWorkers:0,basePrice:0,baseElectricity:0,baseSpace:0}};
 const ManualPacking={id:0,name:'手作業箱詰め',shortName:'手作業',capacity:220,workers:2.2,price:0,electricity:0,space:0,materialMult:1.00};
 const PackingTechDefs=[{id:2,name:'半自動箱詰め',shortName:'半自動',capacity:420,workers:1.25,price:450000,electricity:450,space:10,materialMult:1.00},{id:3,name:'自動箱詰め',shortName:'自動',capacity:850,workers:.65,price:1600000,electricity:950,space:16,materialMult:.92},{id:4,name:'フィルム集積包装',shortName:'集積包装',capacity:1800,workers:.30,price:4800000,electricity:1200,space:20,materialMult:.50},{id:5,name:'高速フィルム集積包装',shortName:'高速集積',capacity:5000,workers:.18,price:15000000,electricity:2800,space:30,materialMult:.46},{id:6,name:'AIフィルム集積包装',shortName:'AI集積',capacity:15000,workers:.10,price:60000000,electricity:6000,space:42,materialMult:.42},{id:7,name:'メガ集積包装ライン',shortName:'メガ集積',capacity:45000,workers:.06,price:240000000,electricity:13000,space:60,materialMult:.38},{id:8,name:'ギガ集積包装ライン',shortName:'ギガ集積',capacity:120000,workers:.04,price:900000000,electricity:30000,space:90,materialMult:.35}];
 const GradeDefs=[{id:1,name:'G1 手動',capacityMult:1,workerMult:1,priceMult:1,electricMult:1,spaceMult:1},{id:2,name:'G2 半自動',capacityMult:2.2,workerMult:.75,priceMult:3.2,electricMult:1.7,spaceMult:1.15},{id:3,name:'G3 自動',capacityMult:5,workerMult:.50,priceMult:9,electricMult:3.3,spaceMult:1.35},{id:4,name:'G4 高速',capacityMult:12,workerMult:.30,priceMult:28,electricMult:7,spaceMult:1.70},{id:5,name:'G5 超高速',capacityMult:30,workerMult:.18,priceMult:110,electricMult:16,spaceMult:2.20}];
@@ -362,7 +362,7 @@ for(const p of Object.values(ProductDefs))p.loads.coater=0;
 ProductDefs.rareearth={name:'レアアース泥団子',emoji:'🧲',basePrice:25000,packageCost:120,materialUsage:2.40,storage:2.40,baseDemand:20,requiresClean:true,dryingDays:10,loads:{kneader:1.30,roller:1.10,dryer:10.0,polisher:.40,coater:1.60,packer:1.10}};
 STARTER_CAPACITY.rareearth=20;
 LEGACY_BASE_PRICES.rareearth=25000;
-MachineTypes.coater={name:'コーティング機',emoji:'🧪',baseCapacity:180,baseWorkers:1.8,basePrice:2000000,baseElectricity:2600,baseSpace:22};
+MachineTypes.coater={name:'コーティング機',emoji:'🧪',baseCapacity:200,baseWorkers:1.8,basePrice:2000000,baseElectricity:2600,baseSpace:22};
 GradeDefs.push(
  {id:6,name:'G6 AI高速',capacityMult:70,workerMult:.12,priceMult:300,electricMult:32,spaceMult:3.0},
  {id:7,name:'G7 メガライン',capacityMult:160,workerMult:.08,priceMult:850,electricMult:65,spaceMult:4.0},
@@ -1472,7 +1472,7 @@ function updateMachineReplacementUIV525(button,preferCurrent=false){
 const _renderEquipmentLinesV525=renderEquipmentLines;
 renderEquipmentLines=function(){
   _renderEquipmentLinesV525();
-  const host=document.getElementById('equipmentLines');if(host){const n=state.factory.singleEquipmentMigrationNoticeV525;host.insertAdjacentHTML('afterbegin',`<div class="riskhint"><b>1ライン1式ルール</b>｜各工程の設備は1台まで。グレード変更時は旧設備を自動売却して入替。中央乾燥室は共用設備のため対象外<br><small>機械は8年・残存価額10%の定額法で減価償却し、売却額と帳簿価額の差を固定資産売却損益へ計上${n?`｜移行時に余剰${n.sold}台を売却（${compactYen(n.proceeds)}）`:''}</small></div>`)}
+  const host=document.getElementById('equipmentLines');if(host){const n=state.factory.singleEquipmentMigrationNoticeV525;host.insertAdjacentHTML('afterbegin',`<div class="riskhint"><b>1ライン1式ルール</b>｜各工程の設備は1台まで。同じグレードの工程設備はすべて同じ能力。グレード変更時は旧設備を自動売却して入替。中央乾燥室は共用設備のため対象外<br><small>機械は8年・残存価額10%の定額法で減価償却し、売却額と帳簿価額の差を固定資産売却損益へ計上${n?`｜移行時に余剰${n.sold}台を売却（${compactYen(n.proceeds)}）`:''}</small></div>`)}
   document.querySelectorAll('[data-buy-machine]').forEach(button=>{button.dataset.factoryBlocked=button.disabled?'1':'0';updateMachineReplacementUIV525(button,true)});
   document.querySelectorAll('[data-bulk-grade]').forEach(select=>{const lineId=select.dataset.bulkGrade,line=lineById(lineId),current=bulkMachineTypesV523(line).map(t=>FactoryModule.assets(lineId,t)[0]?.gradeId).filter(Boolean);if(current.length&&current.every(g=>Number(g)===Number(current[0]))&&[...select.options].some(o=>Number(o.value)===Number(current[0])))select.value=String(current[0]);const button=document.querySelector(`[data-bulk-buy="${lineId}"]`),q=bulkMachineQuoteV523(lineId,Number(select.value));if(button){button.textContent=q.changedTypes.length?'一括導入・入替':'現在の構成';button.disabled=button.disabled||!q.changedTypes.length}});
 };
@@ -1489,7 +1489,7 @@ showQuarter=function(q){
   document.getElementById('quarterModal').classList.add('show');
 };
 
-const _renderV518=render;render=function(){ensureV518State();ensureSingleEquipmentMigrationV525();_renderV518();const dataNote=document.querySelector('#panel-company .card:last-child .note');if(dataNote&&dataNote.textContent.includes('v0.5.'))dataNote.textContent='v0.5.25：1ライン1式・設備自動入替・減価償却と売却損益';document.title=`${state.companyName||'どろだんご工場'}｜泥団子メーカー v0.5.25`};
+const _renderV518=render;render=function(){ensureV518State();ensureSingleEquipmentMigrationV525();_renderV518();const dataNote=document.querySelector('#panel-company .card:last-child .note');if(dataNote&&dataNote.textContent.includes('v0.5.'))dataNote.textContent='v0.5.26：同一グレード能力統一・1ライン1式・設備自動入替';document.title=`${state.companyName||'どろだんご工場'}｜泥団子メーカー v0.5.26`};
 render();
 
 const themeToggle=document.getElementById('themeToggle');
