@@ -201,7 +201,7 @@ table{width:100%;border-collapse:collapse;font-size:11px}th{color:var(--muted);f
     <section class="card"><h2>原材料メーカー</h2><div class="note">購買先ごとにロットを個別設定　自動発注時は供給可能な選択先それぞれへ設定ロットを1回発注</div><div id="rawSuppliers" class="suppliergrid"></div></section>
     <section class="card"><h2>包装資材メーカー</h2><div class="note">包材メーカーごとにロットを個別設定　製品別の包材不足時に各社へ設定ロットを発注</div><div id="packSuppliers" class="suppliergrid"></div></section>
   </div>
-  <section class="card"><div class="linehead"><div><h2 style="margin:0">⛏️ レアアース原料</h2><div class="note" style="margin:3px 0 0">高純度原料は大ロット・高単価　特殊クリーン工場の専用原料ヤードへ納入</div></div><span class="deliverybadge" id="rareRawBadge">特殊原料</span></div><div id="rareRawPanel"></div></section><div class="grid2"><section class="card"><h2>在庫・自動発注</h2><div class="grid3"><div class="metric"><small>原料在庫</small><b id="rawQty">0kg</b></div><div class="metric"><small>平均原料単価</small><b id="rawAvg">¥0/kg</b></div><div class="metric"><small>一般倉庫空き</small><b id="warehouseFree">0kg</b></div></div><div id="packagingStock" class="packtable" style="margin-top:10px"></div><div class="forecast" id="procurementForecast" style="margin-top:10px"></div></section><section class="card"><h2>供給リスク・履歴</h2><div id="supplierEvents" class="eventlog"></div></section></div>
+  <section class="card"><div class="linehead"><div><h2 style="margin:0">⛏️ レアアース原料</h2><div class="note" style="margin:3px 0 0">供給契約後は通常原料と同じく、生産日の必要量に応じて自動発注　特殊クリーン工場の専用原料ヤードへ納入</div></div><span class="deliverybadge" id="rareRawBadge">特殊原料</span></div><div id="rareRawPanel"></div></section><div class="grid2"><section class="card"><h2>在庫・自動発注</h2><div class="grid3"><div class="metric"><small>原料在庫</small><b id="rawQty">0kg</b></div><div class="metric"><small>平均原料単価</small><b id="rawAvg">¥0/kg</b></div><div class="metric"><small>一般倉庫空き</small><b id="warehouseFree">0kg</b></div></div><div id="packagingStock" class="packtable" style="margin-top:10px"></div><div class="forecast" id="procurementForecast" style="margin-top:10px"></div></section><section class="card"><h2>供給リスク・履歴</h2><div id="supplierEvents" class="eventlog"></div></section></div>
 </section>
 
 <section class="panel" id="panel-development">
@@ -1273,6 +1273,42 @@ renderStorageFacilities=function(){_renderStorageFacilitiesV524();renderDryingRo
 // v0.5.24: keep the rare-earth raw-material order panel after supplier UI overrides.
 const _renderLotsV524=renderLots;
 renderLots=function(){_renderLotsV524();renderRareRaw()};
+
+// v0.5.24: rare-earth raw material now uses a persistent supply contract.
+function ensureRareRawContractV524(){
+  const r=state.procurement.rareRaw||(state.procurement.rareRaw={qty:0,avgCost:3200,lotIndex:0});
+  if(typeof r.contractActive!=='boolean')r.contractActive=false;
+  return r;
+}
+const _autoBuyRareRawSmartV524=ProcurementModule.autoBuyRareRawSmartV520.bind(ProcurementModule);
+ProcurementModule.autoBuyRareRawSmartV520=function(requiredQty){
+  const r=ensureRareRawContractV524();
+  if(!r.contractActive){
+    requiredQty=Math.max(0,Number(requiredQty)||0);
+    if(requiredQty>(Number(r.qty)||0)+1e-6)return{ok:false,bought:0,message:'レアアース原料：供給契約がないため自動発注できません'};
+    return{ok:true,bought:0,message:''};
+  }
+  return _autoBuyRareRawSmartV524(requiredQty);
+};
+ProcurementModule.toggleRareRawContractV524=function(){
+  const r=ensureRareRawContractV524();
+  if(!r.contractActive&&cleanFactories().length<=0)return{ok:false,message:'特殊クリーン工場を建設すると供給契約を結べます'};
+  r.contractActive=!r.contractActive;
+  return{ok:true,message:r.contractActive?'レアアース原料の継続供給契約を開始しました':'レアアース原料の供給契約を解除しました'};
+};
+renderRareRaw=function(){
+  const r=ensureRareRawContractV524(),cap=cleanRawCapacity(),lot=RARE_RAW_LOTS[clamp(Number(r.lotIndex)||0,0,RARE_RAW_LOTS.length-1)],e=document.getElementById('rareRawPanel');
+  if(!e)return;
+  const active=r.contractActive,canContract=cleanFactories().length>0;
+  const badge=document.getElementById('rareRawBadge');if(badge){badge.textContent=active?'供給契約中':'未契約';badge.className=`deliverybadge ${active?'done':''}`}
+  e.innerHTML=`<div class="grid3" style="margin-top:9px"><div class="metric"><small>在庫</small><b>${compactNum(r.qty,1)}kg</b></div><div class="metric"><small>平均単価</small><b>${yen(r.avgCost)}/kg</b></div><div class="metric"><small>専用容量</small><b>${compactNum(cap,1)}kg</b></div></div><div class="supplier ${active?'selected':''}" style="margin-top:8px"><div class="supplierhead"><div><b>高純度レアアース原料 継続供給</b><small style="display:block;color:var(--muted);line-height:1.55">契約中は生産日の必要量に応じて設定ロットを自動発注</small></div><span class="supplierstatus ${active?'':'pending'}">${active?'契約中':'未契約'}</span></div><label style="display:block;margin:9px 0"><small>自動発注ロット</small><select id="rareRawLot" style="width:100%;margin-top:3px">${RARE_RAW_LOTS.map((x,i)=>`<option value="${i}" ${i===Number(r.lotIndex)?'selected':''}>${num(x.qty)}kg｜${yen(x.unitPrice)}/kg｜合計 ${compactYen(x.qty*x.unitPrice)}</option>`).join('')}</select></label><button id="toggleRareRawContract" class="${active?'secondary':''}" style="width:100%" ${!active&&!canContract?'disabled':''}>${active?'供給契約を解除':'供給契約を結ぶ'}</button>${!canContract?'<div class="note" style="margin-top:7px">特殊クリーン工場の建設後に契約できます</div>':active?'<div class="riskhint" style="margin-top:7px">✓ 日付を進めると、レアアース品の生産必要量と在庫を比較して自動補充します<br><small>資金または専用原料ヤード容量が足りない場合は、購入可能な小ロットへ自動調整します</small></div>':''}</div>`;
+};
+const _bindDynamicRareContractV524=bindDynamic;
+bindDynamic=function(){
+  _bindDynamicRareContractV524();
+  const b=document.getElementById('toggleRareRawContract');
+  if(b)b.onclick=()=>{const r=ProcurementModule.toggleRareRawContractV524();toast(r.message);save();render()};
+};
 
 // ===== v0.5.23 clean-factory/R-equipment recovery + bulk line purchase =====
 function bulkMachineTypesV523(line){
