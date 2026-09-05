@@ -74,7 +74,7 @@ table{width:100%;border-collapse:collapse;font-size:11px}th{color:var(--muted);f
 @media(max-width:760px){.corpgrid,.managergrid,.regiongrid,.intlgrid{grid-template-columns:1fr}.corpstat{grid-template-columns:repeat(2,minmax(0,1fr))}.officeform{grid-template-columns:1fr 1fr}.officeform button{grid-column:1/-1}.overseasstaff{grid-template-columns:1fr}}
 
 /* v0.5.24 graded drying-room restoration + v0.5.23 bulk machine purchase */
-.bulkbuybox{margin:10px 0;padding:10px;border:1px solid var(--line);border-radius:13px;background:#f7f1e8}.bulkbuyrow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center}.bulkbuyrow select{min-width:0}.recoverybox{margin:10px 0;padding:10px;border:1px solid #e6b8b1;border-radius:13px;background:#fff2ef}.recoverybox .bulkbuyrow{margin-top:8px}@media(max-width:600px){.bulkbuyrow{grid-template-columns:1fr}.bulkbuyrow button{width:100%}}
+.bulkbuybox{margin:10px 0;padding:10px;border:1px solid var(--line);border-radius:13px;background:#f7f1e8}.bulkbuyrow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center}.bulkbuyrow select{min-width:0}@media(max-width:600px){.bulkbuyrow{grid-template-columns:1fr}.bulkbuyrow button{width:100%}}
 
 /* Night-friendly dark theme */
 .theme-toggle{flex:0 0 auto;width:38px;height:38px;padding:0;display:grid;place-items:center;font-size:18px;border:1px solid var(--line);box-shadow:0 3px 10px rgba(45,35,26,.08)}
@@ -90,7 +90,7 @@ html[data-theme="dark"] :is(.bar,.inventoryStack){background:#302c26;border-colo
 html[data-theme="dark"] :is(td,.staffrow,.debtrow,.contractfoldbody,.stmtrow){border-color:#37332e}
 html[data-theme="dark"] :is(.loadpill,.deliverybadge,.pill){background:#34302a;color:#ddd7ce}
 html[data-theme="dark"] :is(.riskhint,.forecast,.quotehint,.shipmentnext){background:#262b22;border-color:#46513f;color:#dfe8d9}
-html[data-theme="dark"] :is(.warning,.accountwarn,.recoverybox){background:#352321;border-color:#68433e;color:#f0d7d2}
+html[data-theme="dark"] :is(.warning,.accountwarn){background:#352321;border-color:#68433e;color:#f0d7d2}
 html[data-theme="dark"] :is(.marketmsg,.lot.selected,.contract.warn){background:#332e1d;color:#f0e4b8}
 html[data-theme="dark"] :is(.contract.done,.supplier.selected){background:#202a20}
 html[data-theme="dark"] :is(.contract.failed,.supplier.disrupted){background:#322120}
@@ -296,6 +296,7 @@ html[data-theme="dark"] a{color:#9ec7df}
 <div class="modalback" id="pastContractsModal"><div class="modal" style="max-width:820px"><h2>🗂️ 過去案件</h2><div class="shipmentcustomer" id="pastContractsModalSub"></div><div id="pastContractsModalBody"></div><div class="modalactions"><button id="closePastContractsModal">閉じる</button></div></div></div>
 <div class="modalback" id="setupConfirmModal"><div class="modal" style="max-width:500px"><h2>🔧 ライン切替の確認</h2><div class="sadtext" id="setupConfirmBody"></div><div class="modalactions"><button id="cancelSetup" class="secondary">やめる</button><button id="confirmSetup">切り替える</button></div></div></div>
 <div class="modalback" id="purchaseConfirmModal"><div class="modal" style="max-width:520px"><h2>💰 購入・投資の確認</h2><div class="sadtext" id="purchaseConfirmBody"></div><div class="modalactions"><button id="cancelPurchase" class="secondary">やめる</button><button id="confirmPurchase">購入する</button></div></div></div>
+<div class="modalback" id="closureConfirmModalV528"><div class="modal" style="max-width:520px"><h2 id="closureConfirmTitleV528">⚠️ 閉鎖の確認</h2><div class="sadtext" id="closureConfirmBodyV528"></div><div class="modalactions"><button id="cancelClosureV528" class="secondary">やめる</button><button id="confirmClosureV528" class="danger">閉鎖する</button></div></div></div>
 
 <div class="modalback approvalback" id="approvalModal"><div class="modal approvalmodal"><div class="sadface" style="font-size:38px">📑</div><h2 style="text-align:center">社長承認が必要です</h2><div class="approvaldept" id="approvalDept"></div><div class="approvaltext" id="approvalText"></div><div class="note" style="margin-top:8px;text-align:center">この承認・却下自体は経営数値に影響しません</div><div class="modalactions"><button id="rejectApproval" class="secondary">却下</button><button id="approveApproval">承認</button></div></div></div>
 <div class="modalback gameoverback" id="gameOverModal"><div class="modal gameovermodal"><div class="sadface">🏭💸</div><h2>GAME OVER</h2><div>運転資金が尽き、工場の経営を続けられなくなりました</div><div class="gameovercash" id="gameOverCash">¥0</div><button id="gameOverReset" class="danger">最初からやり直す</button></div></div>
@@ -670,7 +671,7 @@ function renderStorageFacilities(){const sp=state.factory.specialStorage,a=Stora
 function supplierCard(kind,d){const selected=ProcurementModule.selectedIds(kind).includes(d.id),pending=ProcurementModule.pending(kind,d.id),stop=ProcurementModule.disruption(d.id),remain=stop?Math.max(0,daysBetween(state.date,stop.until)):0,pendingRemain=pending?Math.max(0,daysBetween(state.date,pending.effectiveDate)):0,idx=ProcurementModule.supplierLotIndex(kind,d.id),lots=kind==='raw'?PurchaseLots:PackageLots,selectedLot=lots[idx],lotOptions=lots.map((x,i)=>{if(kind==='raw'){const unit=x.unitPrice*d.priceMult;return`<option value="${i}" ${i===idx?'selected':''}>${num(x.qty)}kg｜¥${num(unit,2)}/kg</option>`}const normalUnit=ProductDefs.normal.packageCost*x.priceMult*d.priceMult;return`<option value="${i}" ${i===idx?'selected':''}>${num(x.qty)}個｜普通用 ¥${num(normalUnit,2)}/個</option>`}).join(''),priceInfo=kind==='raw'?`選択ロット単価 <b>¥${num(selectedLot.unitPrice*d.priceMult,2)}/kg</b>`:`${Object.entries(ProductDefs).map(([k,p])=>`${p.emoji}${p.name.replace('泥団子','')} <b>¥${num(p.packageCost*selectedLot.priceMult*d.priceMult,2)}/個</b>`).join('｜')}`,status=stop?'供給停止':pending?(pending.action==='add'?'立上げ中':'解約予定'):(selected?'取引中':'未契約'),note=stop?`${stop.reason}<br>残り約${remain}日（${(remain/30).toFixed(1)}か月）`:pending?`${pending.action==='add'?'品質確認・取引審査中':'解約予告期間中'}<br>${dateLabel(pending.effectiveDate)}まであと${pendingRemain}日`:selected?'通常供給中':'取引開始には60日必要',button=pending?`申請を取り消す`:selected?`解約申請（${SUPPLIER_EXIT_DAYS}日）`:`取引開始申請（${SUPPLIER_ONBOARD_DAYS}日）`;return`<div class="supplier ${selected?'selected':''} ${pending?'pending':''} ${stop?'disrupted':''}"><div class="supplierhead"><div><b>${d.name}</b><small style="display:block;color:var(--muted);line-height:1.55">${priceInfo}</small></div><span class="supplierstatus ${stop?'stop':pending?'pending':''}">${status}</span></div><div class="note" style="margin:6px 0">${note}</div><label style="display:block;margin:7px 0"><small>このメーカーの発注ロット</small><select style="width:100%;margin-top:3px" data-supplier-lot-kind="${kind}" data-supplier-lot-id="${d.id}">${lotOptions}</select></label><button class="${selected&&!pending?'':'secondary'}" data-supplier-kind="${kind}" data-supplier-id="${d.id}">${button}</button></div>`}
 
 const _oldRenderInventory=renderInventory;
-renderInventory=function(){_oldRenderInventory();const body=document.getElementById('inventoryMaterialRows');if(body){const r=state.procurement.rareRaw,wip=(state.production.dryingWip||[]).reduce((s,x)=>s+x.qty,0);body.insertAdjacentHTML('beforeend',`<tr><td>⛏️ レアアース原料</td><td>${num(r.qty,1)}kg</td><td>専用大ロット</td><td>${num(Math.max(0,cleanRawCapacity()-r.qty),1)}kg</td><td>—</td><td>クリーン原料ヤード</td></tr><tr><td>🧲 レアアース乾燥中</td><td>${num(wip)}個</td><td>10日WIP</td><td>—</td><td>—</td><td>特殊工場内</td></tr>`)}}
+renderInventory=function(){_oldRenderInventory();const body=document.getElementById('inventoryMaterialRows');if(body){const r=state.procurement.rareRaw,wip=(state.production.dryingWip||[]).reduce((s,x)=>s+x.qty,0),plan=ProductionModule.plan(true),daily=Number(plan.rareUsage)||0,need7=daily*7,diff=(Number(r.qty)||0)-need7,days=daily>0?(Number(r.qty)||0)/daily:null;body.insertAdjacentHTML('beforeend',`<tr><td>⛏️ <b>レアアース原料</b></td><td><b>${num(r.qty,1)}kg</b></td><td>次7日 ${num(need7,1)}kg</td><td class="${diff<0?'negative':'positive'}"><b>${diff>=0?'+':''}${num(diff,1)}kg</b></td><td>${days===null?'—':days>=99?'99日以上':days.toFixed(1)+'日'}</td><td>${num(r.qty,1)}kg</td></tr><tr><td>🧲 レアアース乾燥中</td><td>${num(wip)}個</td><td>10日WIP</td><td>—</td><td>—</td><td>特殊工場内</td></tr>`)}}
 const _oldRenderStorageFacilities=renderStorageFacilities;
 renderStorageFacilities=function(){_oldRenderStorageFacilities();renderDryingRooms()};
 const _oldRenderLots=renderLots;
@@ -1342,7 +1343,12 @@ bindDynamic=function(){
 // ===== v0.5.23 clean-factory/R-equipment recovery + bulk line purchase =====
 function bulkMachineTypesV523(line){
   const p=ProductDefs[line?.product];if(!p)return[];
-  return ProcessOrder.filter(type=>type!=='packer'&&p.loads[type]>0&&!(type==='dryer'&&DryingRoomModule.managed(line.factoryId)));
+  return ProcessOrder.filter(type=>p.loads[type]>0&&!(type==='dryer'&&DryingRoomModule.managed(line.factoryId)));
+}
+function bulkTargetGradeV527(type,machineGradeId){
+  if(type!=='packer')return Number(machineGradeId);
+  const map={1:2,2:2,3:3,4:4,5:5,6:6,7:7,8:8,101:2,102:3,103:4,104:5};
+  return map[Number(machineGradeId)]||2;
 }
 function bulkMachineQuoteV523(lineId,gradeId){
   const line=lineById(lineId),p=ProductDefs[line?.product],grade=FactoryModule.grade(gradeId);
@@ -1354,9 +1360,9 @@ function bulkMachineQuoteV523(lineId,gradeId){
   gradeId=Number(gradeId);
   const types=bulkMachineTypesV523(line),rows=[];
   for(const type of types){
-    const attr=FactoryModule.machineAttr(type,gradeId),old=FactoryModule.assets(lineId,type),same=old.length===1&&Number(old[0].gradeId)===gradeId;
+    const targetGradeId=bulkTargetGradeV527(type,gradeId),attr=FactoryModule.machineAttr(type,targetGradeId),old=FactoryModule.assets(lineId,type),same=old.length===1&&Number(old[0].gradeId)===targetGradeId;
     if(!attr)return{...empty,message:'設備情報を取得できません'};
-    rows.push({type,attr,old,same,sale:old.reduce((n,a)=>n+FactoryModule.resaleValue(a),0),book:old.reduce((n,a)=>n+machineBookValue(a),0),oldSpace:old.reduce((n,a)=>n+(FactoryModule.machineAttr(a.type,a.gradeId)?.space||0),0)});
+    rows.push({type,targetGradeId,attr,old,same,sale:old.reduce((n,a)=>n+FactoryModule.resaleValue(a),0),book:old.reduce((n,a)=>n+machineBookValue(a),0),oldSpace:old.reduce((n,a)=>n+(FactoryModule.machineAttr(a.type,a.gradeId)?.space||0),0)});
   }
   const changed=rows.filter(x=>!x.same),grossCost=changed.reduce((n,x)=>n+x.attr.price,0),saleProceeds=changed.reduce((n,x)=>n+x.sale,0),bookValue=changed.reduce((n,x)=>n+x.book,0),space=changed.reduce((n,x)=>n+x.attr.space,0),oldSpace=changed.reduce((n,x)=>n+x.oldSpace,0);
   return{ok:types.length>0,message:'',types,changedTypes:changed.map(x=>x.type),unchangedTypes:rows.filter(x=>x.same).map(x=>x.type),rows,cost:grossCost-saleProceeds,grossCost,saleProceeds,bookValue,gainLoss:saleProceeds-bookValue,space,oldSpace,spaceDelta:space-oldSpace};
@@ -1368,19 +1374,8 @@ FactoryModule.buyLineSetV523=function(lineId,gradeId){
   if(state.finance.cash+q.saleProceeds<q.grossCost)return{ok:false,message:`購入資金が足りません（売却後の不足 ${yen(q.grossCost-state.finance.cash-q.saleProceeds)}）`};
   for(const row of q.rows.filter(x=>!x.same))for(const old of row.old)sellMachineAssetV525(old);
   FinanceModule.cashOut(q.grossCost,'capex');
-  for(const type of q.changedTypes){const a=this.machineAttr(type,Number(gradeId));state.factory.machineAssets.push({id:`m-${Date.now()}-${Math.random()}`,lineId,type,gradeId:Number(gradeId),purchasedPrice:a.price,purchasedDate:state.date,runDays:0,running:true})}
-  return{ok:true,message:`${line.name}の必要工程 ${q.changedTypes.length}台を${FactoryModule.gradeName('kneader',gradeId)}へ入替`};
-};
-function rareRecoveryNeededV523(line){return line?.product==='rareearth'&&factorySite(line.factoryId)?.type==='clean'&&bulkMachineTypesV523(line).some(t=>FactoryModule.assets(line.id,t).filter(a=>Number(a.gradeId)>=100).length===0)}
-FactoryModule.restoreRareSetV523=function(lineId,gradeId){
-  const line=lineById(lineId);if(!line||line.product!=='rareearth'||factorySite(line.factoryId)?.type!=='clean')return{ok:false,message:'復旧対象のレアアースラインではありません'};
-  gradeId=Number(gradeId);if(!RareGradeDefs.some(g=>g.id===gradeId))return{ok:false,message:'Rグレードを選択してください'};
-  const missing=bulkMachineTypesV523(line).filter(type=>!FactoryModule.assets(line.id,type).some(a=>Number(a.gradeId)>=100));
-  if(!missing.length)return{ok:false,message:'不足しているR設備はありません'};
-  const neededSpace=missing.reduce((n,type)=>n+(FactoryModule.machineAttr(type,gradeId)?.space||0),0);
-  if(this.freeEquipmentSpace()<neededSpace)return{ok:false,message:`復旧設備を置く面積が足りません（必要 ${num(neededSpace)}㎡）`};
-  for(const type of missing){const a=this.machineAttr(type,gradeId);state.factory.machineAssets.push({id:`restore-${Date.now()}-${Math.random()}`,lineId,type,gradeId,purchasedPrice:a.price,purchasedDate:state.date,runDays:0,running:true,recoveredFromV522:true})}
-  return{ok:true,message:`旧バグで失われた可能性のあるR設備 ${missing.length}台を${FactoryModule.gradeName('kneader',gradeId)}で無償復旧しました`};
+  for(const row of q.rows.filter(x=>!x.same)){state.factory.machineAssets.push({id:`m-${Date.now()}-${Math.random()}`,lineId,type:row.type,gradeId:row.targetGradeId,purchasedPrice:row.attr.price,purchasedDate:state.date,runDays:0,running:true})}
+  return{ok:true,message:`${line.name}の必要工程 ${q.changedTypes.length}台を一括導入・入替（箱詰め設備を含む）`};
 };
 const _renderEquipmentLinesV523=renderEquipmentLines;
 renderEquipmentLines=function(){
@@ -1389,19 +1384,14 @@ renderEquipmentLines=function(){
     const lineId=fold.dataset.equipmentFold,line=lineById(lineId),p=ProductDefs[line?.product];if(!line||!p)return;
     const body=fold.querySelector('.equipmentfoldbody');if(!body)return;
     const grades=gradesForProduct(line.product),wrong=p.requiresClean&&factorySite(line.factoryId)?.type!=='clean';
-    const bulk=`<div class="bulkbuybox"><div class="linehead"><div><b>⚙️ 必要工程を一括導入・入替</b><div class="note">各工程は1ライン1台まで｜既存設備は自動売却して入替${DryingRoomModule.managed(line.factoryId)?'｜中央乾燥室使用中は乾燥機を除外':''}｜箱詰め設備は別</div></div></div><div class="bulkbuyrow"><select data-bulk-grade="${line.id}">${grades.map(g=>{const q=bulkMachineQuoteV523(line.id,g.id),label=q.changedTypes.length?`変更${q.changedTypes.length}工程｜差引 ${compactYen(q.cost)}`:'現在の構成';return`<option value="${g.id}">${g.name}｜${label}</option>`}).join('')}</select><button data-bulk-buy="${line.id}" ${wrong?'disabled':''}>一括導入・入替</button></div></div>`;
+    const bulk=`<div class="bulkbuybox"><div class="linehead"><div><b>⚙️ 必要工程を一括導入・入替</b><div class="note">各工程は1ライン1台まで｜既存設備は自動売却して入替${DryingRoomModule.managed(line.factoryId)?'｜中央乾燥室使用中は乾燥機を除外':''}｜対応する箱詰め設備も含む</div></div></div><div class="bulkbuyrow"><select data-bulk-grade="${line.id}">${grades.map(g=>{const q=bulkMachineQuoteV523(line.id,g.id),label=q.changedTypes.length?`変更${q.changedTypes.length}工程｜差引 ${compactYen(q.cost)}`:'現在の構成';return`<option value="${g.id}">${g.name}｜${label}</option>`}).join('')}</select><button data-bulk-buy="${line.id}" ${wrong?'disabled':''}>一括導入・入替</button></div></div>`;
     body.insertAdjacentHTML('afterbegin',bulk);
-    if(rareRecoveryNeededV523(line)){
-      const recovery=`<div class="recoverybox"><b>⚠ 旧バージョンのR設備消失バグを検出</b><div class="note">v0.5.22以前でR1〜R4設備が読み込み時に除外される不具合がありました。購入済みグレードを選んで不足工程を無償復旧できます。</div><div class="bulkbuyrow"><select data-rare-restore-grade="${line.id}">${RareGradeDefs.map(g=>`<option value="${g.id}">${g.name}</option>`).join('')}</select><button class="danger" data-rare-restore="${line.id}">R設備を無償復旧</button></div></div>`;
-      body.insertAdjacentHTML('afterbegin',recovery);
-    }
   });
 };
 const _bindDynamicV523=bindDynamic;
 bindDynamic=function(){
   _bindDynamicV523();
-  document.querySelectorAll('[data-bulk-buy]').forEach(b=>b.onclick=()=>{const lineId=b.dataset.bulkBuy,sel=document.querySelector(`[data-bulk-grade="${lineId}"]`),gid=Number(sel?.value),q=bulkMachineQuoteV523(lineId,gid),line=lineById(lineId);if(!q.ok)return toast(q.message||'一括購入できません');if(!q.changedTypes.length)return toast('必要工程はすべて選択中のグレードです');openEquipmentPurchaseConfirmV525(`${line?.name||lineId+'ライン'}｜${FactoryModule.gradeName('kneader',gid)} 一括導入・入替`,q,()=>FactoryModule.buyLineSetV523(lineId,gid),`${q.changedTypes.map(t=>MachineTypes[t]?.name||t).join('・')}｜変更 ${q.changedTypes.length}工程｜箱詰め設備は含みません`) });
-  document.querySelectorAll('[data-rare-restore]').forEach(b=>b.onclick=()=>{const lineId=b.dataset.rareRestore,sel=document.querySelector(`[data-rare-restore-grade="${lineId}"]`),gid=Number(sel?.value);const r=FactoryModule.restoreRareSetV523(lineId,gid);toast(r.message);if(r.ok){save();render()}});
+  document.querySelectorAll('[data-bulk-buy]').forEach(b=>b.onclick=()=>{const lineId=b.dataset.bulkBuy,sel=document.querySelector(`[data-bulk-grade="${lineId}"]`),gid=Number(sel?.value),q=bulkMachineQuoteV523(lineId,gid),line=lineById(lineId);if(!q.ok)return toast(q.message||'一括購入できません');if(!q.changedTypes.length)return toast('必要工程はすべて選択中のグレードです');openEquipmentPurchaseConfirmV525(`${line?.name||lineId+'ライン'}｜${FactoryModule.gradeName('kneader',gid)} 一括導入・入替`,q,()=>FactoryModule.buyLineSetV523(lineId,gid),`${q.changedTypes.map(t=>MachineTypes[t]?.name||t).join('・')}｜変更 ${q.changedTypes.length}工程｜箱詰め設備を含む`) });
 };
 
 // ===== v0.5.25 one set per line + replacement accounting =====
@@ -1474,13 +1464,21 @@ renderEquipmentLines=function(){
   _renderEquipmentLinesV525();
   const host=document.getElementById('equipmentLines');if(host){const n=state.factory.singleEquipmentMigrationNoticeV525;host.insertAdjacentHTML('afterbegin',`<div class="riskhint"><b>1ライン1式ルール</b>｜各工程の設備は1台まで。同じグレードの工程設備はすべて同じ能力。グレード変更時は旧設備を自動売却して入替。中央乾燥室は共用設備のため対象外<br><small>機械は8年・残存価額10%の定額法で減価償却し、売却額と帳簿価額の差を固定資産売却損益へ計上${n?`｜移行時に余剰${n.sold}台を売却（${compactYen(n.proceeds)}）`:''}</small></div>`)}
   document.querySelectorAll('[data-buy-machine]').forEach(button=>{button.dataset.factoryBlocked=button.disabled?'1':'0';updateMachineReplacementUIV525(button,true)});
-  document.querySelectorAll('[data-bulk-grade]').forEach(select=>{const lineId=select.dataset.bulkGrade,line=lineById(lineId),current=bulkMachineTypesV523(line).map(t=>FactoryModule.assets(lineId,t)[0]?.gradeId).filter(Boolean);if(current.length&&current.every(g=>Number(g)===Number(current[0]))&&[...select.options].some(o=>Number(o.value)===Number(current[0])))select.value=String(current[0]);const button=document.querySelector(`[data-bulk-buy="${lineId}"]`),q=bulkMachineQuoteV523(lineId,Number(select.value));if(button){button.textContent=q.changedTypes.length?'一括導入・入替':'現在の構成';button.disabled=button.disabled||!q.changedTypes.length}});
+  document.querySelectorAll('[data-bulk-grade]').forEach(select=>{const lineId=select.dataset.bulkGrade,line=lineById(lineId),current=bulkMachineTypesV523(line).filter(t=>t!=='packer').map(t=>FactoryModule.assets(lineId,t)[0]?.gradeId).filter(Boolean);if(current.length&&current.every(g=>Number(g)===Number(current[0]))&&[...select.options].some(o=>Number(o.value)===Number(current[0])))select.value=String(current[0]);const button=document.querySelector(`[data-bulk-buy="${lineId}"]`),q=bulkMachineQuoteV523(lineId,Number(select.value));if(button){button.textContent=q.changedTypes.length?'一括導入・入替':'現在の構成';button.disabled=button.disabled||!q.changedTypes.length}});
 };
 const _bindDynamicV525=bindDynamic;
 bindDynamic=function(){
   _bindDynamicV525();
   document.querySelectorAll('[data-buy-machine]').forEach(button=>{const [lineId,type]=button.dataset.buyMachine.split('|'),select=document.querySelector(`[data-buy-grade="${lineId}|${type}"]`);if(select)select.onchange=()=>updateMachineReplacementUIV525(button,false);button.onclick=()=>{const gradeId=Number(select?.value),q=machineReplacementQuoteV525(lineId,type,gradeId);if(!q.ok)return toast(q.message);if(q.same)return toast('すでに同じグレードの設備です');const label=type==='packer'?FactoryModule.gradeName(type,gradeId):`${FactoryModule.gradeName(type,gradeId)} ${MachineTypes[type]?.name||''}`;openEquipmentPurchaseConfirmV525(`${q.line.name}｜${label}`,q,()=>FactoryModule.buyMachine(lineId,type,gradeId),`能力 ${num(q.attr.capacity)}/日｜面積 ${num(q.attr.space)}㎡｜電気 ${yen(q.attr.electricity)}/日`)}});
   document.querySelectorAll('[data-bulk-grade]').forEach(select=>select.onchange=()=>{const lineId=select.dataset.bulkGrade,q=bulkMachineQuoteV523(lineId,Number(select.value)),button=document.querySelector(`[data-bulk-buy="${lineId}"]`);if(button){button.textContent=q.changedTypes.length?'一括導入・入替':'現在の構成';button.disabled=!q.ok||!q.changedTypes.length}});
+};
+const _renderInventoryV527=renderInventory;
+renderInventory=function(){
+  _renderInventoryV527();
+  const body=document.getElementById('inventoryMaterialRows');if(!body)return;
+  const row=[...body.querySelectorAll('tr')].find(tr=>tr.cells?.[0]?.textContent.includes('レアアース原料'));if(!row)return;
+  const r=state.procurement.rareRaw,plan=ProductionModule.plan(true),daily=Number(plan.rareUsage)||0,need7=daily*7,diff=(Number(r.qty)||0)-need7,days=daily>0?(Number(r.qty)||0)/daily:null;
+  row.innerHTML=`<td>⛏️ <b>レアアース原料</b></td><td><b title="${num(r.qty,1)}kg">${compactNum(r.qty,1)}kg</b></td><td>次7日 ${num(need7,1)}kg</td><td class="${diff<0?'negative':'positive'}"><b>${diff>=0?'+':''}${num(diff,1)}kg</b></td><td>${days===null?'—':days>=99?'99日以上':days.toFixed(1)+'日'}</td><td>${num(r.qty,1)}kg</td>`;
 };
 showQuarter=function(q){
   const financialOp=Number(q.financialOperatingProfit??q.operatingProfit)||0,financialNet=Number(q.financialNetProfit??q.netProfit)||0,financialCogs=Number(q.financialCogs??q.cogs)||0;
@@ -1489,7 +1487,94 @@ showQuarter=function(q){
   document.getElementById('quarterModal').classList.add('show');
 };
 
-const _renderV518=render;render=function(){ensureV518State();ensureSingleEquipmentMigrationV525();_renderV518();const dataNote=document.querySelector('#panel-company .card:last-child .note');if(dataNote&&dataNote.textContent.includes('v0.5.'))dataNote.textContent='v0.5.26：同一グレード能力統一・1ライン1式・設備自動入替';document.title=`${state.companyName||'どろだんご工場'}｜泥団子メーカー v0.5.26`};
+// ===== v0.5.28 rare-earth BCP, closure controls, and HR screen consolidation =====
+const RareRawSuppliersV528=[
+  {id:'rare-hokuto',name:'北斗レアマテリアル',priceMult:1.00},
+  {id:'rare-pacific',name:'環太平洋資源',priceMult:1.05},
+  {id:'rare-global',name:'グローバル精鉱',priceMult:.97}
+];
+function ensureRareSupplierStateV528(){
+  const r=ensureRareRawContractV524(),valid=new Set(RareRawSuppliersV528.map(x=>x.id));
+  if(!Array.isArray(r.supplierIds))r.supplierIds=r.contractActive?['rare-hokuto']:[];
+  r.supplierIds=r.supplierIds.filter(id=>valid.has(id)).slice(0,3);
+  r.supplierLots=r.supplierLots&&typeof r.supplierLots==='object'?r.supplierLots:{};
+  for(const d of RareRawSuppliersV528)r.supplierLots[d.id]=clamp(Math.floor(Number(r.supplierLots[d.id]??r.lotIndex??0)),0,RARE_RAW_LOTS.length-1);
+  r.supplierChanges=Array.isArray(r.supplierChanges)?r.supplierChanges.filter(x=>x&&valid.has(x.id)&&['add','remove'].includes(x.action)):[];
+  r.contractActive=r.supplierIds.length>0;
+  return r;
+}
+function rarePendingV528(id){return ensureRareSupplierStateV528().supplierChanges.find(x=>x.id===id)||null}
+ProcurementModule.toggleRareSupplierV528=function(id){
+  const r=ensureRareSupplierStateV528(),def=RareRawSuppliersV528.find(x=>x.id===id);if(!def)return{ok:false,message:'メーカーがありません'};
+  if(cleanFactories().length<=0&&!r.supplierIds.includes(id))return{ok:false,message:'特殊クリーン工場を建設すると取引開始できます'};
+  const pending=rarePendingV528(id);if(pending){r.supplierChanges=r.supplierChanges.filter(x=>x!==pending);return{ok:true,message:`${def.name}の${pending.action==='add'?'取引開始':'解約'}申請を取消`}}
+  if(r.supplierIds.includes(id)){
+    if(r.supplierIds.length<=1&&!r.supplierChanges.some(x=>x.action==='add'))return{ok:false,message:'代替の取引先が稼働する前に唯一の購買先は外せません'};
+    const effectiveDate=addDays(state.date,SUPPLIER_EXIT_DAYS);r.supplierChanges.push({id,action:'remove',requestedDate:state.date,effectiveDate});return{ok:true,message:`${def.name}を解約申請　${dateLabel(effectiveDate)}に購買先から外れます`};
+  }
+  if(r.supplierIds.length+r.supplierChanges.filter(x=>x.action==='add').length>=3)return{ok:false,message:'取引中＋立上げ中で最大3社までです'};
+  const effectiveDate=addDays(state.date,SUPPLIER_ONBOARD_DAYS);r.supplierChanges.push({id,action:'add',requestedDate:state.date,effectiveDate});return{ok:true,message:`${def.name}の取引開始申請　${dateLabel(effectiveDate)}から購買可能`};
+};
+ProcurementModule.setRareSupplierLotV528=function(id,index){const r=ensureRareSupplierStateV528(),d=RareRawSuppliersV528.find(x=>x.id===id);if(!d)return{ok:false,message:'メーカーがありません'};r.supplierLots[id]=clamp(Math.floor(Number(index)||0),0,RARE_RAW_LOTS.length-1);return{ok:true,message:`${d.name}のロットを変更`}};
+const _processSupplierChangesV528=ProcurementModule.processSupplierChanges.bind(ProcurementModule);
+ProcurementModule.processSupplierChanges=function(){
+  _processSupplierChangesV528();const r=ensureRareSupplierStateV528();
+  for(const c of [...r.supplierChanges]){if(state.date<c.effectiveDate)continue;const d=RareRawSuppliersV528.find(x=>x.id===c.id);
+    if(c.action==='add'){if(!r.supplierIds.includes(c.id)){r.supplierIds.push(c.id);state.procurement.events.push({date:state.date,type:'supplier',text:`${d?.name||c.id}：レアアース原料の取引開始`})}r.supplierChanges=r.supplierChanges.filter(x=>x!==c);continue}
+    if(r.supplierIds.includes(c.id)){if(r.supplierIds.length>1){r.supplierIds=r.supplierIds.filter(x=>x!==c.id);state.procurement.events.push({date:state.date,type:'supplier',text:`${d?.name||c.id}：レアアース原料の取引終了`})}else{c.effectiveDate=addDays(state.date,7);state.procurement.events.push({date:state.date,type:'supplier',text:`${d?.name||c.id}：代替購買先がないため解約を7日延期`});continue}}r.supplierChanges=r.supplierChanges.filter(x=>x!==c);
+  }r.contractActive=r.supplierIds.length>0;state.procurement.events=state.procurement.events.slice(-20);
+};
+const _updateDisruptionsV528=ProcurementModule.updateDisruptions.bind(ProcurementModule);
+ProcurementModule.updateDisruptions=function(){
+  _updateDisruptionsV528();const r=ensureRareSupplierStateV528();
+  for(const d of RareRawSuppliersV528){const stop=state.procurement.disruptions[d.id];if(stop&&state.date>stop.until){delete state.procurement.disruptions[d.id];state.procurement.events.push({date:state.date,type:'recovery',text:`${d.name} がレアアース原料の供給を再開`})}}
+  for(const d of RareRawSuppliersV528.filter(x=>r.supplierIds.includes(x.id))){if(state.procurement.disruptions[d.id])continue;if(Math.random()<SUPPLY_DISRUPTION_DAILY_RATE){const duration=45+Math.floor(Math.random()*106),reason=DisruptionReasons[Math.floor(Math.random()*DisruptionReasons.length)],until=addDays(state.date,duration);state.procurement.disruptions[d.id]={start:state.date,until,reason};state.procurement.events.push({date:state.date,type:'stop',text:`${d.name}：${reason}（${dateLabel(until)}までレアアース原料供給停止見込）`})}}
+  state.procurement.events=state.procurement.events.slice(-20);
+};
+ProcurementModule.autoBuyRareRawSmartV520=function(requiredQty){
+  requiredQty=Math.max(0,Number(requiredQty)||0);const r=ensureRareSupplierStateV528(),short0=Math.max(0,requiredQty-(Number(r.qty)||0));if(short0<=1e-6)return{ok:true,bought:0,message:''};
+  if(cleanFactories().length<=0)return{ok:false,bought:0,message:'レアアース原料：特殊クリーン工場がないため発注できません'};
+  const suppliers=RareRawSuppliersV528.filter(d=>r.supplierIds.includes(d.id)&&!ProcurementModule.disruption(d.id));if(!suppliers.length)return{ok:false,bought:0,message:'レアアース原料：購買可能な取引先がありません（供給停止・立上げ中を確認）'};
+  let shortage=short0,bought=0,costTotal=0,detail=[],guard=0;
+  while(shortage>1e-6&&guard++<500){let progressed=false;for(const d of suppliers){if(shortage<=1e-6)break;const configured=r.supplierLots[d.id];let chosen=null;for(let i=configured;i>=0;i--){const lot=RARE_RAW_LOTS[i],unit=lot.unitPrice*d.priceMult,cost=lot.qty*unit,free=Math.max(0,cleanRawCapacity()-r.qty);if(free<lot.qty||!FinanceModule.canAfford(cost))continue;chosen={lot,unit,cost,index:i};break}if(!chosen)continue;FinanceModule.cashOut(chosen.cost,'rareRawPurchases');state.finance.lastDay.rareRawPurchasesCash+=chosen.cost;if(state.finance.currentQuarter)state.finance.currentQuarter.rareRawPurchases+=chosen.cost;const nq=r.qty+chosen.lot.qty;r.avgCost=nq?((r.qty*r.avgCost)+(chosen.lot.qty*chosen.unit))/nq:chosen.unit;r.qty=nq;bought+=chosen.lot.qty;costTotal+=chosen.cost;shortage=Math.max(0,requiredQty-r.qty);progressed=true;detail.push(`${d.name} ${num(chosen.lot.qty)}kg${chosen.index<configured?'（小ロットへ自動縮小）':''}`)}if(!progressed)break}
+  if(bought>0)return{ok:shortage<=1e-6,bought,cost:costTotal,message:`レアアース原料 ${detail.join(' ＋ ')}${shortage>1e-6?`｜なお不足 ${num(shortage,1)}kg`:''}`};
+  return{ok:false,bought:0,message:'レアアース原料：現在の現金・専用容量では最小ロットも購入できません'};
+};
+function rareSupplierCardV528(d){
+  const r=ensureRareSupplierStateV528(),selected=r.supplierIds.includes(d.id),pending=rarePendingV528(d.id),stop=ProcurementModule.disruption(d.id),idx=r.supplierLots[d.id],lot=RARE_RAW_LOTS[idx],remain=stop?Math.max(0,daysBetween(state.date,stop.until)):0,pendingRemain=pending?Math.max(0,daysBetween(state.date,pending.effectiveDate)):0,status=stop?'供給停止':pending?(pending.action==='add'?'立上げ中':'解約予定'):(selected?'取引中':'未契約'),note=stop?`${stop.reason}｜残り約${remain}日`:pending?`${dateLabel(pending.effectiveDate)}まであと${pendingRemain}日`:selected?'通常供給中':'取引開始には60日必要',button=pending?'申請を取り消す':selected?`解約申請（${SUPPLIER_EXIT_DAYS}日）`:`取引開始申請（${SUPPLIER_ONBOARD_DAYS}日）`;
+  return`<div class="supplier ${selected?'selected':''} ${pending?'pending':''} ${stop?'disrupted':''}"><div class="supplierhead"><div><b>${d.name}</b><small style="display:block;color:var(--muted)">選択ロット単価 <b>${yen(lot.unitPrice*d.priceMult)}/kg</b></small></div><span class="supplierstatus ${stop?'stop':pending?'pending':''}">${status}</span></div><div class="note" style="margin:6px 0">${note}</div><label style="display:block;margin:7px 0"><small>このメーカーの発注ロット</small><select data-rare-supplier-lot="${d.id}" style="width:100%;margin-top:3px">${RARE_RAW_LOTS.map((x,i)=>`<option value="${i}" ${i===idx?'selected':''}>${num(x.qty)}kg｜${yen(x.unitPrice*d.priceMult)}/kg</option>`).join('')}</select></label><button class="${selected&&!pending?'':'secondary'}" data-rare-supplier="${d.id}" ${!selected&&!pending&&cleanFactories().length<=0?'disabled':''}>${button}</button></div>`;
+}
+renderRareRaw=function(){
+  const r=ensureRareSupplierStateV528(),cap=cleanRawCapacity(),active=RareRawSuppliersV528.filter(d=>r.supplierIds.includes(d.id)),available=active.filter(d=>!ProcurementModule.disruption(d.id)),e=document.getElementById('rareRawPanel');if(!e)return;const badge=document.getElementById('rareRawBadge');if(badge){badge.textContent=`${active.length}社購買｜供給可能${available.length}社`;badge.className=`deliverybadge ${available.length?'done':''}`}
+  e.innerHTML=`<div class="grid3" style="margin-top:9px"><div class="metric"><small>在庫</small><b>${compactNum(r.qty,1)}kg</b></div><div class="metric"><small>平均単価</small><b>${yen(r.avgCost)}/kg</b></div><div class="metric"><small>専用容量</small><b>${compactNum(cap,1)}kg</b></div></div><div class="riskhint" style="margin-top:8px"><b>${active.length>=2?'✓ 複数社購買':'供給停止リスクあり'}</b>｜取引中 ${active.length}/3社｜供給可能 ${available.length}社<br><small>各社を順番に使って必要量を自動補充　新規取引60日・解約30日・供給停止は数か月続く場合あり</small></div><div class="suppliergrid" style="margin-top:9px">${RareRawSuppliersV528.map(rareSupplierCardV528).join('')}</div>`;
+};
+
+let pendingClosureActionV528=null;
+function requestClosureV528(title,detail,action){pendingClosureActionV528=action;document.getElementById('closureConfirmTitleV528').textContent=`⚠️ ${title}`;document.getElementById('closureConfirmBodyV528').innerHTML=`<div class="purchaseconfirmname">${title}</div><div class="warning">${detail}</div><div class="purchaseconfirmwarn">この操作は取り消せません</div>`;document.getElementById('closureConfirmModalV528').classList.add('show')}
+function closeClosureV528(){pendingClosureActionV528=null;document.getElementById('closureConfirmModalV528').classList.remove('show')}
+function executeClosureV528(){const action=pendingClosureActionV528;closeClosureV528();if(!action)return;const x=action();toast(x.message);save();render()}
+FactoryModule.closeLineV528=function(lineId){
+  const line=lineById(lineId);if(!line)return{ok:false,message:'ラインがありません'};if(state.factory.lines.length<=1)return{ok:false,message:'最後の1ラインは閉鎖できません'};if((state.production.dryingWip||[]).some(x=>x.lineId===lineId))return{ok:false,message:'乾燥中の仕掛品があるため、完成後に閉鎖してください'};
+  let proceeds=0;for(const a of [...this.assets(lineId)])proceeds+=sellMachineAssetV525(a).sale;
+  const inv=state.production.lineInventory[lineId]||{};for(const k of Object.keys(ProductDefs))state.production.unattributedInventory[k]=(Number(state.production.unattributedInventory[k])||0)+(Number(inv[k])||0);
+  delete state.production.lineInventory[lineId];delete state.production.lastLineOutput[lineId];state.factory.lines=state.factory.lines.filter(x=>x.id!==lineId);equipmentOpenLineIds.delete(lineId);return{ok:true,message:`${line.name}を閉鎖　設備売却 ${yen(proceeds)}｜配置人員は未配置へ`};
+};
+function factoryCloseCheckV528(id){const site=factorySite(id);if(!site)return{ok:false,reason:'工場がありません'};if(state.factory.sites.length<=1)return{ok:false,reason:'最後の1工場は閉鎖できません'};if(state.factory.lines.some(l=>l.factoryId===id))return{ok:false,reason:'所属ラインを先に閉鎖してください'};if((state.factory.dryingRooms||[]).some(r=>r.factoryId===id))return{ok:false,reason:'中央乾燥室が残っています'};const base=site.type==='clean'?CLEAN_FACTORY_SPACE:180;if(state.factory.space-base<FactoryModule.usedSpace())return{ok:false,reason:'残る工場面積では設備を収容できません'};if(site.type==='clean'&&state.procurement.rareRaw.qty>cleanRawCapacity()-CLEAN_RAW_CAPACITY)return{ok:false,reason:'残るクリーン原料容量では在庫を収容できません'};return{ok:true,site,base}}
+FactoryModule.closeFactoryV528=function(id){const c=factoryCloseCheckV528(id);if(!c.ok)return{ok:false,message:c.reason};const n=String(c.site.id).replace(/\D/g,''),assets=state.finance.facilityAssets||[];const asset=assets.find(a=>a.name===c.site.name)||assets.find(a=>n&&a.name.includes(`第${n}`)&&a.name.includes('工場'));let proceeds=0;if(asset){const book=depreciationInfo(asset.cost,asset.purchasedDate,asset.lifeYears||30).book;proceeds=Math.round(book*.6);FinanceModule.addAssetSale(proceeds,proceeds-book);state.finance.facilityAssets=assets.filter(a=>a.id!==asset.id)}state.factory.sites=state.factory.sites.filter(x=>x.id!==id);state.factory.buildings=state.factory.sites.length;state.factory.space=Math.max(0,state.factory.space-c.base);return{ok:true,message:`${c.site.name}を閉鎖${asset?`｜施設売却 ${yen(proceeds)}`:''}`}};
+function nextFactoryNumberV528(){return Math.max(0,...state.factory.sites.map(s=>Number(String(s.id).replace(/\D/g,''))||0))+1}
+FactoryModule.buildFactory=function(){const cost=1500000;if(!FinanceModule.canAfford(cost))return{ok:false,message:'お金が足りません'};FinanceModule.cashOut(cost,'capex');const n=nextFactoryNumberV528();state.factory.sites.push({id:`F${n}`,name:`第${n}工場`,type:'normal'});state.factory.buildings=state.factory.sites.length;state.factory.space+=180;registerFacilityAsset(`第${n}工場`,cost,30);return{ok:true,message:`第${n}工場を建設`}};
+FactoryModule.buildCleanFactory=function(){if(!FinanceModule.canAfford(CLEAN_FACTORY_COST))return{ok:false,message:'特殊クリーン工場の建設資金が足りません'};FinanceModule.cashOut(CLEAN_FACTORY_COST,'capex');const n=nextFactoryNumberV528();state.factory.sites.push({id:`F${n}`,name:`第${n}工場［クリーン］`,type:'clean'});state.factory.buildings=state.factory.sites.length;state.factory.space+=CLEAN_FACTORY_SPACE;registerFacilityAsset(`第${n}特殊クリーン工場`,CLEAN_FACTORY_COST,30);return{ok:true,message:`特殊クリーン工場を建設　レアアース専用原料容量 ${num(CLEAN_RAW_CAPACITY)}kg`}};
+nextLineId=function(){let n=0,id='A';const used=new Set(state.factory.lines.map(l=>l.id));while(used.has(id)){n++;id=n<26?String.fromCharCode(65+n):`L${n+1}`}return id};
+function relocatePeopleCardsV528(){const workers=document.getElementById('panel-workers'),manager=document.getElementById('managerArea')?.closest('.card'),overseas=document.getElementById('overseasStaff')?.closest('.card');if(manager&&!manager.id)manager.id='managerStaffCardV528';if(overseas&&!overseas.id)overseas.id='overseasStaffCardV528';if(manager&&manager.parentElement!==workers)workers.appendChild(manager);if(overseas&&overseas.parentElement!==workers)workers.appendChild(overseas)}
+function renderFactoryClosureV528(){const card=document.getElementById('buildings')?.closest('.card');if(!card)return;let host=document.getElementById('factoryClosureListV528');if(!host){host=document.createElement('div');host.id='factoryClosureListV528';host.style.marginTop='10px';card.appendChild(host)}host.innerHTML=`<div class="riskhint"><b>工場管理</b>｜所属ラインと中央乾燥室をなくしてから閉鎖できます</div><div class="storagegrid" style="margin-top:8px">${state.factory.sites.map(s=>{const c=factoryCloseCheckV528(s.id);return`<div class="storagecard"><strong>${s.type==='clean'?'🧼':'🏭'} ${s.name}</strong><small>所属ライン ${state.factory.lines.filter(l=>l.factoryId===s.id).length}本｜中央乾燥室 ${DryingRoomModule.rooms(s.id).length}室</small><button class="danger" data-close-factory="${s.id}" ${c.ok?'':'disabled'}>工場を閉鎖</button>${c.ok?'':`<small>${c.reason}</small>`}</div>`}).join('')}</div>`}
+const _renderProductionLinesV528=renderProductionLines;
+renderProductionLines=function(){_renderProductionLinesV528();document.querySelectorAll('#productionLines .linecard').forEach(card=>{const select=card.querySelector('[data-line-product]'),line=lineById(select?.dataset.lineProduct);if(!line)return;const head=card.querySelector('.linehead');if(head&&!head.querySelector('[data-close-line]'))head.insertAdjacentHTML('beforeend',`<button class="danger" data-close-line="${line.id}">ライン閉鎖</button>`)})};
+const _renderStorageFacilitiesV528=renderStorageFacilities;renderStorageFacilities=function(){_renderStorageFacilitiesV528();renderFactoryClosureV528()};
+const _bindDynamicV528=bindDynamic;
+bindDynamic=function(){_bindDynamicV528();document.querySelectorAll('[data-rare-supplier]').forEach(b=>b.onclick=()=>{const x=ProcurementModule.toggleRareSupplierV528(b.dataset.rareSupplier);toast(x.message);save();render()});document.querySelectorAll('[data-rare-supplier-lot]').forEach(e=>e.onchange=()=>{const x=ProcurementModule.setRareSupplierLotV528(e.dataset.rareSupplierLot,Number(e.value));toast(x.message);save();render()});document.querySelectorAll('[data-close-line]').forEach(b=>b.onclick=()=>{const l=lineById(b.dataset.closeLine),wip=(state.production.dryingWip||[]).some(x=>x.lineId===l?.id);if(!l)return;requestClosureV528(`${l.name}を閉鎖`,`設備を自動売却し、${l.assignedWorkers||0}人を未配置へ戻します${wip?'｜乾燥中の仕掛品があるため現在は閉鎖できません':''}`,()=>FactoryModule.closeLineV528(l.id))});document.querySelectorAll('[data-close-factory]').forEach(b=>b.onclick=()=>{const c=factoryCloseCheckV528(b.dataset.closeFactory);if(!c.ok)return toast(c.reason);requestClosureV528(`${c.site.name}を閉鎖`,'工場建物を売却し、工場面積とクリーン原料容量を減らします',()=>FactoryModule.closeFactoryV528(c.site.id))})};
+document.getElementById('cancelClosureV528').onclick=closeClosureV528;document.getElementById('confirmClosureV528').onclick=executeClosureV528;document.getElementById('closureConfirmModalV528').onclick=e=>{if(e.target===document.getElementById('closureConfirmModalV528'))closeClosureV528()};
+
+const _renderV518=render;render=function(){ensureV518State();ensureRareSupplierStateV528();ensureSingleEquipmentMigrationV525();relocatePeopleCardsV528();_renderV518();const dataNote=document.querySelector('#panel-company .card:last-child .note');if(dataNote&&dataNote.textContent.includes('v0.5.'))dataNote.textContent='v0.5.28：レアアース複数社購買・閉鎖機能・人事画面統合';document.title=`${state.companyName||'どろだんご工場'}｜泥団子メーカー v0.5.28`};
 render();
 
 const themeToggle=document.getElementById('themeToggle');
