@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-<title>どろだんご工場 v0.5.17</title>
+<title>どろだんご工場 v0.5.29</title>
 <script>
 try{const t=localStorage.getItem('dorodango-factory-theme');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){document.documentElement.dataset.theme='light'}
 </script>
@@ -100,17 +100,42 @@ html[data-theme="dark"] .factoryscene{filter:brightness(.62) saturate(.78)}
 html[data-theme="dark"] .toast{background:#ebe5db;color:#1b1916}
 html[data-theme="dark"] a{color:#9ec7df}
 @media(max-width:820px){.theme-toggle{width:32px;height:32px;font-size:15px}}
+
+/* v0.5.29: focused work panels and responsive bulk operations */
+.uxguide>summary,.uxfold>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;list-style:none;min-height:32px}
+.uxguide>summary::-webkit-details-marker,.uxfold>summary::-webkit-details-marker{display:none}
+.uxguide>summary:after,.uxfold>summary:after{content:'＋';font-size:18px;color:var(--muted)}
+.uxguide[open]>summary:after,.uxfold[open]>summary:after{content:'−'}
+.uxfold>summary small{color:var(--muted);font-weight:400;margin-left:auto}
+.uxfoldbody{padding-top:12px}.uxfoldbody>.card{box-shadow:none}.uxfoldbody>.card:last-child{margin-bottom:0}
+.uxguidesteps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:12px}
+.uxguidestep{text-align:left;font-size:12px;padding:9px 11px;background:var(--soft);color:var(--muted);font-weight:600}
+.uxguidestep.current{background:var(--mud2);color:#fff}.uxguidestep.done{color:var(--green);background:var(--soft)}
+.uxguidenext{display:flex;align-items:center;gap:18px;border-top:1px solid var(--line);margin-top:12px;padding-top:12px}
+.uxguidenext>div{flex:1;min-width:0}.uxguidenext>button{flex-shrink:0}.uxguidenext .note{margin-top:5px}
+.uxhirecontrols{display:flex;align-items:end;flex-wrap:wrap;gap:9px;margin:14px 0 8px}.uxhirecontrols label{font-size:12px;color:var(--muted);min-width:180px}.uxhirecontrols input{display:block;margin-top:5px;max-width:230px}
+.uxstaffactions{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:10px 0}.uxstaffactions .note{margin:0}
+.staffrow.uxstaffrow{grid-template-columns:minmax(0,1fr) auto minmax(190px,260px);align-items:center;gap:12px}
+.uxstaffrow .staffbuttons{display:flex;align-items:end;flex-wrap:wrap;gap:6px;justify-content:flex-end}
+.uxstafftarget{display:block;color:var(--muted);font-size:10px}.uxstafftarget input{display:block;margin-top:3px;width:86px;padding:6px 8px}
+.uxstaffrow .staffbuttons button{padding:8px 10px}.uxfillline{width:100%}
+.uxdeliveryrow{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:12px}
+#salesWorkSummary .accountwarn{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:9px}
+#firstDeliveryGuide,#productionLines,#equipmentLines,#bulkHireCount,#departmentWorkers,#inquiries,#deliveryRequirementSummary{scroll-margin-top:240px}
+:root[data-theme="dark"] .uxguidestep.current{background:var(--mud);color:#fff}
+@media(max-width:640px){.uxguidesteps{grid-template-columns:repeat(2,minmax(0,1fr))}.uxguidenext{align-items:stretch;flex-direction:column;gap:9px}.uxguidenext>button{width:100%}.uxfold>summary{flex-wrap:wrap}.uxfold>summary small{font-size:10px;margin-left:0;max-width:80%}.staffrow.uxstaffrow{grid-template-columns:minmax(0,1fr) auto}.uxstaffrow .staffbuttons{grid-column:1/-1;justify-content:flex-start}.uxfillline{width:auto}.uxdeliveryrow{flex-direction:column;gap:4px}.uxhirecontrols>button{flex:1}#firstDeliveryGuide,#productionLines,#equipmentLines,#bulkHireCount,#departmentWorkers,#inquiries,#deliveryRequirementSummary{scroll-margin-top:270px}}
+
 </style>
 </head>
 <body>
 <main class="app">
 <section class="sticky">
   <div class="headrow">
-    <div class="brand"><div class="logo"></div><div><h1 id="companyNameTop" title="どろだんご工場">どろだんご工場</h1><small class="brandtype">泥団子メーカー</small><small>v0.5.19　ロス設備強化 / 開発測定器 / 包材大型ロット</small></div></div>
+    <div class="brand"><div class="logo"></div><div><h1 id="companyNameTop" title="どろだんご工場">どろだんご工場</h1><small class="brandtype">泥団子メーカー</small><small>v0.5.29　初回納品ガイド / 一括採用・配置</small></div></div>
     <div class="quickstats">
       <div class="qstat"><small>日付</small><b id="dateTop">2026/4/1</b></div>
       <div class="qstat"><small>所持金</small><b id="cashTop">¥0</b></div>
-      <div class="qstat"><small>直近利益</small><b id="profitTop">¥0</b></div>
+      <div class="qstat"><small>前日の財務利益</small><b id="profitTop">¥0</b></div>
       <div class="qstat"><small>従業員</small><b id="workersTop">0人</b></div>
       <div class="qstat"><small>稼働ライン</small><b id="linesTop">0</b></div>
       <div class="qstat"><small>総保管</small><b id="warehouseTop">0/0kg</b></div>
@@ -201,15 +226,23 @@ html[data-theme="dark"] a{color:#9ec7df}
 <div class="rankflag"><b id="rankName">町工場</b><small id="rankDesc">小規模ユーザー向け</small></div>
 </section>
 
+<details class="card uxguide" id="firstDeliveryGuide" open>
+  <summary><b>最初の納品までのガイド</b><span class="deliverybadge" id="firstDeliveryProgress">0 / 6 ステップ</span></summary>
+  <div class="uxguidesteps" id="firstDeliverySteps" aria-label="初回納品までの手順"></div>
+  <div class="uxguidenext"><div><b id="firstDeliveryNextTitle"></b><div class="note" id="firstDeliveryNextNote"></div></div><button id="firstDeliveryAction"></button></div>
+</details>
+
 <section class="panel active" id="panel-production">
+<section class="card" id="productionLineCard"><div class="linehead productionlinehead"><div class="productionlinetitle"><h2 style="margin:0">生産ライン</h2><div class="note" style="margin:3px 0 0">1ラインは同時に1品目だけ生産　品目を変えれば汎用ラインとして使えます</div></div><div class="lineaddcontrols"><select id="newLineFactory" aria-label="表示・ライン追加先工場"></select><button id="addLine">＋ ライン追加</button></div></div><div class="linegrid" id="productionLines" style="margin-top:10px"></div></section>
   <div class="grid3"><div class="metric"><small>予定生産</small><b id="plannedTotal">0個/日</b><div class="sub">全ライン合計</div></div><div class="metric"><small>受注需要</small><b id="weeklyDemandQuick">0個/週</b><div class="sub">次の7日</div></div><div class="metric"><small>原料在庫</small><b id="rawQuick">0kg</b></div></div>
-  <section class="card"><div class="linehead"><div><h2 style="margin:0">🔁 営業 → 生産 自動連携</h2><div class="note" style="margin:3px 0 0">営業の在庫基準連絡を、生産管理担当が受けて対象ラインの稼働率へ反映</div></div><span id="coordinationStatusBadge" class="deliverybadge">停止</span></div><div id="productionCoordination" style="margin-top:9px"></div></section>
-  <section class="card"><div class="linehead productionlinehead"><div class="productionlinetitle"><h2 style="margin:0">生産ライン</h2><div class="note" style="margin:3px 0 0">1ラインは同時に1品目だけ生産　品目を変えれば汎用ラインとして使えます</div></div><div class="lineaddcontrols"><select id="newLineFactory" aria-label="表示・ライン追加先工場"></select><button id="addLine">＋ ライン追加</button></div></div><div class="linegrid" id="productionLines" style="margin-top:10px"></div></section>
-  <section class="card"><h2>ライン別 負荷状況</h2><div class="note">各工程の能力に対して現在の品目がどこまで負荷を掛けるか表示　100%に近い工程がボトルネックです</div><div id="lineLoadStatus" class="loadmatrix"></div></section>
-  <section class="card"><div class="linehead"><div><h2 style="margin:0">📈 稼働率の月次成績</h2><div class="note" style="margin:3px 0 0">生産管理を2人以上配置すると、各ラインの月ごとの平均稼働率を、直近12か月分確認できます</div></div><span class="deliverybadge" id="utilTrendBadge">生産管理 0人</span></div><div id="utilizationTrend" style="margin-top:9px"></div></section>
-  <section class="card"><h2>品目ごとの必要工程</h2><div class="note">ざらざら泥団子は丸め工程なし　レアアース泥団子は10日乾燥＋コーティング必須　0の工程は使用しません</div><div class="loadtable"><table><thead><tr><th>品目</th><th>原料/個</th><th>こね</th><th>丸め</th><th>乾燥</th><th>磨き</th><th>コーティング</th><th>箱詰め</th></tr></thead><tbody id="loadRows"></tbody></table></div></section>
-  <section class="card"><div class="linehead"><div><h2 style="margin:0">📦 在庫状況</h2><div class="note" style="margin:3px 0 0">「今いくつあるか」だけでなく、受注に対して足りるかまで表示</div></div><span id="inventoryAlertBadge" class="stockbadge good">在庫OK</span></div><div id="warehouseSummary"></div><div class="stocksection"><h3>製品在庫</h3><div class="loadtable"><table class="stocktable"><thead><tr><th>製品</th><th>手持ち</th><th>次7日必要</th><th>7日後差引</th><th>在庫日数目安</th><th>保管使用</th></tr></thead><tbody id="inventoryProductRows"></tbody></table></div></div><div class="stocksection"><h3>原料・包装資材</h3><div class="loadtable"><table class="stocktable"><thead><tr><th>資材</th><th>手持ち</th><th>必要目安</th><th>余裕</th><th>在庫日数目安</th><th>保管使用</th></tr></thead><tbody id="inventoryMaterialRows"></tbody></table></div></div></section>
-  <section class="card"><h2>ロス管理</h2><div class="note">製造時に発生したロスは保管容量を使います　廃棄には処分費が掛かり、ロス再生機があれば再生原料へ戻せます</div><div id="lossManagement"></div></section>
+<section class="card"><div class="linehead"><div><h2 style="margin:0">📦 在庫状況</h2><div class="note" style="margin:3px 0 0">「今いくつあるか」だけでなく、受注に対して足りるかまで表示</div></div><span id="inventoryAlertBadge" class="stockbadge good">在庫OK</span></div><div id="warehouseSummary"></div><div class="stocksection"><h3>製品在庫</h3><div class="note">「現在庫 − 次7日出荷」は、現在庫から受注済みの次7日分の出荷必要数を差し引いた値です　これからの生産は含みません</div><div class="loadtable"><table class="stocktable"><thead><tr><th>製品</th><th>手持ち</th><th>次7日必要</th><th>現在庫 − 次7日出荷</th><th>在庫日数目安</th><th>保管使用</th></tr></thead><tbody id="inventoryProductRows"></tbody></table></div></div><div class="stocksection"><h3>原料・包装資材</h3><div class="loadtable"><table class="stocktable"><thead><tr><th>資材</th><th>手持ち</th><th>必要目安</th><th>余裕</th><th>在庫日数目安</th><th>保管使用</th></tr></thead><tbody id="inventoryMaterialRows"></tbody></table></div></div></section>
+<details class="card uxfold" id="productionDetailsV529"><summary><b>生産の管理・分析</b><small>自動連携・負荷・月次成績・必要工程・ロス</small></summary><div class="uxfoldbody">
+<section class="card"><div class="linehead"><div><h2 style="margin:0">🔁 営業 → 生産 自動連携</h2><div class="note" style="margin:3px 0 0">営業の在庫基準連絡を、生産管理担当が受けて対象ラインの稼働率へ反映</div></div><span id="coordinationStatusBadge" class="deliverybadge">停止</span></div><div id="productionCoordination" style="margin-top:9px"></div></section>
+<section class="card"><h2>ライン別 負荷状況</h2><div class="note">各工程の能力に対して現在の品目がどこまで負荷を掛けるか表示　100%に近い工程がボトルネックです</div><div id="lineLoadStatus" class="loadmatrix"></div></section>
+<section class="card"><div class="linehead"><div><h2 style="margin:0">📈 稼働率の月次成績</h2><div class="note" style="margin:3px 0 0">生産管理を2人以上配置すると、各ラインの月ごとの平均稼働率を、直近12か月分確認できます</div></div><span class="deliverybadge" id="utilTrendBadge">生産管理 0人</span></div><div id="utilizationTrend" style="margin-top:9px"></div></section>
+<section class="card"><h2>品目ごとの必要工程</h2><div class="note">ざらざら泥団子は丸め工程なし　レアアース泥団子は10日乾燥＋コーティング必須　0の工程は使用しません</div><div class="loadtable"><table><thead><tr><th>品目</th><th>原料/個</th><th>こね</th><th>丸め</th><th>乾燥</th><th>磨き</th><th>コーティング</th><th>箱詰め</th></tr></thead><tbody id="loadRows"></tbody></table></div></section>
+<section class="card"><h2>ロス管理</h2><div class="note">製造時に発生したロスは保管容量を使います　廃棄には処分費が掛かり、ロス再生機があれば再生原料へ戻せます</div><div id="lossManagement"></div></section>
+</div></details>
 </section>
 
 <section class="panel" id="panel-equipment">
@@ -220,8 +253,9 @@ html[data-theme="dark"] a{color:#9ec7df}
 </section>
 
 <section class="panel" id="panel-workers">
-  <div class="grid2"><section class="card"><h2>採用・人員整理</h2><div class="grid3"><div class="metric"><small>従業員</small><b id="workersTotal">0人</b></div><div class="metric"><small>未配置</small><b id="workersFree">0人</b></div><div class="metric"><small>日次人件費</small><b id="laborDaily">¥0</b></div></div><div class="actiongrid" style="margin-top:10px"><button id="hire">採用</button><button id="fire" class="secondary">人員整理</button></div><div class="note" id="hireNote" style="margin-top:8px"></div><div class="note" id="fireNote"></div></section><section class="card"><h2>間接部門への人員配置</h2><div class="note">工程省人化で余った人員を営業管理・生産管理・生産技術・経理財務へ配置　間接部門を増やすほど管理機能が段階的に解放されます</div><div id="departmentWorkers" style="margin-top:9px"></div></section></div>
-  <section class="card"><h2>ライン別人員配置</h2><div class="note">必要FTEはラインの品目・稼働設備・稼働率で変動します</div><div id="workerLines"></div></section>
+<section class="card"><h2>採用・人員整理</h2><div class="grid3"><div class="metric"><small>従業員</small><b id="workersTotal">0人</b></div><div class="metric"><small>未配置</small><b id="workersFree">0人</b></div><div class="metric"><small>日次人件費</small><b id="laborDaily">¥0</b></div></div><div class="actiongrid" style="margin-top:10px"><button id="hire">採用</button><button id="fire" class="secondary">人員整理</button></div><div class="uxhirecontrols"><label>まとめて採用する人数<input id="bulkHireCount" type="number" min="1" step="1" value="1"></label><button id="bulkHire">指定人数を採用</button><button id="suggestHire" class="secondary">不足人数を入力</button></div><div class="note" id="bulkHirePreview" aria-live="polite"></div><div class="note" id="hireNote" style="margin-top:8px"></div><div class="note" id="fireNote"></div></section>
+<section class="card"><h2>ライン別人員配置</h2><div class="note">必要FTEはラインの品目・稼働設備・稼働率で変動します</div><div class="uxstaffactions"><button id="fillAllLines">全ラインの不足分を配置</button><span class="note" id="bulkLineStaffNote"></span></div><div id="workerLines"></div></section>
+<section class="card"><h2>間接部門への人員配置</h2><div class="note">工程省人化で余った人員を営業管理・生産管理・生産技術・経理財務へ配置　間接部門を増やすほど管理機能が段階的に解放されます</div><button class="secondary" id="fillSalesStaff">営業の必要人数を配置</button><div id="departmentWorkers" style="margin-top:9px"></div></section>
 </section>
 
 <section class="panel" id="panel-procurement">
@@ -252,14 +286,18 @@ html[data-theme="dark"] a{color:#9ec7df}
   <details class="card" id="devHistoryFold"><summary><span><b>技術開発履歴</b> <small class="note">直近1年間のみ</small></span><span class="deliverybadge" id="devHistorySummary">0件</span></summary><div style="margin-top:10px" id="devHistory"></div></details>
 </section>
 <section class="panel" id="panel-sales">
-  <section class="card"><h2>製品在庫</h2><div class="note">受注判断用　在庫と次7日間の出荷需要を並べて確認できます</div><div class="grid2" id="salesInventory" style="margin-top:9px"></div></section>
-  <section class="card"><div class="linehead"><div><h2 style="margin:0">📡 在庫基準・生産連絡</h2><div class="note" style="margin:3px 0 0">営業管理担当が目標在庫±許容幅を監視　下限割れで増産、上限超過で減産を生産へ連絡</div></div><span id="salesPlanningBadge" class="deliverybadge">営業管理 0人</span></div><div id="salesInventoryPolicy" style="margin-top:9px"></div></section>
-  <section class="card"><div class="linehead"><div><h2 style="margin:0">納品必要数</h2><div class="note" id="deliveryRequirementSummary" style="margin:3px 0 0">今後30日の納品予定</div></div><button id="toggleDeliveryRequirements" class="secondary">折りたたむ</button></div><div id="deliveryRequirementBody"><div class="note" style="margin:6px 0 8px">今後30日分の受注を、同じ納品日・同じ品目ごとに合算　生産計画用</div><div class="loadtable" style="margin-top:8px"><table><thead><tr><th>納品日</th><th>品目</th><th>必要数</th><th>注文件数</th></tr></thead><tbody id="deliveryRequirementRows"></tbody></table></div></div></section>
-  <div class="grid2"><section class="card"><h2>営業需要予測</h2><div class="marketmsg" id="salesForecastMsg"></div><div class="loadtable"><table><thead><tr><th>品目</th><th>週間予測</th><th>月間予測</th><th>前日需要</th><th>前日販売</th><th>未納</th></tr></thead><tbody id="forecastRows"></tbody></table></div><div class="note" style="margin-top:8px">受注済み案件の配送条件から営業が予測　週間＝次7日、月間＝次30日　引き合いは月初に更新されます</div></section><section class="card"><div class="linehead"><div><h2 style="margin:0">受注・納品状況</h2><div class="note" id="activeContractsSummary" style="margin:3px 0 0">進行中 0件</div></div><div class="contractbulk"><button id="toggleContractsSection" class="secondary">全体を折りたたむ</button><button id="openPastContracts" class="secondary">過去案件を見る <span id="pastContractsCount"></span></button></div></div><div id="contractsSectionBody"><div class="linehead" style="margin:7px 0"><div class="note" style="margin:0">案件ごとの詳細も個別に開閉できます</div><button id="toggleContracts" class="secondary">すべて開く</button></div><div id="contracts"></div></div></section></div>
-
-  <section class="card"><div class="linehead"><div><h2 style="margin:0">🤝 主要取引先候補</h2><div class="note" style="margin:3px 0 0">堅実な納品を続けると、設備投資を検討する規模の大口商談が発生　接触 → 概算見積 → サンプル1 → サンプル2 → 最終見積 → 受注開始</div></div><span class="deliverybadge">重点商談</span></div><div id="keyAccountReliability" class="riskhint" style="margin-top:9px"></div><div id="keyAccountArea"></div></section>
-  <section class="card"><div class="linehead"><div><h2 style="margin:0">👥 営業案件の処理体制</h2><div class="note" style="margin:3px 0 0">営業案件30件ごとに営業マン1人＋営業事務1人が必要　不足中は新規見積を提出できません</div></div><span class="deliverybadge" id="salesCaseCapacityBadge">0 / 0件</span></div><div id="salesCaseStaffing"></div></section><section class="card"><div class="linehead"><div><h2 style="margin:0">見積初期設定</h2><div class="note" style="margin:3px 0 0">営業マンを2人以上配置すると、新規引き合いの初値を狙う受注確度から自動逆算できます</div></div><span class="deliverybadge" id="defaultQuoteChanceBadge">要 営業マン2人</span></div><div class="rangebox" style="margin-top:10px"><div class="linehead"><b>見積初期受注確度</b><b id="defaultQuoteChanceValue">75%</b></div><input id="defaultQuoteChance" type="range" min="5" max="95" step="5" value="75"></div><div class="note" id="defaultQuoteStaffNote" style="margin-top:7px">営業マン2人で解放　未解放時の新規引き合いは標準売価を初値として表示します</div><button id="applyDefaultQuoteChance" class="secondary" style="margin-top:8px">現在の未提出見積にも反映</button></section>
-  <section class="card"><h2>今月の引き合い</h2><div class="note" id="inquiryRankNote">会社ランクに応じて引き合い構成が変化します</div><div class="note">見積売価を入力すると、その価格での限界利益と受注確度を表示　顧客の目標価格付近で約50%、安ければ上昇・高ければ低下します</div><div class="inquirygrid" id="inquiries"></div></section>
+<section class="card" id="salesWorkSummary" aria-live="polite"></section>
+<section class="card"><h2>今月の引き合い</h2><div class="note" id="inquiryRankNote">会社ランクに応じて引き合い構成が変化します</div><div class="note">見積売価を入力すると、その価格での限界利益と受注確度を表示　顧客の目標価格付近で約50%、安ければ上昇・高ければ低下します</div><div class="inquirygrid" id="inquiries"></div></section>
+<section class="card"><div class="linehead"><div><h2 style="margin:0">納品必要数</h2><div class="note" id="deliveryRequirementSummary" style="margin:3px 0 0">今後30日の納品予定</div></div><button id="toggleDeliveryRequirements" class="secondary">折りたたむ</button></div><div id="deliveryRequirementBody"><div class="note" style="margin:6px 0 8px">今後30日分の受注を、同じ納品日・同じ品目ごとに合算　生産計画用</div><div class="loadtable" style="margin-top:8px"><table><thead><tr><th>納品日</th><th>品目</th><th>必要数</th><th>注文件数</th></tr></thead><tbody id="deliveryRequirementRows"></tbody></table></div></div></section>
+<section class="card"><div class="linehead"><div><h2 style="margin:0">受注・納品状況</h2><div class="note" id="activeContractsSummary" style="margin:3px 0 0">進行中 0件</div></div><div class="contractbulk"><button id="toggleContractsSection" class="secondary">全体を折りたたむ</button><button id="openPastContracts" class="secondary">過去案件を見る <span id="pastContractsCount"></span></button></div></div><div id="contractsSectionBody"><div class="linehead" style="margin:7px 0"><div class="note" style="margin:0">案件ごとの詳細も個別に開閉できます</div><button id="toggleContracts" class="secondary">すべて開く</button></div><div id="contracts"></div></div></section>
+<section class="card"><h2>製品在庫</h2><div class="note">受注判断用　在庫と次7日間の出荷需要を並べて確認できます</div><div class="grid2" id="salesInventory" style="margin-top:9px"></div></section>
+<details class="card uxfold" id="salesDetailsV529"><summary><b>営業の管理・分析</b><small>在庫基準・需要予測・主要取引先・処理体制・見積初期設定</small></summary><div class="uxfoldbody">
+<section class="card"><div class="linehead"><div><h2 style="margin:0">📡 在庫基準・生産連絡</h2><div class="note" style="margin:3px 0 0">営業管理担当が目標在庫±許容幅を監視　下限割れで増産、上限超過で減産を生産へ連絡</div></div><span id="salesPlanningBadge" class="deliverybadge">営業管理 0人</span></div><div id="salesInventoryPolicy" style="margin-top:9px"></div></section>
+<section class="card"><h2>営業需要予測</h2><div class="marketmsg" id="salesForecastMsg"></div><div class="loadtable"><table><thead><tr><th>品目</th><th>週間予測</th><th>月間予測</th><th>前日需要</th><th>前日販売</th><th>未納</th></tr></thead><tbody id="forecastRows"></tbody></table></div><div class="note" style="margin-top:8px">受注済み案件の配送条件から営業が予測　週間＝次7日、月間＝次30日　引き合いは月初に更新されます</div></section>
+<section class="card"><div class="linehead"><div><h2 style="margin:0">🤝 主要取引先候補</h2><div class="note" style="margin:3px 0 0">堅実な納品を続けると、設備投資を検討する規模の大口商談が発生　接触 → 概算見積 → サンプル1 → サンプル2 → 最終見積 → 受注開始</div></div><span class="deliverybadge">重点商談</span></div><div id="keyAccountReliability" class="riskhint" style="margin-top:9px"></div><div id="keyAccountArea"></div></section>
+<section class="card"><div class="linehead"><div><h2 style="margin:0">👥 営業案件の処理体制</h2><div class="note" style="margin:3px 0 0">営業案件30件ごとに営業マン1人＋営業事務1人が必要　不足中は新規見積を提出できません</div></div><span class="deliverybadge" id="salesCaseCapacityBadge">0 / 0件</span></div><div id="salesCaseStaffing"></div></section>
+<section class="card"><div class="linehead"><div><h2 style="margin:0">見積初期設定</h2><div class="note" style="margin:3px 0 0">営業マンを2人以上配置すると、新規引き合いの初値を狙う受注確度から自動逆算できます</div></div><span class="deliverybadge" id="defaultQuoteChanceBadge">要 営業マン2人</span></div><div class="rangebox" style="margin-top:10px"><div class="linehead"><b>見積初期受注確度</b><b id="defaultQuoteChanceValue">75%</b></div><input id="defaultQuoteChance" type="range" min="5" max="95" step="5" value="75"></div><div class="note" id="defaultQuoteStaffNote" style="margin-top:7px">営業マン2人で解放　未解放時の新規引き合いは標準売価を初値として表示します</div><button id="applyDefaultQuoteChance" class="secondary" style="margin-top:8px">現在の未提出見積にも反映</button></section>
+</div></details>
 </section>
 
 
@@ -467,7 +505,7 @@ function developmentChance(months,budget,rank=state?.rank??0){months=clamp(Numbe
 function aggregateFinanceRows(rows){const keys=['sales','cogs','labor','electricity','facilityMaintenance','wasteDisposal','setupCost','developmentExpense','interest','rawPurchasesCash','packagingCash','cashDelta'];const a=Object.fromEntries(keys.map(k=>[k,0]));a.productStats=blankProductStats();a.detailDays=0;for(const r of rows){if(!r||!r.detailVersion)continue;a.detailDays++;for(const k of keys)a[k]+=Number(r[k])||0;const ps=normalizeProductStats(r.productStats);for(const k of Object.keys(ProductDefs)){a.productStats[k].sales+=ps[k].sales;a.productStats[k].cogs+=ps[k].cogs;a.productStats[k].units+=ps[k].units}}a.contribution=a.sales-a.cogs;a.fixedCost=a.labor+a.electricity+a.facilityMaintenance+a.wasteDisposal+a.setupCost+a.developmentExpense;a.operatingProfit=a.contribution-a.fixedCost;a.netProfit=a.operatingProfit-a.interest;a.contributionRate=a.sales>0?a.contribution/a.sales:0;a.breakEvenSales=a.contributionRate>0?a.fixedCost/a.contributionRate:0;a.safetyMargin=a.sales>0?(a.sales-a.breakEvenSales)/a.sales:0;return a}
 function aggregateQuarter(q){const a={sales:Number(q?.sales)||0,cogs:Number(q?.cogs)||0,labor:Number(q?.labor)||0,electricity:Number(q?.electricity)||0,facilityMaintenance:Number(q?.facilityMaintenance)||0,wasteDisposal:Number(q?.wasteDisposal)||0,setupCost:Number(q?.setupCost)||0,developmentExpense:Number(q?.developmentExpense)||0,interest:Number(q?.interest)||0,rawPurchasesCash:Number(q?.rawPurchases)||0,packagingCash:Number(q?.packagingCash)||0,cashDelta:state.finance.cash-(Number(q?.cashStart)||state.finance.cash),productStats:normalizeProductStats(q?.productStats),detailDays:null};a.contribution=a.sales-a.cogs;a.fixedCost=a.labor+a.electricity+a.facilityMaintenance+a.wasteDisposal+a.setupCost+a.developmentExpense;a.operatingProfit=a.contribution-a.fixedCost;a.netProfit=a.operatingProfit-a.interest;a.contributionRate=a.sales>0?a.contribution/a.sales:0;a.breakEvenSales=a.contributionRate>0?a.fixedCost/a.contributionRate:0;a.safetyMargin=a.sales>0?(a.sales-a.breakEvenSales)/a.sales:0;return a}
 const FactoryModule={grade(id){return GradeDefs[id-1]},packingTech(id){return PackingTechDefs.find(x=>x.id===Number(id))||null},machineAttr(type,gradeId){if(type==='packer'){const t=this.packingTech(gradeId);if(!t)return null;return{capacity:t.capacity,workers:t.workers,price:t.price,electricity:t.electricity,space:t.space,materialMult:t.materialMult}}const b=MachineTypes[type],g=this.grade(gradeId);if(!b||!g)return null;return{capacity:b.baseCapacity*g.capacityMult,workers:b.baseWorkers*g.workerMult,price:Math.round(b.basePrice*g.priceMult),electricity:Math.round(b.baseElectricity*g.electricMult),space:Math.round(b.baseSpace*g.spaceMult),materialMult:1}},gradeName(type,gradeId){return type==='packer'?(this.packingTech(gradeId)?.name||'箱詰め設備'):this.grade(gradeId)?.name||`G${gradeId}`},assets(lineId,type,gradeId){return state.factory.machineAssets.filter(a=>(!lineId||a.lineId===lineId)&&(!type||a.type===type)&&(!gradeId||a.gradeId===gradeId))},packingMode(line){const assets=this.assets(line.id,'packer').filter(a=>a.running&&this.packingTech(a.gradeId));if(!assets.length)return{...ManualPacking,manual:true,assets:[]};const techs=assets.map(a=>({a,t:this.packingTech(a.gradeId)})),capacity=techs.reduce((s,x)=>s+x.t.capacity,0),workers=techs.reduce((s,x)=>s+x.t.workers,0),electricity=techs.reduce((s,x)=>s+x.t.electricity,0),materialMult=capacity?techs.reduce((s,x)=>s+x.t.capacity*x.t.materialMult,0)/capacity:1,top=techs.slice().sort((a,b)=>b.t.id-a.t.id)[0].t;return{id:top.id,name:assets.length>1?`${top.name}ほか${assets.length-1}台`:top.name,shortName:top.shortName,capacity,workers,electricity,space:techs.reduce((s,x)=>s+x.t.space,0),materialMult,manual:false,assets}},usedYears(a){return (a.runDays||0)/365},resaleValue(a){const age=this.usedYears(a),factor=Math.max(.15,.75*Math.pow(.84,age));return Math.round(a.purchasedPrice*factor)},usedSpace(){return state.factory.machineAssets.reduce((s,a)=>s+(this.machineAttr(a.type,a.gradeId)?.space||0),0)+(state.factory.lossRecycler||0)*RecyclerDef.space},maxSpace(){return state.factory.buildings*Ranks[state.rank].maxAreaPerBuilding},freeEquipmentSpace(){return state.factory.space-this.usedSpace()},warehouseUsed(){return StorageModule.allocation().generalUsed},warehouseFree(){return StorageModule.allocation().generalFree},buyMachine(lineId,type,gradeId){const a=this.machineAttr(type,gradeId);if(!a)return{ok:false,message:'選択できない設備です'};if(this.freeEquipmentSpace()<a.space)return{ok:false,message:'今の工場面積では置けません'};if(!FinanceModule.canAfford(a.price))return{ok:false,message:'お金が足りません'};FinanceModule.cashOut(a.price,'capex');state.factory.machineAssets.push({id:`m-${Date.now()}-${Math.random()}`,lineId,type,gradeId,purchasedPrice:a.price,purchasedDate:state.date,runDays:0,running:true});return{ok:true,message:`${lineById(lineId).name}に${type==='packer'?this.gradeName(type,gradeId):MachineTypes[type].name}を購入`}},setOneRunning(lineId,type,gradeId,running){const a=this.assets(lineId,type,gradeId).filter(x=>x.running!==running).sort((x,y)=>(y.runDays||0)-(x.runDays||0))[0];if(!a)return{ok:false,message:running?'停止中の機械がありません':'稼働中の機械がありません'};a.running=running;return{ok:true,message:`${type==='packer'?this.gradeName(type,gradeId):MachineTypes[type].name}を1台${running?'稼働':'停止'}`}},lineRunning(lineId){const l=lineById(lineId);if(!l||!ProductDefs[l.product])return false;const p=ProductDefs[l.product];return this.assets(lineId).some(a=>a.running&&a.type!=='packer'&&p.loads[a.type]>0)},setLineRunning(lineId,running){const assets=this.assets(lineId),targets=assets.filter(a=>a.running!==running);if(!assets.length)return{ok:false,message:'このラインには設備がありません'};if(!targets.length)return{ok:false,message:running?'ラインはすでに稼働中です':'ラインはすでに停止中です'};for(const a of targets)a.running=running;return{ok:true,message:`${lineById(lineId)?.name||lineId+'ライン'}を一括${running?'稼働':'停止'}（${targets.length}台）`}},sellMachine(lineId,type,gradeId){const a=this.assets(lineId,type,gradeId).sort((x,y)=>(y.runDays||0)-(x.runDays||0))[0];if(!a)return{ok:false,message:'売却機がありません'};const v=this.resaleValue(a);state.factory.machineAssets=state.factory.machineAssets.filter(x=>x.id!==a.id);FinanceModule.addAssetSale(v);return{ok:true,message:`${yen(v)}で売却しました`}},expandFactory(){const cost=250000;if(state.factory.space+60>this.maxSpace())return{ok:false,message:'現在ランクの1棟あたり拡張上限です'};if(!FinanceModule.canAfford(cost))return{ok:false,message:'お金が足りません'};FinanceModule.cashOut(cost,'capex');state.factory.space+=60;return{ok:true,message:'工場を60㎡拡張'}},buildFactory(){const cost=1500000;if(!FinanceModule.canAfford(cost))return{ok:false,message:'お金が足りません'};FinanceModule.cashOut(cost,'capex');const n=state.factory.sites.length+1,id=`F${n}`;state.factory.sites.push({id,name:`第${n}工場`,type:'normal'});state.factory.buildings=state.factory.sites.length;state.factory.space+=180;return{ok:true,message:`第${n}工場を建設（新規ライン追加時に所属先として選択可能）`}},expandWarehouse(){const cost=250000;if(!FinanceModule.canAfford(cost))return{ok:false,message:'お金が足りません'};FinanceModule.cashOut(cost,'capex');state.factory.warehouseCapacity+=5000;return{ok:true,message:'一般倉庫を5,000kg拡張'}},lineStats(line,ignoreUtil=false,ignoreStaff=false){const p=ProductDefs[line.product],dev=p?developmentUpgrade(line.product):null,speed=p?productSpeedMult(line.product):1;if(!p){const process=Object.fromEntries(ProcessOrder.map(t=>[t,{needed:false,theoretical:0,active:0,cap:0,mode:t==='packer'?ManualPacking.name:undefined,manual:t==='packer',materialMult:1}]));return{output:0,required:0,fte:0,electricity:0,space:this.assets(line.id).reduce((sum,a)=>sum+(this.machineAttr(a.type,a.gradeId)?.space||0),0),staffing:1,process,limit:'品目未設定',packingMode:ManualPacking.name,packMaterialMult:1}}const u=(ignoreUtil?1:line.utilization/100);let totalFTE=0,electricity=0,space=0;const caps={},process={};for(const type of ProcessOrder){const needed=p.loads[type]>0;if(type==='packer'){const mode=this.packingMode(line),theoretical=mode.capacity,fte=needed?mode.workers*u*productWorkerMult(line.product,type):0,elec=needed?mode.electricity*u:0;totalFTE+=fte;electricity+=elec;space+=this.assets(line.id,'packer').reduce((s,a)=>s+(this.machineAttr('packer',a.gradeId)?.space||0),0);caps[type]=needed?theoretical*u*speed:Infinity;process[type]={needed,theoretical,active:1,cap:caps[type],mode:mode.name,manual:mode.manual,materialMult:mode.materialMult};continue}const assets=this.assets(line.id,type).filter(a=>a.running),theoretical=assets.reduce((s,a)=>s+this.machineAttr(type,a.gradeId).capacity,0);const fte=needed?assets.reduce((s,a)=>s+this.machineAttr(type,a.gradeId).workers,0)*u*productWorkerMult(line.product,type):0;const elec=needed?assets.reduce((s,a)=>s+this.machineAttr(type,a.gradeId).electricity,0)*u:0;totalFTE+=fte;electricity+=elec;space+=this.assets(line.id,type).reduce((s,a)=>s+this.machineAttr(type,a.gradeId).space,0);caps[type]=needed?theoretical*u*speed:Infinity;process[type]={needed,theoretical,active:assets.length,cap:caps[type]}}const required=totalFTE>0?Math.ceil(totalFTE):0,staffing=ignoreStaff||required===0?1:Math.min(1,line.assignedWorkers/required);let max=Infinity,limit='設備';for(const type of ProcessOrder){if(p.loads[type]>0){const c=caps[type]===Infinity?0:caps[type]*staffing;if(c/p.loads[type]<max){max=c/p.loads[type];limit=ProcessNames[type]}}}if(!Number.isFinite(max))max=0;return{output:Math.max(0,Math.floor(max)),required,fte:totalFTE,electricity:Math.round(electricity*staffing),space,staffing,process,limit,packingMode:process.packer?.mode||ManualPacking.name,packMaterialMult:process.packer?.materialMult||1}},electricityCost(){return state.factory.lines.reduce((s,l)=>s+this.lineStats(l).electricity,0)},standardCapacity(){return state.factory.lines.reduce((s,l)=>s+this.lineStats(l,true,false).output,0)},advanceMachineAge(){for(const line of state.factory.lines){const p=ProductDefs[line.product],u=line.utilization/100;if(!p||u<=0)continue;const staffing=this.lineStats(line).staffing;for(const a of this.assets(line.id).filter(a=>a.running&&a.type!=='packer')){if(p.loads[a.type]>0)a.runDays=(a.runDays||0)+u*staffing}const mode=this.packingMode(line);if(p.loads.packer>0)for(const a of mode.assets||[])a.runDays=(a.runDays||0)+u*staffing}}};
-const WorkerModule={lineAssigned(){return state.factory.lines.reduce((s,l)=>s+(l.assignedWorkers||0),0)},departmentAssigned(){const d=state.workers.departments||{};return(Number(d.salesPlanning)||0)+(Number(d.productionControl)||0)+(Number(d.development)||0)+(Number(d.salesRep)||0)+(Number(d.salesAdmin)||0)+(Number(d.dryingRoom)||0)+(Number(d.financeAccounting)||0)},assignedTotal(){return this.lineAssigned()+this.departmentAssigned()},free(){return Math.max(0,state.workers.total-this.assignedTotal())},hire(){const batch=Ranks[state.rank].hireBatch,cost=batch*state.workers.hireFeePerWorker;if(!FinanceModule.canAfford(cost))return{ok:false,message:'採用費が足りません'};FinanceModule.cashOut(cost,'hiring');state.workers.total+=batch;return{ok:true,message:`${batch}人採用しました`}},assign(lineId,d){const l=lineById(lineId);if(!l)return false;if(d>0&&this.free()<d)return false;if(l.assignedWorkers+d<0)return false;l.assignedWorkers+=d;return true},assignDepartment(kind,d){if(!['salesPlanning','productionControl','development','salesRep','salesAdmin','dryingRoom','financeAccounting'].includes(kind))return false;state.workers.departments=state.workers.departments||{salesPlanning:0,productionControl:0,development:0,salesRep:0,salesAdmin:0,dryingRoom:0,financeAccounting:0};const cur=Number(state.workers.departments[kind])||0;if(d>0&&this.free()<d)return false;if(cur+d<0)return false;if(kind==='development'&&d<0){const proposed=cur+d,active=(state.development?.projects||[]).filter(p=>p.status==='active').length;if(active>Math.floor(proposed/2))return false}state.workers.departments[kind]=cur+d;return true},severanceCost(){return state.workers.wagePerWorkerPerDay*60},fireCooldownRemaining(){if(!state.workers.lastFireDate)return 0;return Math.max(0,90-daysBetween(state.workers.lastFireDate,state.date))},fireDaysSince(){return state.workers.lastFireDate?Math.max(0,daysBetween(state.workers.lastFireDate,state.date)):null},fire(){if(this.free()<=0)return{ok:false,message:'未配置の従業員がいません'};const r=this.fireCooldownRemaining();if(r>0)return{ok:false,message:`あと${r}日間は人員整理できません`};const c=this.severanceCost();if(!FinanceModule.canAfford(c))return{ok:false,message:'退職補償費を払える現金がありません'};FinanceModule.cashOut(c,'hiring');state.workers.total--;state.workers.lastFireDate=state.date;return{ok:true,message:`1人を人員整理しました`,cost:c}}};
+const WorkerModule={lineAssigned(){return state.factory.lines.reduce((s,l)=>s+(l.assignedWorkers||0),0)},departmentAssigned(){const d=state.workers.departments||{};return(Number(d.salesPlanning)||0)+(Number(d.productionControl)||0)+(Number(d.development)||0)+(Number(d.salesRep)||0)+(Number(d.salesAdmin)||0)+(Number(d.dryingRoom)||0)+(Number(d.financeAccounting)||0)},assignedTotal(){return this.lineAssigned()+this.departmentAssigned()},free(){return Math.max(0,state.workers.total-this.assignedTotal())},hire(count){const step=Ranks[state.rank].hireBatch,batch=count===undefined?step:Number(count);if(!Number.isSafeInteger(batch)||batch<=0||batch%step!==0||!Number.isSafeInteger(state.workers.total+batch))return{ok:false,message:`採用人数は${step}人単位の整数で指定してください`};const cost=batch*state.workers.hireFeePerWorker;if(!FinanceModule.canAfford(cost))return{ok:false,message:'採用費が足りません'};FinanceModule.cashOut(cost,'hiring');state.workers.total+=batch;return{ok:true,message:`${batch}人採用しました`}},assign(lineId,d){const l=lineById(lineId);if(!l)return false;if(d>0&&this.free()<d)return false;if(l.assignedWorkers+d<0)return false;l.assignedWorkers+=d;return true},assignDepartment(kind,d){if(!['salesPlanning','productionControl','development','salesRep','salesAdmin','dryingRoom','financeAccounting'].includes(kind))return false;state.workers.departments=state.workers.departments||{salesPlanning:0,productionControl:0,development:0,salesRep:0,salesAdmin:0,dryingRoom:0,financeAccounting:0};const cur=Number(state.workers.departments[kind])||0;if(d>0&&this.free()<d)return false;if(cur+d<0)return false;if(kind==='development'&&d<0){const proposed=cur+d,active=(state.development?.projects||[]).filter(p=>p.status==='active').length;if(active>Math.floor(proposed/2))return false}state.workers.departments[kind]=cur+d;return true},severanceCost(){return state.workers.wagePerWorkerPerDay*60},fireCooldownRemaining(){if(!state.workers.lastFireDate)return 0;return Math.max(0,90-daysBetween(state.workers.lastFireDate,state.date))},fireDaysSince(){return state.workers.lastFireDate?Math.max(0,daysBetween(state.workers.lastFireDate,state.date)):null},fire(){if(this.free()<=0)return{ok:false,message:'未配置の従業員がいません'};const r=this.fireCooldownRemaining();if(r>0)return{ok:false,message:`あと${r}日間は人員整理できません`};const c=this.severanceCost();if(!FinanceModule.canAfford(c))return{ok:false,message:'退職補償費を払える現金がありません'};FinanceModule.cashOut(c,'hiring');state.workers.total--;state.workers.lastFireDate=state.date;return{ok:true,message:`1人を人員整理しました`,cost:c}}};
 const ProductionModule={recordUtilization(){const month=state.date.slice(0,7),h=state.production.utilizationMonthly||(state.production.utilizationMonthly=[]);let row=h.find(x=>x.month===month);if(!row){row={month,lines:{}};h.push(row)}for(const l of state.factory.lines){const util=clamp(Number(l.utilization)||0,0,100),x=row.lines[l.id]||(row.lines[l.id]={sum:0,days:0});x.sum+=util;x.days++}state.production.utilizationMonthly=h.sort((a,b)=>a.month.localeCompare(b.month)).slice(-240);return row},monthlyUtilization(limit=12){return(state.production.utilizationMonthly||[]).slice().sort((a,b)=>a.month.localeCompare(b.month)).slice(-Math.max(1,limit))},setupLoss(line){return Math.min(.80,(line.pendingSetupCount||0)*SETUP_LOSS_RATE)},plan(ignoreInventory=false){const lines=state.factory.lines.map(l=>{const stats=FactoryModule.lineStats(l),setupLoss=ProductDefs[l.product]?this.setupLoss(l):0,effectiveOutput=ProductDefs[l.product]&&!DevelopmentModule.isProductTestToday(l.product)?Math.floor(stats.output*(1-setupLoss)):0;return{line:l,stats,setupLoss,effectiveOutput}});const baseByProduct=Object.fromEntries(Object.keys(ProductDefs).map(k=>[k,0]));for(const x of lines){if(ProductDefs[x.line.product])baseByProduct[x.line.product]+=x.effectiveOutput}const rawNeed=Object.entries(baseByProduct).reduce((sum,[k,n])=>sum+n*ProductDefs[k].materialUsage/(1-productLossRate(k)),0);let scale=1;if(!ignoreInventory&&rawNeed>0)scale=Math.min(scale,state.procurement.raw.qty/rawNeed);if(!ignoreInventory){const packNeed={};for(const x of lines){const k=x.line.product;if(!ProductDefs[k])continue;packNeed[k]=(packNeed[k]||0)+x.effectiveOutput*(x.stats.packMaterialMult||1)}for(const[k,n]of Object.entries(packNeed)){if(n>0)scale=Math.min(scale,(state.procurement.packaging[k]?.qty||0)/n)}}if(!ignoreInventory)scale=Math.min(scale,StorageModule.productionScale(baseByProduct,scale));scale=clamp(scale,0,1);const outByLine={},outByProduct=Object.fromEntries(Object.keys(ProductDefs).map(k=>[k,0])),packUsage=Object.fromEntries(Object.keys(ProductDefs).map(k=>[k,0]));for(const x of lines){const k=x.line.product,n=ProductDefs[k]?Math.floor(x.effectiveOutput*scale):0;outByLine[x.line.id]=n;if(ProductDefs[k]){outByProduct[k]+=n;packUsage[k]+=n*(x.stats.packMaterialMult||1)}}const total=Object.values(outByLine).reduce((a,b)=>a+b,0),usage=Object.entries(outByProduct).reduce((sum,[k,n])=>sum+n*ProductDefs[k].materialUsage/(1-productLossRate(k)),0);return{lines,outByLine,outByProduct,total,usage,packUsage,inventoryScale:scale}},run(){const plan=this.plan(),raw=state.procurement.raw,rawCost=raw.avgCost||38;let lossGenerated=0;for(const k of Object.keys(ProductDefs))state.production.lastProduced[k]=0;for(const line of state.factory.lines){const k=line.product,n=plan.outByLine[line.id]||0,p=ProductDefs[k];if(!p||n<=0){state.production.lastLineOutput[line.id]=0;continue}const pack=state.procurement.packaging[k],stats=FactoryModule.lineStats(line),materialGood=n*p.materialUsage,materialIn=materialGood/(1-productLossRate(k)),loss=materialIn-materialGood,packMult=stats.packMaterialMult||1,packUse=n*packMult,packCost=(pack?.avgCost||p.packageCost)*packMult,unitCost=rawCost*(materialIn/n)+packCost,inv=state.production.finished[k],newQty=inv.qty+n;inv.avgCost=newQty?((inv.qty*inv.avgCost)+(n*unitCost))/newQty:unitCost;inv.qty=newQty;raw.qty=Math.max(0,raw.qty-materialIn);if(pack)pack.qty=Math.max(0,pack.qty-packUse);state.production.lineInventory[line.id]=state.production.lineInventory[line.id]||Object.fromEntries(Object.keys(ProductDefs).map(x=>[x,0]));state.production.lineInventory[line.id][k]=(state.production.lineInventory[line.id][k]||0)+n;addLineFinancial(line.id,'unitsProduced',n);state.production.loss.qty=(state.production.loss.qty||0)+loss;lossGenerated+=loss;state.production.lastProduced[k]+=n;state.production.lastLineOutput[line.id]=n}state.production.lastLossGenerated=lossGenerated;state.finance.lastDay.lossGenerated+=lossGenerated;if(state.finance.currentQuarter)state.finance.currentQuarter.lossGenerated+=lossGenerated;state.finance.lastDay.unitsProduced=plan.total;if(state.finance.currentQuarter)state.finance.currentQuarter.unitsProduced+=plan.total;return plan},consumeSetups(){for(const line of state.factory.lines)line.pendingSetupCount=0}};
 const ProcurementModule={supplierDefs(kind){return kind==='raw'?RawSuppliers:PackSuppliers},selectedIds(kind){return kind==='raw'?state.procurement.rawSupplierIds:state.procurement.packSupplierIds},lotMap(kind){return kind==='raw'?state.procurement.rawSupplierLots:state.procurement.packSupplierLots},supplierLotIndex(kind,id){const max=kind==='raw'?PurchaseLots.length-1:PackageLots.length-1;return clamp(Math.floor(Number(this.lotMap(kind)[id])||0),0,max)},setSupplierLot(kind,id,i){if(!this.supplierDefs(kind).some(x=>x.id===id))return{ok:false,message:'メーカーがありません'};const max=kind==='raw'?PurchaseLots.length-1:PackageLots.length-1;this.lotMap(kind)[id]=clamp(Math.floor(Number(i)||0),0,max);return{ok:true,message:`${this.supplierDefs(kind).find(x=>x.id===id).name}のロットを変更`}},pending(kind,id){return(state.procurement.supplierChanges||[]).find(x=>x.kind===kind&&x.id===id)||null},pendingAdds(kind){return(state.procurement.supplierChanges||[]).filter(x=>x.kind===kind&&x.action==='add')},toggleSupplier(kind,id){const key=kind==='raw'?'rawSupplierIds':'packSupplierIds',defs=this.supplierDefs(kind),def=defs.find(x=>x.id===id);if(!def)return{ok:false,message:'メーカーがありません'};const pending=this.pending(kind,id);if(pending){state.procurement.supplierChanges=state.procurement.supplierChanges.filter(x=>x!==pending);return{ok:true,message:`${def.name}の${pending.action==='add'?'取引開始':'解約'}申請を取消`}}const arr=state.procurement[key];if(arr.includes(id)){if(arr.length<=1){const readyAdds=this.pendingAdds(kind).filter(x=>x.effectiveDate<=addDays(state.date,SUPPLIER_EXIT_DAYS));if(!readyAdds.length)return{ok:false,message:'代替の取引先が稼働する前に唯一の購買先は外せません'}}const effectiveDate=addDays(state.date,SUPPLIER_EXIT_DAYS);state.procurement.supplierChanges.push({kind,id,action:'remove',requestedDate:state.date,effectiveDate});return{ok:true,message:`${def.name}を解約申請　${dateLabel(effectiveDate)}に購買先から外れます`}}const activeOrPending=arr.length+this.pendingAdds(kind).length;if(activeOrPending>=3)return{ok:false,message:'取引中＋立上げ中で最大3社までです'};const effectiveDate=addDays(state.date,SUPPLIER_ONBOARD_DAYS);state.procurement.supplierChanges.push({kind,id,action:'add',requestedDate:state.date,effectiveDate});return{ok:true,message:`${def.name}の取引開始申請　審査・品質確認後 ${dateLabel(effectiveDate)}から購買可能`}},processSupplierChanges(){const changes=[...(state.procurement.supplierChanges||[])];for(const c of changes){if(state.date<c.effectiveDate)continue;const key=c.kind==='raw'?'rawSupplierIds':'packSupplierIds',arr=state.procurement[key],def=this.supplierDefs(c.kind).find(x=>x.id===c.id);if(c.action==='add'){if(!arr.includes(c.id)){arr.push(c.id);state.procurement.events.push({date:state.date,type:'supplier',text:`${def?.name||c.id}：取引開始　BCP購買先として利用可能`})}state.procurement.supplierChanges=state.procurement.supplierChanges.filter(x=>x!==c);continue}if(c.action==='remove'){if(arr.includes(c.id)){if(arr.length>1){state.procurement[key]=arr.filter(x=>x!==c.id);state.procurement.events.push({date:state.date,type:'supplier',text:`${def?.name||c.id}：取引終了`})}else{c.effectiveDate=addDays(state.date,7);state.procurement.events.push({date:state.date,type:'supplier',text:`${def?.name||c.id}：代替購買先がないため解約を7日延期`});continue}}state.procurement.supplierChanges=state.procurement.supplierChanges.filter(x=>x!==c)}}state.procurement.events=state.procurement.events.slice(-20)},disruption(id){const d=state.procurement.disruptions[id];if(!d||state.date>d.until)return null;return d},available(kind){return this.supplierDefs(kind).filter(x=>this.selectedIds(kind).includes(x.id)&&!this.disruption(x.id))},updateDisruptions(){this.processSupplierChanges();for(const[id,d]of Object.entries({...state.procurement.disruptions})){if(state.date>d.until){delete state.procurement.disruptions[id];const def=[...RawSuppliers,...PackSuppliers].find(x=>x.id===id);state.procurement.events.push({date:state.date,type:'recovery',text:`${def?.name||id} が供給再開`})}}for(const def of [...RawSuppliers,...PackSuppliers]){if(state.procurement.disruptions[def.id])continue;if(Math.random()<SUPPLY_DISRUPTION_DAILY_RATE){const duration=45+Math.floor(Math.random()*106),reason=DisruptionReasons[Math.floor(Math.random()*DisruptionReasons.length)],until=addDays(state.date,duration);state.procurement.disruptions[def.id]={start:state.date,until,reason};state.procurement.events.push({date:state.date,type:'stop',text:`${def.name}：${reason}（${dateLabel(until)}まで供給停止見込）`})}}state.procurement.events=state.procurement.events.slice(-20)},rawOrders(){const defs=this.available('raw');if(!defs.length)return[];return defs.map(d=>{const lot=PurchaseLots[this.supplierLotIndex('raw',d.id)];const unit=lot.unitPrice*d.priceMult;return{supplier:d,qty:lot.qty,unit,cost:lot.qty*unit,lot}})},packOrders(k){const defs=this.available('pack'),p=ProductDefs[k];if(!defs.length)return[];return defs.map(d=>{const lot=PackageLots[this.supplierLotIndex('pack',d.id)],qty=lot.qty,unit=p.packageCost*lot.priceMult*d.priceMult;return{supplier:d,qty,unit,cost:qty*unit,lot}})},buyRawConfigured(){const parts=this.rawOrders();if(!parts.length)return{ok:false,message:'取引中メーカーがすべて供給停止中（立上げ中の会社はまだ使えません）'};const totalQty=parts.reduce((s,x)=>s+x.qty,0),totalCost=parts.reduce((s,x)=>s+x.cost,0);if(!StorageModule.canAdd('raw',totalQty))return{ok:false,message:`合計${num(totalQty)}kgが一般倉庫・原料サイロに入りません`};if(!FinanceModule.canAfford(totalCost))return{ok:false,message:'お金が足りません'};FinanceModule.cashOut(totalCost,'rawPurchases');state.finance.lastDay.rawPurchasesCash+=totalCost;const r=state.procurement.raw,newQty=r.qty+totalQty,avgUnit=totalCost/totalQty;r.avgCost=newQty?((r.qty*r.avgCost)+(totalQty*avgUnit))/newQty:avgUnit;r.qty=newQty;return{ok:true,message:`原料 ${parts.map(x=>`${x.supplier.name} ${num(x.qty)}kg`).join(' ＋ ')} ＝ 合計${num(totalQty)}kg`}},buyPackagingConfigured(k){const p=ProductDefs[k],parts=this.packOrders(k);if(!parts.length)return{ok:false,message:`${p.name}包材：取引中メーカーがすべて供給停止中`};const totalQty=parts.reduce((s,x)=>s+x.qty,0),totalCost=parts.reduce((s,x)=>s+x.cost,0),storage=totalQty*PACK_STORAGE_PER_UNIT;if(!StorageModule.canAdd('packaging',storage))return{ok:false,message:`${p.name}包材：合計${num(totalQty)}個が一般倉庫に入りません`};if(!FinanceModule.canAfford(totalCost))return{ok:false,message:`${p.name}包材：お金が足りません`};FinanceModule.addPackagingPurchase(totalCost);const inv=state.procurement.packaging[k],newQty=inv.qty+totalQty,avgUnit=totalCost/totalQty;inv.avgCost=newQty?((inv.qty*inv.avgCost)+(totalQty*avgUnit))/newQty:avgUnit;inv.qty=newQty;return{ok:true,message:`${p.name}包材 ${parts.map(x=>`${x.supplier.name} ${num(x.qty)}個`).join(' ＋ ')} ＝ 合計${num(totalQty)}個`}},autoOrder(){const plan=ProductionModule.plan(true),need=plan.usage,raw=state.procurement.raw,msg=[];if(need>0&&raw.qty<need){const r=this.buyRawConfigured();msg.push(r.ok?r.message:`原料発注失敗：${r.message}`)}else if(need>0)msg.push(`原料 発注なし（必要 ${num(need,1)}kg / 在庫 ${num(raw.qty,1)}kg）`);for(const[k,n]of Object.entries(plan.packUsage)){const inv=state.procurement.packaging[k];if(n>0&&inv.qty<n){const r=this.buyPackagingConfigured(k);msg.push(r.ok?r.message:r.message)}}if(!msg.length)msg.push('生産予定がないため発注なし');state.procurement.lastAutoMessage=msg.join('｜')}};
 function contractActive(c,date){if(c.status!=='active')return false;if(date<c.startDate)return false;if(c.endDate&&date>c.endDate)return false;return true}function monthDays(s){const d=dateObj(s);return new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth()+1,0)).getUTCDate()}function contractDemandOnDate(c,date){if(!contractActive(c,date))return 0;const d=dateObj(date),day=d.getUTCDate(),days=monthDays(date),freq=c.deliveriesPerMonth;if(c.type==='spot'){if(c.spotDelivered)return 0;return date===c.spotDate?c.monthlyQty:0}const slots=[];for(let i=0;i<freq;i++)slots.push(Math.max(1,Math.round(1+i*(days/freq))));return slots.includes(day)?c.lotSize:0}
@@ -1574,7 +1612,273 @@ const _bindDynamicV528=bindDynamic;
 bindDynamic=function(){_bindDynamicV528();document.querySelectorAll('[data-rare-supplier]').forEach(b=>b.onclick=()=>{const x=ProcurementModule.toggleRareSupplierV528(b.dataset.rareSupplier);toast(x.message);save();render()});document.querySelectorAll('[data-rare-supplier-lot]').forEach(e=>e.onchange=()=>{const x=ProcurementModule.setRareSupplierLotV528(e.dataset.rareSupplierLot,Number(e.value));toast(x.message);save();render()});document.querySelectorAll('[data-close-line]').forEach(b=>b.onclick=()=>{const l=lineById(b.dataset.closeLine),wip=(state.production.dryingWip||[]).some(x=>x.lineId===l?.id);if(!l)return;requestClosureV528(`${l.name}を閉鎖`,`設備を自動売却し、${l.assignedWorkers||0}人を未配置へ戻します${wip?'｜乾燥中の仕掛品があるため現在は閉鎖できません':''}`,()=>FactoryModule.closeLineV528(l.id))});document.querySelectorAll('[data-close-factory]').forEach(b=>b.onclick=()=>{const c=factoryCloseCheckV528(b.dataset.closeFactory);if(!c.ok)return toast(c.reason);requestClosureV528(`${c.site.name}を閉鎖`,'工場建物を売却し、工場面積とクリーン原料容量を減らします',()=>FactoryModule.closeFactoryV528(c.site.id))})};
 document.getElementById('cancelClosureV528').onclick=closeClosureV528;document.getElementById('confirmClosureV528').onclick=executeClosureV528;document.getElementById('closureConfirmModalV528').onclick=e=>{if(e.target===document.getElementById('closureConfirmModalV528'))closeClosureV528()};
 
-const _renderV518=render;render=function(){ensureV518State();ensureRareSupplierStateV528();ensureSingleEquipmentMigrationV525();relocatePeopleCardsV528();_renderV518();const dataNote=document.querySelector('#panel-company .card:last-child .note');if(dataNote&&dataNote.textContent.includes('v0.5.'))dataNote.textContent='v0.5.28：レアアース複数社購買・閉鎖機能・人事画面統合';document.title=`${state.companyName||'どろだんご工場'}｜泥団子メーカー v0.5.28`};
+const _renderV518=render;render=function(){ensureV518State();ensureRareSupplierStateV528();ensureSingleEquipmentMigrationV525();relocatePeopleCardsV528();_renderV518();const dataNote=document.querySelector('#panel-company .card:last-child .note');if(dataNote&&dataNote.textContent.includes('v0.5.'))dataNote.textContent='v0.5.29：初回納品ガイド・画面整理・一括採用と人員配置';document.title=`${state.companyName||'どろだんご工場'}｜泥団子メーカー v0.5.28`};
+// v0.5.29: first delivery guidance and bulk staffing controls
+// Keep production, pricing, approvals and manager delegation rules unchanged
+const uxV529 = {hireCount: null, guideInitialized: false, delivered: null};
+
+function staffingNeedsV529() {
+  const lines = state.factory.lines.reduce((sum, line) => sum + Math.max(0, FactoryModule.lineStats(line).required - line.assignedWorkers), 0);
+  const required = SalesCapacityModule.required(), departments = state.workers.departments || {};
+  const sales = ['salesRep', 'salesAdmin'].reduce((sum, key) => sum + Math.max(0, required - (departments[key] || 0)), 0);
+  return {lines, sales, total: lines + sales, hire: Math.max(0, lines + sales - WorkerModule.free())};
+}
+
+function finishStaffingV529(message) {
+  toast(message);
+  save();
+  render();
+}
+
+function fillLineStaffV529(lineId) {
+  if (CoordinationModule.productionWorkers() > 0) return;
+  const line = lineById(lineId);
+  if (!line) return;
+  const shortage = Math.max(0, FactoryModule.lineStats(line).required - line.assignedWorkers);
+  const amount = Math.min(shortage, WorkerModule.free());
+  if (!amount) return toast(shortage ? '未配置の従業員がいません' : '必要人数を満たしています');
+  if (WorkerModule.assign(line.id, amount)) finishStaffingV529(`${line.name}に${num(amount)}人配置${amount < shortage ? `｜あと${num(shortage - amount)}人不足` : ''}`);
+}
+
+function fillAllLineStaffV529() {
+  if (CoordinationModule.productionWorkers() > 0) return;
+  let assigned = 0;
+  for (const line of state.factory.lines) {
+    const amount = Math.min(Math.max(0, FactoryModule.lineStats(line).required - line.assignedWorkers), WorkerModule.free());
+    if (amount > 0 && WorkerModule.assign(line.id, amount)) assigned += amount;
+  }
+  const remaining = staffingNeedsV529().lines;
+  finishStaffingV529(`${num(assigned)}人をラインへ配置${remaining ? `｜あと${num(remaining)}人不足` : '｜全ラインの必要人数を満たしました'}`);
+}
+
+function fillSalesStaffV529() {
+  const required = SalesCapacityModule.required(), departments = state.workers.departments || {};
+  const changes = ['salesRep', 'salesAdmin'].map(key => ({key, amount: Math.max(0, required - (departments[key] || 0))}));
+  const total = changes.reduce((sum, item) => sum + item.amount, 0);
+  if (!total) return toast('営業の必要人数を満たしています');
+  if (WorkerModule.free() < total) return toast(`未配置の従業員があと${num(total - WorkerModule.free())}人必要です`);
+  if (CorporateModule.officeFree() < total) return toast('オフィス収容人数が足りません');
+  const applied = [];
+  for (const item of changes) {
+    if (!item.amount) continue;
+    if (!WorkerModule.assignDepartment(item.key, item.amount)) {
+      for (const previous of applied) WorkerModule.assignDepartment(previous.key, -previous.amount);
+      return finishStaffingV529('営業の配置を変更できませんでした');
+    }
+    applied.push(item);
+  }
+  finishStaffingV529(`営業マン・営業事務を必要な各${num(required)}人まで配置しました`);
+}
+
+function renderBulkStaffingV529() {
+  const batch = Ranks[state.rank].hireBatch, count = document.getElementById('bulkHireCount');
+  if (uxV529.hireCount === null) uxV529.hireCount = batch;
+  uxV529.hireCount = Math.max(batch, Math.ceil(uxV529.hireCount / batch) * batch);
+  count.min = batch;
+  count.step = batch;
+  count.value = uxV529.hireCount;
+  const updateHire = () => {
+    const amount = Number(count.value), valid = Number.isSafeInteger(amount) && amount >= batch && amount % batch === 0;
+    if (valid) uxV529.hireCount = amount;
+    const cost = amount * state.workers.hireFeePerWorker;
+    document.getElementById('bulkHire').disabled = !valid || !FinanceModule.canAfford(cost);
+    document.getElementById('bulkHirePreview').textContent = valid ? `採用費 ${yen(cost)}｜日次人件費 ＋${yen(amount * state.workers.wagePerWorkerPerDay)}` : `${num(batch)}人単位の整数で指定してください`;
+  };
+  count.oninput = updateHire;
+  document.getElementById('bulkHire').onclick = () => {
+    const result = WorkerModule.hire(Number(count.value));
+    toast(result.message);
+    checkGameOver();
+    save();
+    render();
+  };
+  const needs = staffingNeedsV529(), preset = document.getElementById('suggestHire');
+  preset.textContent = needs.hire ? `生産・営業の不足分 ${num(Math.ceil(needs.hire / batch) * batch)}人を入力` : '生産・営業の人数は確保済み';
+  preset.disabled = needs.hire === 0;
+  preset.onclick = () => {
+    uxV529.hireCount = Math.max(batch, Math.ceil(staffingNeedsV529().hire / batch) * batch);
+    count.value = uxV529.hireCount;
+    updateHire();
+    count.focus();
+  };
+  updateHire();
+
+  const auto = CoordinationModule.productionWorkers() > 0, fillAll = document.getElementById('fillAllLines');
+  fillAll.disabled = auto || !needs.lines || !WorkerModule.free();
+  fillAll.onclick = fillAllLineStaffV529;
+  document.getElementById('bulkLineStaffNote').textContent = auto ? '生産管理がライン人員を自動調整中です' : `全ラインの不足 ${num(needs.lines)}人｜未配置 ${num(WorkerModule.free())}人　不足時はライン順に配置します`;
+  const fillSales = document.getElementById('fillSalesStaff');
+  fillSales.disabled = !needs.sales;
+  fillSales.onclick = fillSalesStaffV529;
+
+  for (const containerId of ['workerLines', 'departmentWorkers']) {
+    const container = document.getElementById(containerId);
+    for (const buttons of container.querySelectorAll('.staffbuttons')) {
+      const original = buttons.querySelector('[data-worker], [data-dept]');
+      if (!original) continue;
+      const lineId = original.dataset.worker, department = original.dataset.dept;
+      const line = lineId ? lineById(lineId) : null;
+      if (lineId && !line) continue;
+      const row = buttons.closest('.staffrow'), name = row.querySelector('div > b')?.textContent || line?.name || department;
+      const current = line ? line.assignedWorkers : (state.workers.departments[department] || 0), disabled = Boolean(line && auto);
+      row.classList.add('uxstaffrow');
+      const label = document.createElement('label');
+      label.className = 'uxstafftarget';
+      label.textContent = '配置人数';
+      const input = document.createElement('input');
+      input.type = 'number';
+      input.min = '0';
+      input.step = '1';
+      input.value = current;
+      input.disabled = disabled;
+      input.setAttribute('aria-label', `${name}の配置人数`);
+      label.append(input);
+      const apply = document.createElement('button');
+      apply.className = 'secondary';
+      apply.textContent = '反映';
+      apply.setAttribute('aria-label', `${name}の配置人数を反映`);
+      apply.disabled = disabled;
+      apply.onclick = () => {
+        const target = Number(input.value);
+        if (input.value.trim() === '' || !Number.isSafeInteger(target) || target < 0) return toast('配置人数は0以上の整数で指定してください');
+        const delta = target - current;
+        if (delta > WorkerModule.free()) return toast(`未配置の従業員があと${num(delta - WorkerModule.free())}人必要です`);
+        const ok = line ? WorkerModule.assign(line.id, delta) : WorkerModule.assignDepartment(department, delta);
+        finishStaffingV529(ok ? `${name}を${num(target)}人に変更しました` : department === 'development' && delta < 0 ? '進行中の開発案件に必要な人員は外せません' : '配置できません　オフィスの収容人数などを確認してください');
+      };
+      input.onkeydown = event => {if (event.key === 'Enter') {event.preventDefault(); apply.click();}};
+      buttons.prepend(label, apply);
+      if (line) {
+        const fill = document.createElement('button');
+        fill.className = 'secondary uxfillline';
+        fill.textContent = '不足分を配置';
+        fill.disabled = disabled || current >= FactoryModule.lineStats(line).required || WorkerModule.free() === 0;
+        fill.onclick = () => fillLineStaffV529(line.id);
+        buttons.append(fill);
+      }
+    }
+  }
+}
+
+function goToWorkV529(tabName, targetId) {
+  setTab(tabName);
+  const target = document.getElementById(targetId);
+  if (!target) return;
+  for (let parent = target.parentElement; parent; parent = parent.parentElement) if (parent.tagName === 'DETAILS') parent.open = true;
+  if (targetId === 'equipmentLines') {
+    const first = target.querySelector('details');
+    if (first) first.open = true;
+  }
+  target.scrollIntoView({behavior: 'smooth', block: 'start'});
+}
+
+function firstDeliveryStepsV529() {
+  const delivered = (Number(state.finance.cumulativeUnits) || 0) > 0;
+  const contracts = state.sales.contracts.filter(contract => contract.status === 'active');
+  const next = contracts.map(contract => ({contract, next: nextContractDelivery(contract)})).sort((a, b) => (a.next?.date || '9999-12-31').localeCompare(b.next?.date || '9999-12-31'))[0];
+  const selected = state.factory.lines.find(line => next && line.product === next.contract.product) || state.factory.lines.find(line => line.product);
+  const productReady = Boolean(selected && (!next || selected.product === next.contract.product));
+  const equipmentReady = productReady && FactoryModule.lineStats(selected, true, true).output > 0;
+  const staffReady = equipmentReady && selected.assignedWorkers >= FactoryModule.lineStats(selected).required && SalesCapacityModule.ok();
+  const needs = staffingNeedsV529();
+  return [
+    {title: '引き合いを確認', tab: 'sales', target: 'inquiries', done: Boolean(state.onboardingV529?.inquiriesSeen || contracts.length), note: '欲しい品目・数量・納品日を営業で確認して、最初に作る品目を決めましょう', action: '引き合いを見る'},
+    {title: '生産品目を設定', tab: 'production', target: 'productionLines', done: productReady, note: next && !productReady ? `受注した${ProductDefs[next.contract.product].name}を作るラインを準備しましょう` : '引き合いと同じ品目を生産ラインで選びます　初回の品目設定は無料です', action: '品目を選ぶ'},
+    {title: '設備を導入・稼働', tab: 'equipment', target: 'equipmentLines', done: equipmentReady, note: '必要工程の設備を導入して稼働させます　「一括導入・入替」で必要な設備をまとめて選べます', action: 'ラインの設備を見る'},
+    {title: '採用して人員を配置', tab: 'workers', target: 'bulkHireCount', done: staffReady, note: `ラインの作業員と、見積提出に必要な営業マン・営業事務を配置します${needs.hire ? `　現在の不足を補うにはあと${num(needs.hire)}人の採用が必要です` : ''}`, action: '採用・配置へ'},
+    {title: '見積を出して受注', tab: 'sales', target: 'inquiries', done: contracts.length > 0, note: '生産できる品目の見積を提出します　売価と受注確度を見比べましょう　失注した場合は別の引き合いを検討できます', action: '見積を提出する'},
+    {title: '生産して初回納品', tab: 'sales', target: 'deliveryRequirementSummary', done: delivered, note: `日付を進めると、原料・包材の自動発注、生産、納品が進みます${next?.next ? `　次の納品は${dateLabel(next.next.date)}です` : ''}　必要な在庫が納品日までに揃うか確認しましょう`, action: '納品予定を見る'}
+  ].map(step => ({...step, done: delivered || step.done}));
+}
+
+function renderFirstDeliveryGuideV529() {
+  const guide = document.getElementById('firstDeliveryGuide'), steps = firstDeliveryStepsV529();
+  const delivered = steps.every(step => step.done), completed = steps.filter(step => step.done).length, next = steps.find(step => !step.done);
+  if (!uxV529.guideInitialized || uxV529.delivered !== delivered) {
+    guide.open = !delivered;
+    uxV529.guideInitialized = true;
+    uxV529.delivered = delivered;
+  }
+  document.getElementById('firstDeliveryProgress').textContent = delivered ? '✓ 初回納品 達成済み' : `${completed} / ${steps.length} ステップ`;
+  const list = document.getElementById('firstDeliverySteps');
+  list.replaceChildren();
+  steps.forEach((step, index) => {
+    const button = document.createElement('button');
+    button.className = `uxguidestep ${step.done ? 'done' : step === next ? 'current' : ''}`;
+    button.textContent = `${step.done ? '✓' : index + 1} ${step.title}`;
+    if (step === next) button.setAttribute('aria-current', 'step');
+    button.onclick = () => goToWorkV529(step.tab, step.target);
+    list.append(button);
+  });
+  const title = document.getElementById('firstDeliveryNextTitle'), note = document.getElementById('firstDeliveryNextNote'), action = document.getElementById('firstDeliveryAction');
+  title.textContent = next ? `次は ${next.title}` : '初回納品を達成しました';
+  note.textContent = next ? next.note : '次は納品実績を積みながら、設備更新や部門への人員配置を検討してみましょう　各ステップから操作場所を確認できます';
+  action.hidden = !next;
+  action.textContent = next?.action || '';
+  action.onclick = () => {if (next) goToWorkV529(next.tab, next.target);};
+}
+
+function renderSalesWorkSummaryV529() {
+  const area = document.getElementById('salesWorkSummary');
+  area.replaceChildren();
+  const open = state.sales.inquiries.filter(inquiry => inquiry.status === 'open').length;
+  const title = document.createElement('h2');
+  title.textContent = `営業の確認｜未提出の見積 ${num(open)}件`;
+  area.append(title);
+  const staffing = document.createElement('div');
+  staffing.className = SalesCapacityModule.ok() ? 'note' : 'accountwarn';
+  staffing.textContent = SalesCapacityModule.ok() ? `営業の処理体制は準備済み｜${num(SalesCapacityModule.caseCount())} / ${num(SalesCapacityModule.capacity())}案件` : `見積提出には営業マン・営業事務が各${num(SalesCapacityModule.required())}人必要です`;
+  if (!SalesCapacityModule.ok()) {
+    const button = document.createElement('button');
+    button.className = 'secondary';
+    button.textContent = '営業の人員を配置する';
+    button.onclick = () => goToWorkV529('workers', 'departmentWorkers');
+    staffing.append(button);
+  }
+  area.append(staffing);
+  const deliveries = upcomingDeliveryRequirements(7).slice(0, 3), nextTitle = document.createElement('h3');
+  nextTitle.textContent = '直近7日の納品';
+  area.append(nextTitle);
+  if (!deliveries.length) {
+    const note = document.createElement('div');
+    note.className = 'note';
+    note.textContent = '直近7日に納品予定はありません　受注後はここで納品日と現在庫を確認できます';
+    area.append(note);
+  }
+  for (const delivery of deliveries) {
+    const product = ProductDefs[delivery.product], stock = Number(state.production.finished[delivery.product]?.qty) || 0;
+    const row = document.createElement('div');
+    row.className = 'uxdeliveryrow';
+    const name = document.createElement('b'), quantity = document.createElement('span');
+    name.textContent = `${dateLabel(delivery.date)}｜${product.emoji} ${product.name}`;
+    quantity.textContent = `納品 ${num(delivery.qty)}個｜現在庫 ${num(stock)}個`;
+    row.append(name, quantity);
+    area.append(row);
+  }
+  const note = document.createElement('div');
+  note.className = 'note';
+  note.textContent = '現在庫は今ある数量です　それぞれの納品日に確保される数量の予測ではありません';
+  if (deliveries.length) area.append(note);
+}
+
+const setTabBeforeV529 = setTab;
+setTab = function(tabName) {
+  setTabBeforeV529(tabName);
+  if (tabName === 'sales' && !state.onboardingV529?.inquiriesSeen) {
+    state.onboardingV529 = {...(state.onboardingV529 || {}), inquiriesSeen: true};
+    save();
+  }
+  renderFirstDeliveryGuideV529();
+};
+const renderBeforeV529 = render;
+render = function() {
+  renderBeforeV529();
+  renderBulkStaffingV529();
+  renderFirstDeliveryGuideV529();
+  renderSalesWorkSummaryV529();
+  document.title = `${state.companyName || 'どろだんご工場'}｜泥団子メーカー v0.5.29`;
+};
+
 render();
 
 const themeToggle=document.getElementById('themeToggle');
