@@ -1,7 +1,86 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T07:07:17+09:00",
+  "updatedAt": "2026-10-05T23:22:54.886Z",
   "articles": [
+    {
+      "id": "20261005-hyakupa-paper-tube",
+      "kind": "news",
+      "category": "industry",
+      "title": "持ち歩いて詰め替える　緑茶の紙筒が包装賞",
+      "dek": "一回分のバリア包材と、繰り返し使う紙の外装を組み合わせる",
+      "summary": [
+        "Hyaku-Paの緑茶用包装が世界緑茶コンテスト2026の包装大賞を受賞した",
+        "細い紙筒には一回分の小袋3個を収め、家庭用の保存容器から補充できる",
+        "鮮度を守る小袋にはバリアラミネートを使い、筒・保存容器・展示箱は紙製としている"
+      ],
+      "why": "外装の紙化と中身の保護を分けて考える提案の参考になる",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/hyaku-pa-wins-award-for-reusable-paper-tube-and-display-box-for-green-tea/",
+      "publishedAt": "2026-10-05",
+      "addedAt": "2026-10-06",
+      "language": "en",
+      "verificationNote": "10月5日付の本文を確認　構成は記事掲載の企業説明、回収後の実績は確認していない"
+    },
+    {
+      "id": "column-20261006-good-unit-cost",
+      "kind": "column",
+      "category": "sales",
+      "title": "包材の単価より、良品一個あたりの包材費を見よう",
+      "dek": "ロスの発生場所をそろえて比べると、値引き以外の提案が見えてくる",
+      "summary": [
+        "購入した数量と、良品として出荷できた数量を分ける",
+        "ロスを材料・設備・段取り・作業条件に分けて記録する",
+        "比較試験の条件と判定担当者を先に決める"
+      ],
+      "why": "包材の値上がり・値下がりだけで商談を終わらせず、顧客の使い方に沿って比較できる",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-06",
+      "addedAt": "2026-10-06",
+      "language": "ja",
+      "verificationNote": "数値は計算方法を説明する仮の例　特定の工場の実績ではなく、品質や削減効果を保証しない",
+      "body": [
+        {
+          "heading": "購入単価の分母を変えてみる",
+          "text": "一枚いくらという比較は必要だけれど、その包材を使って何個の良品ができたかも聞いてみたい\n使った枚数に、立ち上げ時の調整、シール不良、印字の不備、途中の材料交換で失った数量が混ざっていないかを整理する\nまずは対象の品種と号機、集計期間、良品の判定基準をそろえ、購入数量・投入数量・良品数量を混同しない表を作る"
+        },
+        {
+          "heading": "計算は仮の数字で説明する",
+          "text": "仮の例として、同じ1000枚を投入し、現行品は一枚10円で良品900個、候補品は一枚10.5円で良品990個だったとする\n投入した包材費だけを良品数で割ると、現行品は約11.11円、候補品は約10.61円になる\nこれは比較方法の例であって、候補品で歩留まりが上がる保証ではない\n内容物、電力、人件費、廃棄費などは入れていないので、総原価の比較とは分けて説明する"
+        },
+        {
+          "heading": "ロスの原因を包材に決めつけない",
+          "text": "不良が減ったとしても、包材だけが理由とは限らない\n機械の清掃、温度設定、作業者、運転速度、内容物の状態が変わっていたら、その条件も記録する\n不良を種類ごとに分け、顧客の製造・品質担当者と、比較試験の量と判定方法を相談する\n合格基準を緩めて良品数を増やす比較にはせず、必要な品質を満たした数量で確認する"
+        },
+        {
+          "heading": "商談の持ち帰りは、条件をそろえた記録表",
+          "text": "次の提案は、単価表だけでなく、品種・号機・投入量・良品数・ロスの分類・運転条件を一枚にまとめる\n顧客側で取得できる記録と、追加で測る項目を分ければ、試験の負担も見えやすい\n保存性や食品安全への影響が関わる変更は、担当部門の評価を経て判断してもらう\n見込みの削減額を先に約束せず、比較できるデータを集めることを次の行動にする"
+        }
+      ],
+      "questions": [
+        "この品種と号機では、投入した包材数と良品数を同じ期間で確認できますか？",
+        "立ち上げ・シール・印字・交換時のロスを、今はどのように記録していますか？",
+        "現行品と候補品を同じ品質基準で比較する場合、条件を決める製造・品質の担当者はどなたですか？"
+      ]
+    },
+    {
+      "id": "20261005-wagyu-raoh",
+      "kind": "news",
+      "category": "food",
+      "title": "ラ王に和牛×シーフード　別添ペーストで味変",
+      "dek": "日清食品がWAGYUMAFIA監修の新商品を10月19日に発売予定",
+      "summary": [
+        "日清食品はWAGYUMAFIA監修のラ王を全国発売すると発表した",
+        "牛白湯に和牛脂とシーフードのうまみを組み合わせ、別添の柚子ペーストを付ける",
+        "発売予定日は10月19日で、内容量は101g、1ケース12食入り"
+      ],
+      "why": "別添品を含む商品構成と、発売前の包材手配を考える材料になる",
+      "source": "日清食品",
+      "url": "https://www.nissin.com/jp/company/news/13946/",
+      "publishedAt": "2026-10-05",
+      "addedAt": "2026-10-06",
+      "language": "ja",
+      "verificationNote": "10月5日付の公式本文を確認　10月19日は発売予定日であり、販売実績ではない"
+    },
     {
       "id": "20261002-sig-machinery",
       "category": "industry",
@@ -19,6 +98,427 @@
       "verificationNote": "記事本文を確認　能力・切り替え時間はメーカー説明",
       "addedAt": "2026-10-05",
       "language": "en"
+    },
+    {
+      "id": "column-20261006-promotion-pack-orders",
+      "kind": "column",
+      "category": "food",
+      "title": "販促の予定を、包材の発注予定に変える",
+      "dek": "売場の開始日から逆算して、確定分と追加分の判断日を分ける",
+      "summary": [
+        "販促開始日と、食品工場の製造・納品日を分ける",
+        "確定数量と予測数量を区別し、追加発注の判断日を置く",
+        "販促終了後の包材残量と使い道まで相談する"
+      ],
+      "why": "食品メーカーの販促計画を、包材の不足と残り過ぎを考える具体的な商談にできる",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-06",
+      "addedAt": "2026-10-06",
+      "language": "ja",
+      "verificationNote": "一般的な商談の整理方法　販売量や納期を保証せず、発注・在庫・表示の判断は関係担当者が確認する",
+      "body": [
+        {
+          "heading": "売場の日付を、そのまま包材納期にしない",
+          "text": "販促がいつ始まるかを聞いたら、次に食品の製造日、物流拠点への納品日、包材の受け入れ日を分けて確認する\n販促開始日に包材が届いても、製造や検査が間に合わないことがある\n営業は小売向けの計画を工場向けの日程へ翻訳し、印刷の校了、包材製造、検査、出荷までの前提を関係者に確認する\n予定が動いたときに誰へ連絡するかも決めておく"
+        },
+        {
+          "heading": "確定分と予測分を分けて話す",
+          "text": "販促数量の内訳には、すでに確定した店舗向けの注文と、売れ行きを見て追加する見込みが混ざることがある\n合計だけを包材会社へ伝える前に、どこまでが発注確定なのかを聞く\n追加分は、必要になった日の相談ではなく、いつまでに数量を決めれば間に合うかという判断日を置く\n製造枠や材料の確保は供給側の確認が必要で、見込み数量だけで無条件に納期を約束しない"
+        },
+        {
+          "heading": "販促が終わる日も、発注条件になる",
+          "text": "販促専用の印刷や日付入りデザインなら、終了後に残った包材を通常販売へ使えるとは限らない\n追加生産を決める前に、余剰の見込み、保管場所、通常品との共用可否を確認する\n共通包材と別の販促表示を組み合わせる案もあるが、表示や貼付方法、設備への適性は担当者に確認してもらう\n残りを減らすために必要な表示を省くような判断はしない"
+        },
+        {
+          "heading": "次の販促に残すのは、予測が外れた理由",
+          "text": "終了後は、予測数量、実際の発注、包材の使用量、残量を同じ品種単位で振り返る\n店舗数の変更、追加注文のタイミング、製造ロス、計画外の転用などを分けると、次回の相談が具体的になる\n包材の保有者、追加発注の承認者、残在庫の扱いは、購買担当者と契約条件を確認する\n商談で目指すのは販売を言い当てることではなく、判断が必要な日と担当者を見えるようにすること"
+        }
+      ],
+      "questions": [
+        "販促開始日とは別に、食品の製造日と包材の受け入れ期限は決まっていますか？",
+        "数量のうち発注確定分と追加見込み分はそれぞれどれだけで、追加を判断する日はいつですか？",
+        "終了後に残った専用包材の保有・保管・使用可否は、どの担当者と条件を確認すればよいですか？"
+      ]
+    },
+    {
+      "id": "20261005-upm-paper-cocreation",
+      "kind": "news",
+      "category": "industry",
+      "title": "紙へ切り替えるなら、包材と設備を一緒に評価",
+      "dek": "UPMの担当者が、単純な材料置換では済まない紙化の課題を語る",
+      "summary": [
+        "UPM Specialty Materialsの技術担当者が紙包装への移行についてインタビューに答えた",
+        "材料の終末処理、バリア性能、生産効率を同時に考える必要性を説明している",
+        "紙をそのまま既存包装に置き換えて全設備で動くとは言えず、関係企業との共同開発を重視した"
+      ],
+      "why": "紙化の見積もりを出す前に、評価する設備と条件をすり合わせたい",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/where-we-stand-in-the-paper-transition-and-how-co-creation-can-help/",
+      "publishedAt": "2026-10-05",
+      "addedAt": "2026-10-06",
+      "language": "en",
+      "verificationNote": "10月5日付のインタビュー本文を確認　UPM担当者の見解であり、規制適合や全設備への適性を保証する内容ではない"
+    },
+    {
+      "id": "20261005-utien-unifresh",
+      "kind": "news",
+      "category": "industry",
+      "title": "厚みのある食品にも　スキン包装の加熱を二段階に",
+      "dek": "Utien Packがフィルムと形状への対応幅を説明",
+      "summary": [
+        "Utien PackはUnifresh真空スキン包装技術を紹介した",
+        "予熱とシール室での加熱を組み合わせ、50mmの突出形状への対応をうたう",
+        "PLCの条件調整により、高バリアフィルムから通気性フィルムまで対応すると説明する"
+      ],
+      "why": "フィルムの選定と機械条件を一緒に評価する商談につながる",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/utien-pack-expanding-the-possibilities-of-skin-packaging/",
+      "publishedAt": "2026-10-05",
+      "addedAt": "2026-10-06",
+      "language": "en",
+      "verificationNote": "10月5日付のメーカー執筆・提供記事を確認　対応寸法やフィルム範囲はメーカー説明で、個別食品の保存性は別途評価が必要"
+    },
+    {
+      "id": "20261005-robatech-melter-renewal",
+      "kind": "news",
+      "category": "industry",
+      "title": "包装設備の更新は、予備機の共通化まで提案する",
+      "dek": "食品工場の接着剤メルター更新事例をRobatechが紹介",
+      "summary": [
+        "RobatechはDE-VAU-GEによる接着剤メルター44台の更新事例を紹介した",
+        "加熱ホース接続数の異なる旧設備を6接続のAlpha S Proに統一した",
+        "予備機を各包装ラインで使える構成とし、保守・交換・部品管理の簡素化を説明している"
+      ],
+      "why": "設備単体の価格に加え、保守と予備機の運用まで比較できる",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/why-de-vau-ge-upgraded-44-adhesive-melters-with-robatech/",
+      "publishedAt": "2026-10-05",
+      "addedAt": "2026-10-06",
+      "language": "en",
+      "verificationNote": "10月5日付のメーカー提供記事を確認　2026年に行われた更新事例の紹介で、更新自体が10月5日に完了したとの意味ではない"
+    },
+    {
+      "id": "20261005-markem-2d-coding",
+      "kind": "news",
+      "category": "industry",
+      "title": "2Dコードは、印字できるだけでは足りない",
+      "dek": "高速ライン、フィルム、擦れへの耐性を含めた検討をメーカーが提案",
+      "summary": [
+        "Markem-Imajeが軟包装への2Dコード印字の課題を整理した",
+        "高解像度に加え、生産速度、基材との相性、擦れへの耐性、印字位置を論点に挙げた",
+        "熱転写印字を選択肢として紹介し、コードと商品データの連携を重視している"
+      ],
+      "why": "デザイン校正だけでなく、充填後や物流後の読み取り評価を相談したい",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/2d-coding-redefining-the-role-of-flexible-packaging/",
+      "publishedAt": "2026-10-05",
+      "addedAt": "2026-10-06",
+      "language": "en",
+      "verificationNote": "10月5日付のメーカー提供記事本文を確認　熱転写の優位性はメーカーの説明、法令適合を保証する紹介ではない"
+    },
+    {
+      "id": "20260930-meiji-cup-collection",
+      "kind": "news",
+      "category": "industry",
+      "title": "ヨーグルト紙カップを横浜13店舗で回収",
+      "dek": "明治とTOPPANが、洗浄済み容器の回収と再製品化を進める",
+      "summary": [
+        "明治とTOPPANは横浜市内のイオン系13店舗で紙カップ回収を実施すると発表した",
+        "対象はブルガリアヨーグルトLB81の400gシリーズ4種、期間は10月1日から11月30日",
+        "回収品をグッズに再製品化し、2027年の国際園芸博覧会で販売する計画としている"
+      ],
+      "why": "材料の説明だけでなく、回収場所と再利用先を含む包装提案の参考になる",
+      "source": "明治",
+      "url": "https://www.meiji.co.jp/corporate/pressrelease/2026/09_18/index.html",
+      "publishedAt": "2026-09-30",
+      "addedAt": "2026-10-06",
+      "language": "ja",
+      "verificationNote": "9月30日付の公式本文を確認　再製品化・販売は計画、今回の回収量や成果は未発表"
+    },
+    {
+      "id": "20260915-tyvek-renewable-ci",
+      "kind": "news",
+      "category": "industry",
+      "title": "Tyvekの再生可能原料割当を産業用途へ拡大",
+      "dek": "DuPontが消費者・産業向けにマスバランス方式の材料を展開",
+      "summary": [
+        "DuPontは再生可能原料を割り当てたTyvekを消費者・産業用途向けに世界展開すると発表した",
+        "ISCC PLUS認証のバイオ循環原料をマスバランス方式で30〜100%割り当てる",
+        "タグ・ラベルや産業用包装などが対象で、従来品と同じ製品仕様としている"
+      ],
+      "why": "物理的な原料含有率とマスバランスの割当を分けて説明したい",
+      "source": "DuPont",
+      "url": "https://www.dupont.com/knowledge/dupont-launches-tyvek-with-renewable-attribution-for-consumer-industrial-applications.html",
+      "publishedAt": "2026-09-15",
+      "addedAt": "2026-10-06",
+      "language": "en",
+      "verificationNote": "9月15日付の公式発表本文を確認　割当率は各製品に実際に含まれるバイオ原料の比率を意味しない"
+    },
+    {
+      "id": "20261005-pilkul-triple-renewal",
+      "kind": "news",
+      "category": "food",
+      "title": "ピルクルの機能性表示商品を刷新　65ml×8本",
+      "dek": "日清ヨークが10月12日のリニューアルを発表",
+      "summary": [
+        "日清ヨークはピルクル エイジングライフ -トリプル-への刷新を発表した",
+        "65ml×8本の仕様で、全国の沖縄を除く地域に10月12日から展開予定",
+        "中高年の動作に関する機能を届出表示に加えたと説明している"
+      ],
+      "why": "内容の刷新に伴う表示確認と、旧新包材の切り替えを相談する題材になる",
+      "source": "日清ヨーク",
+      "url": "https://www.nissin.com/jp/company/news/13947/",
+      "publishedAt": "2026-10-05",
+      "addedAt": "2026-10-06",
+      "language": "ja",
+      "verificationNote": "10月5日付の公式本文を確認　機能は企業の届出表示の説明で、国による機能性・安全性評価や治療効果を意味しない"
+    },
+    {
+      "id": "20260929-myojo-duck-noodle",
+      "kind": "news",
+      "category": "food",
+      "title": "フォアグラ風味を香料で表現　明星の新油そば",
+      "dek": "満鶏軒監修のカップ麺を10月12日に発売予定",
+      "summary": [
+        "明星食品は満鶏軒監修のNEO油そばシリーズ第3弾を発表した",
+        "鴨油とたまごタレに柚子などを組み合わせ、フォアグラの風味は香料で表現する",
+        "フォアグラそのものは使わず、10月12日に全国発売予定としている"
+      ],
+      "why": "商品名や訴求と原材料の説明を一致させる表示確認の参考になる",
+      "source": "明星食品",
+      "url": "https://www.nissin.com/jp/company/news/13941/",
+      "publishedAt": "2026-09-29",
+      "addedAt": "2026-10-06",
+      "language": "ja",
+      "verificationNote": "9月29日付の公式本文を確認　発売予定と原材料の注意書きを区別して要約"
+    },
+    {
+      "id": "20260930-meiji-pear-yogurt",
+      "kind": "news",
+      "category": "food",
+      "title": "110gでデザート需要へ　明治の洋梨ヨーグルト",
+      "dek": "食べきり容量に秋の果実フレーバーを組み合わせる",
+      "summary": [
+        "明治はブルガリアヨーグルト あじわい芳醇の洋梨味を発表した",
+        "洋梨コンフィチュールと濃厚なヨーグルトを組み合わせ、110gで展開する",
+        "全国での発売日は10月6日、希望小売価格は税込176円"
+      ],
+      "why": "容量・食べる場面・季節フレーバーを一緒に聞く商談の材料になる",
+      "source": "明治",
+      "url": "https://www.meiji.co.jp/corporate/pressrelease/2026/09_15/index.html",
+      "publishedAt": "2026-09-30",
+      "addedAt": "2026-10-06",
+      "language": "ja",
+      "verificationNote": "9月30日付の公式本文を確認　10月6日は発売日、販売成果は確認していない"
+    },
+    {
+      "id": "20260928-meiji-caramel-ice",
+      "kind": "news",
+      "category": "food",
+      "title": "アイスもクッキーもキャラメル　200mlの新味",
+      "dek": "明治がスーパーカップの秋の新商品を展開",
+      "summary": [
+        "明治はスーパーカップ コク旨キャラメルを発表した",
+        "アイスにはキャラメルペースト、クッキーにはキャラメルパウダーを使用する",
+        "200mlのカップ商品を10月5日から全国発売、希望小売価格は税込194円"
+      ],
+      "why": "季節商品の切り替え時期と、カップ・蓋の調達予定を確認したい",
+      "source": "明治",
+      "url": "https://www.meiji.co.jp/corporate/pressrelease/2026/09_11/index.html",
+      "publishedAt": "2026-09-28",
+      "addedAt": "2026-10-06",
+      "language": "ja",
+      "verificationNote": "9月28日付の公式本文を確認　10月5日は発売日"
+    },
+    {
+      "id": "20261005-chatgpt-visual-ads",
+      "kind": "news",
+      "category": "ai",
+      "title": "ChatGPTの画像生成中に広告　米国で試験へ",
+      "dek": "OpenAIが画像を使う広告形式と測定機能の拡充を発表",
+      "summary": [
+        "OpenAIはChatGPT向けの新しいビジュアル広告形式を発表した",
+        "画像生成中に表示する形式を、10月後半から米国の一部広告主と試す予定",
+        "広告は生成画像と分けて明示し、既存システムからのコンバージョンデータ連携も拡充すると説明した"
+      ],
+      "why": "AIの利用場面そのものが、新しい商品発見や販促の場所になりつつある",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement/",
+      "publishedAt": "2026-10-05",
+      "addedAt": "2026-10-06",
+      "language": "en",
+      "verificationNote": "10月5日付の公式本文を確認　試験予定で、日本での提供や効果を確認したものではない"
+    },
+    {
+      "id": "20260929-gpt61-sol",
+      "kind": "news",
+      "category": "ai",
+      "title": "OpenAIがGPT-6.1 Sol　業務とコード作業を強化",
+      "dek": "価格と性能のバランスを訴求するモデル更新",
+      "summary": [
+        "OpenAIはGPT-6 Solの更新版GPT-6.1 Solを発表した",
+        "コード開発、コンピューター操作、業務作業での性能改善をうたう",
+        "一部評価ではAstraに近い性能を、標準入出力のトークン単価は5分の1で提供すると説明した"
+      ],
+      "why": "導入候補はベンチマークだけでなく、自分の業務の成功率と費用で比較したい",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "publishedAt": "2026-09-29",
+      "addedAt": "2026-10-06",
+      "language": "en",
+      "verificationNote": "公式本文と9月29日付の公式DevDay記録を確認　性能比較は提供企業の評価で、全作業で同等を意味しない"
+    },
+    {
+      "id": "20261002-gpt6-production-guide",
+      "kind": "news",
+      "category": "ai",
+      "title": "AI導入は、成功率と待ち時間まで測る",
+      "dek": "OpenAIがGPT-6向けの実運用ガイドを公開",
+      "summary": [
+        "OpenAIはモデル選定から本番運用までのガイドを公開した",
+        "能力・費用・応答時間を見ながら、作業に合うモデルや推論設定を選ぶ考え方を示す",
+        "指示や出力条件の整理、長い作業の管理、監視とデータ管理を導入時の論点に挙げた"
+      ],
+      "why": "営業資料づくりのAI化も、完成物の品質と実際の手戻りを測って判断したい",
+      "source": "OpenAI",
+      "url": "https://openai.com/index/practical-guide-building-gpt-6/",
+      "publishedAt": "2026-10-02",
+      "addedAt": "2026-10-06",
+      "language": "en",
+      "verificationNote": "10月2日付の公式本文を確認　提供企業の実装ガイドで、導入成果の保証ではない"
+    },
+    {
+      "id": "20261005-northeastern-ai-interpretability",
+      "kind": "news",
+      "category": "ai",
+      "title": "AIの内部から、誤りや欺きを見抜けるか",
+      "dek": "ノースイースタン大学が解釈可能性研究と国際連携を紹介",
+      "summary": [
+        "大学はDavid BauらによるAIの内部構造を調べる研究を紹介した",
+        "公開モデルの内部活動を観察し、欺きなどに関連するパターンを探すことを目指す",
+        "40人超の研究者が参加する国際コンソーシアムでモデル・手法・計算資源を共有する"
+      ],
+      "why": "もっともらしい回答を、そのまま見積もりや専門判断に使わないための研究として注目したい",
+      "source": "Northeastern University",
+      "url": "https://news.northeastern.edu/2026/10/05/ai-lie-detector-research/",
+      "publishedAt": "2026-10-05",
+      "addedAt": "2026-10-06",
+      "language": "en",
+      "verificationNote": "10月5日付の大学記事本文を確認　研究の紹介であり、汎用的な嘘検出器の完成や精度を報告したものではない"
+    },
+    {
+      "id": "20261005-uri-marine-snow",
+      "kind": "news",
+      "category": "science",
+      "title": "海の粒子の成分を、画像とAIで推定できるか",
+      "dek": "ロードアイランド大学が3年間の研究計画を発表",
+      "summary": [
+        "大学の研究チームは沈降する海洋粒子の成分を画像から推定するAIを開発する計画",
+        "NSFが約70万ドルを支援し、研究期間は2027年1月から2029年12月を予定する",
+        "画像と採取試料の化学情報を結び、炭素や微小プラスチックの移動の理解を目指す"
+      ],
+      "why": "見た目の画像と実測値を結び付ける手法は、製造業の画像検査を考える視点にもなる",
+      "source": "University of Rhode Island",
+      "url": "https://www.uri.edu/news/2026/10/reading-the-oceans-snowflakes-how-ai-decodes-marine-snow/",
+      "publishedAt": "2026-10-05",
+      "addedAt": "2026-10-06",
+      "language": "en",
+      "verificationNote": "10月5日付の大学発表本文を確認　助成と研究計画であり、画像だけで成分判定に成功したという結果ではない"
+    },
+    {
+      "id": "20261005-crew12-return-plan",
+      "kind": "news",
+      "category": "science",
+      "title": "Crew-12、10月7日以降のISS離脱を計画",
+      "dek": "NASAが帰還中継の日程を発表　天候などで変更の可能性",
+      "summary": [
+        "NASAとSpaceXはCrew-12のISS離脱を米東部時間10月7日8時5分以降に予定する",
+        "その日程で離脱した場合、4人は10月8日にカリフォルニア沖へ帰還する計画",
+        "宇宙船と回収チームの準備、太平洋の天候などが実施条件となる"
+      ],
+      "why": "宇宙開発の運用を、確定した実績と条件付きの予定に分けて追いたい",
+      "source": "NASA",
+      "url": "https://www.nasa.gov/news-release/nasa-to-stream-spacex-crew-12-return-splashdown-live/",
+      "publishedAt": "2026-10-05",
+      "addedAt": "2026-10-06",
+      "language": "en",
+      "verificationNote": "10月5日付の公式本文を確認　時刻は米東部時間、離脱と帰還は予定"
+    },
+    {
+      "id": "20260930-moon-5g-contract",
+      "kind": "news",
+      "category": "science",
+      "title": "月面の5G通信へ　NASAが開発契約",
+      "dek": "Wi-Fi 6を含む統合通信システムの要素技術を開発",
+      "summary": [
+        "NASAはModulate Spaceに月面向け5G通信システムの要素技術開発を発注した",
+        "Wi-Fi 6を組み込む構想で、ハードウェア・ファームウェア・ソフトウェアを開発する",
+        "実証を通じてシステム構成と運用性能を理解し、将来の月面通信へつなげる"
+      ],
+      "why": "地上の技術を別環境に展開するとき、実証で何を確認するかが参考になる",
+      "source": "NASA",
+      "url": "https://www.nasa.gov/news-release/nasa-awards-contract-to-develop-5g-communications-for-moon/",
+      "publishedAt": "2026-09-30",
+      "addedAt": "2026-10-06",
+      "language": "en",
+      "verificationNote": "9月30日付の公式本文を確認　開発契約であり、月面での通信網稼働を報告したものではない"
+    },
+    {
+      "id": "20260930-moon-prism-payloads",
+      "kind": "news",
+      "category": "science",
+      "title": "月の氷・地下空間・環境を調べる3件を選定",
+      "dek": "NASAが月面拠点づくりに向けた科学機器を採択",
+      "summary": [
+        "NASAはPRISM計画で3つの科学調査と機器群を選定した",
+        "月面の環境監視、地下の溶岩洞候補、低温域の氷を調べる計画",
+        "商業月面輸送CLPSを通じて運び、将来の資源利用や活動場所の判断材料を集める"
+      ],
+      "why": "設備投資の前に、現場条件とリスクを測定するという視点で読める",
+      "source": "NASA",
+      "url": "https://www.nasa.gov/news-release/nasa-adds-new-science-investigations-for-moon-base/",
+      "publishedAt": "2026-09-30",
+      "addedAt": "2026-10-06",
+      "language": "en",
+      "verificationNote": "9月30日付、10月2日訂正の公式本文を確認　採択と調査計画であり、氷や地下空間の今回の発見ではない"
+    },
+    {
+      "id": "20261002-mysuru-rameswaram-special",
+      "kind": "news",
+      "category": "travel",
+      "title": "南インドのマイスール―ラーメーシュワラムに臨時列車",
+      "dek": "10〜11月に週1回の往復を設定すると現地紙が報道",
+      "summary": [
+        "Financial Expressは両都市間の週1回の特別列車を報じた",
+        "マイスール発は10月5日から11月30日の月曜日に9便を設定する予定",
+        "復路は10月6日から12月1日の火曜日で、ベンガルールやマドゥライなどを通る"
+      ],
+      "why": "南インドを鉄道で巡る際の新しい候補路線として追える",
+      "source": "Financial Express",
+      "url": "https://www.financialexpress.com/business/railways-weekly-special-trains-to-kick-off-on-mysuru-rameswaram-route-dates-time-stoppages-4352061/",
+      "publishedAt": "2026-10-02",
+      "addedAt": "2026-10-06",
+      "language": "en",
+      "verificationNote": "10月2日付の報道本文を確認　鉄道当局の原文と当日の運行・空席は未確認、利用前に鉄道側で確認が必要"
+    },
+    {
+      "id": "20260930-hyderabad-danapur-special",
+      "kind": "news",
+      "category": "travel",
+      "title": "ハイデラバード―ダナプル、祭礼期の臨時列車を延長",
+      "dek": "インドの長距離鉄道に10〜11月の追加運行",
+      "summary": [
+        "Financial ExpressはSouth Central Railwayによる特別列車の延長を報じた",
+        "ハイデラバード発は10月3日から11月28日の土曜日に設定する予定",
+        "ダナプル発の復路は10月5日から11月30日の月曜日に設定するとしている"
+      ],
+      "why": "祭礼期は通常便と臨時便の両方を確認する視点になる",
+      "source": "Financial Express",
+      "url": "https://www.financialexpress.com/business/railways-hyderabaddanapur-route-adds-on-more-special-trains-to-tackle-festive-rush-4350273/",
+      "publishedAt": "2026-09-30",
+      "addedAt": "2026-10-06",
+      "language": "en",
+      "verificationNote": "9月30日付の報道本文を確認　当局の原文と当日の運行・空席は未確認、利用前に鉄道側で確認が必要"
     },
     {
       "id": "20261005-column-machine-utilization",
