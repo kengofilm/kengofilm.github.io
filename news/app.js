@@ -7,8 +7,7 @@ const categories = {
   ai: {name:'AI・未来',color:'#5964d8'},
   science: {name:'科学・宇宙',color:'#147698'},
   travel: {name:'旅・海外',color:'#168478'},
-  world: {name:'世界・経済',color:'#b94463'},
-  culture: {name:'教養・音楽',color:'#7a54b4'}
+  world: {name:'世界・経済',color:'#b94463'}
 };
 const $ = id => document.getElementById(id);
 const KEYS = {feed:'kengo-news-feed-v1',saved:'kengo-news-saved-v1',read:'kengo-news-read-v1'};
@@ -38,14 +37,14 @@ function openArticle(a){
   current=a;lastFocus=document.activeElement;read.add(a.id);if(read.size>500)read=new Set([...read].slice(-500));put(KEYS.read,[...read]);
   const column=isColumn(a),c=categories[a.category];$('detail-category').textContent=c.name;$('detail-category').style.setProperty('--c',c.color);
   const content=$('detail-content');content.replaceChildren();const title=node('h2','detail-title',a.title);title.id='detail-title';
-  content.append(title,node('p','detail-meta',`${a.source}${column?' オリジナルコラム':''} · ${a.publishedAt.replaceAll('-','/')} 公開${a.language==='en'?' · 英語記事':''}`),node('h3','summary-title',column?'このコラムのポイント':'3行でわかる'));
+  content.append(title,node('p','detail-meta',`${column?'営業コラム':a.source} · ${a.publishedAt.replaceAll('-','/')} 公開${a.language==='en'?' · 英語記事':''}`),node('h3','summary-title',column?'このコラムのポイント':'3行でわかる'));
   const list=node('ol','summary-list');a.summary.forEach(t=>list.append(node('li','',t)));content.append(list);
   if(column){
     const body=node('div','column-body');a.body.forEach(s=>{const section=node('section','column-section');section.append(node('h3','',s.heading),node('p','',s.text));body.append(section);});content.append(body);
     const prompts=node('section','meeting-prompts');prompts.append(node('h3','','次の商談で聞いてみる'));const questions=node('ul','');a.questions.forEach(q=>questions.append(node('li','',q)));prompts.append(questions);content.append(prompts);
   }
   const why=node('div','why');why.append(node('h3','','けんごに関係するポイント'),node('p','',a.why));content.append(why);
-  if(a.verificationNote)content.append(node('p','verification',a.verificationNote));
+  if(a.verificationNote)content.append(node('p','verification',column?a.verificationNote.replace(/^ルリのオリジナル営業コラム[\s　]*/,'営業コラム　'):a.verificationNote));
   const source=$('source-link');source.hidden=column;if(column)source.removeAttribute('href');else source.href=a.url;
   updateSaveButton();$('detail').showModal();$('detail').scrollTop=0;document.body.style.overflow='hidden';render();
 }
@@ -68,15 +67,15 @@ function render(){
   articles.forEach((a,i)=>{
     const c=categories[a.category],column=isColumn(a);const card=node('article',`story${column?' column-card':''}${i===0&&mode==='today'&&!q?' featured':''}`);card.style.setProperty('--c',c.color);
     const top=node('div','story-top');const label=node('span','tag',c.name);const save=node('button','bookmark');save.append(bookmarkIcon());save.setAttribute('aria-label',`${a.title}を${saved[a.id]?'保存から解除':'あとで読むに保存'}`);save.setAttribute('aria-pressed',String(!!saved[a.id]));save.addEventListener('click',()=>toggleSave(a));top.append(label,save);
-    const open=node('button','story-open');open.dataset.articleId=a.id;open.setAttribute('aria-label',`${a.title}の${column?'コラム':'要約'}を読む`);if(column)open.append(node('span','original-label','ルリのオリジナル'));open.append(node('h2','',a.title),node('p','deck',a.dek));open.addEventListener('click',()=>openArticle(a));
-    const foot=node('div','story-foot'),meta=node('div','story-meta');meta.append(node('span','',column?'ルリ · 営業コラム':a.source),node('time','date',dateString(a.publishedAt)+' 公開'));meta.lastChild.setAttribute('datetime',a.publishedAt);foot.append(meta);if(read.has(a.id))foot.append(node('span','read-mark','読んだ'));else foot.append(node('span','read-badge',column?'コラムを読む':'要約を読む'));
+    const open=node('button','story-open');open.dataset.articleId=a.id;open.setAttribute('aria-label',`${a.title}の${column?'コラム':'要約'}を読む`);open.append(node('h2','',a.title),node('p','deck',a.dek));open.addEventListener('click',()=>openArticle(a));
+    const foot=node('div','story-foot'),meta=node('div','story-meta');meta.append(node('span','',column?'営業コラム':a.source),node('time','date',dateString(a.publishedAt)+' 公開'));meta.lastChild.setAttribute('datetime',a.publishedAt);foot.append(meta);if(read.has(a.id))foot.append(node('span','read-mark','読んだ'));else foot.append(node('span','read-badge',column?'コラムを読む':'要約を読む'));
     card.append(top,open,foot);$('stories').append(card);
   });
 }
 function updateStatus(cached=false){if(!feed)return;$('edition').textContent=new Intl.DateTimeFormat('ja-JP',{timeZone:'Asia/Tokyo',year:'numeric',month:'long',day:'numeric',weekday:'short'}).format(new Date(feed.updatedAt));const columns=feed.articles.filter(isColumn).length;$('update-line').textContent=`最終更新 ${dateString(feed.updatedAt,true)} · ニュース${feed.articles.length-columns}本 · コラム${columns}本${cached?' · 保存済みの一覧を表示':''}`;const age=Date.now()-Date.parse(feed.updatedAt);if(age>48*60*60*1000){$('notice').textContent='記事一覧は2日以上前の更新だよ　元記事の公開日も確認してね';$('notice').hidden=false;}}
 async function load(manual=false){
   const button=$('refresh');if(button.disabled)return;button.disabled=true;button.classList.add('refreshing');$('notice').hidden=true;
-  const cached=stored(KEYS.feed,null);if(!feed&&validate(cached)){feed=cached;updateStatus(true);render();}
+  const cached=stored(KEYS.feed,null);if(cached?.schemaVersion===1&&Array.isArray(cached.articles))cached.articles=cached.articles.filter(a=>a?.category!=='culture');if(!feed&&validate(cached)){feed=cached;updateStatus(true);render();}
   try{const response=await fetch('./feed.json?t='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(15000)});if(!response.ok)throw new Error('HTTP '+response.status);const data=await response.json();if(!validate(data))throw new Error('Invalid feed');feed=data;put(KEYS.feed,data);updateStatus();render();if(manual)toast('最新の記事一覧を確認したよ');}
   catch{if(feed){updateStatus(true);$('notice').textContent='再読み込みできなかったよ　前回の記事一覧を表示している';}else{$('update-line').textContent='記事一覧を取得できなかったよ';$('notice').textContent='接続を確認して、右上の更新ボタンでもう一度試してね';render();}$('notice').hidden=false;}
   finally{button.disabled=false;button.classList.remove('refreshing');}

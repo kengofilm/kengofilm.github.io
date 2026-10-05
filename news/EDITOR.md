@@ -7,9 +7,9 @@ Update **only `news/feed.json`**. Fetch this guide and the existing feed first. 
 
 ## Reader and category order
 
-Topics: flexible packaging, films, printing, machinery and manufacturing sales; food manufacturers and new products; AI agents and future technology; science/space; overseas independent travel and railways; world economy/history/music. Skip celebrity gossip, sports and repetitive domestic political coverage.
+Topics: flexible packaging, films, printing, machinery and manufacturing sales; food manufacturers and new products; AI agents and future technology; science/space; overseas independent travel and railways; world economy. Skip celebrity gossip, sports and repetitive domestic political coverage.
 
-The UI order is `industry` (包装・製造業), `food` (食品メーカー), `sales` (営業コラム), `ai`, `science`, `travel`, `world`, `culture`, after おすすめ. Keep packaging near the top of the recommended feed as well. Food manufacturers are an independent category, including both verified news and clearly marked original columns.
+The UI order is `industry` (包装・製造業), `food` (食品メーカー), `sales` (営業コラム), `ai`, `science`, `travel`, `world`, after おすすめ. Exclude the former culture category and all general culture/music articles. Keep packaging near the top of the recommended feed as well. Food manufacturers are an independent category, including both verified news and clearly marked original columns.
 
 ## New additions and retention
 
@@ -21,11 +21,11 @@ Deduplicate both URLs and underlying stories against retained items. Do not add 
 
 ## Verified news
 
-Use Reuters, AP, NHK, ITmedia, Packaging Europe, scientific journals, university/NASA/JAXA announcements, food manufacturers, transport/travel authorities, and official music releases. Prefer primary sources for technical claims. Search and inspect current sources; do not reuse unverified assistant links. Use concise original Japanese headlines and three short factual paraphrases, not copied passages. Distinguish company claims, goals, tests, simulations and established results. A `why` is an editorial interpretation, not a source claim. Paywalls are allowed only when available material supports the summary; explicitly note access limits. Confirm publication dates. For a product or music release, explain if the date is the release date instead of a news publication date.
+Use Reuters, AP, NHK, ITmedia, Packaging Europe, scientific journals, university/NASA/JAXA announcements, food manufacturers, transport/travel authorities, and official releases. Prefer primary sources for technical claims. Search and inspect current sources; do not reuse unverified assistant links. Use concise original Japanese headlines and three short factual paraphrases, not copied passages. Distinguish company claims, goals, tests, simulations and established results. A `why` is an editorial interpretation, not a source claim. Paywalls are allowed only when available material supports the summary; explicitly note access limits. Confirm publication dates. For a product release, explain if the date is the release date instead of a news publication date.
 
-## Ruri's original sales columns
+## Sales columns
 
-Author/source: `ルリ`. Set `kind: "column"`; do not invent an external source or URL. Write original, useful Japanese text for a manufacturing/packaging salesperson, including concrete questions for the next meeting. At least one of the two daily columns should be `sales`; regularly add `food` columns about food-manufacturer sales. News and columns must remain visibly distinguishable.
+Set `kind: "column"` and `source: "営業コラム"`. Omit author branding; do not show ルリ, るりオリジナル, or similar labels. Do not invent an external source or URL. Write original, useful Japanese text for a manufacturing/packaging salesperson, including concrete questions for the next meeting. At least one of the two daily columns should be `sales`; regularly add `food` columns about food-manufacturer sales. News and columns must remain visibly distinguishable.
 
 Topics include machine-specific utilization (with the denominator defined), suitable materials/widths/lots, setup time, bottlenecks, margin versus processing time, pricing units, delivery planning, sample evaluation, buying decisions, complaints, next actions, food-product renewal, shelf life, frozen foods, small portions and OEM/PB coordination. Avoid repeating existing titles or the same advice with only a new headline. Vary the question, example and practical next action.
 
@@ -38,20 +38,19 @@ Root: `{ "schemaVersion": 1, "updatedAt": "actual ISO8601 with timezone", "artic
 All articles:
 - `id`: stable unique string
 - `kind`: `news` or `column`; absent means news for older entries
-- `category`: `industry`, `food`, `sales`, `ai`, `science`, `travel`, `world`, `culture`
+- `category`: `industry`, `food`, `sales`, `ai`, `science`, `travel`, `world`
 - `title`: concise original Japanese headline
 - `dek`: one Japanese sentence describing the point
 - `summary`: exactly three nonempty short Japanese strings
 - `why`: concise relevance to this reader, clearly an editorial interpretation
-- `source`: actual source organization for news, `ルリ` for original columns
+- `source`: actual source organization for news, `営業コラム` for columns
 - `publishedAt`, `addedAt`: valid `YYYY-MM-DD` dates
 - `language`: `ja` or `en`
-- `verificationNote`: verification/access limits for news; original-column label and hypothetical-example note for columns
+- `verificationNote`: verification/access limits for news; hypothetical-example note for columns, without author/original branding
 
 News also require a verified HTTPS `url`, with no invented link or tracking parameters.
 
 Columns additionally require:
-- `author`: `ルリ`
 - `body`: at least three sections (prefer four), each `{ "heading": "...", "text": "..." }`; write substantial useful text, not summary repetition
 - `questions`: three specific Japanese questions for the next meeting
 - No `url` is required; the app displays the complete original text internally
