@@ -1,35 +1,63 @@
 # Kengo News: daily editing guide
 
-Public web app: https://kengofilm.github.io/news/
+Public app: https://kengofilm.github.io/news/
 Repository: `kengofilm/kengofilm.github.io`, branch `main`.
-Update **only `news/feed.json`** using GitHub fetch_file, then update_file with the freshly retrieved blob SHA. The user has explicitly authorized publishing and daily updates, including browser fallback. Connector reads work, but connector writes returned HTTP 403; browser editing via the signed-in GitHub session was verified. If this persists, use cua_repl to open the repository, select news/feed.json, use the visible Edit file control, replace its full contents via the editor textbox, and commit directly to main. Check the resulting file using the GitHub read connector. Do not request the same permission again. If authentication or a real access block occurs, preserve the last edition and report the blocker. Never use raw browser fetch or inspect credentials. Do not modify the root game or any other files. GitHub Pages deploys the main branch.
 
-## Editorial brief
+Update **only `news/feed.json`**. Fetch this guide and the existing feed first. Use GitHub update_file with the freshly retrieved blob SHA. The user has explicitly authorized public publishing, daily updates, and signed-in GitHub browser fallback. Connector reads work; writes have returned HTTP 403. If this persists, use cua_repl to open `news/feed.json`, choose the visible Edit file control, replace the contents through the editor textbox, and commit directly to main. Verify the resulting file through the read connector. Do not ask for the same permission again. If a real authentication/access block occurs, preserve the previous edition and report it. Never use raw browser fetch or inspect credentials. Do not modify the root game or other files. GitHub Pages deploys main.
 
-For this reader: AI agents and future technology (about 30%), science/space (15%), flexible packaging, films, printing, machinery and manufacturing sales (25%), overseas independent travel, railways and cultural understanding (20%), world economy/history/music (10%). These are editorial targets, not strict quotas. Skip celebrity gossip, sports and repetitive domestic political coverage. Prioritize surprising developments, useful manufacturing/packaging stories, and things worth talking about.
+## Reader and category order
 
-Research 10–15 strong articles, primarily published in the last 72 hours. Broaden to 7 days if necessary, occasionally 30 days for particularly relevant specialist research. Do not include irrelevant stories just to reach a count. Use Reuters, AP, NHK, ITmedia, Packaging Europe, scientific journals, university/NASA/JAXA announcements, transport and travel authorities. Prefer primary sources for technical claims. Search and inspect the current source; never reuse unverified old assistant links. Deduplicate URLs and underlying stories. Paywalled links are allowed, but don't invent details behind the wall; describe verification limits. Date accurately; do not present an older discovery as new today. Japanese headlines and three short paraphrased summary sentences, no wholesale copying or full articles. Distinguish company claims, forecasts and scientific simulations from established results. `why` is an editorial interpretation of why the story matters to the reader.
+Topics: flexible packaging, films, printing, machinery and manufacturing sales; food manufacturers and new products; AI agents and future technology; science/space; overseas independent travel and railways; world economy/history/music. Skip celebrity gossip, sports and repetitive domestic political coverage.
+
+The UI order is `industry` (包装・製造業), `food` (食品メーカー), `sales` (営業コラム), `ai`, `science`, `travel`, `world`, `culture`, after おすすめ. Keep packaging near the top of the recommended feed as well. Food manufacturers are an independent category, including both verified news and clearly marked original columns.
+
+## New additions and retention
+
+Aim to **ADD 20–30 newly verified news items and 2 original columns** each run. Keep the existing articles; do not replace the list with only today's edition. Counts are targets, never reasons to pad with weak, duplicate or invented items. If fewer sound stories exist, add fewer and report the actual number. Ensure topic variety; do not fill most additions with one vendor's announcements.
+
+Prefer news from the past 72 hours, broaden to 7 days, and occasionally 30 days for relevant specialist developments. Retain news published within 30 days, up to 150 items. Retain original columns for up to 180 days, up to 60 items. Prune older/least relevant items when necessary; saved articles remain device-local snapshots. The total feed is therefore at most 210 items. Keep stable IDs, original `addedAt` dates, and existing column text unchanged unless correcting an error.
+
+Deduplicate both URLs and underlying stories against retained items. Do not add the same announcement again through a different publication. Mix categories in the recommended order, with a packaging story first when available and food/sales items within the first six. Surface new additions near the front while keeping recent earlier articles. Never label an older announcement as new today.
+
+## Verified news
+
+Use Reuters, AP, NHK, ITmedia, Packaging Europe, scientific journals, university/NASA/JAXA announcements, food manufacturers, transport/travel authorities, and official music releases. Prefer primary sources for technical claims. Search and inspect current sources; do not reuse unverified assistant links. Use concise original Japanese headlines and three short factual paraphrases, not copied passages. Distinguish company claims, goals, tests, simulations and established results. A `why` is an editorial interpretation, not a source claim. Paywalls are allowed only when available material supports the summary; explicitly note access limits. Confirm publication dates. For a product or music release, explain if the date is the release date instead of a news publication date.
+
+## Ruri's original sales columns
+
+Author/source: `ルリ`. Set `kind: "column"`; do not invent an external source or URL. Write original, useful Japanese text for a manufacturing/packaging salesperson, including concrete questions for the next meeting. At least one of the two daily columns should be `sales`; regularly add `food` columns about food-manufacturer sales. News and columns must remain visibly distinguishable.
+
+Topics include machine-specific utilization (with the denominator defined), suitable materials/widths/lots, setup time, bottlenecks, margin versus processing time, pricing units, delivery planning, sample evaluation, buying decisions, complaints, next actions, food-product renewal, shelf life, frozen foods, small portions and OEM/PB coordination. Avoid repeating existing titles or the same advice with only a new headline. Vary the question, example and practical next action.
+
+Do not invent actual factory data, customer stories or professional results. Explicitly label numerical examples as hypothetical. Use no private employer/customer/employee information. Do not promise food safety, shelf life, legal compliance, cost reduction or performance without appropriate evidence and evaluation. For quality/labeling/contract decisions, explain which responsible parties must confirm rather than giving unsupported specialist rulings. Friendly, practical Japanese without the Japanese full stop character is preferred.
 
 ## JSON schema
 
 Root: `{ "schemaVersion": 1, "updatedAt": "actual ISO8601 with timezone", "articles": [ ... ] }`
 
-Each article requires:
-- `id`: stable unique string, e.g. `20261006-short-slug`
-- `category`: `ai`, `science`, `industry`, `travel`, `world`, or `culture`
+All articles:
+- `id`: stable unique string
+- `kind`: `news` or `column`; absent means news for older entries
+- `category`: `industry`, `food`, `sales`, `ai`, `science`, `travel`, `world`, `culture`
 - `title`: concise original Japanese headline
-- `dek`: one Japanese sentence describing the news, about 40–90 characters
-- `summary`: exactly three short Japanese strings (factual paraphrases)
-- `why`: one concise Japanese sentence tying it to this reader; inference, not source fact
-- `source`: real publication/organization name
-- `url`: verified HTTPS article URL, no invented links or tracking query parameters
-- `publishedAt`: source publication date `YYYY-MM-DD`; omit articles with an unconfirmed publication date
-- `addedAt`: date first selected `YYYY-MM-DD`
+- `dek`: one Japanese sentence describing the point
+- `summary`: exactly three nonempty short Japanese strings
+- `why`: concise relevance to this reader, clearly an editorial interpretation
+- `source`: actual source organization for news, `ルリ` for original columns
+- `publishedAt`, `addedAt`: valid `YYYY-MM-DD` dates
 - `language`: `ja` or `en`
-- `verificationNote`: concise verification note, including access limits where relevant
+- `verificationNote`: verification/access limits for news; original-column label and hypothetical-example note for columns
 
-Order by relevance, mixing categories. Today's top story is first. Replace the article list with the new edition; browser bookmarks retain a snapshot independently. Check all required fields, 3 summary strings, allowed categories, real dates, HTTPS URLs, unique IDs and unique article URLs. Only change `updatedAt` after successful research and validation. On failed research, preserve the previous feed and timestamp. Never overwrite with an empty list.
+News also require a verified HTTPS `url`, with no invented link or tracking parameters.
 
-## Schedule and operations
+Columns additionally require:
+- `author`: `ルリ`
+- `body`: at least three sections (prefer four), each `{ "heading": "...", "text": "..." }`; write substantial useful text, not summary repetition
+- `questions`: three specific Japanese questions for the next meeting
+- No `url` is required; the app displays the complete original text internally
 
-The app is published through GitHub Pages. The ChatGPT scheduled task is the editor: it researches, summarizes and commits the JSON. No API key, paid model service, or GitHub Actions workflow is required. GitHub Pages can take a few minutes to publish a commit. The UI fetches the JSON on opening, refresh, or return after five minutes. It shows the last successful edition time and warns if the edition is older than 48 hours. A failure retains the prior feed. Saved articles and read status are device-local, with no account sync. This is a public app, personalized by subject selection; there is no private personal/employee data in the repo.
+Validate required fields, supported categories/kinds, three summary strings, real dates, unique IDs, unique news URLs, and column body/questions before committing. Set `updatedAt` to the actual successful editing time only. On research failure, preserve the previous feed and timestamp; never publish an empty feed. Re-fetch the current remote feed immediately before writing. If it changed, merge additions into the newer feed instead of overwriting them.
+
+## Operations
+
+The existing daily ChatGPT automation researches, writes columns and commits the feed. It does not provide minute-by-minute live streaming. GitHub Pages may need a few minutes to publish. The UI fetches the feed on opening, refresh, or return after five minutes, shows the last successful editing time, and warns after 48 hours. Failures retain the prior feed. Saved articles/read status are device-local. This is a public, topic-personalized app with no private business data.
