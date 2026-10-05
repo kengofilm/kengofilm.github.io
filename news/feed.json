@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-05T20:45:00+09:00",
+  "articles": [
+    {
+      "id": "20261005-agent-economy",
+      "category": "ai",
+      "title": "アプリを使う時代から、AIに任せる時代へ",
+      "dek": "AIエージェントが、個人の予定管理から企業の業務まで入り始めている",
+      "summary": [
+        "Axiosは、個人と企業がAIエージェント経由でデジタルサービスを使う変化を取り上げた",
+        "メールや予定などとの連携が進むほど、エージェントを提供する企業の存在感が強まる",
+        "企業には、AIが利用者の代わりに動くことを前提にした顧客対応が求められるという分析"
+      ],
+      "why": "けんごが気になっていた「数年後の生活の変化」を、ソフトの使い方から考えられる",
+      "source": "Axios",
+      "url": "https://www.axios.com/2026/10/05/ai-agents-consumers-business",
+      "publishedAt": "2026-10-05",
+      "verificationNote": "検索で取得した記事要旨に基づく要約　本文の直接取得はできていない　将来像は媒体の分析",
+      "addedAt": "2026-10-05",
+      "language": "en"
+    },
+    {
+      "id": "20261005-doordash",
+      "category": "ai",
+      "title": "ドローン配送は「機体」より先に包装を設計する",
+      "dek": "DoorDashが専用機体と包装、厨房から玄関までの受け渡しを一体で開発",
+      "summary": [
+        "DoorDashは、注文内容や重さ、距離のデータから空中配送システムを設計した",
+        "機体だけでなく、包装や積み込み、厨房と機体の受け渡しも開発対象にした",
+        "北カリフォルニアで試験配送を始める計画で、実際の店舗運営に組み込むことを目指す"
+      ],
+      "why": "未来技術と包装の仕事が直接つながる話　機械とフィルムをセットで考える営業にも通じる",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/doordash-develops-aircraft-packaging-and-infrastructure-for-drone-delivery/",
+      "publishedAt": "2026-10-05",
+      "verificationNote": "記事本文を確認　実装計画・性能説明は企業発表に基づく",
+      "addedAt": "2026-10-05",
+      "language": "en"
+    },
+    {
+      "id": "20260925-recycled-bopp",
+      "category": "industry",
+      "title": "食品用BOPPに再生PP20％、パイロットラインで実証",
+      "dek": "再生材を使ってもフィルムが切れずに延伸できるか　製膜側の壁を一つ越えた",
+      "summary": [
+        "NEXTLOOPP、Süper Film、Brücknerが、食品グレード再生PPを使ったBOPP製膜試験を実施した",
+        "再生材20％の条件で、試験中のフィルム切れがなく、機械・光学特性は求める技術基準を満たしたと報告",
+        "次の段階は実生産ラインの通常速度での検証で、商業量産が完了したという発表ではない"
+      ],
+      "why": "ラミ営業で「再生材入りの食品用フィルムはどこまで来たか」を話す材料になる",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/proving-a-commercially-credible-pathway-to-food-grade-recycled-content/",
+      "publishedAt": "2026-09-25",
+      "verificationNote": "記事本文を確認　試験結果の説明はプロジェクト関係者による",
+      "addedAt": "2026-10-05",
+      "language": "en"
+    },
+    {
+      "id": "20260916-blackhole",
+      "category": "science",
+      "title": "若い宇宙に巨大ブラックホール　誕生と成長を再現",
+      "dek": "JWSTの「大きすぎるブラックホール」と小さな赤い点をつなぐシミュレーション",
+      "summary": [
+        "Nature論文は、初期宇宙で巨大ブラックホールが生まれ、急成長する過程を計算で追った",
+        "太陽約100万個分の質量を持つ種が形成され、その後の成長でさらに大きくなるモデルを提示した",
+        "小さな赤い天体と巨大ブラックホールを同じ成長過程で説明するが、計算による仮説の検証は続く"
+      ],
+      "why": "最近話していたブラックホールの、落ちたらどうなるかより一段先の「どう生まれたか」の話",
+      "source": "Nature",
+      "url": "https://www.nature.com/articles/s41586-026-10985-8",
+      "publishedAt": "2026-09-16",
+      "verificationNote": "論文要旨を確認　観測による確定ではなくシミュレーション研究",
+      "addedAt": "2026-10-05",
+      "language": "en"
+    },
+    {
+      "id": "20261004-ai-risk",
+      "category": "ai",
+      "title": "AIの利益のため、どこまでリスクを受け入れるか",
+      "dek": "Altmanの発言から、AIの普及と安全性をめぐる対立を読む",
+      "summary": [
+        "Reutersは、Sam AltmanがAIの利益を理由に一定のリスク受容を支持したと報じた",
+        "発言では、AIを広く利用可能にすることと、一か所に管理を集中させないことが重視された",
+        "AI開発の速度と安全策をどう両立するかが、開発企業や規制側の争点になっている"
+      ],
+      "why": "シンギュラリティへの期待と、加速する社会が引き受けるリスクを一緒に考えられる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/openais-altman-says-ai-benefits-warrant-accepting-some-risks-2026-10-04/",
+      "publishedAt": "2026-10-04",
+      "verificationNote": "検索で取得した報道要旨を確認　本文の直接取得はできていない　発言の紹介であり安全性の断定ではない",
+      "addedAt": "2026-10-05",
+      "language": "en"
+    },
+    {
+      "id": "20261002-sig-machinery",
+      "category": "industry",
+      "title": "工場を広げず増産　SIGの新型充填機",
+      "dek": "面積あたりの能力と、15分未満のサイズ切り替えを売りにする設備提案",
+      "summary": [
+        "SIGは、無菌紙容器向けのSIG Neo充填機を拡充した",
+        "小容量用は毎時32,000個、大容量用は毎時15,000個の充填をうたう",
+        "部品交換なしで15分未満の容器切り替えが可能とし、増床を伴わない能力増強を狙っている"
+      ],
+      "why": "機械の販売で、価格だけでなく省スペース・増産・段取り短縮をどう価値にするか参考になる",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/sigs-new-aseptic-carton-filling-machines-target-high-output-and-flexibility/",
+      "publishedAt": "2026-10-02",
+      "verificationNote": "記事本文を確認　能力・切り替え時間はメーカー説明",
+      "addedAt": "2026-10-05",
+      "language": "en"
+    },
+    {
+      "id": "20260929-china-rail",
+      "category": "travel",
+      "title": "中国の高速鉄道、さらに1,142km延伸",
+      "dek": "総延長5万km超のネットワークに新路線　鉄道旅の選択肢が広がる",
+      "summary": [
+        "中国は大型連休前に、複数地域で合計1,142kmの高速鉄道を開業した",
+        "SCMPは、総延長が5万kmを超え、北東部や西部、中部にも新区間が加わると報じた",
+        "雄安と商丘を結ぶ路線などが全国ネットワークへの接続を進める"
+      ],
+      "why": "中国を列車で西へ進む旅の構想に関連する　個別の運行便や乗り継ぎは旅行時に確認したい",
+      "source": "South China Morning Post",
+      "url": "https://www.scmp.com/economy/article/3369067/china-expands-high-speed-rail-network-1142km-linking-xiongan",
+      "publishedAt": "2026-09-29",
+      "verificationNote": "公開された記事本文・冒頭を確認　元記事は閲覧制限がある場合あり",
+      "addedAt": "2026-10-05",
+      "language": "en"
+    },
+    {
+      "id": "20260910-structural-white",
+      "category": "science",
+      "title": "白色顔料もPFASも使わず、白く水をはじく材料",
+      "dek": "京大の研究が、微細な空洞構造で白さと撥水性を生み出す方法を提示",
+      "summary": [
+        "京大iCeMSの研究チームは、自然の泡や和紙に似た光散乱を利用する材料技術を発表した",
+        "光と溶媒処理で高分子に多孔構造を作り、二酸化チタン顔料なしで白さを生み出す",
+        "表面構造による撥水性も実現し、包装・印刷材料・繊維への応用を提案している"
+      ],
+      "why": "フィルムと印刷を扱う仕事に近い基礎研究　機能を添加剤から構造へ移す発想が面白い",
+      "source": "京都大学 iCeMS",
+      "url": "https://www.icems.kyoto-u.ac.jp/en/news/11675/",
+      "publishedAt": "2026-09-10",
+      "verificationNote": "大学の研究発表本文を確認　研究段階であり、包装の量産採用を意味しない",
+      "addedAt": "2026-10-05",
+      "language": "en"
+    },
+    {
+      "id": "20261001-ai-factories",
+      "category": "world",
+      "title": "AIへの投資が、世界の工場を動かしている",
+      "dek": "半導体や関連機器の需要が製造業を支える一方、地域差も残る",
+      "summary": [
+        "Reutersは、AI関連投資が世界の工場活動を押し上げていると報じた",
+        "アジアでは、半導体やAI関連製品への需要が製造業の追い風になっている",
+        "日本は製造業の成長が鈍化しており、世界の製造業を一枚岩では捉えられない"
+      ],
+      "why": "AIの発展を画面の中だけでなく、設備・素材・メーカーの受注につながる変化として読める",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-economy-asian-factory-activity-expands-thanks-global-ai-boom-2026-10-01/",
+      "publishedAt": "2026-10-01",
+      "verificationNote": "検索で取得した記事抜粋を確認　本文の直接取得はできていない",
+      "addedAt": "2026-10-05",
+      "language": "en"
+    },
+    {
+      "id": "20260909-mono-pp",
+      "category": "industry",
+      "title": "飲むヨーグルトのパウチ、本体も口栓もPPへ",
+      "dek": "SüdpackのモノPP容器　複合ラミネートからの転換を狙う",
+      "summary": [
+        "Südpackは、飲むヨーグルト市場向けにPP系スパウトパウチを発表した",
+        "本体と口栓の両方をPPにし、PPの機械リサイクル工程で処理できる設計だという",
+        "シール性や機械適性、保存期間を訴求しており、同社は95％超のリサイクル率を説明している"
+      ],
+      "why": "モノマテ化とシール・バリア・口栓の両立は、ラミネート提案でそのまま使える論点",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/sudpack-unveils-mono-pp-pouch-solution-for-yoghurt-drink-market-2/",
+      "publishedAt": "2026-09-09",
+      "verificationNote": "記事本文を確認　95％超はメーカー説明で、社会全体の実際の回収率を意味しない",
+      "addedAt": "2026-10-05",
+      "language": "en"
+    },
+    {
+      "id": "20260915-uzbekistan",
+      "category": "travel",
+      "title": "ウズベキスタンへの外国人訪問、21％増",
+      "dek": "鉄道と滞在先の整備で、シルクロード定番都市の先へ",
+      "summary": [
+        "2026年1〜8月の外国人による訪問は、前年同期比21.1％増の910万件と報じられた",
+        "Euronewsは、鉄道接続や宿泊施設、入国制度の変化を紹介している",
+        "訪問数には親族訪問やビジネスも含まれ、すべてが観光客という数字ではない"
+      ],
+      "why": "中央アジア旅の候補を、サマルカンドなどの定番だけでなく地方にも広げて考えられる",
+      "source": "Euronews",
+      "url": "https://www.euronews.com/2026/09/15/beyond-the-silk-road-visitors-stay-longer-spend-more-and-venture-further-across-uzbekistan",
+      "publishedAt": "2026-09-15",
+      "verificationNote": "記事本文を確認　統計の訪問目的区分に注意",
+      "addedAt": "2026-10-05",
+      "language": "en"
+    },
+    {
+      "id": "20261001-japan-pmi",
+      "category": "world",
+      "title": "日本の製造業、9月の成長は6か月ぶり低水準",
+      "dek": "生産と新規受注の伸びが減速　得意先の設備投資を考える背景に",
+      "summary": [
+        "Reutersは、9月の日本の製造業活動が拡大を続けながら、伸びは6か月ぶりの低水準になったと報じた",
+        "民間調査では、生産と新規受注の成長鈍化が示された",
+        "これは製造業全体の景況指標であり、個別の包装需要や企業の受注を直接示すものではない"
+      ],
+      "why": "得意先の増産や設備導入が進みやすいかを考える背景情報として読んでおける",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/japan-september-factory-growth-slows-6-month-low-pmi-shows-2026-10-01/",
+      "publishedAt": "2026-10-01",
+      "verificationNote": "検索で取得した報道抜粋を確認　本文の直接取得はできていない",
+      "addedAt": "2026-10-05",
+      "language": "en"
+    }
+  ]
+}
