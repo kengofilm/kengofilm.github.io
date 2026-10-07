@@ -1,7 +1,86 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T00:00:06.575Z",
+  "updatedAt": "2026-10-07T23:09:11.562Z",
   "articles": [
+    {
+      "id": "news-20261008-film-recycling-protocol",
+      "kind": "news",
+      "category": "industry",
+      "title": "フィルム再生評価を共通化　artienceとDICが国内手順",
+      "dek": "脱墨と剥離の試験条件、判定基準、報告様式をそろえ、材料間の比較をしやすくする",
+      "summary": [
+        "軟包装の脱墨と接着層剥離を対象に、国内向けの共通評価手順を策定",
+        "装置、試験条件、材料の扱いを定め、再現性の向上を狙う",
+        "10月14〜16日のTOKYO PACK 2026で両社が紹介する計画"
+      ],
+      "why": "再生しやすさを感覚ではなく、印刷やラミネート条件を含む共通データで話す入口になる",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/industry-first-common-protocol-for-evaluating-film-packaging-recyclability-in-japan/",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "Packaging Europe本文を確認　業界初という表現と期待効果はartience GroupとDICの発表に基づき、普及実績はまだ示されていない"
+    },
+    {
+      "id": "column-20261008-first-attendance",
+      "kind": "column",
+      "category": "sales",
+      "title": "初回立ち会いは、見る項目を三つに絞る",
+      "dek": "現場へ行く目的を事前に決め、見学を次の判断につなげる",
+      "summary": [
+        "立ち会い前に、観察項目と判定者を決める",
+        "気付いたことを事実、仮説、確認事項に分ける",
+        "終了時に次の試験と担当を合意する"
+      ],
+      "why": "現場で多くを見るより、次の判断に必要な情報を取り切る商談へ変えられる",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-08",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "一般的な製造営業の進め方を整理したコラム　仮の数字は例示で、特定企業や工場の実績は扱わない",
+      "body": [
+        {
+          "heading": "立ち会いの目的を一文にする",
+          "text": "見学、試作確認、原因調査では見る項目が違う　訪問前に今回決めたいことを一文で書き、顧客と工場の担当者へ共有する"
+        },
+        {
+          "heading": "三つに絞って記録する",
+          "text": "仮の例として供給位置、シール状態、排出後の姿勢の三つだけを重点項目にする　速度や温度などの数字は測定方法と一緒に記録し、見た印象だけを確定条件にしない"
+        },
+        {
+          "heading": "事実と仮説を分ける",
+          "text": "袋が傾いたは事実でも、材料が原因は仮説かもしれない　設備、材料、内容物、作業方法のどこを追加確認するかを技術と製造の担当者につなぐ"
+        },
+        {
+          "heading": "現場を出る前に次を決める",
+          "text": "合否を急いで決めず、追加データ、再試験、担当者、回答予定日をそろえる　品質や安全に関する判定は責任を持つ担当者が根拠を確認する"
+        }
+      ],
+      "questions": [
+        "今回の立ち会いで、最後に決めたいことは何ですか",
+        "測定値と現象を、誰がどの方法で記録しますか",
+        "未決の場合、追加試験の担当者と回答予定日はいつですか"
+      ]
+    },
+    {
+      "id": "news-20261008-kraft-heinz-innovation",
+      "kind": "news",
+      "category": "food",
+      "title": "Kraft Heinz、たんぱく質と食物繊維へ開発軸",
+      "dek": "研究開発と販促へ7億ドルを投じ、小容量カップや新カテゴリーを含む商品刷新を進める",
+      "summary": [
+        "2026年のマーケティングと研究開発費を前年より35％増やしたと説明",
+        "1000超のレシピで、たんぱく質や食物繊維を増やす改良を実施",
+        "高たんぱくMac & Cheeseの小容量カップやチーズ味ラーメンを展開"
+      ],
+      "why": "健康訴求の刷新は、容量構成や表示、包材SKUの増減を読む材料になる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/retail-consumer/kraft-heinz-backs-protein-fiber-trends-innovation-drive-gains-steam-2026-10-06/",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "Reuters本文を確認　投資額と改良件数は会社説明で、販売成果はまだ限定的"
+    },
     {
       "id": "news-20261007-tetrapak-ice-paper",
       "kind": "news",
@@ -20,6 +99,427 @@
       "addedAt": "2026-10-07T00:00:06.575Z",
       "language": "ja",
       "verificationNote": "Packaging Europe本文を確認　紙比率や薄肉化はTetra Pakの公表値で、残る材料にはポリマー、インキ、ラッカーが含まれる"
+    },
+    {
+      "id": "column-20261008-installation-stop",
+      "kind": "column",
+      "category": "industry",
+      "title": "設備更新は、本体価格より停止日数を聞く",
+      "dek": "機械の比較を購入額だけで終わらせず、工事と立ち上げの停止時間まで商談に入れる",
+      "summary": [
+        "搬入、据付、配線、試運転を停止計画へ分ける",
+        "旧設備の撤去と予備生産を同時に確認する",
+        "停止短縮の案は製造と保全の承認につなげる"
+      ],
+      "why": "設備営業が価格表から入り込めない、操業計画と切替リスクの相談を作れる",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-08",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "一般的な設備更新商談の論点を整理したコラム　仮の数字は例示で、工事、安全、契約条件は各担当者の確認を前提とする",
+      "body": [
+        {
+          "heading": "停止の範囲を分ける",
+          "text": "電源を落とす時間だけが停止ではない　製品を止める前の洗浄、旧機の撤去、搬入、据付、配線、調整、試運転、品質確認を工程ごとに分ける"
+        },
+        {
+          "heading": "仮の例で総時間を見る",
+          "text": "仮の例として据付が一日でも、撤去半日、配線半日、試運転一日なら生産影響は三日に広がることがある　実際の日数は現場条件と施工会社の計画で確認する"
+        },
+        {
+          "heading": "止める前に作れる量を聞く",
+          "text": "切替前に予備生産できるか、保管場所と期限は足りるか、別号機へ移せるかを聞く　品質や表示の判断を営業だけで決めず、製造と品質の担当者へつなぐ"
+        },
+        {
+          "heading": "責任の境界を図にする",
+          "text": "搬入経路、基礎、電源、排気、通信、既存設備との接続を誰が担当するかを一枚にする　安全条件、検収、追加工事、費用負担は保全、安全、調達、法務などの担当者が確認する"
+        }
+      ],
+      "questions": [
+        "生産を止める工程はどこからどこまでで、許容できる停止時間は何時間ですか",
+        "切替前の予備生産や別号機への振替は可能ですか",
+        "撤去、搬入、配線、試運転、検収をそれぞれ誰が担当しますか"
+      ]
+    },
+    {
+      "id": "news-20261007-morinaga-acai-two-pack",
+      "kind": "news",
+      "category": "food",
+      "title": "売れた単品を2個パックへ　森永乳業がアサイー商品拡張",
+      "dek": "4月発売品の出荷が計画を上回り、80g×2の小分け仕様を全国投入する",
+      "summary": [
+        "10月13日から全国で新発売する計画",
+        "既存品は発売約1か月で累計50万個を出荷したと公表",
+        "家族や友人とのシェアを想定した80gの2個パック"
+      ],
+      "why": "単品の反応を見て多個包装へ広げる流れは、包材需要の立ち上がりを読む材料になる",
+      "source": "森永乳業",
+      "url": "https://www.morinagamilk.co.jp/release/newsentry-4744.html",
+      "publishedAt": "2026-10-06",
+      "addedAt": "2026-10-07T00:00:06.575Z",
+      "language": "ja",
+      "verificationNote": "森永乳業の公式発表を確認　50万個は2026年4月6日から5月8日までの同社出荷実績"
+    },
+    {
+      "id": "news-20261008-acg-pp-blister",
+      "kind": "news",
+      "category": "industry",
+      "title": "PP主体で高バリアを狙う　ACGが医薬品ブリスター",
+      "dek": "PPとEVOHの多層成形材にPP蓋材を組み合わせ、リサイクル設計と保護性能の両立を掲げる",
+      "summary": [
+        "成形材はPP/EVOH/PP構成で、蓋材にもPPを使う設計",
+        "水蒸気と酸素の透過率についてACGが目標値を公表",
+        "既存の医薬品包装ラインでの成形とシールを想定"
+      ],
+      "why": "単一素材化の表示だけでなく、バリア値と実機成形性を同時に確認する必要が分かる",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/recyclable-high-barrier-polypropylene-pharma-blister-revealed-by-acg/",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "Packaging Europe本文を確認　バリア値、リサイクル性、ライン適性はACGの製品説明で、用途ごとの検証結果ではない"
+    },
+    {
+      "id": "news-20261008-borouge-recycling-capacity",
+      "kind": "news",
+      "category": "industry",
+      "title": "再生ポリオレフィン年1.4万トン増へ　Borougeが欧州投資",
+      "dek": "ドイツとオーストリアの機械再生設備を増強し、2027年に段階稼働する計画",
+      "summary": [
+        "ドイツ拠点は2027年1〜3月期に年約9000トン増を見込む",
+        "オーストリア拠点は2027年10〜12月期に再生PEを年最大5000トン増やす計画",
+        "柔軟包装を含む再生材需要と欧州規制への対応を狙う"
+      ],
+      "why": "再生材の調達提案では、総能力だけでなく樹脂別の稼働時期と供給地域を確認したい",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/investments-to-boost-borouges-mechanical-recycling-capacity-for-plastics/",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "Packaging Europe本文を確認　能力増と稼働時期はBorouge Internationalの計画値で、完成実績ではない"
+    },
+    {
+      "id": "news-20261008-mondi-kraft",
+      "kind": "news",
+      "category": "industry",
+      "title": "伸びと平滑性を一枚に　Mondiが包装用クラフト紙",
+      "dek": "耐突刺し性、印刷性、コーティング適性を両立させ、重い品や角のある品の製袋用途を狙う",
+      "summary": [
+        "3年間の開発で半伸長クラフト紙を設計したとMondiが説明",
+        "フォームフィルシールや乾燥食品、部品、建材などを想定",
+        "未晒し針葉樹のフレッシュファイバーを100％使うとしている"
+      ],
+      "why": "紙化提案でも、印刷とコートと製袋の各工程を同じ試験計画に入れる重要性が見える",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/sustainability-awards-finalist-interview-mondis-ad-vantage-kraft-paper/",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "Packaging EuropeのMondi担当者インタビューを確認　性能とリサイクル性は同社説明で、個別用途の実機結果ではない"
+    },
+    {
+      "id": "news-20261008-heycircle-closures",
+      "kind": "news",
+      "category": "industry",
+      "title": "戻す箱を速く閉じる　Hey Circleが2方式追加",
+      "dek": "再利用箱に事前装着ファスナーと被せ蓋を加え、梱包速度と用途の違いに対応する",
+      "summary": [
+        "ファスナーは通し直す作業を省き、封印も追加できる設計",
+        "被せ蓋は面ファスナーで固定し、店舗配送や構内物流を想定",
+        "新しい大型箱は最大15kgの荷物を対象にしている"
+      ],
+      "why": "再利用包装は耐久回数だけでなく、梱包と空箱返送の作業時間まで採用条件になる",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/reusable-shipping-boxes-now-offer-pre-zipped-zipper-or-slip-on-lid/",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "Packaging Europe本文を確認　最大50回の循環や置換効果はメーカー説明で、用途によって異なる"
+    },
+    {
+      "id": "news-20261008-pilgrims-europe-results",
+      "kind": "news",
+      "category": "food",
+      "title": "鶏肉が豚肉の逆風を補う　Pilgrim’s Europe決算",
+      "dek": "2025年度は鶏肉部門の成長で売上と営業利益を伸ばし、食品製造への継続投資を掲げる",
+      "summary": [
+        "売上は41.2億ポンド、営業利益は2億6770万ポンドと公表",
+        "営業利益率は6.5％で、前年の6.0％から上昇",
+        "豚肉は価格差や原料調達の影響を受けたが、鶏肉の伸びが補った"
+      ],
+      "why": "畜種ごとの需要と原料事情の違いは、工場投資や包材数量を一括りに見ないための材料になる",
+      "source": "Food Manufacture",
+      "url": "https://www.foodmanufacture.co.uk/Article/2026/10/07/poultry-growth-offset-pork-challenges-in-2025-for-pilgrims/",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "Food Manufacture本文を確認　数値はPilgrim’s Europeの2025年度発表で、記事公開日は2026年10月7日"
+    },
+    {
+      "id": "news-20261008-diageo-cameronbridge-strike",
+      "kind": "news",
+      "category": "food",
+      "title": "Diageo蒸留所でスト拡大　人員削減案を巡り対立",
+      "dek": "Cameronbridgeで組合が追加日程を示し、会社は最大10職の削減案と供給影響の見方を説明した",
+      "summary": [
+        "100人超の組合員による行動に10月12、15、19、22日を追加",
+        "組合は安全や生産への影響を懸念し、協議不足を主張",
+        "Diageoは供給への影響を見込まず、対話を続けるとしている"
+      ],
+      "why": "生産拠点の労務変動は、納期や在庫を断定せず確認する必要がある外部要因になる",
+      "source": "Food Manufacture",
+      "url": "https://www.foodmanufacture.co.uk/Article/2026/10/07/diageo-cameronbridge-strike-to-escalate-over-job-cut-threat/",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "Food Manufacture本文を確認　影響評価は組合と会社で異なり、今後の供給実績は未確定"
+    },
+    {
+      "id": "news-20261008-morrisons-sainsburys-talks",
+      "kind": "news",
+      "category": "food",
+      "title": "英小売2社の統合協議が判明　MorrisonsとSainsbury’s",
+      "dek": "過去の協議が報じられ、実現時の市場シェアや競争当局の審査が論点になっている",
+      "summary": [
+        "両社は2025年11月と2026年2月に協議したと報じられた",
+        "単純合算の市場シェアは23.6％との推計が紹介された",
+        "現在の合意や承認はなく、専門家の実現可能性の見方も分かれる"
+      ],
+      "why": "大口小売の再編観測は食品メーカーの商流に影響し得るが、未成立案件として扱う必要がある",
+      "source": "Food Manufacture",
+      "url": "https://www.foodmanufacture.co.uk/Article/2026/10/07/morrisons-held-merger-talks-with-sainsburys-as-us-owners-seek-exit/",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "Food Manufacture本文を確認　協議は報道ベースで、合併合意や当局承認が成立した事実ではない"
+    },
+    {
+      "id": "news-20261008-microsoft-local-ai-pc",
+      "kind": "news",
+      "category": "ai",
+      "title": "AI処理をPC側へ　Microsoftがローカル実行を強化",
+      "dek": "コード生成モデルとエージェント隔離技術をWindows端末へ載せ、クラウド依存を減らす構想",
+      "summary": [
+        "AIコードモデルを個人向けPC上で動かす仕組みを発表",
+        "エージェントのデータアクセスを制限する実行コンテナを披露",
+        "NvidiaのRTX Sparkを搭載するSurface Laptop Ultraも示した"
+      ],
+      "why": "現場AIでは性能だけでなく、データを端末内に置く範囲とアクセス権の設計が重要になる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/microsoft-nvidia-ceos-unveil-new-ai-laptop-san-francisco-event-2026-10-07/",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "Reuters本文を確認　製品機能と狙いは発表時点の説明で、導入効果や普及度は未確定"
+    },
+    {
+      "id": "news-20261008-samsung-q3-memory",
+      "kind": "news",
+      "category": "ai",
+      "title": "AIメモリー需要でSamsung利益急増　7〜9月期予想",
+      "dek": "HBMやDRAMの逼迫と価格上昇を背景に、営業利益は前年同期の約9倍になる見通し",
+      "summary": [
+        "7〜9月期の営業利益を107.4兆ウォンと見積もった",
+        "売上高は前年同期比127％増の195兆ウォンを予想",
+        "詳細な部門別実績は月内に公表する予定"
+      ],
+      "why": "AI設備投資は演算チップだけでなく、メモリー供給と価格にも波及している",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/samsung-q3-profit-jumps-783-ai-memory-boom-lifts-chip-earnings-2026-10-07/",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "Reutersの速報値を確認　数値はSamsungの暫定予想で、部門別確定値は未公表"
+    },
+    {
+      "id": "news-20261008-ai-biology-data",
+      "kind": "news",
+      "category": "ai",
+      "title": "創薬AIの壁は細胞データ　Biohubが大規模整備",
+      "dek": "言語ほど豊富な学習データがない生物分野で、細胞の反応を予測する基盤づくりが進む",
+      "summary": [
+        "Biohubは政府、Google、Metaなどと総額18億ドル規模の計画を進める",
+        "現在の数億細胞規模から、将来は数十億〜数兆のデータが必要との見方",
+        "自律研究所や仮想試験は進む一方、実用的な仮想細胞は研究段階"
+      ],
+      "why": "AIの成果はモデル名より、再現可能な現場データをどう集めるかで決まることを示す",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/ai-wants-cure-disease-it-needs-data-first-2026-10-07/",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "Reuters本文を確認　投資計画と研究者見解を扱い、AIが疾病を治療した実績を示す記事ではない"
+    },
+    {
+      "id": "news-20261008-us-ai-risk-poll",
+      "kind": "news",
+      "category": "ai",
+      "title": "米有権者、AIリスク対応に不満　Reuters/Ipsos調査",
+      "dek": "雇用、電力料金、安全保障への懸念が広がり、規制強化を求める回答が党派をまたいだ",
+      "summary": [
+        "登録有権者の57％が政権の対応は不十分と回答",
+        "議会の対応を不十分とした割合は54％",
+        "政府規制の強化を支持した人は民主党80％、共和党61％"
+      ],
+      "why": "AI導入の説明では便益だけでなく、雇用、電力、管理責任への不安も無視できない",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/most-us-voters-say-trump-congress-dont-take-ai-risks-seriously-reutersipsos-poll-2026-10-07/",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "Reuters/Ipsosが10月5日まで6日間に実施した調査を確認　全成人4506人、うち登録有権者3526人の回答"
+    },
+    {
+      "id": "news-20261008-singapore-ai-risk",
+      "kind": "news",
+      "category": "ai",
+      "title": "AI投資熱に安全と回収の警戒　シンガポール会合",
+      "dek": "自律システムや生物悪用への懸念と、巨額投資が利益へ結び付くかという疑問が同時に表面化した",
+      "summary": [
+        "政府関係者は自律エージェントを完全に制御できない可能性を指摘",
+        "バイオ分野では危険な病原体設計への悪用懸念が示された",
+        "投資家からは金利上昇下のAI資産評価と回収時期への警戒も出た"
+      ],
+      "why": "AI営業では能力だけでなく、停止権限と投資回収の前提を同じ資料で示す必要がある",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/existential-threats-join-bubble-fears-ai-mood-sobers-singapore-forums-2026-10-07/",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "Reutersがシンガポールの2会合での発言を報道　リスクは登壇者の見解で、発生済みの事実とは区別"
+    },
+    {
+      "id": "news-20261008-mit-sando",
+      "kind": "news",
+      "category": "science",
+      "title": "飛行中も安全経路を保証へ　MITのSANDO",
+      "dek": "未知環境を飛ぶロボットが計画を更新しながら、障害物との衝突を避ける手法を開発した",
+      "summary": [
+        "センサーで得た新情報に応じて安全な軌道を再計画",
+        "数理的な安全保証と探索効率を組み合わせる",
+        "災害現場など地図が不完全な環境での利用を想定"
+      ],
+      "why": "工場内ロボットでも、賢さだけでなく動作範囲を保証する設計思想が参考になる",
+      "source": "MIT News",
+      "url": "https://news.mit.edu/2026/planning-system-ensures-robots-flight-path-will-remain-collision-free-1007",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "MIT News本文と公開日を確認　研究手法の紹介で、災害現場への実運用実績ではない"
+    },
+    {
+      "id": "news-20261008-esa-mars-cloud",
+      "kind": "news",
+      "category": "science",
+      "title": "火星の長大雲、珍しい氷形成をモデルが示唆",
+      "dek": "Arsia Mons下流の雲を再現するには、塵を核にしない均質核生成が必要だった",
+      "summary": [
+        "水氷の雲は毎朝形成され、最大約1800kmまで伸びる",
+        "モデルでは空気が10分で約30度冷え、湿度が急上昇",
+        "均質核生成を入れると観測に近づいたが、一部の差は残る"
+      ],
+      "why": "観測と計算の一致度だけでなく、残る差と仮説の強さを分けて読む好例になる",
+      "source": "ESA",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Mars_s_oddest_cloud_may_be_even_odder_than_we_thought",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "ESA発表とNature Geoscience掲載情報を確認　均質核生成はモデルと観測からの強い示唆で、直接観測ではない"
+    },
+    {
+      "id": "news-20261008-hera-braking",
+      "kind": "news",
+      "category": "science",
+      "title": "小惑星到着へ長時間減速　ESAのHeraが準備",
+      "dek": "惑星防衛探査機が目標天体へ近づくため、打ち上げ後最大級の減速運用に入る",
+      "summary": [
+        "打ち上げから2年を経て、目標小惑星への接近段階へ移る",
+        "推進系を使う継続的な減速がミッションの重要局面",
+        "地上局と運用チームが機体状態を監視しながら進める"
+      ],
+      "why": "宇宙開発でも到着には速度管理が必要で、計画と実施済みを分けて追う記事",
+      "source": "ESA",
+      "url": "https://www.esa.int/Space_Safety/Hera/Brake%21_Time_for_ESA_s_Hera_asteroid_mission_to_go_slow",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "ESAの10月7日発表を確認　減速は準備中の運用で、目標天体への到着完了ではない"
+    },
+    {
+      "id": "news-20261008-themis-rehearsal",
+      "kind": "news",
+      "category": "science",
+      "title": "再使用ロケットThemis、2回目の極低温充填試験",
+      "dek": "液体窒素で機体と地上手順を確認し、着陸後の無人排出作業も一部試した",
+      "summary": [
+        "9月29日にスウェーデンのEsrangeで試験を実施",
+        "マイナス200度まで冷やした液体窒素で極低温条件を再現",
+        "着陸後に残留推進剤を遠隔回収するロボット手順も確認"
+      ],
+      "why": "再使用設備は飛行性能だけでなく、回収後の安全な段取りまで設計対象になる",
+      "source": "ESA",
+      "url": "https://www.esa.int/Enabling_Support/Space_Transportation/Future_space_transportation/Themis_completes_second_fuelling_rehearsal",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "ESA本文を確認　今回は非可燃の液体窒素による地上試験で、飛行や実燃料運用ではない"
+    },
+    {
+      "id": "news-20261008-crew12-undock",
+      "kind": "news",
+      "category": "science",
+      "title": "Crew-12がISSを離脱　10月8日着水へ",
+      "dek": "4人を乗せたDragonが10月7日に宇宙ステーションを離れ、カリフォルニア沖へ帰還する",
+      "summary": [
+        "米東部時間8時5分にHarmonyモジュールから離脱",
+        "NASA、ESA、Roscosmosの4人が搭乗",
+        "着水は10月8日11時34分ごろを予定"
+      ],
+      "why": "宇宙運用は発表時点で離脱済みだが、着水は予定として分けて掲載する",
+      "source": "NASA",
+      "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/07/dragon-undocks-from-station-to-bring-nasas-spacex-crew-12-home/",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "NASAの10月7日運用ブログを確認　離脱は実施済み、着水時刻は天候や運用で変わり得る予定"
+    },
+    {
+      "id": "news-20261008-imf-energy-debt-ai",
+      "kind": "news",
+      "category": "world",
+      "title": "高エネルギー・債務・AI投資を警戒　IMFトップ",
+      "dek": "供給制約とAI需要が物価と成長を異なる方向へ動かし、各国差を広げると指摘した",
+      "summary": [
+        "高いエネルギー価格が供給面の下押しになると説明",
+        "AI投資は需要を押し上げる一方、物価や市場評価のリスクも伴う",
+        "来週の年次総会で新しい世界経済見通しを公表する予定"
+      ],
+      "why": "原料、輸送、設備投資の価格を一つの景気判断だけで読む危うさが分かる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/imf-chief-warns-energy-shock-growing-debt-ai-risks-threaten-global-growth-2026-10-07/",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "Reuters本文でIMF専務理事の講演内容を確認　成長率の具体的な改定値はまだ公表前"
+    },
+    {
+      "id": "news-20261008-global-markets-oil",
+      "kind": "news",
+      "category": "world",
+      "title": "原油100ドル近辺で株安　ユーロも下落",
+      "dek": "エネルギー高、米金利見通し、フランス財政への懸念が重なり、世界株が反落した",
+      "summary": [
+        "STOXX 600は1％下落し、MSCI世界株指数も0.6％安",
+        "Brent原油は荒い値動きの後、100.20ドルで引けた",
+        "米国債入札への需要が強く、長期金利は低下"
+      ],
+      "why": "包装や食品の見積条件では、原料と燃料と金利の動きを別々に確認する必要がある",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-07/",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-07T23:08:57.424Z",
+      "language": "ja",
+      "verificationNote": "Reutersの10月7日市場記事を確認　価格は同日終値付近で、継続的に変動する"
     },
     {
       "id": "column-20261007-loss-review",
@@ -61,25 +561,6 @@
         "当社が一つだけ条件を変えられるなら、再検討につながる項目はありますか",
         "次回の更新や増産を検討する時期と、その前に確認したい評価項目は何ですか"
       ]
-    },
-    {
-      "id": "news-20261007-morinaga-acai-two-pack",
-      "kind": "news",
-      "category": "food",
-      "title": "売れた単品を2個パックへ　森永乳業がアサイー商品拡張",
-      "dek": "4月発売品の出荷が計画を上回り、80g×2の小分け仕様を全国投入する",
-      "summary": [
-        "10月13日から全国で新発売する計画",
-        "既存品は発売約1か月で累計50万個を出荷したと公表",
-        "家族や友人とのシェアを想定した80gの2個パック"
-      ],
-      "why": "単品の反応を見て多個包装へ広げる流れは、包材需要の立ち上がりを読む材料になる",
-      "source": "森永乳業",
-      "url": "https://www.morinagamilk.co.jp/release/newsentry-4744.html",
-      "publishedAt": "2026-10-06",
-      "addedAt": "2026-10-07T00:00:06.575Z",
-      "language": "ja",
-      "verificationNote": "森永乳業の公式発表を確認　50万個は2026年4月6日から5月8日までの同社出荷実績"
     },
     {
       "id": "20261005-hyakupa-paper-tube",
