@@ -1,7 +1,86 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T23:09:11.562Z",
+  "updatedAt": "2026-10-08T23:18:40.397Z",
   "articles": [
+    {
+      "id": "news-20261009-pulpex-fibre-bottle",
+      "kind": "news",
+      "category": "industry",
+      "title": "紙ボトルを年4000万本へ　Pulpexが初の商用工場",
+      "dek": "試作段階から量産へ移り、繊維ボトルの供給能力を立ち上げる",
+      "summary": [
+        "Pulpexがスコットランド近郊で初の商用製造施設を開設",
+        "初期能力は年間最大4000万本で、試験生産から量産へ移行",
+        "木材パルプ由来ボトルの商用供給を拡大する計画"
+      ],
+      "why": "紙化の商談で、材料評価だけでなく量産能力と供給時期を確認する材料になる",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/pulpex-opens-first-commercial-facility-for-paper-bottle-manufacturing/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "Packaging Europe本文を確認　年間能力はPulpexの公表値で、実際の稼働率や採用規模はまだ示されていない",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "column-20261009-no-go-criteria",
+      "kind": "column",
+      "category": "sales",
+      "title": "商談では、採用しない条件を先に聞く",
+      "dek": "良い条件だけでなく、止まる理由を早く共有して提案の無駄を減らす",
+      "summary": [
+        "採用条件と不採用条件を同じ表にする",
+        "誰が判断し、どの証拠を求めるかを聞く",
+        "外せない条件は技術と品質へ確認をつなぐ"
+      ],
+      "why": "案件が進んだ後の手戻りを減らし、顧客が本当に避けたいリスクから提案を組み立てられる",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-09",
+      "language": "ja",
+      "verificationNote": "一般的な製造営業の進め方を整理したコラム　品質、安全、契約の判断は担当者が根拠を確認する",
+      "body": [
+        {
+          "heading": "最初に止まる条件を聞く",
+          "text": "何ができれば採用かだけでは条件が増え続ける　何が起きたら候補から外れるかを聞くと、提案の優先順位が見える"
+        },
+        {
+          "heading": "条件を事実へ直す",
+          "text": "安定しない、使いにくいでは判定が揺れる　仮の例として連続三十分で停止が一回以内、切替が二十分以内など、測り方と判定者をセットにする"
+        },
+        {
+          "heading": "決める人と証拠をそろえる",
+          "text": "現場が良いと言っても、品質、調達、保全が別の基準を持つことがある　試験記録、見積条件、供給体制のどれを誰が確認するかを一覧にする"
+        },
+        {
+          "heading": "外せない条件は持ち帰る",
+          "text": "食品安全、法令、品質保証、契約条件を営業だけで判断しない　不明点は担当部門へつなぎ、確認中の項目と回答予定日を顧客へ共有する"
+        }
+      ],
+      "questions": [
+        "今回の提案が候補から外れるのは、どんな状態が起きた時ですか",
+        "その条件を誰が、どの記録や試験結果で判断しますか",
+        "営業だけで答えず、技術や品質へ確認すべき項目はどれですか"
+      ],
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-hanamaruki-miso-plant",
+      "kind": "news",
+      "category": "food",
+      "title": "ハナマルキ、無添加みそ工場を長野に竣工",
+      "dek": "84億円を投じ、工場全体の年産能力を2万8000トンへ広げる",
+      "summary": [
+        "長野市で無添加みそを年1万トン生産する新工場が竣工",
+        "既存1万8000トンと合わせ、全体で年2万8000トン体制",
+        "建物と生産設備を含む投資額は84億円"
+      ],
+      "why": "発酵食品の増産で、充填、包材、物流がどの時点から増えるかを読む材料になる",
+      "source": "ハナマルキ",
+      "url": "https://prtimes.jp/main/html/rd/p/000000065.000135535.html",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "会社発表で竣工日、能力、投資額を確認　能力は設備上の公表値で、販売実績とは異なる",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
     {
       "id": "news-20261008-film-recycling-protocol",
       "kind": "news",
@@ -20,6 +99,560 @@
       "addedAt": "2026-10-07T23:08:57.424Z",
       "language": "ja",
       "verificationNote": "Packaging Europe本文を確認　業界初という表現と期待効果はartience GroupとDICの発表に基づき、普及実績はまだ示されていない"
+    },
+    {
+      "id": "column-20261009-headspace-volume-change",
+      "kind": "column",
+      "category": "food",
+      "title": "内容量変更は、ヘッドスペースまで確認する",
+      "dek": "重量だけを変えず、充填後の空間とシール周辺の状態を試作で確かめる",
+      "summary": [
+        "内容量変更を容器寸法と充填条件へつなげる",
+        "ヘッドスペースとシール部の汚れを観察する",
+        "表示と品質の判断は各担当者へ確認する"
+      ],
+      "why": "小容量化や増量で起こる現場影響を、単価ではなく充填と包装の条件から提案できる",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-09",
+      "language": "ja",
+      "verificationNote": "一般的な食品メーカー向け商談の論点を整理したコラム　仮の数字は例示で、品質、食品安全、表示は担当者の確認を前提とする",
+      "body": [
+        {
+          "heading": "重量と空間を分けて見る",
+          "text": "同じ袋やカップで内容量だけを変えると、製品上部の空間も変わる　見た目だけでなく、充填時の跳ね、空気の残り、搬送中の動きを確認する"
+        },
+        {
+          "heading": "仮の例で試作条件を置く",
+          "text": "仮の例として百八十グラムから百五十グラムへ変える時、容器は同じ、容器も小さくする、充填速度を変えるの三条件を比べる　実際の設定は設備と製品特性で決める"
+        },
+        {
+          "heading": "シール周辺を観察する",
+          "text": "内容物がシール部へ付く頻度、液面の揺れ、排出後の姿勢を記録する　密封性や保存性の判断は品質担当者が試験方法と基準を確認する"
+        },
+        {
+          "heading": "表示と在庫を同時に確認する",
+          "text": "内容量変更ではフィルム、ラベル、ケース、商品コードも動く　表示内容、旧包材の扱い、切替日は商品企画、品質、物流、調達の担当者へつなぐ"
+        }
+      ],
+      "questions": [
+        "内容量を変えた時、容器寸法とヘッドスペースはどう変える予定ですか",
+        "充填時の跳ねやシール部への付着を、どの試作条件で確認しますか",
+        "旧包材の残数と表示切替を、誰がいつ確定しますか"
+      ],
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261007-tetrapak-ice-paper",
+      "kind": "news",
+      "category": "industry",
+      "title": "アイス包装を紙85％へ　Tetra Pakが欧州投入",
+      "dek": "紙主体でも高速包装を狙う新素材を、アイスメーカーと検証して段階展開する",
+      "summary": [
+        "紙比率は最大85％で、FSC認証林などの原料を使う設計",
+        "53gsmの紙を採用し、同社は一部の紙系代替品より最大50％薄いと説明",
+        "欧州のアイスメーカーと検証し、2026年10〜12月期から欧州で順次展開"
+      ],
+      "why": "紙化は包材だけでなく、巻取り適性やシール条件を含む設備評価の商談につながる",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/tetra-pak-launches-paper-based-ice-cream-wrapping-solution/",
+      "publishedAt": "2026-10-06",
+      "addedAt": "2026-10-07T00:00:06.575Z",
+      "language": "ja",
+      "verificationNote": "Packaging Europe本文を確認　紙比率や薄肉化はTetra Pakの公表値で、残る材料にはポリマー、インキ、ラッカーが含まれる"
+    },
+    {
+      "id": "news-20261009-sudpack-flexo",
+      "kind": "news",
+      "category": "industry",
+      "title": "Südpack、ポーランド拠点へ高性能フレキソ印刷機",
+      "dek": "食品・非食品向けの軟包装で、対応素材と生産柔軟性の拡大を狙う",
+      "summary": [
+        "Kłobuckのフレキソ印刷コンピテンスセンターへ新設備を投資",
+        "多様な軟包装材料を扱う設計で、食品用途にも対応",
+        "デジタル機能と作業者の人間工学改善を掲げる"
+      ],
+      "why": "印刷設備の更新が、色数だけでなく材料対応、段取り、作業性へ広がる例になる",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/sudpack-strengthens-flexographic-printing-capabilities/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "Packaging Europe本文を確認　柔軟性や効率向上はSüdpackの設計目標で、導入後の実績値は未公表",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-reuse-ecommerce-alliance",
+      "kind": "news",
+      "category": "industry",
+      "title": "欧州の再使用EC包装、事業者が共通基盤づくり",
+      "dek": "New ERAが業界主導で、国やサービスをまたぐ運用原則の整備を目指す",
+      "summary": [
+        "New European Reuse Allianceが共同イニシアチブを開始",
+        "再使用型EC包装に共通する原則と基盤の調和を狙う",
+        "事業者間で返却や循環をつなぐための取り組み"
+      ],
+      "why": "再使用包装は容器単体より、回収網と事業者間の標準化が商談の成否を左右する",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/operators-unite-to-harmonize-reusable-e-commerce-infrastructure-across-europe/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "Packaging Europeの見出し、公開日、公開リードを確認　本文取得に制限があり、要約は公開範囲に限定",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-tosca-recycled-pallet",
+      "kind": "news",
+      "category": "industry",
+      "title": "青果物流へ再生プラパレット　既存自動化に合わせる",
+      "dek": "ToscaとCabkaがユーロ寸法で設計し、通い箱と搬送設備への接続を狙う",
+      "summary": [
+        "1200×800ミリの再使用パレットを再生プラスチックで製造",
+        "既存のユーロ寸法搬送設備と再使用クレートに合わせた設計",
+        "RFID対応、修理、再使用、使用後の再資源化を想定"
+      ],
+      "why": "環境対応を設備総入れ替えにせず、既存搬送との互換性から提案する参考になる",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/recycled-plastic-pallet-to-slot-into-automated-fresh-produce-supply-chains/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "Packaging Europe本文を確認　規制対応や総保有コスト低減は企業側の狙いで、実運用の成果は未提示",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-novolex-innovation-centre",
+      "kind": "news",
+      "category": "industry",
+      "title": "Novolex、食品環境を再現する包装開発拠点",
+      "dek": "成形・シール・印刷を一か所に集め、顧客との試験を短く回す",
+      "summary": [
+        "米テキサス州に1万7500平方フィートの開発拠点を開設",
+        "食品の使用環境を模擬できる試験設備を用意",
+        "成形、シール、印刷を施設内で組み合わせる"
+      ],
+      "why": "包材提案をサンプル提出だけで終わらせず、実機条件に近い共同検証へ進める例になる",
+      "source": "IN Food",
+      "url": "https://in-food.co.uk/novolex-opens-texas-packaging-innovation-centre/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "IN Food本文を確認　施設規模と機能はNovolexの発表に基づく",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-alpla-nevada-plant",
+      "kind": "news",
+      "category": "industry",
+      "title": "ALPLA、ネバダ州にボトル新工場",
+      "dek": "米西部の供給網を広げ、国内外顧客向けのプラスチック容器を生産する",
+      "summary": [
+        "North Las Vegasに1万3000平方メートルの拠点を開設予定",
+        "Craig Road Logistics Center内でプラスチックボトルを製造",
+        "米西部での供給能力と顧客対応の強化を狙う"
+      ],
+      "why": "容器工場の立地は、輸送距離、在庫、納期の商談条件に直結する",
+      "source": "Food Infotech",
+      "url": "https://www.foodinfotech.com/alpla-to-open-new-packaging-plant-in-nevada/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "Food Infotech本文を確認　開設効果は会社計画で、稼働後の実績はまだない",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-acg-pp-blister",
+      "kind": "news",
+      "category": "industry",
+      "title": "医薬ブリスターをPP主体へ　ACGが高バリア品",
+      "dek": "PPとEVOHの多層構成で、水蒸気と酸素の遮断を両立させる設計",
+      "summary": [
+        "PP／EVOH／PP構成のRecycloPod PP Ultraを発表",
+        "水蒸気透過率0.60未満、酸素透過率0.20未満を公表",
+        "PP系蓋材との組み合わせと熱成形を想定"
+      ],
+      "why": "単一素材化に近づける提案でも、バリア値と成形条件を同時に確認する必要がある",
+      "source": "Express Pharma",
+      "url": "https://www.expresspharma.in/acg-launches-recyclopod-pp-ultra-polypropylene-blister-packaging-system/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "Express Pharma本文を確認　透過率はACGの公表値で、個別製剤への適合は品質担当者の評価が必要",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-itoham-mishima",
+      "kind": "news",
+      "category": "food",
+      "title": "伊藤ハム米久、三島工場を竣工　包装まで自動化",
+      "dek": "約300億円を投じ、年2万トンの生産と物流・品質データの高度化を進める",
+      "summary": [
+        "静岡県三島市の新工場が竣工し、2026年10月に生産開始",
+        "投資額は約300億円、生産能力は年約2万トン",
+        "原料搬送、包装、物流へ自動化設備とデータ活用を導入"
+      ],
+      "why": "食品工場の自動化が、加工機だけでなく包装と物流を一体で見る案件だと分かる",
+      "source": "伊藤ハム米久ホールディングス",
+      "url": "https://prtimes.jp/main/html/rd/p/000000767.000004867.html",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "会社発表で投資額、能力、生産開始時期を確認　生産性や品質安定化は計画上の効果",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-crab-stock-pro",
+      "kind": "news",
+      "category": "food",
+      "title": "盛田、業務用の濃縮かにだしを発売",
+      "dek": "料理人が濃度と味を調整できるプロ向け商品で、外食の仕込み需要を狙う",
+      "summary": [
+        "業務用の蟹だしつゆ Crab Stock PROを発売",
+        "かにの旨みと香りを基礎に、料理側で味を調整する濃縮設計",
+        "外食や中食でのメニュー展開を想定"
+      ],
+      "why": "業務用商品は容器容量、希釈作業、開封後運用まで聞くと包材提案が具体化する",
+      "source": "盛田",
+      "url": "https://prtimes.jp/main/html/rd/p/000000266.000143384.html",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "会社発表で発売日と商品用途を確認　味や使用感の評価は会社説明に基づく",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-marstons-closure-plan",
+      "kind": "news",
+      "category": "food",
+      "title": "英Marston's醸造所、2027年夏の閉鎖を提案",
+      "dek": "樽詰めエール需要の低下を受け、物流拠点を含む再編を検討する",
+      "summary": [
+        "Carlsberg BritvicがBurton-upon-Trent拠点の閉鎖案を発表",
+        "醸造所と主要物流機能を2027年夏に閉じる計画",
+        "樽詰めエール数量の減少を背景として示した"
+      ],
+      "why": "需要構造の変化が、製造設備だけでなく容器形態と物流拠点まで動かす例になる",
+      "source": "Food Manufacture",
+      "url": "https://www.foodmanufacture.co.uk/Article/2026/10/08/carlsberg-britvic-to-close-marstons-burton-upon-trent-brewery/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "Food Manufacture本文を確認　閉鎖は提案段階で、確定済みの実績として扱っていない",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-napolina-campaign",
+      "kind": "news",
+      "category": "food",
+      "title": "Napolina、需要増を受け販促へ6桁ポンド投資",
+      "dek": "屋外広告とYouTubeを組み合わせ、常温イタリア食品ブランドの成長を狙う",
+      "summary": [
+        "PrincesがNapolinaの全国販促キャンペーンを発表",
+        "投資額は6桁ポンドで、屋外広告とYouTubeを活用",
+        "ブランド価値売上が過去2年で13.7％増えたと説明"
+      ],
+      "why": "販売投資の拡大は、SKU別の生産計画や販促用包材の発注時期を探る材料になる",
+      "source": "Food Manufacture",
+      "url": "https://www.foodmanufacture.co.uk/Article/2026/10/08/princes-invests-six-figure-sum-into-napolina-marketing-campaign/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "Food Manufacture本文を確認　成長率は企業側が示したブランド実績",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-watami-food-loop",
+      "kind": "news",
+      "category": "food",
+      "title": "ワタミ、食品残さのリサイクルループ認定",
+      "dek": "食品循環資源を配合飼料へ回し、事業内の循環利用を進める",
+      "summary": [
+        "再生利用事業計画の認定取得を会社が発表",
+        "店舗などから出る食品循環資源を飼料化する仕組み",
+        "廃棄物処理と調達をつなぐ循環モデルを進める"
+      ],
+      "why": "食品残さは廃棄量だけでなく、分別容器、回収頻度、保管条件の提案機会になる",
+      "source": "ワタミ",
+      "url": "https://prtimes.jp/main/html/rd/p/000001921.000009215.html",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "会社発表で認定取得と計画の概要を確認　削減効果の実績値はまだ示されていない",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-asml-hyper-na",
+      "kind": "news",
+      "category": "ai",
+      "title": "次世代露光技術Hyper NA、実用準備は約10年先",
+      "dek": "ASMLとZeissが5ナノメートル級パターンを示し、次の微細化候補を検証する",
+      "summary": [
+        "両社研究者がHyper NA光学系の概念を査読論文で提示",
+        "数値開口を高め、約5ナノメートルの特徴形成を想定",
+        "既存光源の再利用も視野に、開発へ約10年を見込む"
+      ],
+      "why": "研究成果と量産導入の間に長い時間があることを、設備投資の見通しで区別できる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/asml-zeiss-say-next-generation-chipmaking-technology-may-be-ready-10-years-2026-10-08/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "Reuters本文を確認　技術は研究・開発段階で、量産採用や顧客の購入決定は示されていない",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-us-ai-taskforce",
+      "kind": "news",
+      "category": "ai",
+      "title": "米AIタスクフォース、産業別の課題整理へ",
+      "dek": "銀行、医療、公益などの代表を集め、政策提言の土台づくりを始める",
+      "summary": [
+        "産業横断のAIタスクフォース幹部が10月8日に初会合",
+        "全体委員会は翌週に開き、憲章をまとめる計画",
+        "銀行、医療、公益などの業界を対象にする"
+      ],
+      "why": "AI導入は一括論ではなく、業界ごとのデータ、責任、運用条件で分かれると分かる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/trump-ai-task-force-leaders-meet-thursday-vice-chair-says-2026-10-08/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "Reuters本文を確認　会合と組織設計は予定段階で、政策成果はまだない",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-tsmc-q3-revenue",
+      "kind": "news",
+      "category": "ai",
+      "title": "TSMC、7〜9月売上が過去最高",
+      "dek": "AI需要を背景に前年同期比50％増となり、市場予想も上回った",
+      "summary": [
+        "7〜9月売上は1兆4900億台湾ドル",
+        "前年同期比50％増で、LSEG集計の予想を上回った",
+        "9月単月売上も前年同月比54.6％増"
+      ],
+      "why": "AI需要が設備・材料の発注へ波及しているかを実績数字で確認できる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/tsmcs-third-quarter-revenue-surges-50-yy-beating-market-forecast-2026-10-08/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "Reuters本文と会社売上発表を確認　利益見通しはアナリスト予想で、確定値ではない",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-globalfoundries-tsmc",
+      "kind": "news",
+      "category": "ai",
+      "title": "GlobalFoundries、TSMC向け接続部品を米国生産",
+      "dek": "AIプロセッサとメモリーをつなぐ部品で、20億ドル規模の契約を結ぶ",
+      "summary": [
+        "TSMC向けの重要部品をニューヨーク工場で製造",
+        "AIプロセッサとメモリー間の接続に使う",
+        "契約規模は20億ドルとGlobalFoundriesが発表"
+      ],
+      "why": "先端半導体でも、前工程以外の接続部品と地域分散が供給網の要点になる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/globalfoundries-make-key-ai-chip-component-tsmc-2026-10-08/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "Reuters本文を確認　契約額と用途は会社発表に基づき、量産開始後の供給実績は未確認",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-firmus-ipo-shelved",
+      "kind": "news",
+      "category": "ai",
+      "title": "AIデータセンターFirmus、50億ドルIPOを撤回",
+      "dek": "市場環境と需要を理由に公開調達を見送り、民間資金へ切り替える",
+      "summary": [
+        "豪Firmusが50億ドル規模の新規上場計画を棚上げ",
+        "当初は1株11豪ドル、時価総額306億豪ドルを想定",
+        "今後は私募と別の資金調達手段を検討"
+      ],
+      "why": "AI投資の拡大局面でも、建設計画と資金調達は同じ確度ではないと分かる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/australian-nvidia-backed-ai-data-centre-operator-firmus-shelves-ipo-2026-10-08/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "Reuters本文を確認　稼働中はメルボルンとシンガポールの2拠点で、追加5拠点は初期計画段階",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-nasa-science-initiatives",
+      "kind": "news",
+      "category": "science",
+      "title": "NASA、査読改革と研究者育成の2施策",
+      "dek": "匿名査読の拡大と、AI・科学の複合人材10人のフェロー制度を始める",
+      "summary": [
+        "Science Mission Directorate内にメタサイエンス施策を設置",
+        "二重匿名査読を広げ、提案内容そのものの評価を重視",
+        "Genesis Mission Fellowsを10人支援する計画"
+      ],
+      "why": "技術開発だけでなく、研究の選び方と人材育成が成果の土台になる",
+      "source": "NASA",
+      "url": "https://www.nasa.gov/news-release/nasa-announces-bold-science-initiatives-for-americas-golden-age-summit/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "NASA公式発表を確認　施策開始の発表で、研究成果はこれから",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-nasa-doe-nuclear",
+      "kind": "news",
+      "category": "science",
+      "title": "NASAと米エネルギー省、宇宙原子力で連携強化",
+      "dek": "研究、燃料、試験、打ち上げ統合、運用までを一つの枠組みにする",
+      "summary": [
+        "宇宙原子力電源と推進の覚書を10月8日に締結",
+        "先端研究から燃料生産、試験、打ち上げ統合まで連携",
+        "覚書は11月1日に発効する"
+      ],
+      "why": "長距離探査の計画では、推進機器だけでなく燃料と試験体制まで見る必要がある",
+      "source": "NASA",
+      "url": "https://www.nasa.gov/news-release/nasa-energy-department-advance-new-era-of-nuclear-powered-exploration/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "NASA公式発表を確認　覚書は協力枠組みで、特定機の完成や打ち上げを意味しない",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-solar-switchback",
+      "kind": "news",
+      "category": "science",
+      "title": "太陽風の磁場折れ曲がり、発生源を太陽表面まで追跡",
+      "dek": "Solar Orbiterが粒子組成を測り、磁力線のつなぎ替えと乱流の役割を示した",
+      "summary": [
+        "S字型の磁場構造スイッチバック内を探査機が通過",
+        "酸素と炭素の荷電粒子から、太陽表面の熱い磁気ループを特定",
+        "形成は磁力線再結合、伝播は波と乱流が関わると解析"
+      ],
+      "why": "宇宙天気の原因を、遠隔画像と現場粒子測定を組み合わせて追う研究例になる",
+      "source": "ESA",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Solar_Orbiter/Solar_Orbiter_tracks_origin_of_mysterious_magnetic_switchbacks",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "ESA公式説明とNature Astronomy掲載情報を確認　単一事例の詳細解析で、全スイッチバックの起源を一つに限定していない",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-fastnav-moon-rover",
+      "kind": "news",
+      "category": "science",
+      "title": "月面ローバーを秒速1メートルへ　FASTNAV実地試験",
+      "dek": "火山砂漠を11日間走らせ、自律走行で従来より広い範囲の探査を狙う",
+      "summary": [
+        "スペイン・フエルテベントゥラ島で誘導制御系を試験",
+        "溶岩岩塊や砂丘を自律走行する能力を検証",
+        "目標速度は秒速1メートルで、従来例の約10倍"
+      ],
+      "why": "高速化の価値が、移動時間だけでなく低温・影の領域を抜ける運用余地にある",
+      "source": "ESA",
+      "url": "https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Shaping_the_Future/Moon_Rovers_in_the_Fast_Lane",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "ESA公式発表を確認　地上実証の終了で、月面での達成実績ではない",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-webb-ngc7129",
+      "kind": "news",
+      "category": "science",
+      "title": "Webb、星形成領域NGC 7129の噴流を可視化",
+      "dek": "赤外線で塵の奥の若い星を捉え、星が周囲のガスを削り圧縮する姿を示す",
+      "summary": [
+        "地球から3300光年の星形成領域を赤外線観測",
+        "中心星LkHα 234は太陽の約5〜8倍の質量",
+        "噴流が作った空洞は約3.5光年に広がる"
+      ],
+      "why": "一枚の画像から、星の成長段階と周囲への作用を読み解く材料になる",
+      "source": "ESA",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Webb_captures_commotion_from_nebula_s_stellar_jets",
+      "publishedAt": "2026-10-06",
+      "language": "ja",
+      "verificationNote": "ESA公式解説を確認　赤外線画像の科学説明で、距離や質量は掲載値",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-crew12-splashdown",
+      "kind": "news",
+      "category": "science",
+      "title": "Crew-12、237日間のISS任務を終え帰還",
+      "dek": "3792周回と多数の実験を終え、4人がカリフォルニア沖へ着水した",
+      "summary": [
+        "Crew-12の4人が10月8日に地球へ帰還",
+        "237日間で1億マイル超を移動し、地球を3792周以上",
+        "幹細胞生産、点滴液生成、感染と心臓影響などを研究"
+      ],
+      "why": "有人宇宙飛行を滞在日数だけでなく、実験テーマと運用実績で見られる",
+      "source": "NASA",
+      "url": "https://www.nasa.gov/news-release/nasas-spacex-crew-12-splashes-down-sets-briefing-to-discuss-mission/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "NASA公式発表を確認　実験項目はミッション実施内容で、臨床応用の確立を意味しない",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-el-nino-wmo",
+      "kind": "news",
+      "category": "world",
+      "title": "エルニーニョ、2027年2月まで継続ほぼ確実",
+      "dek": "WMOが強度の上昇を予測し、降雨と気温への広域影響を警戒する",
+      "summary": [
+        "2027年2月まで続く確率はほぼ100％とWMOが発表",
+        "10〜12月の海面水温偏差は最大3.7度を予測",
+        "1950年以降でも最強級になる可能性を示した"
+      ],
+      "why": "食品原料や物流の商談で、天候リスクを調達条件と在庫に早めに織り込む材料になる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/environment/un-weather-body-says-el-nio-set-intensify-last-until-february-2027-2026-10-08/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "Reuters本文とWMO発表内容を確認　強度と影響は予測で、地域ごとの被害確定ではない",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-riyadh-flight-suspensions",
+      "kind": "news",
+      "category": "travel",
+      "title": "Lufthansaなど、リヤド便を一時停止",
+      "dek": "空港攻撃を巡る安全懸念で、欧州とインドの航空会社が運航を見直す",
+      "summary": [
+        "Lufthansa Groupとインドの3社がリヤド便停止を発表",
+        "フーシ派がサウジ首都の空港攻撃を主張した後の措置",
+        "運航再開は安全状況と各社判断に左右される"
+      ],
+      "why": "海外出張は航空券価格だけでなく、経由地と代替便を含む行程の余裕が必要になる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/middle-east/lufthansa-air-india-suspend-flights-riyadh-after-houthi-attacks-2026-10-08/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "Reuters本文を確認　停止対象と期間は変更される可能性があり、利用時は各社の最新運航情報確認が必要",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-protected-ecosystems-concessions",
+      "kind": "news",
+      "category": "world",
+      "title": "保護地域へ資源開発区画が重複　調査が警鐘",
+      "dek": "石油・ガスと鉱業の権益が広範囲で重なり、2030年保全目標との差を示す",
+      "summary": [
+        "石油・ガス区画が保護地域6100万ヘクタール超と重複",
+        "鉱業権益も4270万ヘクタールと重なると推計",
+        "現在の公約では2030年の保全率は約23％にとどまる見通し"
+      ],
+      "why": "素材調達の環境リスクを、認証の有無だけでなく採掘地域の重複まで見るきっかけになる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/encroaching-energy-mine-concessions-threaten-protected-ecosystems-research-shows-2026-10-08/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "Reuters本文でEarth Insightの研究結果を確認　面積は研究側の地理データ解析による推計",
+      "addedAt": "2026-10-08T23:18:40.397Z"
+    },
+    {
+      "id": "news-20261009-rubber-deforestation",
+      "kind": "news",
+      "category": "industry",
+      "title": "天然ゴム供給網、森林破壊の追跡が課題",
+      "dek": "衛星と地球観測で生産地をたどり、タイヤ各社の確認範囲を広げる",
+      "summary": [
+        "観測データで1993年以降約400万ヘクタールの熱帯林減少とゴムを関連付け",
+        "一部企業は供給網の森林破壊なしを検証する取り組み",
+        "小規模農家まで遡る追跡性が業界課題"
+      ],
+      "why": "原材料の環境説明では、一次供給者だけでなく農園までの追跡範囲を聞く必要がある",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/sustainability/land-use-biodiversity/sticky-situation-tyre-industry-struggles-clean-up-its-rubber-supply-chain--ecmii-2026-10-08/",
+      "publishedAt": "2026-10-08",
+      "language": "ja",
+      "verificationNote": "Reuters本文を確認　森林減少面積は研究推計で、個社すべての供給実態を示す数字ではない",
+      "addedAt": "2026-10-08T23:18:40.397Z"
     },
     {
       "id": "column-20261008-first-attendance",
@@ -80,25 +713,6 @@
       "addedAt": "2026-10-07T23:08:57.424Z",
       "language": "ja",
       "verificationNote": "Reuters本文を確認　投資額と改良件数は会社説明で、販売成果はまだ限定的"
-    },
-    {
-      "id": "news-20261007-tetrapak-ice-paper",
-      "kind": "news",
-      "category": "industry",
-      "title": "アイス包装を紙85％へ　Tetra Pakが欧州投入",
-      "dek": "紙主体でも高速包装を狙う新素材を、アイスメーカーと検証して段階展開する",
-      "summary": [
-        "紙比率は最大85％で、FSC認証林などの原料を使う設計",
-        "53gsmの紙を採用し、同社は一部の紙系代替品より最大50％薄いと説明",
-        "欧州のアイスメーカーと検証し、2026年10〜12月期から欧州で順次展開"
-      ],
-      "why": "紙化は包材だけでなく、巻取り適性やシール条件を含む設備評価の商談につながる",
-      "source": "Packaging Europe",
-      "url": "https://www.packagingeurope.com/tetra-pak-launches-paper-based-ice-cream-wrapping-solution/",
-      "publishedAt": "2026-10-06",
-      "addedAt": "2026-10-07T00:00:06.575Z",
-      "language": "ja",
-      "verificationNote": "Packaging Europe本文を確認　紙比率や薄肉化はTetra Pakの公表値で、残る材料にはポリマー、インキ、ラッカーが含まれる"
     },
     {
       "id": "column-20261008-installation-stop",
