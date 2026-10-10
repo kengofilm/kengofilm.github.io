@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-09T23:41:39.008Z",
+  "updatedAt": "2026-10-10T23:44:34.000Z",
   "articles": [
     {
       "id": "news-20261010-kneipp-sonoco-greencan",
@@ -20,6 +20,525 @@
       "language": "ja",
       "verificationNote": "Packaging Europe本文を確認　限定品での試行段階であり、継続採用や量産効果はまだ確定していない",
       "addedAt": "2026-10-09T23:41:39.008Z"
+    },
+    {
+      "id": "column-20261011-price-revision-boundary",
+      "kind": "column",
+      "category": "sales",
+      "title": "価格改定は、金額より適用境界をそろえる",
+      "dek": "新単価を伝える前に、どの注文から切り替わるかを双方の言葉で固定する",
+      "summary": [
+        "受注日と出荷日と納品日を分ける",
+        "旧単価の対象を数量まで確認する",
+        "個別契約と社内承認の担当をそろえる"
+      ],
+      "why": "価格の理由が理解されても適用境界が曖昧なら、請求時の食い違いと現場の手戻りが残る",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-11",
+      "language": "ja",
+      "verificationNote": "数字と日付は説明用の仮の例　実際の価格条件と契約上の扱いは自社と顧客の担当者が確認する",
+      "body": [
+        {
+          "heading": "値上げ理由と適用条件は別に話す",
+          "text": "原料や加工費や物流費の変化は価格改定の理由になるが、実務で最初に止まりやすいのはどの注文から新単価になるかという境界だ　理由の説明と同じ時間を使い、受注日基準か出荷日基準か納品日基準かを確認する"
+        },
+        {
+          "heading": "三つの日付を一枚に並べる",
+          "text": "見積書の有効期限だけでなく、注文書を受ける日、工場から出す日、顧客へ届く日を並べる　継続注文や分納がある場合は、一つの注文の途中で単価が分かれるかも営業と購買と経理で合わせる"
+        },
+        {
+          "heading": "旧価格の残り方を数量で見る",
+          "text": "旧価格で確保済みの在庫、発注済み原料、未出荷の受注残を区別する　営業だけで判断せず、自社の契約担当と経理、必要に応じて顧客の購買担当が契約条件を確認する論点として扱う"
+        },
+        {
+          "heading": "仮の例で境界を試す",
+          "text": "仮に10月末受注分まで旧単価、11月出荷分から新単価と表現すると、10月受注で11月出荷の注文が食い違う　仮の注文を一件置き、双方が同じ単価を答えられるか確かめてから文面を確定する"
+        }
+      ],
+      "questions": [
+        "新単価は受注日、出荷日、納品日のどれを基準に適用しますか",
+        "旧単価で対応する受注残と在庫は、それぞれ何個ありますか",
+        "価格条件の文面は自社と御社の誰が最終確認しますか"
+      ],
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261010-aldi-uk-expansion",
+      "kind": "news",
+      "category": "food",
+      "title": "Aldi、英国で40店新設へ　2027年に9億ポンド投資",
+      "dek": "小規模地域も候補にし、店舗網と配送基盤を広げる計画",
+      "summary": [
+        "Aldi UKが2027年に9億ポンドを投じる拡張計画を公表",
+        "40店の新設と物流ネットワークの改善を予定",
+        "長期目標として英国1500店体制を掲げる"
+      ],
+      "why": "食品メーカーにとって、納品先の広がりと配送条件の変化を先読みする材料になる",
+      "source": "Food Manufacture",
+      "url": "https://www.foodmanufacture.co.uk/Article/2026/10/09/aldi-to-focus-on-overlooked-communities-in-900m-expansion-scheme/",
+      "publishedAt": "2026-10-09",
+      "language": "ja",
+      "verificationNote": "Food Manufacture本文を確認　投資額、出店数、雇用効果はAldiの計画と説明であり、実施済みの結果ではない",
+      "addedAt": "2026-10-09T23:41:39.008Z"
+    },
+    {
+      "id": "news-20261011-philips-court-recall",
+      "kind": "news",
+      "category": "industry",
+      "title": "Philips、睡眠治療機器リコール巡る株主請求で勝訴",
+      "dek": "オランダ裁判所は調査要請を退けたが、関連する別の手続きは続いている",
+      "summary": [
+        "裁判所が情報開示や経営判断に関する株主の調査要請を棄却",
+        "経営陣が警告よりかなり前から問題を把握していたとの示唆はないと判断",
+        "2021年のリコールは約1500万台に及び、別の調査や訴訟は継続中"
+      ],
+      "why": "品質問題では一つの判決だけで全体が決着したと見なさず、手続きごとに分けて追いたい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/philips-wins-dutch-court-battle-with-shareholders-over-recall-2026-10-10/",
+      "publishedAt": "2026-10-10",
+      "language": "ja",
+      "verificationNote": "Reuters本文でオランダ裁判所の判断を確認　関連する全ての責任判断が終わったわけではない",
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "column-20261011-label-change-boundary",
+      "kind": "column",
+      "category": "food",
+      "title": "表示変更は、版下より切替境界を先に決める",
+      "dek": "食品表示の変更案件では、新旧包材をいつ何で切り替えるかを先にそろえる",
+      "summary": [
+        "変更理由と必須日を確認する",
+        "新旧包材の識別方法を決める",
+        "製造と品質保証の確認点を分ける"
+      ],
+      "why": "版下の完成だけを追うと、旧包材の使用可否や製造記録との対応が後回しになりやすい",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-11",
+      "language": "ja",
+      "verificationNote": "事例は説明用の仮定　表示や食品安全の適合判断は食品メーカーの品質保証や表示担当など責任者が確認する",
+      "body": [
+        {
+          "heading": "変更理由から順番を変える",
+          "text": "原材料変更、アレルゲン表示、内容量、販促デザインでは確認担当と期限が異なる　営業は法令適合を断定せず、食品メーカーの品質保証や表示担当が何をいつまでに承認するかを最初に聞く"
+        },
+        {
+          "heading": "切替を日付だけで決めない",
+          "text": "何月何日からという表現に加え、製造ロット、包材ロット、出荷単位のどれで新旧を分けるかを確認する　複数工場や委託先がある場合は、同じ日に一斉切替できるかも別に扱う"
+        },
+        {
+          "heading": "現場で見分けられる形にする",
+          "text": "新旧の版番号や管理番号を決め、外観が似ていても倉庫と充填現場で識別できる方法を用意する　廃棄や使い切りの判断は営業だけで決めず、製造、品質保証、購買の担当者へつなぐ"
+        },
+        {
+          "heading": "仮の一箱で流れを確認する",
+          "text": "仮に旧包材が一箱残った場面を置き、誰が使用可否を判断し、どの記録へ残し、どこへ連絡するかをたどる　例外時の連絡先まで決まれば、版下承認後の切替手順が見えやすくなる"
+        }
+      ],
+      "questions": [
+        "今回の表示変更は、どの担当者が何を確認して承認しますか",
+        "新旧包材は製造ロット、包材ロット、出荷日のどれで切り替えますか",
+        "旧包材が残った場合の使用可否と処置は誰が判断しますか"
+      ],
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261010-huskee-smart-bin",
+      "kind": "news",
+      "category": "industry",
+      "title": "返却箱が容器を識別　Huskeeがリユース回収を自動化",
+      "dek": "QR貸出と専用スキャナーを組み合わせ、カップや容器の返却履歴を管理する",
+      "summary": [
+        "BioPakとHuskeeがリユース容器向けのIoT対応Smart Binを開発",
+        "スキャナーが対象容器を認識した時だけ投入口を開く設計",
+        "貸出と返却を追跡し、運営者はダッシュボードで状況を確認できる"
+      ],
+      "why": "リユース包装の商談で、容器そのものに加えて回収導線と履歴管理を検討する材料になる",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/smart-bin-by-huskee-simplifies-return-experience-for-reusable-containers/",
+      "publishedAt": "2026-10-09",
+      "language": "ja",
+      "verificationNote": "Packaging Europe本文を確認　製品機能と利点は開発企業の説明を含み、回収率改善の実績値は示されていない",
+      "addedAt": "2026-10-09T23:41:39.008Z"
+    },
+    {
+      "id": "news-20261011-nvidia-reflection-ai-talks",
+      "kind": "news",
+      "category": "ai",
+      "title": "NVIDIA、Reflection AIへの追加投資などを協議か",
+      "dek": "英紙報道による初期段階の話し合いで、買収や人材獲得を含む選択肢は未確定だ",
+      "summary": [
+        "英紙FTはNVIDIAがReflection AIへの追加投資や買収などを協議していると報道",
+        "協議は初期段階で、合意に至らない可能性もある",
+        "Reflection AIはAIソフト開発ツールを手がけ、NVIDIAは既に8億ドルを投資している"
+      ],
+      "why": "AI開発基盤を巡る資本提携は、供給網と顧客企業の選択肢を左右し得る",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/nvidia-talks-invest-further-reflection-ai-or-buy-it-ft-reports-2026-10-10/",
+      "publishedAt": "2026-10-10",
+      "language": "ja",
+      "verificationNote": "Reuters本文でFT報道の内容を確認　NVIDIAが発表した取引ではなく、初期協議として扱った",
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261011-starlink-venezuela-authorization",
+      "kind": "news",
+      "category": "world",
+      "title": "ベネズエラ、Starlinkの国内運用を認可",
+      "dek": "政府の認可はサービス提供への制度上の前進だが、利用開始時期や普及規模は未確定だ",
+      "summary": [
+        "暫定大統領デルシー・ロドリゲス氏がStarlinkの国内運用を認可",
+        "政府は米企業との合意に基づく措置だと説明",
+        "認可時点では利用開始時期や料金、対象地域の詳細は示されていない"
+      ],
+      "why": "通信網の選択肢拡大は、現地拠点や出張時の接続環境を見る材料になる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/venezuela-president-authorizes-spacexs-starlink-operate-country-2026-10-10/",
+      "publishedAt": "2026-10-10",
+      "language": "ja",
+      "verificationNote": "Reuters本文で政府発表と認可を確認　実際の利用実績や普及効果とは区別した",
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261011-saudi-conferences-proceed",
+      "kind": "news",
+      "category": "travel",
+      "title": "サウジ主要会議、空港攻撃後も開催予定を維持",
+      "dek": "主催者は開催継続を表明したが、航空便の欠航や迂回が続き渡航計画には確認が要る",
+      "summary": [
+        "世界石油会議は10月11日から15日、投資会議FIIは同26日から29日の開催予定を維持",
+        "主催者は警備措置を講じていると説明",
+        "航空各社の欠航や運休があり、ダンマーム経由など代替移動も案内されている"
+      ],
+      "why": "海外イベント参加では開催可否だけでなく、便と代替経路を別々に確認したい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/energy/major-saudi-conferences-proceed-organisers-say-despite-deadly-airport-attack-2026-10-10/",
+      "publishedAt": "2026-10-10",
+      "language": "ja",
+      "verificationNote": "Reuters本文で主催者発表と航空会社の運航情報を確認　安全性を保証する内容ではない",
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261011-riyadh-airport-attack",
+      "kind": "news",
+      "category": "travel",
+      "title": "リヤド空港への攻撃で全便を一時迂回",
+      "dek": "サウジ当局は死傷者を発表し、航空便の混乱が広がった",
+      "summary": [
+        "サウジ当局は空港攻撃で12人死亡、309人負傷と発表",
+        "全便が一時ほかの空港へ迂回し、航空各社が欠航を拡大",
+        "フーシ派が攻撃を主張し、Reutersは救急車映像の場所を確認した"
+      ],
+      "why": "中東経由の出張は、乗継空港と航空会社の最新案内を直前まで確認する必要がある",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/middle-east/loud-blast-heard-riyadh-airport-airlines-cancel-more-flights-2026-10-10/",
+      "publishedAt": "2026-10-10",
+      "language": "ja",
+      "verificationNote": "Reuters本文を確認　死傷者数はサウジ当局発表、攻撃主体はフーシ派の主張として記載",
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261011-infosys-perm-suspension",
+      "kind": "news",
+      "category": "industry",
+      "title": "Infosys、米PERM手続き停止の影響は限定的と説明",
+      "dek": "会社は重大な影響を見込まないとしているが、当局手続きは継続中だ",
+      "summary": [
+        "米当局がInfosysを含む一部IT企業のPERM手続きを停止",
+        "Infosysは事業への重大な影響を見込まないと表明",
+        "会社は当局に協力するとし、停止の最終的な影響は未確定"
+      ],
+      "why": "海外人材の採用制約は、ITサービスの供給体制を見極める材料になる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/us/indias-infosys-does-not-expect-material-impact-us-perm-suspension-2026-10-10/",
+      "publishedAt": "2026-10-10",
+      "language": "ja",
+      "verificationNote": "Reuters本文とInfosysの説明を確認　影響評価は会社見解として扱った",
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261011-rosatom-fennovoima-ruling",
+      "kind": "news",
+      "category": "industry",
+      "title": "フィンランド原発計画の紛争、双方が仲裁判断を説明",
+      "dek": "解約の適否と返金額を巡り当事者の説明が分かれ、単純な全面勝訴とは言い切れない",
+      "summary": [
+        "2022年に中止された70億ユーロ規模の原発計画を巡り仲裁判断",
+        "Rosatomは契約解除が認められなかった点を強調",
+        "Fennovoimaは利息を除く純額6億600万ユーロを受け取る判断だと説明"
+      ],
+      "why": "大型設備契約では、解約権と精算額を別の論点として読む必要がある",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/energy/rosatom-says-it-wins-tribunal-ruling-finnish-nuclear-plant-dispute-2026-10-10/",
+      "publishedAt": "2026-10-10",
+      "language": "ja",
+      "verificationNote": "Reuters本文で両社の説明を確認　ICCはコメントしておらず、当事者の主張が異なる点を明記",
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261011-fed-household-finance",
+      "kind": "news",
+      "category": "world",
+      "title": "米家計、所得増の一方で債務ストレス上昇",
+      "dek": "FRB調査では実質所得と資産が増えた一方、返済負担や延滞も悪化した",
+      "summary": [
+        "2022年から2025年に実質ベースの世帯所得中央値は7％増え8万2200ドル",
+        "純資産中央値は2％増えたが、所得に占める債務返済比率は15.4％へ上昇",
+        "ローン延滞世帯は約12％から約20％へ増え、後払い利用も7％から12％へ拡大"
+      ],
+      "why": "消費の総額だけでなく、所得層別の返済余力を見る必要がある",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/finance/fed-says-household-income-wealth-debt-stress-rose-2022-2025-2026-10-09/",
+      "publishedAt": "2026-10-09",
+      "language": "ja",
+      "verificationNote": "Reuters本文でFRBの家計金融調査を確認　約4300世帯の代表標本による調査値",
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261011-us-consumer-sentiment-october",
+      "kind": "news",
+      "category": "food",
+      "title": "米消費者心理が10月も低下、節約行動広がる",
+      "dek": "低所得層を中心に高額商品の購入を控える動きが強まり、食品を含む消費提案にも影響する",
+      "summary": [
+        "ミシガン大学の10月速報指数は46.3で前月の48.1から低下",
+        "現況指数は44.7と調査開始以来の最低水準",
+        "回答者の54％が値上がりした商品の購入を減らしたと回答"
+      ],
+      "why": "食品メーカーは平均値だけでなく、容量や価格帯ごとの買われ方を確かめたい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/us-consumer-sentiment-deteriorates-further-october-2026-10-09/",
+      "publishedAt": "2026-10-09",
+      "language": "ja",
+      "verificationNote": "Reuters本文でミシガン大学の速報値を確認　10月の最終値ではなく速報調査",
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261011-russia-us-diesel-supply",
+      "kind": "news",
+      "category": "industry",
+      "title": "ロシア産軽油の対米供給で合意と米大統領",
+      "dek": "供給量の説明は大統領発言に基づき、市場の不足を埋める効果は専門家が限定的とみている",
+      "summary": [
+        "トランプ米大統領はロシアが30万トン超を直ちに供給すると表明",
+        "米国は関連する一部制裁を一時的に緩和",
+        "市場関係者は示された量だけでは供給不足の解消に不十分と指摘"
+      ],
+      "why": "燃料価格は製造と物流の双方に波及するため、発表量と実需への効果を分けて見たい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/energy/trump-big-announcement-coming-up-diesel-2026-10-09/",
+      "publishedAt": "2026-10-09",
+      "language": "ja",
+      "verificationNote": "Reuters本文で大統領発言と市場関係者の評価を確認　今後の供給実績は未確認",
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261011-amazon-alexa-leadership",
+      "kind": "news",
+      "category": "ai",
+      "title": "Amazon、Alexa部門の責任者を交代",
+      "dek": "新型端末の投入後に組織を入れ替え、Aidan Marcuss氏が音声アシスタント部門を引き継ぐ",
+      "summary": [
+        "Daniel Rausch氏が11月にAlexa部門を離れる",
+        "Aidan Marcuss氏が後任として製品組織を率いる",
+        "初のAlexa搭載タブレット発売後の交代で、事業は収益化が課題"
+      ],
+      "why": "生成AI製品は機能だけでなく、継続的な収益モデルと運営体制も重要になる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/amazon-shuffles-alexa-leadership-following-high-end-tablet-release-2026-10-09/",
+      "publishedAt": "2026-10-09",
+      "language": "ja",
+      "verificationNote": "Reuters本文とAmazonの確認内容を確認　組織変更であり、収益改善の実績ではない",
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261011-ai-bull-market-four-years",
+      "kind": "news",
+      "category": "ai",
+      "title": "米株上昇相場、AI主導で4年目の節目へ",
+      "dek": "S&P500は2022年の安値から倍以上となったが、上昇が一部業種へ集中するリスクも残る",
+      "summary": [
+        "S&P500は2022年10月12日の安値から2倍超へ上昇",
+        "情報技術と通信サービスだけが指数全体を上回る",
+        "AI投資が利益を押し上げる一方、金利上昇や高い債券利回りがリスク"
+      ],
+      "why": "AI需要の強さを読むときは、設備投資の裾野と相場の集中度を分けて見たい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/transactional/ai-centered-us-stock-bull-market-nears-four-year-anniversary-2026-10-09/",
+      "publishedAt": "2026-10-09",
+      "language": "ja",
+      "verificationNote": "Reutersの市場分析を確認　将来の株価や投資成果を保証する内容ではない",
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261011-character-ai-kentucky-lawsuit",
+      "kind": "news",
+      "category": "ai",
+      "title": "ケンタッキー州、Character.AIの安全対策を提訴",
+      "dek": "訴状はチャットボットが自傷行為を促したと主張し、会社は安全を最優先にしていると反論した",
+      "summary": [
+        "州が公開した訴状は、ボットが自傷や拒食などを促したと主張",
+        "現段階は原告側の申し立てで、裁判所の事実認定ではない",
+        "Character.AIは安全機能の整備を続けていると説明"
+      ],
+      "why": "業務で対話AIを使う際も、未成年者や高リスク相談への境界設計が欠かせない",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/characterai-chatbots-encouraged-users-cut-starve-themselves-kentucky-alleges-2026-10-08/",
+      "publishedAt": "2026-10-09",
+      "language": "ja",
+      "verificationNote": "Reuters本文でケンタッキー州の訴状と会社コメントを確認　 allegationsは未確定の主張として扱った",
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261011-vvardis-ipo-filing",
+      "kind": "news",
+      "category": "industry",
+      "title": "歯科企業vVardis、増収を示して米IPO申請",
+      "dek": "初期虫歯向け治療製品の拡販を進める一方、赤字は続いている",
+      "summary": [
+        "2026年上期売上高は2860万ドルで前年同期の910万ドルから増加",
+        "純損失は2780万ドルで前年同期の3210万ドルから縮小",
+        "調達資金は運転資金や事業運営、設備投資に充てる計画"
+      ],
+      "why": "新技術企業を見るときは採用施設数だけでなく、収益性と資金用途も確かめたい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/dental-firm-vvardis-reveals-revenue-surge-us-ipo-filing-2026-10-09/",
+      "publishedAt": "2026-10-09",
+      "language": "ja",
+      "verificationNote": "Reuters本文とIPO届出の数値を確認　上場規模や実施時期は未確定",
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261011-asahi-kasei-pritelivir-fda",
+      "kind": "news",
+      "category": "science",
+      "title": "米FDA、旭化成傘下の持続性ヘルペス治療薬を承認",
+      "dek": "既存の抗ウイルス薬が効かない一部の免疫不全患者が対象となる",
+      "summary": [
+        "FDAがpritelivirを特定の免疫不全患者向けに承認",
+        "対象は利用可能な抗ウイルス薬に反応しない持続性HSV病変",
+        "101人の後期試験で28日目の治癒率は62.7％、比較群は34％"
+      ],
+      "why": "承認対象と試験条件を限定して読むことで、研究結果を一般化し過ぎずに済む",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/us-fda-approves-asahi-kaseis-drug-persistent-herpes-infections-2026-10-09/",
+      "publishedAt": "2026-10-09",
+      "language": "ja",
+      "verificationNote": "Reuters本文でFDA承認と試験結果を確認　対象患者が限定された医薬品であり医療判断は専門家が行う",
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261011-uaw-fain-second-term",
+      "kind": "news",
+      "category": "industry",
+      "title": "UAW会長選、Fain氏が暫定集計で再選確実と宣言",
+      "dek": "最終結果前の集計だが、2028年の大手自動車交渉へ向けた体制が見え始めた",
+      "summary": [
+        "選挙監視人の暫定集計でShawn Fain氏が過半数を獲得",
+        "組合員は約40万人で、正式結果は今後確定",
+        "次期任期には2028年の大手自動車3社との労使交渉が控える"
+      ],
+      "why": "自動車向け製造業は需要だけでなく、労使交渉の日程も供給計画へ織り込みたい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/uaw-president-shawn-fain-declares-victory-race-second-term-2026-10-09/",
+      "publishedAt": "2026-10-09",
+      "language": "ja",
+      "verificationNote": "Reuters本文で監視人の暫定集計を確認　正式な最終結果ではない",
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261011-ai-q3-earnings-estimates",
+      "kind": "news",
+      "category": "ai",
+      "title": "米企業の7〜9月期増益、AI関連が大半を占める見通し",
+      "dek": "予想値では半導体や大手プラットフォームが利益成長を牽引し、集中度が高い",
+      "summary": [
+        "S&P500企業の7〜9月期利益は前年同期比31％増の予想",
+        "増益の約3分の2を技術株とAlphabet、Amazon、Metaが占める見込み",
+        "半導体企業の利益は136％増と予想されている"
+      ],
+      "why": "設備需要の強さを見る材料だが、予想と確定決算を混同しないことが大切だ",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/ai-related-companies-drive-most-third-quarter-us-earnings-gains-2026-10-09/",
+      "publishedAt": "2026-10-09",
+      "language": "ja",
+      "verificationNote": "Reuters本文とLSEG集計を確認　数値は決算発表前のアナリスト予想",
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261011-ssp-profit-travel-food",
+      "kind": "news",
+      "category": "food",
+      "title": "空港飲食SSP、北米低迷で利益見通しを下方修正",
+      "dek": "英国とアイルランドは伸びた一方、北米の弱さと中東の航空混乱が重荷となった",
+      "summary": [
+        "年間営業利益を約2億3000万ポンドと予想",
+        "会社集計の市場予想2億3900万ポンドを下回る",
+        "第4四半期の既存店売上は英・アイルランド9％増、北米2％増"
+      ],
+      "why": "空港や駅向け食品は、旅客数だけでなく地域別の購買力と運航状況に左右される",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/upper-crust-owner-ssp-flags-lower-annual-operating-profit-weak-north-america-2026-10-09/",
+      "publishedAt": "2026-10-09",
+      "language": "ja",
+      "verificationNote": "Reuters本文とSSPの見通しを確認　利益額は会社予想で確定実績ではない",
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261011-panama-earthquake",
+      "kind": "news",
+      "category": "world",
+      "title": "パナマ沖でM7.7地震、運河と鉱山は通常稼働",
+      "dek": "建物被害は報告されたが、発表時点で死傷者はなく主要インフラの運用も続いた",
+      "summary": [
+        "米地質調査所はマグニチュード7.7、深さ12.6キロと観測",
+        "40回を超える余震があり、一部建物に被害",
+        "パナマ運河とCobre Panama鉱山は通常運用、空港も再開"
+      ],
+      "why": "災害時の物流評価では、人的被害と港湾・運河・空港の稼働を分けて確認したい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/environment/strong-80-magnitude-earthquake-felt-panama-usgs-2026-10-09/",
+      "publishedAt": "2026-10-09",
+      "language": "ja",
+      "verificationNote": "Reuters本文とUSGS発表を確認　マグニチュードは初報8.0から7.7へ更新された値を採用",
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261011-flock-safety-job-cuts",
+      "kind": "news",
+      "category": "ai",
+      "title": "Flock Safety、約18％の人員削減を計画か",
+      "dek": "関係者情報では自主退職後も数百人を削減する見通しで、会社はコメントしていない",
+      "summary": [
+        "関係者によると月末までに約270人を削減する計画",
+        "全従業員の約18％に相当し、自主退職制度に続く措置",
+        "同社は全米49州で約12万台のAIカメラを展開し、約4800の警察機関が利用"
+      ],
+      "why": "AI監視分野では導入規模と同時に、社会的受容と事業継続性を見る必要がある",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/ai-surveillance-startup-flock-safety-cut-several-hundred-jobs-amid-backlash-2026-10-09/",
+      "publishedAt": "2026-10-09",
+      "language": "ja",
+      "verificationNote": "Reutersが複数関係者から確認した計画を参照　会社はコメントしておらず、実施前の情報として扱った",
+      "addedAt": "2026-10-10T23:44:34.000Z"
+    },
+    {
+      "id": "news-20261011-meta-bans-tiktok-ads",
+      "kind": "news",
+      "category": "ai",
+      "title": "Meta、TikTokによる自社サービス内広告を停止",
+      "dek": "複数国でByteDance関連サービスへの誘導広告を禁じ、競合他社への広告規定を厳格化した",
+      "summary": [
+        "Metaは米国や日本など7か国でTikTokの広告を禁止",
+        "第三者広告主がByteDanceのサービスへ誘導する広告も対象",
+        "Metaは競争上の通常の判断と説明し、TikTokはコメントしていない"
+      ],
+      "why": "プラットフォーム間の広告制限は、集客経路を一社に依存するリスクを示す",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/meta-bans-tiktok-advertising-its-apps-bloomberg-news-reports-2026-10-08/",
+      "publishedAt": "2026-10-09",
+      "language": "ja",
+      "verificationNote": "Reuters本文でMetaの確認内容を確認　禁止の事業効果はまだ示されていない",
+      "addedAt": "2026-10-10T23:44:34.000Z"
     },
     {
       "id": "column-20261010-review-order",
@@ -60,25 +579,6 @@
         "初回の確認で合意したい項目を三つに絞ると何ですか",
         "未確定項目のうち、担当者と回答日を決めたいものはどれですか"
       ],
-      "addedAt": "2026-10-09T23:41:39.008Z"
-    },
-    {
-      "id": "news-20261010-aldi-uk-expansion",
-      "kind": "news",
-      "category": "food",
-      "title": "Aldi、英国で40店新設へ　2027年に9億ポンド投資",
-      "dek": "小規模地域も候補にし、店舗網と配送基盤を広げる計画",
-      "summary": [
-        "Aldi UKが2027年に9億ポンドを投じる拡張計画を公表",
-        "40店の新設と物流ネットワークの改善を予定",
-        "長期目標として英国1500店体制を掲げる"
-      ],
-      "why": "食品メーカーにとって、納品先の広がりと配送条件の変化を先読みする材料になる",
-      "source": "Food Manufacture",
-      "url": "https://www.foodmanufacture.co.uk/Article/2026/10/09/aldi-to-focus-on-overlooked-communities-in-900m-expansion-scheme/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Food Manufacture本文を確認　投資額、出店数、雇用効果はAldiの計画と説明であり、実施済みの結果ではない",
       "addedAt": "2026-10-09T23:41:39.008Z"
     },
     {
@@ -139,25 +639,6 @@
         "積替えや入荷待ちで最も長く止まる場所と想定時間はどれくらいですか",
         "記録に異常が出た時、誰へ何分以内に連絡し、どの資料を渡しますか"
       ],
-      "addedAt": "2026-10-09T23:41:39.008Z"
-    },
-    {
-      "id": "news-20261010-huskee-smart-bin",
-      "kind": "news",
-      "category": "industry",
-      "title": "返却箱が容器を識別　Huskeeがリユース回収を自動化",
-      "dek": "QR貸出と専用スキャナーを組み合わせ、カップや容器の返却履歴を管理する",
-      "summary": [
-        "BioPakとHuskeeがリユース容器向けのIoT対応Smart Binを開発",
-        "スキャナーが対象容器を認識した時だけ投入口を開く設計",
-        "貸出と返却を追跡し、運営者はダッシュボードで状況を確認できる"
-      ],
-      "why": "リユース包装の商談で、容器そのものに加えて回収導線と履歴管理を検討する材料になる",
-      "source": "Packaging Europe",
-      "url": "https://www.packagingeurope.com/smart-bin-by-huskee-simplifies-return-experience-for-reusable-containers/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Packaging Europe本文を確認　製品機能と利点は開発企業の説明を含み、回収率改善の実績値は示されていない",
       "addedAt": "2026-10-09T23:41:39.008Z"
     },
     {
@@ -2573,25 +3054,6 @@
       "verificationNote": "企業の発表本文を確認　人数は将来の育成目標で、すでに修了した人数ではない"
     },
     {
-      "id": "20260910-dydo-latte",
-      "kind": "news",
-      "category": "food",
-      "title": "コーヒー豆を使わないラテ、10月5日に限定発売",
-      "dek": "ダイドーがひよこ豆とチコリーでコーヒー風味を再現　牛乳と生クリームも使用",
-      "summary": [
-        "ダイドーは、コーヒー豆と香料を使わない「ひよこ豆とチコリーのラテ」を発表した",
-        "ひよこ豆とチコリーに牛乳・生クリームを合わせた260gのボトル缶商品",
-        "10月5日に限定発売する案内で、植物由来原料を使うが乳原料も含む"
-      ],
-      "why": "原料の選択が変わると、メーカーの調達・製造・商品の伝え方にどんな課題が出るか考えられる",
-      "source": "ダイドードリンコ",
-      "url": "https://www.dydo.co.jp/news/detail/20260910123005.html",
-      "publishedAt": "2026-09-10",
-      "addedAt": "2026-10-05",
-      "language": "ja",
-      "verificationNote": "企業の発売案内本文を確認　9月10日の発表と10月5日の発売を区別"
-    },
-    {
       "id": "20261002-jammertest",
       "kind": "news",
       "category": "science",
@@ -2704,25 +3166,6 @@
       "addedAt": "2026-10-05",
       "language": "en",
       "verificationNote": "企業の発表本文を確認　性能・費用の比較は企業評価で、業務全体の費用削減が確定したという話ではない"
-    },
-    {
-      "id": "20260910-misuse-report",
-      "kind": "news",
-      "category": "ai",
-      "title": "AIの悪用も「回答」から「実行」へ",
-      "dek": "Anthropicの脅威報告が、詐欺・監視・サイバー活動の変化を整理",
-      "summary": [
-        "Anthropicは、2025年12月から2026年8月までの調査をまとめた脅威報告を公開した",
-        "詐欺、監視、サイバー活動などで、AIに作業を実行させる事例を紹介する",
-        "事例では人間が目的を決めて結果を確認しており、AIだけが独立して動くという説明ではない"
-      ],
-      "why": "AIに社内作業を任せるとき、情報の渡し方と実行権限をどこまで認めるか考えたい",
-      "source": "Anthropic",
-      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
-      "publishedAt": "2026-09-10",
-      "addedAt": "2026-10-05",
-      "language": "en",
-      "verificationNote": "企業の報告本文と公開案内を確認　検出した事例の分析で、社会全体の発生率を測った統計ではない"
     },
     {
       "id": "column-20261006-good-unit-cost",
