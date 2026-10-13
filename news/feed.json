@@ -1,25 +1,468 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-12T23:13:25.000Z",
+  "updatedAt": "2026-10-13T23:37:12.000Z",
   "articles": [
     {
-      "id": "news-20261013-pregis-infinx-rightsizing",
+      "id": "news-20261014-nivea-recycled-aluminium-tin",
       "kind": "news",
       "category": "industry",
-      "title": "注文ごとに袋を適正寸法へ　Pregisがオンデマンド包装を拡充",
-      "dek": "紙・ポリ・緩衝材付きのメーラーを注文単位で成形するInfinXを発表",
+      "title": "NIVEA青缶、再生アルミ95％へ　見た目と強度を保つ合金を共同開発",
+      "dek": "ドイツで2026年初めに切り替え、2027年から他市場へ広げる計画",
       "summary": [
-        "PregisはSharp製品群にオンデマンド包装システムInfinXを追加した",
-        "個々の注文に合わせてメーラーを作り、紙・ポリ・緩衝材付きの形式に対応する",
-        "既存ラインへの統合と工具不要の材料切替を訴求するが、効果数値は利用現場ごとの検証が必要"
+        "BeiersdorfはNIVEA Cremeの缶を再生アルミニウム95％の仕様へ切り替えた",
+        "缶メーカーと合金・製造工程を開発し、従来の外観と耐久性を保つと説明する",
+        "ドイツでは2026年初めに導入済みで、他市場への展開は2027年からの計画"
       ],
-      "why": "多品種の通販現場では、包材単価だけでなく空隙・作業・輸送をまとめて見る提案材料になる",
+      "why": "再生材比率を上げる提案では、材料調達だけでなく成形性・外観・量産移行を同時に詰める必要がある",
       "source": "Packaging Europe",
-      "url": "https://www.packagingeurope.com/pregis-launches-new-rightsizing-portfolio/",
-      "publishedAt": "2026-10-12",
-      "addedAt": "2026-10-13",
+      "url": "https://www.packagingeurope.com/nivea-creme-tin-now-made-from-95-recycled-aluminium/",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-14",
       "language": "en",
-      "verificationNote": "公開記事本文を確認　省資材・省作業・総所有コストの効果はPregisの説明で、第三者試験値は記事に示されていない"
+      "verificationNote": "公開記事本文を確認　外観・耐久性、エネルギーと排出削減の効果はBeiersdorfの説明で、第三者検証値は記事に示されていない"
+    },
+    {
+      "id": "column-20261014-comparison-criteria",
+      "kind": "column",
+      "category": "sales",
+      "title": "競合名より、比較表の列を聞く",
+      "dek": "他社の名前を追う前に、顧客が何を並べて判断するのかを具体化する",
+      "summary": [
+        "競合情報を集めるより先に、価格・納期・品質などの評価軸を聞く",
+        "現行品の基準値と、今回変えたい条件を分けて確認する",
+        "比較項目ごとに証拠と未確認事項を置き、次の評価を決める"
+      ],
+      "why": "守秘に触れずに顧客の判断構造を理解でき、自社が用意すべき資料と試験を絞りやすい",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-14",
+      "addedAt": "2026-10-14",
+      "language": "ja",
+      "body": [
+        {
+          "heading": "競合名を聞いても提案は決まらない",
+          "text": "競合会社や見積額を直接聞くと、顧客が答えにくいだけでなく比較の本質を外すことがある\n知りたいのは相手の秘密ではなく、採用時に並べる項目と優先順位\n価格、納期、段取り、品質記録、保守など、比較表の列を聞くと提案の不足が見える"
+        },
+        {
+          "heading": "現行の基準を先に置く",
+          "text": "新しい案の良さを語る前に、現行品の単価、加工時間、ロット、納期、困り事を確認する\n仮に単価が5％高くても段取りが30分短いなら、評価は年間回数で変わる\nこの数字は仮の例で、実際の条件は顧客と自社の担当部門が確認する"
+        },
+        {
+          "heading": "項目ごとに証拠をそろえる",
+          "text": "寸法表、試験結果、納期回答、見積条件など、比較項目ごとに示せる資料を置く\nまだ分からないことは推測で埋めず、誰がいつ確認するかを書く\n品質や契約の判断は営業だけで確定せず、それぞれの責任部門へつなぐ"
+        },
+        {
+          "heading": "次の評価を一つ決める",
+          "text": "比較表を作ること自体をゴールにせず、次に何を試すかへ進める\nサンプル評価、設備確認、物流試算など、最大の不確実性を減らす行動を一つ選ぶ\n判定者、期限、合格条件まで合意すれば、値引きだけの競争になりにくい"
+        }
+      ],
+      "questions": [
+        "採用判断で必ず比較する項目は何ですか",
+        "現行品で維持したい基準と、今回変えたい条件はそれぞれ何ですか",
+        "次の評価は誰が、どの資料や試験結果を使って決めますか"
+      ],
+      "verificationNote": "一般的な営業実務を題材にしたコラム　数字はすべて仮の例で、実際の条件は関係部門と確認が必要"
+    },
+    {
+      "id": "news-20261014-nissin-black-pepper-crab",
+      "kind": "news",
+      "category": "food",
+      "title": "カップヌードルに黒胡椒クラブ　日清食品が10月26日発売",
+      "dek": "カニ風味の具材とバター風味オイルで、濃厚なスープを設計",
+      "summary": [
+        "日清食品はカップヌードル ブラックペッパークラブを全国で10月26日に発売する",
+        "内容量78gで希望小売価格は税別248円、1ケース12食入り",
+        "カニ風味かまぼこ、たまご、ネギと別添バター風味オイルを組み合わせる"
+      ],
+      "why": "新味提案では中身だけでなく、発売日・入数・別添品を含む生産と売場の条件まで確認したい",
+      "source": "日清食品",
+      "url": "https://www.nissin.com/jp/company/news/13950/",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-14",
+      "language": "ja",
+      "verificationNote": "2026年10月13日付の公式発表を確認　商品は発表済みで、発売は10月26日の予定"
+    },
+    {
+      "id": "column-20261014-spares-by-downtime",
+      "kind": "column",
+      "category": "industry",
+      "title": "予備品は、壊れやすさより止まる時間で選ぶ",
+      "dek": "故障率だけでなく、停止影響・調達日数・交換難度から持つべき部品を決める",
+      "summary": [
+        "故障頻度が低くても、設備全体を止める部品は優先度が高い",
+        "在庫費と停止損失を仮の数字で並べ、現場と購買の判断材料にする",
+        "品質保証や保管条件を担当部門と確認し、補充ルールまで決める"
+      ],
+      "why": "予備品の値段だけでなく、止まったときの時間と復旧経路を見える化して提案できる",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-14",
+      "addedAt": "2026-10-14",
+      "language": "ja",
+      "body": [
+        {
+          "heading": "頻度と影響を分ける",
+          "text": "よく交換する消耗品だけが重要とは限らない\n年に一度も壊れなくても、その部品がなければ号機全体が止まるなら経営への影響は大きい\n故障頻度、停止する工程、代替運転の可否を別々に聞く"
+        },
+        {
+          "heading": "仮の停止時間で比べる",
+          "text": "仮に部品Aは5万円で納期2日、停止一時間当たりの影響が10万円なら、手元在庫の意味を説明しやすい\n一方で隣の号機へ振り替えられるなら実際の影響は小さくなる\n数字は仮の例で、現場能力と損失の見方は顧客側の担当者が確認する"
+        },
+        {
+          "heading": "持てば安心とは限らない",
+          "text": "予備品には使用期限、保管温湿度、定期点検、仕様変更のリスクがある\n品質保証の範囲や互換性を営業だけで断定せず、メーカー、保全、品質、購買で確認する\n高額品は共同在庫や緊急供給契約も候補になるが、責任範囲を契約担当と詰める"
+        },
+        {
+          "heading": "補充のきっかけを決める",
+          "text": "在庫を一個使ったら発注するのか、定期点検前に見直すのかを明確にする\n担当者、発注点、標準納期、代替品の承認手順を一覧にする\n予備品の提案を売切りにせず、設備停止を短くする運用まで一緒に設計したい"
+        }
+      ],
+      "questions": [
+        "この部品がなくなると、どの号機と後工程が何時間止まりますか",
+        "別号機への振替や代替品で、どこまで生産を続けられますか",
+        "在庫を使った後は誰が、どの発注点と納期条件で補充しますか"
+      ],
+      "verificationNote": "一般的な営業実務を題材にしたコラム　数字はすべて仮の例で、実際の条件は関係部門と確認が必要"
+    },
+    {
+      "id": "news-20261014-shellworks-vivomer-collection",
+      "kind": "news",
+      "category": "industry",
+      "title": "植物由来パックを店頭回収　ShellworksとMYGroupが800店超に回収箱",
+      "dek": "使用済みVivomerを集め、英国ハルの施設で複合板へ加工する経路を整備",
+      "summary": [
+        "ShellworksとMYGroupはVivomer包装の専用回収箱を英国の800店超へ設置する",
+        "Vivomerは植物廃棄物の発酵由来素材で、回収品はMYboardへ加工する",
+        "3100万kgという回収量はMYGroupの広い持ち帰り事業の実績で、Vivomer単独の回収実績ではない"
+      ],
+      "why": "素材の環境性だけでなく、回収拠点・選別・再用途まで説明できる提案が求められる",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/collection-points-established-for-shellworks-plant-based-compostable-packs/",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-14",
+      "language": "en",
+      "verificationNote": "公開記事本文を確認　回収箱の設置は新たな取り組みで、Vivomerの回収量や再資源化率はまだ示されていない"
+    },
+    {
+      "id": "news-20261014-morinaga-otona-yasai-jelly",
+      "kind": "news",
+      "category": "food",
+      "title": "常温保存できる野菜ゼリー　森永乳業が細身スパウト袋でAmazon先行",
+      "dek": "赤い果実を組み合わせた機能性表示食品を11月6日から販売",
+      "summary": [
+        "森永乳業はおとなのやさいゼリー＋赤い果実を11月6日にAmazonで先行発売する",
+        "ラクチュロースとサケ鼻軟骨由来プロテオグリカンを機能性関与成分として届け出ている",
+        "常温で長期保存しやすい細身のスパウト付きパウチを採用する"
+      ],
+      "why": "食品営業では中身の機能だけでなく、保管温度・賞味期間・販売チャネル・飲み方を一緒に聞きたい",
+      "source": "森永乳業",
+      "url": "https://www.morinagamilk.co.jp/release/newsentry-4750.html",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-14",
+      "language": "ja",
+      "verificationNote": "2026年10月13日付の森永乳業公式発表を確認　機能性表示は事業者の届出に基づき、国の個別審査を受けた特保とは異なる"
+    },
+    {
+      "id": "news-20261014-happy-avengers-coffee-cans",
+      "kind": "news",
+      "category": "industry",
+      "title": "缶を集めたくなる販促へ　HappyがAvengers限定デザイン8種",
+      "dek": "新作映画に合わせ、触感印刷を施した11オンス缶を米国で展開",
+      "summary": [
+        "Happy ProductsはMarvel Studiosの新作に合わせたRTDコーヒー缶8種類を発表した",
+        "高精細な触感印刷を用い、4種類の飲料を11オンス缶で展開する",
+        "米国内で順次販売するが、店頭の在庫と取扱商品は小売店ごとに異なる"
+      ],
+      "why": "包材は保護だけでなく、複数柄・印刷触感・店頭展開を組み合わせた販促資産にもなる",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/collectable-coffee-cans-mark-release-of-marvels-new-avengers-film/",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-14",
+      "language": "en",
+      "verificationNote": "公開記事本文を確認　販売効果や収集率の実績は記事に示されておらず、ブランド施策として要約"
+    },
+    {
+      "id": "news-20261014-meiji-meltykiss-2026",
+      "kind": "news",
+      "category": "food",
+      "title": "明治Meltykiss、箱3品と袋2品を10月20日発売",
+      "dek": "冬季チョコの定番を刷新し、濃いキャラメル味を発売時から加える",
+      "summary": [
+        "明治は2026年のMeltykiss計5品を10月20日に全国発売する",
+        "箱タイプ3品と袋タイプ2品をそろえ、濃いキャラメルを当初から投入する",
+        "発売前の公式商品発表であり、販売数量や消費者評価の実績はまだない"
+      ],
+      "why": "季節商品の包装提案では、SKU数・発売時期・店頭での見分けやすさを一体で考えたい",
+      "source": "明治",
+      "url": "https://www.meiji.co.jp/corporate/pressrelease/2026/10_09/index.html",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-14",
+      "language": "ja",
+      "verificationNote": "2026年10月13日付の明治公式発表を確認　発売日と商品構成は予定として記載"
+    },
+    {
+      "id": "news-20261014-meiji-bulgaria-peach-lb81",
+      "kind": "news",
+      "category": "food",
+      "title": "120gの飲むヨーグルトに白桃　明治が特保の小容量品",
+      "dek": "LB81乳酸菌を使い、10月20日から全国で発売",
+      "summary": [
+        "明治は明治ブルガリアのむヨーグルト脂肪0白桃LB81を10月20日に全国発売する",
+        "120gのPET容器で希望小売価格は税込149円",
+        "特定保健用食品として許可された表示内容は公式発表に基づき、個別の効果を保証するものではない"
+      ],
+      "why": "小容量商品では、飲用場面・容器・健康表示を別々の担当者と確認する商談が必要になる",
+      "source": "明治",
+      "url": "https://www.meiji.co.jp/corporate/pressrelease/2026/10_07/index.html",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-14",
+      "language": "ja",
+      "verificationNote": "2026年10月13日付の明治公式発表を確認　商品表示は許可内容を要約し、医療的な効果は断定していない"
+    },
+    {
+      "id": "news-20261014-independent-ai-evaluation-publication",
+      "kind": "news",
+      "category": "ai",
+      "title": "AIの独立評価、どこまで公開するか　企業と評価機関の綱引き",
+      "dek": "安全性の透明性と営業秘密の保護をめぐり、共通ルールはまだない",
+      "summary": [
+        "ReutersはAnthropicやOpenAIと外部評価機関の契約・交渉を取材した",
+        "評価結果の公表権を求める側と、機密や悪用リスクを管理したい企業側で条件が分かれる",
+        "公開方法を統一する法律や業界標準はなく、個別契約に依存している"
+      ],
+      "why": "AIを導入するときは性能値だけでなく、誰が何を試し、問題をどこまで開示できるかを確認したい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/behind-ai-industrys-call-independent-reviews-fight-over-what-gets-made-public-2026-10-13/",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-14",
+      "language": "en",
+      "verificationNote": "Reutersの調査記事を確認　契約交渉の一部は関係者証言に基づき、各社回答も併記されている"
+    },
+    {
+      "id": "news-20261014-scaleway-amd-sweden-supercomputer",
+      "kind": "news",
+      "category": "ai",
+      "title": "Scaleway、スウェーデンにAMD製AIスーパーコンピューター",
+      "dek": "MI355Xを採用し、フランス国外で初の大規模拠点を構築へ",
+      "summary": [
+        "ScalewayはスウェーデンにAMD MI355X搭載の商用AIスーパーコンピューターを建設すると発表した",
+        "Bullの組立、HPEのネットワーク、VAST Dataのストレージ、Motulの冷却技術を組み合わせる",
+        "完成時期や稼働実績ではなく、欧州での計算資源拡大に向けた建設計画"
+      ],
+      "why": "AI設備の案件はGPUだけでなく、冷却・通信・ストレージ・組立の供給網で見る必要がある",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/scaleway-build-amd-powered-ai-supercomputer-sweden-2026-10-13/",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-14",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　欧州初などの位置付けはScalewayの説明で、稼働後の性能実績ではない"
+    },
+    {
+      "id": "news-20261014-omron-onlogic-acquisition",
+      "kind": "news",
+      "category": "industry",
+      "title": "オムロン、産業PCのOnLogicを6.75億ドルで買収へ",
+      "dek": "制御機器とエッジ計算を組み合わせ、製造現場のPhysical AIを強化",
+      "summary": [
+        "オムロンは米OnLogicと親会社InterLogicを6億7500万ドルで買収すると発表した",
+        "産業用コンピューターを自動化機器へ組み込み、データ処理と制御を近づける狙い",
+        "買収効果は会社の将来計画で、統合後の売上や生産性の実績ではない"
+      ],
+      "why": "設備提案では機械単体だけでなく、現場データをどこで処理し制御へ戻すかが論点になる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/transactional/japans-omron-buy-us-industrial-pc-firm-onlogic-675-million-physical-ai-push-2026-10-13/",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-14",
+      "language": "en",
+      "verificationNote": "Reuters本文と買収発表を確認　金額と狙いは公表内容で、取引完了後の成果は未確定"
+    },
+    {
+      "id": "news-20261014-imf-global-growth-ai-risks",
+      "kind": "news",
+      "category": "world",
+      "title": "IMF、2026年成長率を3.1％予想　AI投資が支える一方で下振れ警戒",
+      "dek": "戦争・原油・債務・AI収益性を世界経済の主要リスクに挙げた",
+      "summary": [
+        "IMFは2026年の世界成長率見通しを3.1％とし、従来の3.0％から引き上げた",
+        "AI関連投資が成長を支える一方、紛争や原油高、債務負担をリスクに挙げた",
+        "数値はWorld Economic Outlookの予測であり、確定した経済実績ではない"
+      ],
+      "why": "顧客の投資計画を見るときは、成長テーマと資金・エネルギーの下振れ条件を同時に置きたい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/imf-says-ai-investment-propping-up-global-growth-war-debt-threaten-outlook-2026-10-13/",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-14",
+      "language": "en",
+      "verificationNote": "Reuters本文とIMF見通しを確認　成長率は予測で、AIの寄与も確定実績ではない"
+    },
+    {
+      "id": "news-20261014-bank-regulators-agentic-ai",
+      "kind": "news",
+      "category": "ai",
+      "title": "銀行監督当局、エージェントAIの運用を詳しく点検",
+      "dek": "サイバー防御・復旧計画・外部依存を中心に米欧で監視を強める",
+      "summary": [
+        "Reutersによると米欧の監督当局は銀行のAI利用への質問を増やしている",
+        "自律性の高いエージェントAI、サイバー攻撃、障害時の復旧が主な論点",
+        "新しい一律規制が成立したわけではなく、現段階は監督と情報収集の強化"
+      ],
+      "why": "金融以外でもAI導入前に権限範囲・停止方法・復旧手順を聞くことが重要になる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/banking-watchdogs-ramp-up-ai-scrutiny-stability-fears-mount-sources-say-2026-10-13/",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-14",
+      "language": "en",
+      "verificationNote": "Reutersの関係者取材を確認　監督強化の動きであり、共通の新規制が施行されたという記事ではない"
+    },
+    {
+      "id": "news-20261014-google-gemini4-argon",
+      "kind": "news",
+      "category": "ai",
+      "title": "Google、Gemini 4 Argonを企業・開発者向けに投入",
+      "dek": "長時間の複雑作業を訴求し、期間限定のAPI価格を設定",
+      "summary": [
+        "Googleは旗艦AIモデルGemini 4 Argonを開発者と企業向けに発表した",
+        "11月30日までは入力100万トークン2ドル、出力10ドルで、その後は倍額になる",
+        "複雑な作業での性能はGoogleのベンチマーク主張で、利用現場ごとの検証が必要"
+      ],
+      "why": "AIサービスの比較ではデモ性能だけでなく、通常価格・処理量・検証条件をそろえたい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/google-launches-flagship-ai-model-gemini-4-argon-developers-businesses-2026-10-13/",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-14",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　性能比較はGoogleの発表に基づき、価格は期間限定条件と通常条件を区別"
+    },
+    {
+      "id": "news-20261014-nvidia-doctolib-genesis-stakes",
+      "kind": "news",
+      "category": "ai",
+      "title": "Nvidia、仏DoctolibとGenesis AIへ少数出資",
+      "dek": "医療予約とPhysical AIの欧州企業へ資本参加、金額は非公表",
+      "summary": [
+        "NvidiaはフランスのDoctolibとGenesis AIの少数株式を取得すると発表した",
+        "Doctolibは医療予約・業務ソフト、Genesis AIはPhysical AI基盤を手掛ける",
+        "出資額と持分比率は公表されず、提携による事業成果は今後の計画"
+      ],
+      "why": "AI投資ニュースでは出資の事実と、将来の製品・売上効果を分けて読む必要がある",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/nvidia-buy-minority-stake-frances-doctolib-2026-10-13/",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-14",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　少数出資は発表済みだが、金額と成果指標は非公表"
+    },
+    {
+      "id": "news-20261014-qualcomm-arm-license-verdict",
+      "kind": "news",
+      "category": "ai",
+      "title": "Qualcomm、Armとのライセンス訴訟で陪審評決",
+      "dek": "Armの契約違反と事業関係への干渉を認定、損害額は2ドル",
+      "summary": [
+        "デラウェア州の陪審はArmがQualcommとのライセンス契約に違反したと認定した",
+        "QualcommとMetaの関係に不当に干渉したとの主張も認めた",
+        "損害額は2ドルで、評決後の法的手続きや上訴の可能性は別途確認が必要"
+      ],
+      "why": "技術供給の商談では性能だけでなく、知財ライセンスと取引関係の継続条件も重要になる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/qualcomm-says-jury-found-arm-breached-license-agreement-2026-10-13/",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-14",
+      "language": "en",
+      "verificationNote": "Reuters本文で陪審評決を確認　Qualcommの声明と裁判結果を区別し、最終的な法的終結とは断定していない"
+    },
+    {
+      "id": "news-20261014-mumbai-airport-winter-slots",
+      "kind": "news",
+      "category": "travel",
+      "title": "ムンバイ空港、冬季便の削減を見送り　航空会社の反発受け",
+      "dek": "ターミナル工事に伴う国際便の一時削減案を撤回し、現行枠を維持",
+      "summary": [
+        "ムンバイ空港は冬季の発着枠を現状のまま維持すると航空会社へ通知した",
+        "ターミナル解体に伴う国際便の一時削減案に航空会社が反発していた",
+        "将来の工事進行や便別の時刻変更は航空会社と空港の最新案内で確認が必要"
+      ],
+      "why": "出張計画では路線の有無だけでなく、空港工事と発着枠の変更も追いたい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/india/adanis-mumbai-airport-holds-off-winter-flight-cuts-after-airline-pushback-2026-10-13/",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-14",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　記事時点の空港通知であり、個別便の運航保証ではない"
+    },
+    {
+      "id": "news-20261014-european-automakers-pressure",
+      "kind": "news",
+      "category": "industry",
+      "title": "欧州量販車メーカー、EV競争と需要低迷で支援を要請",
+      "dek": "中国勢との競争や高コストを背景に、政策の柔軟性を求める声",
+      "summary": [
+        "欧州の自動車メーカー幹部は量販車事業が強い圧力にあると訴えた",
+        "中国メーカーとのEV競争、需要の弱さ、コスト負担が重なっている",
+        "支援要請や再編策は各社・業界の主張で、政策決定や回復実績ではない"
+      ],
+      "why": "自動車向け営業では生産台数だけでなく、車種転換・原価圧力・拠点再編を顧客ごとに確認したい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/autos-transportation/european-automakers-urge-support-vw-warns-enormous-pressure-2026-10-13/",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-14",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　企業幹部の発言、販売データ、政策要請を分けて要約"
+    },
+    {
+      "id": "news-20261014-goldman-q3-equities",
+      "kind": "news",
+      "category": "world",
+      "title": "Goldman Sachs、株式取引が伸び四半期利益増",
+      "dek": "7～9月期の純利益は52.9億ドル、株式取引収入は72％増",
+      "summary": [
+        "Goldman Sachsの四半期純利益は52億9000万ドル、1株利益は17.01ドルだった",
+        "株式取引収入は前年同期比72％増の64億4000万ドル",
+        "投資銀行手数料も21％増えたが、数字は一四半期の実績で将来収益を保証しない"
+      ],
+      "why": "金融市場の好調が設備投資やM&Aへどう波及するかは、顧客の資金計画で確かめたい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/finance/goldman-sachs-quarterly-profit-rises-equities-strength-2026-10-13/",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-14",
+      "language": "en",
+      "verificationNote": "Reuters本文と決算数値を確認　市場予想との差と実績を区別"
+    },
+    {
+      "id": "news-20261014-jj-medtech-q3",
+      "kind": "news",
+      "category": "industry",
+      "title": "J&J医療機器売上は2.5％増　市場予想には届かず",
+      "dek": "中東情勢が販売に影響、DePuy Synthes分離は2027年半ばを予定",
+      "summary": [
+        "J&Jの医療機器売上は前年同期比2.5％増の86億ドルだった",
+        "市場予想の87億1000万ドルを下回り、会社は中東情勢の影響を挙げた",
+        "整形外科のDePuy Synthes分離は2027年半ばの計画で、まだ完了していない"
+      ],
+      "why": "医療向け製造の営業では全社成長率だけでなく、地域・部門・再編時期を分けて見る必要がある",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/jj-beats-earnings-estimates-middle-east-conflict-weighs-medical-device-sales-2026-10-13/",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-14",
+      "language": "en",
+      "verificationNote": "Reuters本文と四半期決算を確認　分離は将来計画として記載"
+    },
+    {
+      "id": "news-20261014-luxury-market-value-drop",
+      "kind": "news",
+      "category": "world",
+      "title": "欧州高級品株、時価総額3500億ドル減　需要回復に不透明感",
+      "dek": "中国消費の弱さや為替を背景に、業界の評価が大きく調整",
+      "summary": [
+        "Reutersの分析では欧州高級品大手の時価総額がピークから約3500億ドル減少した",
+        "中国需要の弱さ、価格引き上げ余地、為替が業績への重荷となっている",
+        "時価総額は市場価格で変動し、減少額は企業の現金損失そのものではない"
+      ],
+      "why": "ブランド向け営業では過去の成長率を延長せず、数量・価格・地域別の前提を聞き直したい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/retail-consumer/european-luxurys-350-billion-blowout-2026-10-13/",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-14",
+      "language": "en",
+      "verificationNote": "Reutersの分析記事を確認　市場評価の変化と企業の事業実績を区別"
     },
     {
       "id": "column-20261013-open-items-handover",
@@ -63,25 +506,6 @@
       "verificationNote": "一般的な営業実務を題材にしたコラム　数字はすべて仮の例で、実際の条件は関係部門と確認が必要"
     },
     {
-      "id": "news-20261013-starbucks-chipotle-denial",
-      "kind": "news",
-      "category": "food",
-      "title": "Starbucks、Chipotle買収観測を明確に否定",
-      "dek": "大型外食再編の観測を打ち消し、自社の店舗運営改善へ焦点を戻した",
-      "summary": [
-        "StarbucksはChipotleを買収しないと10月12日に表明した",
-        "観測はFinancial Timesの報道をきっかけに広がり、両社の株価も反応していた",
-        "Starbucksはメニュー簡素化や待ち時間短縮を含む既存の再建策を継続する"
-      ],
-      "why": "食品企業のニュースでは、報道された検討と会社が確定した方針を分けて読むことが大切",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/starbucks-says-it-is-not-buying-chipotle-mexican-grill-2026-10-12/",
-      "publishedAt": "2026-10-12",
-      "addedAt": "2026-10-13",
-      "language": "en",
-      "verificationNote": "Reuters本文を確認　買収観測の経緯と、同社の否定コメントを区別"
-    },
-    {
       "id": "column-20261013-case-design-mixed-load",
       "kind": "column",
       "category": "food",
@@ -121,6 +545,44 @@
         "変更案を誰がどの試験条件で評価し、旧在庫をいつ切り替えますか"
       ],
       "verificationNote": "一般的な営業実務を題材にしたコラム　数字はすべて仮の例で、実際の条件は関係部門と確認が必要"
+    },
+    {
+      "id": "news-20261013-pregis-infinx-rightsizing",
+      "kind": "news",
+      "category": "industry",
+      "title": "注文ごとに袋を適正寸法へ　Pregisがオンデマンド包装を拡充",
+      "dek": "紙・ポリ・緩衝材付きのメーラーを注文単位で成形するInfinXを発表",
+      "summary": [
+        "PregisはSharp製品群にオンデマンド包装システムInfinXを追加した",
+        "個々の注文に合わせてメーラーを作り、紙・ポリ・緩衝材付きの形式に対応する",
+        "既存ラインへの統合と工具不要の材料切替を訴求するが、効果数値は利用現場ごとの検証が必要"
+      ],
+      "why": "多品種の通販現場では、包材単価だけでなく空隙・作業・輸送をまとめて見る提案材料になる",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/pregis-launches-new-rightsizing-portfolio/",
+      "publishedAt": "2026-10-12",
+      "addedAt": "2026-10-13",
+      "language": "en",
+      "verificationNote": "公開記事本文を確認　省資材・省作業・総所有コストの効果はPregisの説明で、第三者試験値は記事に示されていない"
+    },
+    {
+      "id": "news-20261013-starbucks-chipotle-denial",
+      "kind": "news",
+      "category": "food",
+      "title": "Starbucks、Chipotle買収観測を明確に否定",
+      "dek": "大型外食再編の観測を打ち消し、自社の店舗運営改善へ焦点を戻した",
+      "summary": [
+        "StarbucksはChipotleを買収しないと10月12日に表明した",
+        "観測はFinancial Timesの報道をきっかけに広がり、両社の株価も反応していた",
+        "Starbucksはメニュー簡素化や待ち時間短縮を含む既存の再建策を継続する"
+      ],
+      "why": "食品企業のニュースでは、報道された検討と会社が確定した方針を分けて読むことが大切",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/starbucks-says-it-is-not-buying-chipotle-mexican-grill-2026-10-12/",
+      "publishedAt": "2026-10-12",
+      "addedAt": "2026-10-13",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　買収観測の経緯と、同社の否定コメントを区別"
     },
     {
       "id": "news-20261013-weavabel-polybag-loop",
@@ -3047,253 +3509,6 @@
       "verificationNote": "Packaging Europe本文を確認　紙比率や薄肉化はTetra Pakの公表値で、残る材料にはポリマー、インキ、ラッカーが含まれる"
     },
     {
-      "id": "news-20261007-morinaga-acai-two-pack",
-      "kind": "news",
-      "category": "food",
-      "title": "売れた単品を2個パックへ　森永乳業がアサイー商品拡張",
-      "dek": "4月発売品の出荷が計画を上回り、80g×2の小分け仕様を全国投入する",
-      "summary": [
-        "10月13日から全国で新発売する計画",
-        "既存品は発売約1か月で累計50万個を出荷したと公表",
-        "家族や友人とのシェアを想定した80gの2個パック"
-      ],
-      "why": "単品の反応を見て多個包装へ広げる流れは、包材需要の立ち上がりを読む材料になる",
-      "source": "森永乳業",
-      "url": "https://www.morinagamilk.co.jp/release/newsentry-4744.html",
-      "publishedAt": "2026-10-06",
-      "addedAt": "2026-10-07T00:00:06.575Z",
-      "language": "ja",
-      "verificationNote": "森永乳業の公式発表を確認　50万個は2026年4月6日から5月8日までの同社出荷実績"
-    },
-    {
-      "id": "news-20261007-sig-cleanclic",
-      "kind": "news",
-      "category": "industry",
-      "title": "外しても閉じる　SIGが業務用バッグ用口栓",
-      "dek": "濃縮飲料やクリーマー向けに、接続と再閉栓を簡単にするCleanClic Connectを発表",
-      "summary": [
-        "バッグインボックスとバッグイントレー向けの業務用口栓",
-        "ディスペンサー接続中だけ流路が開き、外すと閉じる構造",
-        "濃縮飲料、紅茶、クリーマー、シェイクミックスなどを想定"
-      ],
-      "why": "注ぎやすさだけでなく、交換作業と残液管理を含めて提案する視点が得られる",
-      "source": "Packaging Europe",
-      "url": "https://www.packagingeurope.com/sig-creates-bag-in-box-fitment-to-dispense-food-and-drink-smoothly/",
-      "publishedAt": "2026-10-06",
-      "addedAt": "2026-10-07T00:00:06.575Z",
-      "language": "ja",
-      "verificationNote": "Packaging Europe本文を確認　密閉性や作業性はSIGの製品説明で、実運用条件ごとの性能確認は別途必要"
-    },
-    {
-      "id": "news-20261007-easydoc",
-      "kind": "news",
-      "category": "industry",
-      "title": "適合宣言書を3段階で作成　包装向けEasyDoC",
-      "dek": "小規模事業者向けに、質問形式で情報を整理し文書化するデジタルサービスが登場",
-      "summary": [
-        "製品と包装の情報を入力し、適合性に関する質問へ回答する流れ",
-        "最大10言語の文書作成と保存、ダウンロードに対応すると説明",
-        "品目数が比較的少ない事業者を主な対象に据える"
-      ],
-      "why": "包材営業でも規制文書の作成責任と必要データを先に確認する重要性が増している",
-      "source": "Packaging Europe",
-      "url": "https://www.packagingeurope.com/new-digital-platform-generates-declaration-of-conformity-in-three-steps/",
-      "publishedAt": "2026-10-06",
-      "addedAt": "2026-10-07T00:00:06.575Z",
-      "language": "ja",
-      "verificationNote": "Packaging Europe本文を確認　機能は開発元PackIntelXの説明で、法令適合を自動保証するものとは扱わず担当部門の確認が必要"
-    },
-    {
-      "id": "news-20261007-avara-telford",
-      "kind": "news",
-      "category": "food",
-      "title": "鶏肉工場へ約20億円　Avaraが自動骨外しを導入へ",
-      "dek": "英国Telford拠点を対象に、次世代自動化設備へ約1000万ポンドを投じる計画",
-      "summary": [
-        "自動骨外し設備を導入し、生産量と効率の向上を目指す",
-        "投資は英国事業へ3年間で1億ポンドを投じる広域計画の一部",
-        "同拠点は鶏肉の小分けと小売向け包装を担う"
-      ],
-      "why": "食品工場では加工設備と包装工程の能力バランス、切替時間、人員配置まで商談材料になる",
-      "source": "Food Manufacture",
-      "url": "https://www.foodmanufacture.co.uk/Article/2026/10/06/avara-foods-to-pump-10m-into-telford-site/",
-      "publishedAt": "2026-10-06",
-      "addedAt": "2026-10-07T00:00:06.575Z",
-      "language": "ja",
-      "verificationNote": "Food Manufacture本文を確認　投資額と効果はAvaraの計画および説明で、導入後の実績ではない"
-    },
-    {
-      "id": "news-20261007-cocoa-volatility",
-      "kind": "news",
-      "category": "food",
-      "title": "カカオ高止まり　食品メーカーは調達と配合を再設計",
-      "dek": "気候と供給集中が価格変動を長引かせ、産地支援や代替原料の検討が進む",
-      "summary": [
-        "価格は2025年のピークを下回る一方、なお高い水準で変動",
-        "西アフリカへの供給集中は短期では解消しにくいとの分析",
-        "メーカーは調達先、使用量、商品構成、代替原料を並行検討"
-      ],
-      "why": "原料変動は内容量や包材寸法、表示変更、販促時期まで連鎖するため早い情報共有が効く",
-      "source": "Food Manufacture",
-      "url": "https://www.foodmanufacture.co.uk/Article/2026/10/06/the-future-of-cocoa-climate-change-supply-risks-and-the-new-era-of-volatility/",
-      "publishedAt": "2026-10-06",
-      "addedAt": "2026-10-07T00:00:06.575Z",
-      "language": "ja",
-      "verificationNote": "Food Manufactureの分析記事を確認　将来見通しはINGなど関係者の予測で、確定した供給量や価格ではない"
-    },
-    {
-      "id": "news-20261007-ferrero-power-crunch",
-      "kind": "news",
-      "category": "food",
-      "title": "Ferreroが高たんぱくバー刷新　菓子の外へ広げる",
-      "dek": "買収後のPower Crunchを再設計し、軽い食感と複数フレーバーで日常需要を狙う",
-      "summary": [
-        "1本あたり12〜14gのたんぱく質をうたう商品群",
-        "食感を軽く、より歯切れよくする方向で配合を刷新",
-        "競技者だけでなく一般消費者の間食需要を見込む"
-      ],
-      "why": "食品メーカーのカテゴリ拡張では、配合だけでなく売場、容量、包材の見直しが同時に動く",
-      "source": "Food Manufacture",
-      "url": "https://www.foodmanufacture.co.uk/Article/2026/10/06/ferrero-targets-growth-beyond-chocolate-with-power-crunch-refresh/",
-      "publishedAt": "2026-10-06",
-      "addedAt": "2026-10-07T00:00:06.575Z",
-      "language": "ja",
-      "verificationNote": "Food Manufacture本文を確認　栄養量と市場狙いはFerrero側の製品説明に基づく"
-    },
-    {
-      "id": "news-20261007-morinaga-crepe-strawberry",
-      "kind": "news",
-      "category": "food",
-      "title": "20案超からピンク生地　森永製菓がクレープアイス刷新",
-      "dek": "ストロベリー味で包材を開けた瞬間からの見え方と食感をまとめて設計する",
-      "summary": [
-        "ブランド初というピンク色のクレープシートを採用",
-        "20パターン以上の試作を経て商品化",
-        "10月19日にコンビニ先行、12月14日に販路を広げる計画"
-      ],
-      "why": "試作品の評価軸を味だけでなく外観、開封、温度帯まで分ける商品開発の例になる",
-      "source": "森永製菓",
-      "url": "https://www.morinaga.co.jp/company/newsrelease/detail.php?no=3213",
-      "publishedAt": "2026-10-06",
-      "addedAt": "2026-10-07T00:00:06.575Z",
-      "language": "ja",
-      "verificationNote": "森永製菓の公式発表を確認　売上や試作回数は同社説明で、発売後の販売実績ではない"
-    },
-    {
-      "id": "news-20261007-elevenlabs-india",
-      "kind": "news",
-      "category": "ai",
-      "title": "ElevenLabsがインドへ大型投資　現地言語と人材を強化",
-      "dek": "数億ドル規模を投じ、音声AIの現地チームとインド諸語対応を広げる方針",
-      "summary": [
-        "投資額は数億ドル規模だが、正確な金額は非公表",
-        "現地チームの拡充とインド言語向けモデル開発を進める",
-        "カルナータカ州とはアクセシビリティ分野でも協力"
-      ],
-      "why": "多言語AIは営業資料、問い合わせ、現場教育への応用余地がある一方、精度確認が欠かせない",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/india/ai-firm-elevenlabs-invest-hundreds-millions-dollars-india-2026-10-06/",
-      "publishedAt": "2026-10-06",
-      "addedAt": "2026-10-07T00:00:06.575Z",
-      "language": "ja",
-      "verificationNote": "Reuters本文を確認　投資規模と用途は会社発表で、金額内訳や成果は未確定"
-    },
-    {
-      "id": "news-20261007-mistral-large4",
-      "kind": "news",
-      "category": "ai",
-      "title": "MistralがLarge 4を予告　10月27日の一般公開計画",
-      "dek": "サイバーセキュリティやコーディングで競争力を主張し、専門家へ先行提供する",
-      "summary": [
-        "新モデルLarge 4を10月27日に一般公開する計画",
-        "一部専門家には先行アクセスを提供",
-        "性能優位はMistral CEOの主張で、独立評価はこれから"
-      ],
-      "why": "法人導入では発表時の性能表だけでなく、公開後の実データと運用費を比べる必要がある",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/mistral-ceo-says-new-ai-model-beats-chinese-ones-some-areas-2026-10-06/",
-      "publishedAt": "2026-10-06",
-      "addedAt": "2026-10-07T00:00:06.575Z",
-      "language": "ja",
-      "verificationNote": "Reuters本文を確認　性能比較はCEOの説明で、公開前モデルのため独立した再現検証は限定的"
-    },
-    {
-      "id": "news-20261007-amd-2027-supply",
-      "kind": "news",
-      "category": "ai",
-      "title": "AMD、2027年の供給を大幅拡大へ　CEOが表明",
-      "dek": "AI向け需要を見据え、顧客や製造パートナーと能力拡大を協議する",
-      "summary": [
-        "2027年に供給量を大きく増やす方針",
-        "顧客需要と生産能力の調整を進めている",
-        "将来計画であり、実際の供給量は今後の製造状況に左右される"
-      ],
-      "why": "半導体供給の見通しは、設備投資とAI導入時期を考える際の前提条件になる",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/asia-pacific/amd-plans-substantially-increase-supply-2027-ceo-says-2026-10-06/",
-      "publishedAt": "2026-10-06",
-      "addedAt": "2026-10-07T00:00:06.575Z",
-      "language": "ja",
-      "verificationNote": "Reuters本文を確認　供給増はCEOが示した2027年計画で、達成済みの実績ではない"
-    },
-    {
-      "id": "news-20261007-mit-ai-accelerators",
-      "kind": "news",
-      "category": "ai",
-      "title": "AI半導体120種超を同じ物差しで比較　MIT調査",
-      "dek": "公開情報から性能と消費電力を継続整理し、用途に合う加速器選びを支える",
-      "summary": [
-        "最新調査は120を超えるAIアクセラレーターを対象",
-        "ピーク性能とピーク電力を主な比較軸にする",
-        "CPU、GPU、ASIC、FPGA、データフロー型などを整理"
-      ],
-      "why": "設備選定では最高性能だけでなく、電力と用途適合を並べる考え方が製造現場にも通じる",
-      "source": "MIT News",
-      "url": "https://news.mit.edu/2026/supercomputing-researchers-document-evolution-ai-hardware-1006",
-      "publishedAt": "2026-10-06",
-      "addedAt": "2026-10-07T00:00:06.575Z",
-      "language": "ja",
-      "verificationNote": "MIT News本文を確認　調査は公開情報に依存し、企業が非公開とする実運用性能は含まれない場合がある"
-    },
-    {
-      "id": "news-20261007-hanoi-metro-trainsets",
-      "kind": "news",
-      "category": "travel",
-      "title": "ハノイ都市鉄道へ200編成　VingroupとAlstom合意",
-      "dek": "車両供給と技術移転を含む枠組みで、ベトナムの都市交通整備を進める",
-      "summary": [
-        "対象はハノイの都市鉄道向け200編成",
-        "Alstomの技術移転を契約枠組みに含める",
-        "合意段階で、納入済み車両の実績ではない"
-      ],
-      "why": "ハノイの移動環境を左右する大型計画として、旅行者にも現地事業にも影響が大きい",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/asia-pacific/vingroup-alstom-agree-deal-200-hanoi-metro-trainsets-2026-10-06/",
-      "publishedAt": "2026-10-06",
-      "addedAt": "2026-10-07T00:00:06.575Z",
-      "language": "ja",
-      "verificationNote": "Reuters本文を確認　契約・計画の発表で、開業時期や実際の輸送能力は今後の進捗確認が必要"
-    },
-    {
-      "id": "news-20261007-global-markets-records",
-      "kind": "news",
-      "category": "world",
-      "title": "米株が最高値圏　金利低下とAI期待が支え",
-      "dek": "S&P500とNasdaqが記録的水準をつける一方、原油はおおむね安定して推移した",
-      "summary": [
-        "米主要株価指数が最高値圏で推移",
-        "国債利回りの低下が株式の支えになった",
-        "AI関連への期待と投資負担への警戒が併存"
-      ],
-      "why": "相場の強さだけでなく、金利と設備投資負担を合わせて見ると法人需要の温度感をつかみやすい",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-06/",
-      "publishedAt": "2026-10-06",
-      "addedAt": "2026-10-07T00:00:06.575Z",
-      "language": "ja",
-      "verificationNote": "Reutersの市場概況を確認　市場値は記事時点のスナップショットで、その後変動する"
-    },
-    {
       "id": "column-20261006-good-unit-cost",
       "kind": "column",
       "category": "sales",
@@ -3374,139 +3589,6 @@
         "数量のうち発注確定分と追加見込み分はそれぞれどれだけで、追加を判断する日はいつですか？",
         "終了後に残った専用包材の保有・保管・使用可否は、どの担当者と条件を確認すればよいですか？"
       ]
-    },
-    {
-      "id": "news-20261012-food-climate-supply-risk",
-      "kind": "news",
-      "category": "food",
-      "title": "食品企業の気候リスク評価、複合災害を十分反映せず",
-      "dek": "干ばつ・火災・害虫などが重なる供給ショックを、個別モデルだけで捉えにくいと報告が指摘した",
-      "summary": [
-        "Re-WIRE報告は食品供給網の複合リスク評価を求めた",
-        "多くの収量モデルは複数災害の連鎖を十分扱えていない",
-        "企業には保険業界のようなストレステストを提案"
-      ],
-      "why": "食品向け営業では一原料一地域だけでなく、代替調達と包材変更の連鎖も確認したい",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/sustainability/land-use-biodiversity/food-companies-are-flying-blind-escalating-climate-threats-supply-chains-heres--ecmii-2026-10-05/",
-      "publishedAt": "2026-10-05",
-      "language": "ja",
-      "verificationNote": "Reuters掲載の論考とFood and Land Use Coalition報告を確認　提案内容であり効果の実績ではない",
-      "addedAt": "2026-10-11T23:20:00.000Z"
-    },
-    {
-      "id": "news-20261007-sunkist-disney-pack",
-      "kind": "news",
-      "category": "food",
-      "title": "同じ中身に全9柄　サンキストが限定パッケージ",
-      "dek": "3種の100％果汁飲料でディズニーキャラクターを採用し、10月12日の週から順次発売",
-      "summary": [
-        "アップル、グレープ、オレンジブレンドの3商品が対象",
-        "商品ごとに異なる図柄を用意し、合計9種類を展開",
-        "全国で数量限定として順次販売する"
-      ],
-      "why": "多柄展開は版管理、切替順、残材、セット出荷の確認が営業提案の差になる",
-      "source": "森永乳業",
-      "url": "https://www.morinagamilk.co.jp/release/newsentry-4745.html",
-      "publishedAt": "2026-10-05",
-      "addedAt": "2026-10-07T00:00:06.575Z",
-      "language": "ja",
-      "verificationNote": "森永乳業の公式発表を確認　数量限定商品の計画で、販売数量や消化率は未公表"
-    },
-    {
-      "id": "20261005-hyakupa-paper-tube",
-      "kind": "news",
-      "category": "industry",
-      "title": "持ち歩いて詰め替える　緑茶の紙筒が包装賞",
-      "dek": "一回分のバリア包材と、繰り返し使う紙の外装を組み合わせる",
-      "summary": [
-        "Hyaku-Paの緑茶用包装が世界緑茶コンテスト2026の包装大賞を受賞した",
-        "細い紙筒には一回分の小袋3個を収め、家庭用の保存容器から補充できる",
-        "鮮度を守る小袋にはバリアラミネートを使い、筒・保存容器・展示箱は紙製としている"
-      ],
-      "why": "外装の紙化と中身の保護を分けて考える提案の参考になる",
-      "source": "Packaging Europe",
-      "url": "https://www.packagingeurope.com/hyaku-pa-wins-award-for-reusable-paper-tube-and-display-box-for-green-tea/",
-      "publishedAt": "2026-10-05",
-      "addedAt": "2026-10-06",
-      "language": "en",
-      "verificationNote": "10月5日付の本文を確認　構成は記事掲載の企業説明、回収後の実績は確認していない"
-    },
-    {
-      "id": "20261005-wagyu-raoh",
-      "kind": "news",
-      "category": "food",
-      "title": "ラ王に和牛×シーフード　別添ペーストで味変",
-      "dek": "日清食品がWAGYUMAFIA監修の新商品を10月19日に発売予定",
-      "summary": [
-        "日清食品はWAGYUMAFIA監修のラ王を全国発売すると発表した",
-        "牛白湯に和牛脂とシーフードのうまみを組み合わせ、別添の柚子ペーストを付ける",
-        "発売予定日は10月19日で、内容量は101g、1ケース12食入り"
-      ],
-      "why": "別添品を含む商品構成と、発売前の包材手配を考える材料になる",
-      "source": "日清食品",
-      "url": "https://www.nissin.com/jp/company/news/13946/",
-      "publishedAt": "2026-10-05",
-      "addedAt": "2026-10-06",
-      "language": "ja",
-      "verificationNote": "10月5日付の公式本文を確認　10月19日は発売予定日であり、販売実績ではない"
-    },
-    {
-      "id": "20261005-upm-paper-cocreation",
-      "kind": "news",
-      "category": "industry",
-      "title": "紙へ切り替えるなら、包材と設備を一緒に評価",
-      "dek": "UPMの担当者が、単純な材料置換では済まない紙化の課題を語る",
-      "summary": [
-        "UPM Specialty Materialsの技術担当者が紙包装への移行についてインタビューに答えた",
-        "材料の終末処理、バリア性能、生産効率を同時に考える必要性を説明している",
-        "紙をそのまま既存包装に置き換えて全設備で動くとは言えず、関係企業との共同開発を重視した"
-      ],
-      "why": "紙化の見積もりを出す前に、評価する設備と条件をすり合わせたい",
-      "source": "Packaging Europe",
-      "url": "https://www.packagingeurope.com/where-we-stand-in-the-paper-transition-and-how-co-creation-can-help/",
-      "publishedAt": "2026-10-05",
-      "addedAt": "2026-10-06",
-      "language": "en",
-      "verificationNote": "10月5日付のインタビュー本文を確認　UPM担当者の見解であり、規制適合や全設備への適性を保証する内容ではない"
-    },
-    {
-      "id": "20261005-utien-unifresh",
-      "kind": "news",
-      "category": "industry",
-      "title": "厚みのある食品にも　スキン包装の加熱を二段階に",
-      "dek": "Utien Packがフィルムと形状への対応幅を説明",
-      "summary": [
-        "Utien PackはUnifresh真空スキン包装技術を紹介した",
-        "予熱とシール室での加熱を組み合わせ、50mmの突出形状への対応をうたう",
-        "PLCの条件調整により、高バリアフィルムから通気性フィルムまで対応すると説明する"
-      ],
-      "why": "フィルムの選定と機械条件を一緒に評価する商談につながる",
-      "source": "Packaging Europe",
-      "url": "https://www.packagingeurope.com/utien-pack-expanding-the-possibilities-of-skin-packaging/",
-      "publishedAt": "2026-10-05",
-      "addedAt": "2026-10-06",
-      "language": "en",
-      "verificationNote": "10月5日付のメーカー執筆・提供記事を確認　対応寸法やフィルム範囲はメーカー説明で、個別食品の保存性は別途評価が必要"
-    },
-    {
-      "id": "20261005-robatech-melter-renewal",
-      "kind": "news",
-      "category": "industry",
-      "title": "包装設備の更新は、予備機の共通化まで提案する",
-      "dek": "食品工場の接着剤メルター更新事例をRobatechが紹介",
-      "summary": [
-        "RobatechはDE-VAU-GEによる接着剤メルター44台の更新事例を紹介した",
-        "加熱ホース接続数の異なる旧設備を6接続のAlpha S Proに統一した",
-        "予備機を各包装ラインで使える構成とし、保守・交換・部品管理の簡素化を説明している"
-      ],
-      "why": "設備単体の価格に加え、保守と予備機の運用まで比較できる",
-      "source": "Packaging Europe",
-      "url": "https://www.packagingeurope.com/why-de-vau-ge-upgraded-44-adhesive-melters-with-robatech/",
-      "publishedAt": "2026-10-05",
-      "addedAt": "2026-10-06",
-      "language": "en",
-      "verificationNote": "10月5日付のメーカー提供記事を確認　2026年に行われた更新事例の紹介で、更新自体が10月5日に完了したとの意味ではない"
     },
     {
       "id": "20261005-column-machine-utilization",
