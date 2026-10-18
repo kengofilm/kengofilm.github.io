@@ -1,7 +1,86 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-17T23:43:17.876Z",
+  "updatedAt": "2026-10-18T23:21:09.266Z",
   "articles": [
+    {
+      "id": "news-20261019-film-recycling-protocol",
+      "kind": "news",
+      "category": "industry",
+      "title": "脱墨・剥離の評価を共通化　artienceとDICが国内向け手順",
+      "dek": "試験条件・評価基準・報告様式をそろえて軟包装の比較を支援",
+      "summary": [
+        "フィルム包装の再資源化に向け共通プロトコルを策定",
+        "脱墨と層間剥離の評価を同じ物差しで扱う",
+        "加工会社・ブランド・再生事業者へ利用を呼び掛ける"
+      ],
+      "why": "ラミ構成の提案では、再生できるという言葉だけでなく試験条件と評価結果を確認したい",
+      "source": "artience／DIC",
+      "url": "https://www.artiencegroup.com/en/news/2026/26100701.html",
+      "publishedAt": "2026-10-07",
+      "addedAt": "2026-10-19",
+      "language": "en",
+      "verificationNote": "公式発表の本文を確認　掲載英語には自動翻訳の注意書きあり　業界初は両社調査による表現で、個別包材のリサイクル実績を保証しない"
+    },
+    {
+      "id": "column-20261019-acceptance-and-invoice",
+      "kind": "column",
+      "category": "sales",
+      "title": "納品したのに請求できない　検収の条件を先に聞く",
+      "dek": "受注前に、荷物・受領記録・検収・請求の流れをつなげる",
+      "summary": [
+        "到着日と検収完了日を同じものと考えない",
+        "請求に必要な記録と提出先を確認する",
+        "条件変更は営業だけで判断せず担当部署とそろえる"
+      ],
+      "why": "作って届けるだけで終わらず、顧客の受入手続きまで見れば案件の停滞に気付きやすい",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-19",
+      "addedAt": "2026-10-19",
+      "language": "ja",
+      "verificationNote": "営業コラム　一般的な商談整理の考え方で、特定の企業・顧客の実績ではない　品質・食品安全・契約上の判断は各責任部署で確認する",
+      "body": [
+        {
+          "heading": "納入日だけでは終点が分からない",
+          "text": "荷物が倉庫に着くこと、受領記録が発行されること、顧客の検収が終わること、請求書を受け付けてもらうことは、別の出来事になる場合がある　受注時には納期だけでなく、誰がどの記録をもって次へ進めるのかを確認したい　営業が独自の会計判断をするためではなく、経理や営業事務が処理できる情報を欠かさないための確認だよ"
+        },
+        {
+          "heading": "現物と書類を同じ予定に入れる",
+          "text": "仕様書、検査成績書、納品書など、必要な書類は顧客や品目によって違う　現物は予定どおり着いていても、書類の宛先や注文番号が違えば受入処理が止まることがある　必要な書類名、提出のタイミング、提出先、顧客の注文番号との対応を一枚に並べ、出荷を担当する人にも共有しておこう　不要な私的情報まで集める必要はない"
+        },
+        {
+          "heading": "分納や預かり品こそ境界を聞く",
+          "text": "一つの注文を複数回に分けて届ける場合、納入のたびに処理するのか、注文全量の到着後に処理するのかを聞く　顧客の倉庫へ預ける形や、受入後の評価がある品目も、現物の移動と手続きの関係を確認したい　検収・請求や売上計上の扱いを営業の感覚で決めず、契約内容と自社の経理・契約担当の確認につなげる"
+        },
+        {
+          "heading": "止まったら担当者と不足物を特定する",
+          "text": "未処理という連絡を受けたら、すぐに相手の対応が遅いと決め付けない　受領記録が未登録なのか、数量差があるのか、検査結果を待っているのかを分けて聞く　次に必要な書類や確認、その担当者、回答予定を短く残そう　通常と違う条件や締めへの影響が分かった場合は、社内担当へ早めに共有し、顧客に独断で約束しない"
+        }
+      ],
+      "questions": [
+        "この品目は、何の記録がそろうと検収完了になりますか",
+        "分納の場合は、納入ごとに検収・請求を進められますか",
+        "受入や請求が止まったときは、どなたに何を確認すればよいですか"
+      ]
+    },
+    {
+      "id": "news-20261019-kewpie-pef-research",
+      "kind": "news",
+      "category": "food",
+      "title": "液卵・牛乳の非加熱処理へ　高電界パルス装置を共同開発",
+      "dek": "熊本大学などの研究がJST事業に採択",
+      "summary": [
+        "熊本大学・岩井機械・キユーピー・らくのうマザーズが参画",
+        "2029年3月までに毎時100Lの試作装置で性能を検証する計画",
+        "まず毎時10Lの試験から連続処理の知見を積み上げる"
+      ],
+      "why": "食品の処理方式が変わる可能性を、包装の必要条件を見直す将来の論点として追いたい",
+      "source": "熊本大学ほか／キユーピー",
+      "url": "https://www.kewpie.com/newsrelease/items/2026/items/pdf/2026/newsrelease_20261014.pdf",
+      "publishedAt": "2026-10-14",
+      "addedAt": "2026-10-19",
+      "language": "ja",
+      "verificationNote": "共同発表PDF本文を確認　採択と研究開発計画の発表で、毎時100Lの性能達成や個別食品の安全性・期限延長が実証済みという意味ではない"
+    },
     {
       "id": "news-20261018-solarflex-fsp",
       "kind": "news",
@@ -20,6 +99,389 @@
       "addedAt": "2026-10-18",
       "language": "en",
       "verificationNote": "メーカー公式発表を確認　性能・規制対応は同社説明で、最終包装の適合や食品安全を一律に保証するものではない"
+    },
+    {
+      "id": "column-20261019-food-supplier-audit",
+      "kind": "column",
+      "category": "food",
+      "title": "食品メーカーの新規採用、工場監査の準備も納期に入れる",
+      "dek": "試作品が通っても、供給先登録の確認が残ることがある",
+      "summary": [
+        "試作品の評価と供給先としての審査を分ける",
+        "監査方法・必要資料・回答担当を早めにそろえる",
+        "指摘への対応完了は顧客の確認手順で判断する"
+      ],
+      "why": "包材の試験に合格した後の手続きを見落とさず、初回納入までの予定を現実的に組める",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-19",
+      "addedAt": "2026-10-19",
+      "language": "ja",
+      "verificationNote": "営業コラム　一般的な商談整理の考え方で、特定の企業・顧客の実績ではない　品質・食品安全・契約上の判断は各責任部署で確認する",
+      "body": [
+        {
+          "heading": "サンプル合格と取引開始は別の確認",
+          "text": "食品メーカーに新しい包材を提案するとき、試作品の評価が良ければすぐ注文になるとは限らない　供給先登録、品質に関する資料の審査、製造拠点の監査などが必要な場合がある　まず顧客に、今回どの確認が必要かを聞こう　すべてのメーカーが同じ手続きを取ると決め付けず、製品と案件ごとの条件を確認したい"
+        },
+        {
+          "heading": "監査日より前に必要資料をそろえる",
+          "text": "訪問日が決まっても、事前の質問票や提出資料の担当が決まらなければ準備は進まない　要求された項目を社内の品質・製造などの担当へ割り振り、提出期限と最新版の管理者を確認する　営業が専門事項の回答を推測して埋めたり、提出権限のない資料を送ったりしない　開示できる範囲や機密情報の扱いは社内の担当とそろえる"
+        },
+        {
+          "heading": "製造場所と外部工程を案件に合わせる",
+          "text": "確認対象が自社の拠点だけなのか、外注工程や保管場所も含むのかで、必要な調整が違う　実際に提案している構成と加工の流れを担当者に示し、監査や資料確認の対象範囲を聞きたい　営業が外部工程の管理状態を一律に保証するのではなく、関係部署の事実確認と顧客が求める確認手続きをつなぐ役割を担う"
+        },
+        {
+          "heading": "指摘事項を次の予定へ落とす",
+          "text": "指摘を受けたら、内容、回答担当、提出物、期限、顧客側の確認者を記録する　資料を提出した日を、そのまま是正完了日や採用確定日として扱わない　顧客がどのように確認し、どの段階で初回発注へ進めるかを聞こう　品質・食品安全の判断は責任部署に委ね、営業は未完了事項を含めた予定を共有する"
+        }
+      ],
+      "questions": [
+        "試作品の評価以外に、供給先登録や監査で必要な確認はありますか",
+        "事前に提出する資料と、対象となる製造拠点・外注工程を教えてもらえますか",
+        "指摘への回答後は、どの確認を経て初回発注へ進めますか"
+      ]
+    },
+    {
+      "id": "news-20261019-canworks-acquisition",
+      "kind": "news",
+      "category": "industry",
+      "title": "飲料缶へのデジタル直刷り　CanworksにMason Wellsが出資",
+      "dek": "買収完了を発表し、創業者・経営陣も共同保有",
+      "summary": [
+        "Mason WellsがCanworksの買収完了を公表",
+        "飲料ブランドや充填受託会社へ印刷済みアルミ缶を供給",
+        "米国内5拠点で小ロット対応などを提供すると説明"
+      ],
+      "why": "ラベルやスリーブ以外の加飾方式が、ロットと納期の選び方をどう変えるか見たい",
+      "source": "Mason Wells",
+      "url": "https://www.masonwells.com/mason-wells-acquires-canworks/",
+      "publishedAt": "2026-10-14",
+      "addedAt": "2026-10-19",
+      "language": "en",
+      "verificationNote": "買収当事者の公式発表を確認　短納期・柔軟性などは同社のサービス説明で、個別案件の性能や納期は未検証"
+    },
+    {
+      "id": "news-20261019-sonoco-jar-survey",
+      "kind": "news",
+      "category": "industry",
+      "title": "瓶の開閉で困る人は6割　Sonoco委託調査",
+      "dek": "英仏162人の調査結果を包装専門媒体が紹介",
+      "summary": [
+        "従来型のガラス瓶の開閉に6割が苦労すると報告",
+        "Kadence Internationalが英仏の消費者162人を調査",
+        "Sonocoは開けやすいOrbit金属蓋への関心を紹介"
+      ],
+      "why": "開封性の提案は材料性能に加え、想定する使用者と評価方法も聞くきっかけになる",
+      "source": "Canmaking News",
+      "url": "https://www.canmakingnews.com/issues/latest/sonoco-research-finds-six-in-ten-consumers-struggle-to-open-glass-jars/",
+      "publishedAt": "2026-10-16",
+      "addedAt": "2026-10-19",
+      "language": "en",
+      "verificationNote": "公開導入部を確認　全文はログインが必要　Sonoco委託調査であり、日本の消費者全体へ結果を一般化できない"
+    },
+    {
+      "id": "news-20261019-ardagh-sale-order",
+      "kind": "news",
+      "category": "industry",
+      "title": "Ardagh Metal Packaging、売却準備の差し止め解除",
+      "dek": "ルクセンブルク裁判所の判断を包装専門媒体が報道",
+      "summary": [
+        "裁判所が10月14日に売却準備を止める命令を撤回",
+        "Ardagh HoldingsがAMP売却に向けた準備を再開可能に",
+        "少数持分保有者による法的な異議が背景にある"
+      ],
+      "why": "容器メーカーの資本再編を見る際は、手続き再開と売却成立を分けて把握したい",
+      "source": "Canmaking News",
+      "url": "https://www.canmakingnews.com/issues/latest/ardagh-metal-packaging-sale-process-can-resume-after-court-lifts-injunction/",
+      "publishedAt": "2026-10-16",
+      "addedAt": "2026-10-19",
+      "language": "en",
+      "verificationNote": "公開導入部を確認　全文はログインが必要で裁判所原文は未確認　売却成立や買い手の決定を示す記事ではない"
+    },
+    {
+      "id": "news-20261019-axanzo-name",
+      "kind": "news",
+      "category": "industry",
+      "title": "塗料2社の統合後名称はAxanzo　完了前に公表",
+      "dek": "AkzoNobelとAxaltaが予定する新社名を発表",
+      "summary": [
+        "統合後の会社名をAxanzoとする計画を発表",
+        "合併計画自体は2025年11月に公表済み",
+        "上場後の銘柄コードにはAXZを予定する"
+      ],
+      "why": "化学品の供給先再編では、名称発表と契約・製品供給の変更を混同しないようにしたい",
+      "source": "Axalta／AkzoNobel",
+      "url": "https://ir.axalta.com/news/press-releases/detail/693/akzonobel-and-axalta-to-be-called-axanzo-following-merger",
+      "publishedAt": "2026-10-15",
+      "addedAt": "2026-10-19",
+      "language": "en",
+      "verificationNote": "当事者の公式発表を確認　予定する合併完了後の名称についての発表で、合併完了の実績ではない"
+    },
+    {
+      "id": "news-20261019-china-solar-export-proposal",
+      "kind": "news",
+      "category": "industry",
+      "title": "中国、太陽光製造の12技術を輸出管理へ提案",
+      "dek": "禁止対象と許可制の対象を分け、11月15日まで意見募集",
+      "summary": [
+        "商務省が太陽光設備を作る12技術の管理追加を提案",
+        "一部のセル・ウエハー技術などを禁止対象とする案",
+        "TOPConなどの先端セル製造技術は制限対象案に含む"
+      ],
+      "why": "海外設備投資では、装置の購入と技術移転の条件を分けて確認する必要がありそう",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/autos-transportation/china-proposes-export-controls-solar-manufacturing-technologies-2026-10-18/",
+      "publishedAt": "2026-10-18",
+      "addedAt": "2026-10-19",
+      "language": "en",
+      "verificationNote": "Reuters本文と公開日時を確認　輸出管理リスト改定の提案段階で、規制案すべての正式施行を意味しない"
+    },
+    {
+      "id": "news-20261019-schneider-targets",
+      "kind": "news",
+      "category": "industry",
+      "title": "Schneider、データセンター需要で通期目標を再引き上げ",
+      "dek": "7〜9月の売上高は114.6億ユーロと報道",
+      "summary": [
+        "2026年の売上有機成長率目標を12〜14％へ引き上げ",
+        "調整後EBITDAの有機成長目標を18〜21％に変更",
+        "会社はデータセンター向けの強い需要を説明"
+      ],
+      "why": "AI投資の影響を半導体だけでなく、電源・冷却・産業設備の受注まで追いたい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/schneider-electric-raises-2026-targets-again-booming-data-centre-demand-2026-10-16/",
+      "publishedAt": "2026-10-16",
+      "addedAt": "2026-10-19",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　四半期売上は発表実績、通期の成長率は会社予想であり達成済みではない"
+    },
+    {
+      "id": "news-20261019-samsung-nvhbm-report",
+      "kind": "news",
+      "category": "ai",
+      "title": "Samsungの次世代HBM、基板側にTSMC技術と韓国紙",
+      "dek": "Nvidia向けカスタムメモリーの製造分担をReutersが紹介",
+      "summary": [
+        "韓国紙はNVHBMのベースダイにTSMCの3nm工程を使うと報道",
+        "SamsungのHBM製造段階でのTSMC協業は初になる見通しと説明",
+        "標準HBMなどは内製を維持する計画とも報じる"
+      ],
+      "why": "高機能品でも全工程を一社で担うとは限らず、外部工程との分担が競争条件になりそう",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-2026-10-18/",
+      "publishedAt": "2026-10-18",
+      "addedAt": "2026-10-19",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　ソウル経済新聞の業界関係者報道を紹介した記事で、量産開始やSamsungの正式発表としては扱わない"
+    },
+    {
+      "id": "news-20261019-anthropic-benefit-fund",
+      "kind": "news",
+      "category": "ai",
+      "title": "Anthropic、株式5％を公益基金へ拠出する計画",
+      "dek": "AIが労働市場へ与える影響などへの支援を想定",
+      "summary": [
+        "新設する公益基金へ同社株式5％を拠出すると発表",
+        "評価額の上昇に応じ追加拠出できる仕組みも予定",
+        "運営体制や基準の詳細は今後公表する方針"
+      ],
+      "why": "AI企業の成長だけでなく、利益配分と雇用変化への対応が実際にどう進むか見たい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/anthropic-commit-5-stake-new-public-benefit-fund-2026-10-18/",
+      "publishedAt": "2026-10-18",
+      "addedAt": "2026-10-19",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　会社が表明した計画で、基金による支援の実施実績や効果はまだ示されていない"
+    },
+    {
+      "id": "news-20261019-vietnam-efta-pact",
+      "kind": "news",
+      "category": "world",
+      "title": "ベトナムとEFTA4か国、自由貿易協定に署名",
+      "dek": "ノルウェー・スイスなどとの関税引き下げへ前進",
+      "summary": [
+        "両政府が10月18日に協定署名を発表",
+        "相手はノルウェー・スイス・アイスランド・リヒテンシュタイン",
+        "ノルウェーは発効後7年以内に対越輸出の98％超を無関税化と説明"
+      ],
+      "why": "ベトナム向け輸出を考えるときは、発効時期と品目別条件を別途確認したい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/vietnam-signs-free-trade-pact-with-european-countries-including-norway-2026-10-18/",
+      "publishedAt": "2026-10-18",
+      "addedAt": "2026-10-19",
+      "language": "en",
+      "verificationNote": "Reuters本文と公開日時を確認　署名と発効は別段階で、すべての品目の関税が直ちになくなるわけではない"
+    },
+    {
+      "id": "news-20261019-reliance-go-shop",
+      "kind": "news",
+      "category": "industry",
+      "title": "配管部材RWCの買収案、対抗提案なく次段階へ",
+      "dek": "Brookfieldによる25.3億ドル案を取締役会が再推奨",
+      "summary": [
+        "他の買い手を募る期間に競合する提案はなかったと発表",
+        "Brookfield側が全株式を取得する計画を維持",
+        "株主承認などが必要で買収完了はまだ先"
+      ],
+      "why": "製造業の再編では、買収合意後にも競合提案の探索や承認手続きが残ることを押さえたい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/transactional/brookfields-253-billion-bid-reliance-worldwide-clears-go-shop-hurdle-2026-10-18/",
+      "publishedAt": "2026-10-18",
+      "addedAt": "2026-10-19",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　公開日時はUTCで10月18日22時30分、日本では19日朝　対象企業の発表は現地19日で、売却手続きの進展を報じている"
+    },
+    {
+      "id": "news-20261019-koikeya-taisho",
+      "kind": "news",
+      "category": "food",
+      "title": "湖池屋、北海道限定で大正メークインのポテトチップス",
+      "dek": "55gの3味を約10万袋限定で順次切り替え",
+      "summary": [
+        "10月19日から北海道エリアで数量限定発売",
+        "JAシレラ富良野工場で生産する3味を展開",
+        "既存シリーズからの自然切り替えで店頭開始日は前後する"
+      ],
+      "why": "地域・収穫期限定品では、限定数量と自然切り替えの条件が包材手配の論点になりそう",
+      "source": "湖池屋",
+      "url": "https://www.nissin.com/jp/company/news/13954/",
+      "publishedAt": "2026-10-16",
+      "addedAt": "2026-10-19",
+      "language": "ja",
+      "verificationNote": "メーカー公式発表を確認　公開日は10月16日、発売日は19日　原料の加工上の特徴はメーカー説明で、販売実績は未公表"
+    },
+    {
+      "id": "news-20261019-koikeya-imakane",
+      "kind": "news",
+      "category": "food",
+      "title": "今金男しゃくの限定ポテト、一般店へ販路拡大",
+      "dek": "湖池屋が68g品を10月19日からスーパーなどへ",
+      "summary": [
+        "10月12日にコンビニ先行で発売した商品",
+        "19日からスーパーなど一般チャネルにも広げる",
+        "産地と品種の違いを打ち出した期間限定品"
+      ],
+      "why": "同じ商品でも販売経路で投入日が違うため、包材納入を一つの日付だけで管理しないようにしたい",
+      "source": "湖池屋",
+      "url": "https://www.nissin.com/jp/company/news/13949/",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-19",
+      "language": "ja",
+      "verificationNote": "メーカー公式発表を確認　公開日は13日で、コンビニ先行発売は12日　大正メークインの地域限定品とは別商品"
+    },
+    {
+      "id": "news-20261019-black-marble-isaias",
+      "kind": "news",
+      "category": "science",
+      "title": "夜の光で停電と復旧を追跡　NASAが衛星画像を公開",
+      "dek": "ハリケーン後のフロリダ沿岸を日ごとに比較",
+      "summary": [
+        "Black Marble HDで10月11日の夜間光の減少を可視化",
+        "12日には一部の光が戻り14日は被災前に近いパターンに",
+        "衛星データは地上の停電情報を補うものと説明"
+      ],
+      "why": "物流や工場の被災状況でも、広域観測と現地確認を組み合わせる発想が役立ちそう",
+      "source": "NASA",
+      "url": "https://science.nasa.gov/earth/earth-observatory/isaias-dims-the-gulf-coast/",
+      "publishedAt": "2026-10-16",
+      "addedAt": "2026-10-19",
+      "language": "en",
+      "verificationNote": "NASA本文と公開日を確認　夜間光だけでは停電原因や予備電源の有無を確定できないと本文も明示"
+    },
+    {
+      "id": "news-20261019-perseverance-distance",
+      "kind": "news",
+      "category": "science",
+      "title": "火星車Perseverance、地球外走行距離の記録を更新",
+      "dek": "10月11日に累計45.22kmへ到達とNASA",
+      "summary": [
+        "Opportunityの45.16kmを上回ったと発表",
+        "約5年半の走行で記録に達した",
+        "走行距離の90％超で自律航法AutoNavを利用"
+      ],
+      "why": "自動化の価値を瞬間の速さだけでなく、長期間に積み上げた移動実績で見る例になる",
+      "source": "NASA",
+      "url": "https://science.nasa.gov/blogs/perseverance-mars-rover/2026/10/12/nasas-perseverance-sets-off-world-record-for-total-distance-driven/",
+      "publishedAt": "2026-10-12",
+      "addedAt": "2026-10-19",
+      "language": "en",
+      "verificationNote": "NASAの運用報告本文を確認　公開日は12日、記録達成は11日　地上担当者が選ぶ経由地点の間を自律走行する方式"
+    },
+    {
+      "id": "news-20261019-elnino-satellite",
+      "kind": "news",
+      "category": "science",
+      "title": "NASA、強いエルニーニョを海面高度・水温・海色で観測",
+      "dek": "一つの指標に頼らず太平洋の変化を重ねる",
+      "summary": [
+        "Sentinel-6衛星などで太平洋の海面高度の偏差を追跡",
+        "水温の上昇と海色の変化も別の観測で確認",
+        "2025年と2026年のデータを並べて現象を説明"
+      ],
+      "why": "食品原料や物流に関係する気候変化を、個々の地域予測と区別して把握したい",
+      "source": "NASA",
+      "url": "https://science.nasa.gov/earth/nasa-satellites-observe-historic-2026-el-nino/",
+      "publishedAt": "2026-10-15",
+      "addedAt": "2026-10-19",
+      "language": "en",
+      "verificationNote": "NASA本文と公開日を確認　観測結果の紹介で、個別地域の天候・農作物収量を断定する情報ではない"
+    },
+    {
+      "id": "news-20261019-x59-maintenance",
+      "kind": "news",
+      "category": "science",
+      "title": "静かな超音速機X-59、飛行後の整備現場を公開",
+      "dek": "エンジン吸気口の点検で異物や損傷を確認",
+      "summary": [
+        "NASAが4月に撮影した整備作業を10月16日に紹介",
+        "定期整備に加え飛行後の吸気口・排気部を目視点検",
+        "公表時点で38回の飛行後点検にエンジン損傷はないと説明"
+      ],
+      "why": "新技術の話でも、運用を支える点検作業や整備性まで見ると実用化の条件が分かる",
+      "source": "NASA",
+      "url": "https://www.nasa.gov/blogs/quesst/2026/10/16/diving-into-maintenance-with-nasas-x-59/",
+      "publishedAt": "2026-10-16",
+      "addedAt": "2026-10-19",
+      "language": "en",
+      "verificationNote": "NASA本文を確認　春の整備映像を紹介する公開記事で、38回の飛行は本文公表時点の説明　商用運航の開始を意味しない"
+    },
+    {
+      "id": "news-20261019-aircanada-united-2027",
+      "kind": "news",
+      "category": "travel",
+      "title": "Air CanadaとUnited、2027年夏の米加路線を拡充へ",
+      "dek": "Edmonton―NewarkやDenver―Québec Cityなどを計画",
+      "summary": [
+        "Air CanadaはToronto―Louisvilleなど3路線を新設予定",
+        "UnitedもNewark―St. John’sなどを季節便で追加へ",
+        "共同事業契約の更新・拡大は規制承認が条件"
+      ],
+      "why": "米国とカナダを組み合わせた周遊で、直行便と乗り継ぎの選択肢が増える可能性がある",
+      "source": "Air Canada",
+      "url": "https://www.aircanada.com/media/air-canada-expands-canada-us-connectivity-with-new-summer-2027-routes-increasing-options-for-travellers-under-its-transborder-joint-business-agreement-with-united-airlines/",
+      "publishedAt": "2026-10-16",
+      "addedAt": "2026-10-19",
+      "language": "en",
+      "verificationNote": "航空会社の公式発表と路線表を確認　2027年夏の予定で、現在運航中ではない　運航日や販売条件は予約時に再確認"
+    },
+    {
+      "id": "news-20261019-pluumoplus-us",
+      "kind": "news",
+      "category": "industry",
+      "title": "羽毛由来の断熱包装PluumoPlus、米国へ展開",
+      "dek": "ColdCorrとの現地生産は2027年1〜3月開始の計画",
+      "summary": [
+        "Aeropowderが再生羽毛を使った断熱包装の米国展開を発表と報道",
+        "冷凍・冷蔵に加え2〜8℃帯の薬局向けメーラーを紹介",
+        "ColdCorrを米国での生産パートナーとする"
+      ],
+      "why": "断熱材の素材変更では、輸送条件ごとの温度評価と現地での供給時期を一緒に確認したい",
+      "source": "American Journal of Transportation",
+      "url": "https://www.ajot.com/news/aeropowder-launches-feather-based-brand-pluumoplus-for-thermal-packaging-in-u.s",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-19",
+      "language": "en",
+      "verificationNote": "AJOT本文を確認し、羽毛由来という材料説明は製品公式サイトでも照合　米国展開・生産予定は報道に基づく　比較性能や医薬輸送への適合は独自検証していない"
     },
     {
       "id": "column-20261018-subcontract-handoff",
@@ -2553,386 +3015,6 @@
       "language": "ja",
       "verificationNote": "Reutersが複数関係者から確認した計画を参照　会社はコメントしておらず、実施前の情報として扱った",
       "addedAt": "2026-10-10T23:44:34.000Z"
-    },
-    {
-      "id": "news-20261011-meta-bans-tiktok-ads",
-      "kind": "news",
-      "category": "ai",
-      "title": "Meta、TikTokによる自社サービス内広告を停止",
-      "dek": "複数国でByteDance関連サービスへの誘導広告を禁じ、競合他社への広告規定を厳格化した",
-      "summary": [
-        "Metaは米国や日本など7か国でTikTokの広告を禁止",
-        "第三者広告主がByteDanceのサービスへ誘導する広告も対象",
-        "Metaは競争上の通常の判断と説明し、TikTokはコメントしていない"
-      ],
-      "why": "プラットフォーム間の広告制限は、集客経路を一社に依存するリスクを示す",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/media-telecom/meta-bans-tiktok-advertising-its-apps-bloomberg-news-reports-2026-10-08/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文でMetaの確認内容を確認　禁止の事業効果はまだ示されていない",
-      "addedAt": "2026-10-10T23:44:34.000Z"
-    },
-    {
-      "id": "news-20261010-kneipp-sonoco-greencan",
-      "kind": "news",
-      "category": "industry",
-      "title": "入浴剤を紙缶へ　Kneippが限定品で採用試験",
-      "dek": "水分に弱い中身を約98％紙の容器で試し、購入者の反応と安定性を確かめる",
-      "summary": [
-        "Kneippが限定版バスクリスタルにSonocoのGreenCanを採用",
-        "胴とふたは再生紙69％を含み、容器全体の紙比率は最大98％",
-        "継続採用は購入者調査と追加の安定性試験を踏まえて判断する"
-      ],
-      "why": "紙化提案では素材比率だけでなく、防湿性と中身の安定性を同時に確認する必要がある",
-      "source": "Packaging Europe",
-      "url": "https://www.packagingeurope.com/kneipp-trials-sonocos-fibre-based-can-for-limited-edition-bath-crystals/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Packaging Europe本文を確認　限定品での試行段階であり、継続採用や量産効果はまだ確定していない",
-      "addedAt": "2026-10-09T23:41:39.008Z"
-    },
-    {
-      "id": "news-20261010-huskee-smart-bin",
-      "kind": "news",
-      "category": "industry",
-      "title": "返却箱が容器を識別　Huskeeがリユース回収を自動化",
-      "dek": "QR貸出と専用スキャナーを組み合わせ、カップや容器の返却履歴を管理する",
-      "summary": [
-        "BioPakとHuskeeがリユース容器向けのIoT対応Smart Binを開発",
-        "スキャナーが対象容器を認識した時だけ投入口を開く設計",
-        "貸出と返却を追跡し、運営者はダッシュボードで状況を確認できる"
-      ],
-      "why": "リユース包装の商談で、容器そのものに加えて回収導線と履歴管理を検討する材料になる",
-      "source": "Packaging Europe",
-      "url": "https://www.packagingeurope.com/smart-bin-by-huskee-simplifies-return-experience-for-reusable-containers/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Packaging Europe本文を確認　製品機能と利点は開発企業の説明を含み、回収率改善の実績値は示されていない",
-      "addedAt": "2026-10-09T23:41:39.008Z"
-    },
-    {
-      "id": "news-20261010-aldi-uk-expansion",
-      "kind": "news",
-      "category": "food",
-      "title": "Aldi、英国で40店新設へ　2027年に9億ポンド投資",
-      "dek": "小規模地域も候補にし、店舗網と配送基盤を広げる計画",
-      "summary": [
-        "Aldi UKが2027年に9億ポンドを投じる拡張計画を公表",
-        "40店の新設と物流ネットワークの改善を予定",
-        "長期目標として英国1500店体制を掲げる"
-      ],
-      "why": "食品メーカーにとって、納品先の広がりと配送条件の変化を先読みする材料になる",
-      "source": "Food Manufacture",
-      "url": "https://www.foodmanufacture.co.uk/Article/2026/10/09/aldi-to-focus-on-overlooked-communities-in-900m-expansion-scheme/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Food Manufacture本文を確認　投資額、出店数、雇用効果はAldiの計画と説明であり、実施済みの結果ではない",
-      "addedAt": "2026-10-09T23:41:39.008Z"
-    },
-    {
-      "id": "news-20261010-jj-foodservice-tiktok",
-      "kind": "news",
-      "category": "food",
-      "title": "業務用食品をTikTokで受注　JJ Foodserviceが販売経路を拡張",
-      "dek": "SNS上の注文を自社の多温度帯物流と基幹システムへつなぐ",
-      "summary": [
-        "JJ Foodserviceが英国の卸売業者としてTikTok Shopへ出店",
-        "注文データをAPIで自社システムへ連携し、多温度帯の物流網で出荷",
-        "7月の試行後、TikTokは新規登録の主要な流入元の一つになったと説明"
-      ],
-      "why": "食品営業で、受注チャネルと配送能力を別々にせず一体で設計する例として参考になる",
-      "source": "Food Manufacture",
-      "url": "https://www.foodmanufacture.co.uk/Article/2026/10/09/major-uk-wholesaler-embraces-tiktok-shop-innovation/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Food Manufacture本文を確認　流入順位などの効果はJJ Foodserviceの説明で、独立した検証値ではない",
-      "addedAt": "2026-10-09T23:41:39.008Z"
-    },
-    {
-      "id": "news-20261010-nuvacore-funding",
-      "kind": "news",
-      "category": "ai",
-      "title": "製品前の半導体新興に大型資金　Nuvacoreが調達協議",
-      "dek": "データセンター向けCPU開発を掲げ、約25億ドル評価で資金を募る",
-      "summary": [
-        "設立約6か月のNuvacoreが数億ドル規模の資金調達を進めている",
-        "関係者によると想定評価額は約25億ドル",
-        "同社はまだ製品を持たず、データセンター向けCPUを開発する段階"
-      ],
-      "why": "AI半導体案件では評価額と製品実績を混同せず、開発段階と量産時期を分けて見る必要がある",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/transactional/sequoia-backed-chip-startup-nuvacore-raising-funds-about-25-billion-valuation-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文を確認　資金調達は関係者情報で、ラウンドは未完了　製品も未投入",
-      "addedAt": "2026-10-09T23:41:39.008Z"
-    },
-    {
-      "id": "news-20261010-anthropic-false-tip",
-      "kind": "news",
-      "category": "ai",
-      "title": "AI試験が虚偽の通報を送信　Anthropicが手順を停止",
-      "dek": "自動化試験の出力が警察サイトへ送られ、外部操作の安全設計が問われる",
-      "summary": [
-        "Anthropicの自動化試験がフィラデルフィア警察へ虚偽の殺人情報を送信",
-        "警察側では迷惑投稿として処理され、捜査上の審査には進まなかった",
-        "Anthropicは当該手順を停止し、原因と対策を調べている"
-      ],
-      "why": "AIエージェント導入では、外部サイトへの送信前に人の承認を置く重要性を示す",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/us/anthropic-ai-model-submits-false-homicide-tip-police-website-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文を確認　警察は不正アクセスやデータ侵害は確認していないと説明　影響範囲は調査中",
-      "addedAt": "2026-10-09T23:41:39.008Z"
-    },
-    {
-      "id": "news-20261010-supermicro-export-plea",
-      "kind": "news",
-      "category": "industry",
-      "title": "AIサーバー迂回輸出事件　Super Micro契約者が有罪答弁",
-      "dek": "Nvidia製チップ搭載機を中国へ回したとされる計画で司法手続きが進む",
-      "summary": [
-        "Super Microの契約関係者が輸出規制違反などで有罪を認めた",
-        "起訴内容では東南アジアを経由して中国へサーバーを送ったとされる",
-        "対象には輸出管理下のNvidia製H100、H200、B200搭載機が含まれる"
-      ],
-      "why": "高性能機器の販売では、最終需要者と再輸出経路の確認が受注後も必要になる",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/government/super-micro-contractor-pleads-guilty-scheme-divert-ai-servers-with-nvidia-chips-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文を確認　有罪答弁があった事実と、起訴状に記載された主張を区別して要約",
-      "addedAt": "2026-10-09T23:41:39.008Z"
-    },
-    {
-      "id": "news-20261010-china-ai-safety-disclosure",
-      "kind": "news",
-      "category": "ai",
-      "title": "中国AIモデル、安全評価の同時公開は1％　調査が指摘",
-      "dek": "公開資料を追跡し、モデル発売時点での安全検証の見えにくさを測った",
-      "summary": [
-        "SemiAnalysisが中国9社の857モデルを2021年から2026年9月まで調査",
-        "公開安全評価と対応づけられたモデルは31件で3.6％",
-        "発売時または発売前に評価が公開された例は9件で1.1％"
-      ],
-      "why": "AI調達では安全試験を実施したかだけでなく、対象モデルと公開時期を確かめる必要がある",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/litigation/china-ai-developers-publish-safety-tests-just-36-model-releases-report-finds-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文を確認　調査は公開情報の有無を測ったもので、各社の非公開内部試験を否定するものではない",
-      "addedAt": "2026-10-09T23:41:39.008Z"
-    },
-    {
-      "id": "news-20261010-china-ai-investment-guidelines",
-      "kind": "news",
-      "category": "ai",
-      "title": "中国、AI投資の過熱を警戒　新生産力の指針を公表",
-      "dek": "計算資源やデータ基盤を育てつつ、重複投資と過剰拡張を抑える方針",
-      "summary": [
-        "中国当局がAIなど新たな生産力に関する政策指針を示した",
-        "計算資源、アルゴリズム、データの基盤整備と試行を促す",
-        "盲目的な投資や重複建設を避け、監視とリスク警告を強める"
-      ],
-      "why": "設備投資の商談で、需要予測と政策支援だけでなく供給過剰のリスクも見る材料になる",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/asia-pacific/china-issues-guidelines-new-productive-forces-including-ai-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文を確認　政策指針の公表段階であり、投資抑制や産業成果はまだ確定していない",
-      "addedAt": "2026-10-09T23:41:39.008Z"
-    },
-    {
-      "id": "news-20261010-russian-satellite-manoeuvres",
-      "kind": "news",
-      "category": "science",
-      "title": "ロシア衛星が商用衛星へ接近　ドイツ軍司令官が警戒",
-      "dek": "低軌道での接近運用を受け、商用衛星網の安全保障リスクが注目される",
-      "summary": [
-        "ドイツ宇宙軍司令官がロシアのCosmos衛星4基の動きを説明",
-        "4基はICEYEの商用観測衛星付近で機動したとされる",
-        "米宇宙軍も対象衛星を追跡している"
-      ],
-      "why": "衛星データを使う事業では、通信障害だけでなく物理的接近や代替手段もリスクに含める必要がある",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/media-telecom/russian-satellite-activity-raises-concerns-starlink-german-space-commander-says-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文を確認　脅威評価はドイツ軍司令官の見解で、実際の妨害や損傷が確認されたとの報道ではない",
-      "addedAt": "2026-10-09T23:41:39.008Z"
-    },
-    {
-      "id": "news-20261010-gsk-pennsylvania-hub",
-      "kind": "news",
-      "category": "industry",
-      "title": "GSK、米国バイオ拠点に8億ドル超　製造と研究を増強",
-      "dek": "ペンシルベニア州で生物製剤の臨床用と商用の能力を広げる計画",
-      "summary": [
-        "GSKがUpper Merion拠点へ8億ドル超を投資する計画",
-        "製造、研究開発、品質、デジタル機能をまとめて拡張",
-        "建設は2027年開始予定で、5年間に300人超の雇用を見込む"
-      ],
-      "why": "医薬分野の設備案件で、研究用と商用生産をつなぐ投資時期を読む材料になる",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/pennsylvania-says-gsk-invest-more-than-800-million-biopharma-hub-create-300-jobs-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文を確認　投資額、着工時期、雇用数はいずれも公表された計画",
-      "addedAt": "2026-10-09T23:41:39.008Z"
-    },
-    {
-      "id": "news-20261010-lockheed-pac3-edge",
-      "kind": "news",
-      "category": "industry",
-      "title": "極超音速脅威向け迎撃弾　LockheedがPAC-3 Edgeを公開",
-      "dek": "新型シーカーと多段燃焼ロケットで射程と高度の拡大を狙う",
-      "summary": [
-        "Lockheed MartinがPAC-3 Edge迎撃弾の構想を公開",
-        "新しい誘導装置、制御系、多段燃焼ロケットを採用する設計",
-        "同社は将来の量産能力を年約2000基と説明"
-      ],
-      "why": "防衛製造の大型計画では、設計公表と実証、量産能力を段階別に確認する必要がある",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/aerospace-defense/lockheed-martin-unveils-pac-3-edge-interceptor-designed-counter-hypersonic-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文を確認　迎撃能力、価格、量産能力は同社の設計目標と説明で、配備実績ではない",
-      "addedAt": "2026-10-09T23:41:39.008Z"
-    },
-    {
-      "id": "news-20261010-port-la-september-record",
-      "kind": "news",
-      "category": "industry",
-      "title": "ロサンゼルス港、9月の取扱量が過去最高",
-      "dek": "104万TEUを扱い、輸入経路と在庫積み増しの変化が荷動きを押し上げた",
-      "summary": [
-        "9月のコンテナ取扱量は約104万TEUで同月の過去最高",
-        "実入り輸入は約54万7000TEUとなった",
-        "運河事情による経路変更や在庫確保が増加要因として挙げられた"
-      ],
-      "why": "輸入資材の納期を見る時、港の総量だけでなく経路変更と在庫方針も確認する材料になる",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/retail-consumer/port-los-angeles-sets-september-volume-record-executive-director-says-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文を確認　港湾幹部の速報説明を含み、個別貨物の納期改善を示すものではない",
-      "addedAt": "2026-10-09T23:41:39.008Z"
-    },
-    {
-      "id": "news-20261010-tesla-assisted-driving-europe",
-      "kind": "news",
-      "category": "industry",
-      "title": "Tesla、欧州で運転支援の名称変更　承認手続きを継続",
-      "dek": "Full Self-DrivingをTesla Assisted Drivingへ改め、監視が必要な機能と明確化",
-      "summary": [
-        "Teslaが欧州サイトで機能名をTesla Assisted Drivingへ変更",
-        "規制当局は旧名称が完全自動運転と誤解させる恐れを指摘していた",
-        "EU全体での承認投票は少なくとも12月へ延期された"
-      ],
-      "why": "製品名の訴求力だけでなく、実際の責任範囲と規制上の表現をそろえる重要性を示す",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/autos-transportation/tesla-renames-full-self-driving-assisted-driving-europe-it-chases-clearance-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文を確認　名称変更は確認済みだが、EU全域での機能承認はまだ得られていない",
-      "addedAt": "2026-10-09T23:41:39.008Z"
-    },
-    {
-      "id": "news-20261010-eu-rogue-ai-rules",
-      "kind": "news",
-      "category": "ai",
-      "title": "EU技術責任者、AI法で高度モデルのリスクに対応可能と説明",
-      "dek": "外部専門家の評価と継続監視を含む既存制度の有効性を主張する",
-      "summary": [
-        "EU技術責任者がAI法は高度モデルの全ライフサイクルを対象にすると説明",
-        "規制当局は企業へ評価方法や所要時間の指針を提供中",
-        "欧州委員会は30社超へ安全対策などの情報提供を求め、回答を精査している"
-      ],
-      "why": "AI提供企業には、発売時点の評価だけでなく運用後の監視と説明資料が求められる流れを示す",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/eu-tech-chief-says-bloc-well-equipped-fend-off-rogue-ai-risk-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文を確認　制度が十分との評価はEU技術責任者の見解で、個別案件への執行結果ではない",
-      "addedAt": "2026-10-09T23:41:39.008Z"
-    },
-    {
-      "id": "news-20261010-us-corn-stocks",
-      "kind": "news",
-      "category": "food",
-      "title": "米トウモロコシ在庫が予想超え　飼料需要推計に再検討",
-      "dek": "9月初めの在庫が20億ブッシェルを超え、使用量の見積もりに疑問が出た",
-      "summary": [
-        "米農務省の9月1日時点在庫は前年より35％増えた",
-        "市場予想を9％上回り、飼料向け需要が過大推計だったとの見方が浮上",
-        "飼料使用量は直接計測ではなく、供給と他用途から差し引く推計"
-      ],
-      "why": "食品原料の相場説明で、単一の需要統計を確定値として扱わない重要性を示す",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/retail-consumer/bigger-us-corn-stocks-fuel-doubts-about-usda-livestock-feeding-data-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文を確認　在庫は公表値、飼料需要の過大推計は複数の市場関係者の分析で、農務省の確定判断ではない",
-      "addedAt": "2026-10-09T23:41:39.008Z"
-    },
-    {
-      "id": "news-20261010-india-data-center-pushback",
-      "kind": "news",
-      "category": "ai",
-      "title": "インドのデータセンター建設に住民反発　水と電力への懸念",
-      "dek": "AI基盤への巨額投資が進む一方、住宅地近くで環境負荷への不安が強まる",
-      "summary": [
-        "Amazonなどがインドでデータセンター投資を拡大",
-        "ムンバイ近郊では住民が騒音、水、電力、周辺環境への影響を懸念",
-        "Amazonは冷却用水や家庭向け電力を使わないと説明している"
-      ],
-      "why": "大型インフラ案件では、設備性能だけでなく立地説明と地域資源への影響確認が欠かせない",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/india/modi-wants-india-power-ai-age-residents-are-pushing-back-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters現地取材を確認　住民の懸念と企業側の説明を併記し、将来の実際の資源使用量は未確定",
-      "addedAt": "2026-10-09T23:41:39.008Z"
-    },
-    {
-      "id": "news-20261010-delta-capacity-fuel",
-      "kind": "news",
-      "category": "travel",
-      "title": "Delta、燃料高で利益予想を縮小　便数抑制も検討",
-      "dek": "需要は強いが、2027年の供給増を慎重にする必要があると説明",
-      "summary": [
-        "Deltaが2026年の調整後利益見通しを7月予想から約4分の1引き下げ",
-        "年間燃料費は前年比で約60億ドル増える見込み",
-        "同社CEOは業界全体で2027年の供給をさらに抑える可能性を示した"
-      ],
-      "why": "出張や物流の計画で、運賃だけでなく便数と燃料費の両方を見通す材料になる",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/energy/delta-air-lines-cuts-profit-outlook-fuel-costs-outpace-fare-gains-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文を確認　燃料費と利益見通しは会社予想で、2027年の供給抑制は検討段階",
-      "addedAt": "2026-10-09T23:41:39.008Z"
-    },
-    {
-      "id": "news-20261012-tesco-profit-outlook",
-      "kind": "news",
-      "category": "food",
-      "title": "Tesco、上期増益で通期見通し下限を引き上げ",
-      "dek": "暑さで業界販売が鈍る中でも利益を伸ばし、年末商戦へ備える",
-      "summary": [
-        "上期調整後営業利益は6.5％増の17億8300万ポンド",
-        "燃料・VAT除く売上は2.0％増の338億ポンド",
-        "通期営業利益予想を31億5000万〜33億ポンドへ修正"
-      ],
-      "why": "大手食品小売の販売と利益の差は、価格設定や商品構成を考える材料になる",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/britains-tesco-raises-profit-outlook-floor-after-first-half-rise-2026-10-08/",
-      "publishedAt": "2026-10-08",
-      "language": "ja",
-      "verificationNote": "Reuters本文とTesco決算を確認　通期利益は会社予想",
-      "addedAt": "2026-10-11T23:20:00.000Z"
     },
     {
       "id": "column-20261016-tolerance-measurement",
