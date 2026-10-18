@@ -22,8 +22,16 @@ function toast(message){$('toast').textContent=message;$('toast').hidden=false;c
 function node(tag,className,text){const el=document.createElement(tag);if(className)el.className=className;if(text!==undefined)el.textContent=text;return el;}
 function validUrl(value){try{const u=new URL(value);return u.protocol==='https:';}catch{return false;}}
 function isColumn(a){return a.kind==='column';}
+function validDate(value,allowTime=false){
+  if(typeof value!=='string')return false;
+  const dateOnly=/^\d{4}-\d{2}-\d{2}$/.test(value);
+  const timestamp=/^\d{4}-\d{2}-\d{2}T(?:[01]\d|2[0-3]):[0-5]\d:[0-5]\d(?:\.\d{1,3})?(?:Z|[+-](?:[01]\d|2[0-3]):[0-5]\d)$/.test(value);
+  if(!dateOnly && !(allowTime && timestamp))return false;
+  const day=value.slice(0,10), parsed=new Date(day+'T00:00:00Z');
+  return !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0,10)===day && !Number.isNaN(Date.parse(value));
+}
 function validArticle(a){
-  if(!a || typeof a.id!=='string' || typeof a.title!=='string' || !Object.hasOwn(categories,a.category) || a.category==='all' || typeof a.source!=='string' || !/^\d{4}-\d{2}-\d{2}$/.test(a.publishedAt) || !/^\d{4}-\d{2}-\d{2}$/.test(a.addedAt) || typeof a.dek!=='string' || typeof a.why!=='string' || !Array.isArray(a.summary) || a.summary.length!==3 || !a.summary.every(x=>typeof x==='string'))return false;
+  if(!a || typeof a.id!=='string' || typeof a.title!=='string' || !Object.hasOwn(categories,a.category) || a.category==='all' || typeof a.source!=='string' || !validDate(a.publishedAt) || !validDate(a.addedAt,true) || typeof a.dek!=='string' || typeof a.why!=='string' || !Array.isArray(a.summary) || a.summary.length!==3 || !a.summary.every(x=>typeof x==='string'))return false;
   if(isColumn(a))return Array.isArray(a.body) && a.body.length>=3 && a.body.every(s=>s && typeof s.heading==='string' && typeof s.text==='string') && Array.isArray(a.questions) && a.questions.length>0 && a.questions.every(q=>typeof q==='string');
   return (a.kind===undefined || a.kind==='news') && validUrl(a.url);
 }
@@ -86,3 +94,4 @@ $('clear').addEventListener('click',()=>{mode='today';category='all';$('search')
 // Refresh when the reader returns after a while; the scheduled editor updates feed.json independently.
 let lastVisible=Date.now();document.addEventListener('visibilitychange',()=>{if(!document.hidden&&Date.now()-lastVisible>5*60*1000)load();if(document.hidden)lastVisible=Date.now();});
 render();load();
+
