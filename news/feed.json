@@ -1,25 +1,487 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-18T23:21:09.266Z",
+  "updatedAt": "2026-10-19T23:49:46.085Z",
   "articles": [
     {
-      "id": "news-20261019-film-recycling-protocol",
+      "id": "news-20261020-reseal-fibre-tray",
       "kind": "news",
       "category": "industry",
-      "title": "脱墨・剥離の評価を共通化　artienceとDICが国内向け手順",
-      "dek": "試験条件・評価基準・報告様式をそろえて軟包装の比較を支援",
+      "title": "繊維トレーに再封フィルム　材料・蓋材・包装機の3社が連携",
+      "dek": "Cirkla、Belmark、Ossidが生鮮品などを想定した組合せを紹介",
       "summary": [
-        "フィルム包装の再資源化に向け共通プロトコルを策定",
-        "脱墨と層間剥離の評価を同じ物差しで扱う",
-        "加工会社・ブランド・再生事業者へ利用を呼び掛ける"
+        "繊維製トレーと開閉できる蓋フィルムを組み合わせる",
+        "Ossidのシール設備と一体で展示会に出展",
+        "対象は生鮮たんぱく食品・青果・調理済み食品など"
       ],
-      "why": "ラミ構成の提案では、再生できるという言葉だけでなく試験条件と評価結果を確認したい",
-      "source": "artience／DIC",
-      "url": "https://www.artiencegroup.com/en/news/2026/26100701.html",
-      "publishedAt": "2026-10-07",
-      "addedAt": "2026-10-19",
+      "why": "包材単体でなく、蓋材と設備の適合を商談で確認する題材になる",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/worlds-first-resealable-fibre-tray-developed-for-proteins-produce-and-more/",
+      "publishedAt": "2026-10-19",
+      "addedAt": "2026-10-20",
       "language": "en",
-      "verificationNote": "公式発表の本文を確認　掲載英語には自動翻訳の注意書きあり　業界初は両社調査による表現で、個別包材のリサイクル実績を保証しない"
+      "verificationNote": "記事本文とOssid公式発信を照合　世界初や保存性能は企業側の説明で、個別食品での評価結果は未確認"
+    },
+    {
+      "id": "column-20261020-quotation-unit-basis",
+      "kind": "column",
+      "category": "sales",
+      "title": "m単価と枚単価、そのまま比べていない？",
+      "dek": "見積の前提をそろえる営業は、価格差の正体を説明できる",
+      "summary": [
+        "比較する単位と、換算に使った寸法を明記する",
+        "製品に残る長さと加工で使う長さを分ける",
+        "換算表の版と承認者を残し、仕様変更時に見直す"
+      ],
+      "why": "値引き交渉に入る前に、同じ数量・同じ仕様の価格を比較できるようにする",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-20",
+      "addedAt": "2026-10-20",
+      "language": "ja",
+      "verificationNote": "商談準備のための実務上の整理　特定企業の実績や非公開情報は使用していない　品質・表示・契約に関わる判断は担当者へ確認する",
+      "body": [
+        {
+          "heading": "安いかどうかの前に、何の単価か",
+          "text": "同じ包材の見積でも、原反はm、製袋後は枚、材料購入はkgというように単位が違うことがある　営業がするべき最初の仕事は、数字を一列に並べることではなく、その単価が何を含むかを聞くこと　幅、厚み、袋のピッチ、取り数、発注量をそろえ、版代や運賃などの別建て費用も欄を分ける　「同等品だから比較できる」と急がず、仕様書のどの版を使った見積なのかまで記録する"
+        },
+        {
+          "heading": "簡単な換算ほど前提を書いておく",
+          "text": "仮の例として、1m当たり30円のフィルムを、送りピッチ250mm、幅方向の取り数1で使うとする　加工ロスも追加費用もない単純計算なら、1mから4枚なので材料部分は1枚7.5円になる　ただし、これは製袋品の販売価格ではない　立上げ、継ぎ、検査除去などが別途必要なら必要原反量は変わる　mからkgへの換算も材質・層構成・厚みなどの確認が必要で、営業の概算値を正式な重量や請求数量に置き換えない"
+        },
+        {
+          "heading": "差額を三つに分けてから話す",
+          "text": "比較表では、材料の単価差、仕様や数量の差、含まれる作業の差を分ける　片方だけ製袋や梱包を含んでいるなら、それは材料単価だけの比較になっていない　どの工程で、どの数量を受け渡す条件なのかを加工担当と確認する　歩留まりも工場全体の平均を無条件に使わず、見積対象の条件に合う計算方法を担当者に決めてもらう　数字の根拠が未確認なら、仮置きと明示して比較を保留する"
+        },
+        {
+          "heading": "換算表にも更新の持ち主をつける",
+          "text": "商談で合意した換算表は、作成日、仕様書の版、数量条件、確認者を添えて保存する　ピッチや取り数が変われば、以前の枚単価は比較の前提を失うことがある　変更が来たときに誰が見直し、誰が顧客へ説明するかを決めておく　注文や請求に使う単位、数量差の扱い、計算の丸め方は、営業だけで決めず購買・生産管理・経理などの担当者と確認する　整った換算表は、安く見せる道具ではなく誤解を減らす道具になる"
+        }
+      ],
+      "questions": [
+        "今回の見積はm・kg・枚のどれを基準に比較し、どこまでの加工を含めますか？",
+        "換算に使うピッチ・取り数・加工ロスは、どの仕様書と担当者の確認値ですか？",
+        "仕様変更時の換算表更新と、注文・請求単位の確認は誰が担当しますか？"
+      ]
+    },
+    {
+      "id": "news-20261020-donbei-regional-six",
+      "kind": "news",
+      "category": "food",
+      "title": "どん兵衛が地域の味6品　11月2日から期間限定",
+      "dek": "東西の定番4品に、博多うどんと信州そばを加える",
+      "summary": [
+        "日清食品が地域別つゆを楽しむ6品を発表",
+        "きつねうどんと天ぷらそばで東西の味を展開",
+        "全国発売予定日は11月2日"
+      ],
+      "why": "地域性を全国企画にする際の品種数と包材展開を考える材料になる",
+      "source": "日清食品",
+      "url": "https://www.nissin.com/jp/company/news/13956/",
+      "publishedAt": "2026-10-19",
+      "addedAt": "2026-10-20",
+      "language": "ja",
+      "verificationNote": "公式発表の公開日・本文・発売日を確認　販売予定の案内で、販売実績ではない"
+    },
+    {
+      "id": "news-20261018-solarflex-fsp",
+      "kind": "news",
+      "category": "industry",
+      "title": "Sun Chemical、食品包装向けUVフレキソインキを更新",
+      "dek": "低マイグレーションと高速印刷の両立を訴求",
+      "summary": [
+        "SolarFlex FSPの改良品をラベル・スリーブ・包装向けに発表",
+        "毎分200m超で移行試験や臭気評価を行ったと説明",
+        "独・スイスのインキ規制への対応をうたう"
+      ],
+      "why": "インキ単体の説明と、実際の積層構成・硬化条件での評価を分けて確認したい",
+      "source": "Sun Chemical",
+      "url": "https://www.sunchemical.com/sun-chemical-launches-next-generation-gio-compliant-solarflex-fsp-uv-flexo-inks/",
+      "publishedAt": "2026-10-13",
+      "addedAt": "2026-10-18",
+      "language": "en",
+      "verificationNote": "メーカー公式発表を確認　性能・規制対応は同社説明で、最終包装の適合や食品安全を一律に保証するものではない"
+    },
+    {
+      "id": "column-20261020-barcode-after-packing",
+      "kind": "column",
+      "category": "food",
+      "title": "バーコードの確認、平らな版下だけで終わっていない？",
+      "dek": "食品の袋やラベルは、中身を入れた後の姿で読取り条件が変わる",
+      "summary": [
+        "版下の確認と、充填・包装後の読取り確認を分ける",
+        "しわ・曲面・結露など実際の使用場面を共有する",
+        "試験条件と確認担当を決め、結果を次の版に残す"
+      ],
+      "why": "包装の見た目だけでなく、工場・倉庫・売場での識別まで商談で確認する",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-20",
+      "addedAt": "2026-10-20",
+      "language": "ja",
+      "verificationNote": "商談準備のための実務上の整理　特定企業の実績や非公開情報は使用していない　品質・表示・契約に関わる判断は担当者へ確認する",
+      "body": [
+        {
+          "heading": "正しい番号と、読める状態は別の論点",
+          "text": "商品コードが正しく登録されていることと、包装された商品を現場で読み取れることは同じではない　袋が膨らめば表示面が曲がり、内容物の位置によって折れやしわも変わる　平面の校正紙で確認が終わっている場合は、充填後のサンプルを誰がどこで確認するのかを商談の議題に加える　営業が規格適合を断言するのではなく、顧客の品質・表示担当とコード管理の担当者へ必要な確認方法を聞く"
+        },
+        {
+          "heading": "どこで読むのかを一つずつたどる",
+          "text": "工場の出荷確認、物流センターの仕分け、店舗の販売では、使う機器や商品の持ち方が異なることがある　食品なら、冷蔵庫から出した時の結露や冷凍品の表面状態など、想定する条件も共有したい　ただし濡らせばよい、冷やせばよいと営業だけで試験方法を決めない　商品と包材に適した取扱いを担当者に確認し、安全に実施できる条件で、どの工程の何を検証するかを整理する"
+        },
+        {
+          "heading": "サンプルはきれいな一袋だけにしない",
+          "text": "見本用に整えた一袋で読み取れても、製造や輸送で姿が変わった商品まで同じとは限らない　製造条件、充填量、表示面の向き、ロットの違いなど、確認対象を選ぶ理由を残す　試験数や評価基準は品質担当や取引先の要求に従って決め、読み取れたかだけでなく、読取りまでのやり直しや持ち替えも記録する　専用機器による評価が必要な場合は、適切な担当者に依頼し、スマートフォンの読取りだけで代替したと扱わない"
+        },
+        {
+          "heading": "売場で困る前に、版の変更点をつなぐ",
+          "text": "新柄への変更、表示位置の移動、袋寸法の変更では、従来品と同じコードを使う場合でも包装後の状態が変わる　変更点と試験結果、承認した版、残った課題を一緒に引き継ぐと、印刷会社・製袋会社・食品メーカーが同じ条件で話しやすい　表示内容や番号の適否、納入先の要求に適合するかは、それぞれの責任を持つ担当者が判断する　営業は「読めるはず」で終えず、確認を完了させる人と期限を決めるところまで支援したい"
+        }
+      ],
+      "questions": [
+        "この商品は工場・物流センター・店舗のどこで、どの機器を使って読み取りますか？",
+        "充填後の曲面やしわ、冷蔵・冷凍後の表面状態は、誰がどの条件で確認しますか？",
+        "表示位置や袋寸法を変更した際の再確認と、承認版の管理は誰が担当しますか？"
+      ]
+    },
+    {
+      "id": "news-20261020-cgf-local-recycling-design",
+      "kind": "news",
+      "category": "industry",
+      "title": "回収する人から包装を考える　CGFが新たな設計資料",
+      "dek": "低・中所得国の回収・選別現場を念頭に置く",
+      "summary": [
+        "CGFが地域の回収実態を踏まえた包装設計を提案",
+        "PETの着色、ラベル、接着剤などの選別への影響を扱う",
+        "素材だけでなく現地の回収関係者との協議を重視"
+      ],
+      "why": "再資源化の提案では、販売先の回収ルートまで聞く必要がある",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/how-packaging-design-helps-waste-pickers-in-low-and-middle-income-countries/",
+      "publishedAt": "2026-10-19",
+      "addedAt": "2026-10-20",
+      "language": "en",
+      "verificationNote": "記事本文とCGF公式概要を確認　報告書全文は登録が必要で未取得　地域ごとの回収可否を保証する資料ではない"
+    },
+    {
+      "id": "news-20261020-corona-seven-pack-concept",
+      "kind": "news",
+      "category": "industry",
+      "title": "ノンアルコールビールを7本組に　紙系包装のコンセプト",
+      "dek": "Corona Cero向けにSmurfit Westrockなどが試作を紹介",
+      "summary": [
+        "1週間の各日に1本を対応させる包装案を制作",
+        "AB InBev、JKR、Smurfit Westrockが協働",
+        "消費者向け包装と輸送用の段ボールを組み合わせる"
+      ],
+      "why": "まとめ買いの提案は、使う場面と輸送形態をセットで考えたい",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/fibre-based-packaging-concept-serves-alcohol-free-beer-for-every-weekday/",
+      "publishedAt": "2026-10-19",
+      "addedAt": "2026-10-20",
+      "language": "en",
+      "verificationNote": "記事本文を確認　コンセプト開発の紹介であり、広域販売や量産実績を確認したものではない"
+    },
+    {
+      "id": "news-20261020-3m-amazon-commercial",
+      "kind": "news",
+      "category": "industry",
+      "title": "3MがAmazon向けデータセンター取引を拡大",
+      "dek": "購入条件に連動する新株予約権の付与を報告",
+      "summary": [
+        "Amazon子会社に3M株の取得権を付与",
+        "権利の大部分は接続製品などの購入に連動する",
+        "全権利確定には約60億ドルの購入が条件となる"
+      ],
+      "why": "部材需要を見る際は、契約上の条件と受注済み金額を分けたい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/retail-consumer/3m-expands-amazon-data-center-partnership-shares-gain-2026-10-19/",
+      "publishedAt": "2026-10-19",
+      "addedAt": "2026-10-20",
+      "language": "en",
+      "verificationNote": "記事本文を確認　購入条件付きの取引枠組みで、60億ドル全額の購入完了を意味しない"
+    },
+    {
+      "id": "news-20261020-max10-certification-report",
+      "kind": "news",
+      "category": "industry",
+      "title": "737 MAX 10の認証発表へと報道　正式説明待ち",
+      "dek": "Reutersが米当局による10月20日の発表予定を伝える",
+      "summary": [
+        "関係者が認証に関する発表予定をReutersに説明",
+        "発表場所は米ワシントン州エバレットと報道",
+        "BoeingはFAAに問い合わせるよう回答した"
+      ],
+      "why": "航空機の供給計画は、報道段階と正式認証・引渡しを区別したい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/aerospace-defense/us-set-announce-certification-boeing-737-max-10-tuesday-sources-say-2026-10-19/",
+      "publishedAt": "2026-10-19",
+      "addedAt": "2026-10-20",
+      "language": "en",
+      "verificationNote": "記事本文を確認　匿名情報源に基づく予定の報道で、正式な認証発表を確認したものではない"
+    },
+    {
+      "id": "news-20261020-cisco-strawberry-milk",
+      "kind": "news",
+      "category": "food",
+      "title": "いちごみるくがチョコフレークに　サクマ製菓とコラボ",
+      "dek": "日清シスコが11月2日に期間限定発売を予定",
+      "summary": [
+        "キャンディの風味とチョコフレークを組み合わせる",
+        "包装にもいちごみるくを想起させる意匠を使う",
+        "全国での期間限定商品として発表"
+      ],
+      "why": "異業種の定番ブランドを包装で伝える商品企画の例になる",
+      "source": "日清シスコ",
+      "url": "https://www.nissin.com/jp/company/news/13953/",
+      "publishedAt": "2026-10-19",
+      "addedAt": "2026-10-20",
+      "language": "ja",
+      "verificationNote": "公式発表の公開日・本文・発売日を確認　味の評価や売上効果は検証していない"
+    },
+    {
+      "id": "news-20261020-haagen-classy-night",
+      "kind": "news",
+      "category": "food",
+      "title": "ハーゲンダッツが夜向け新シリーズ　香りを軸に2品",
+      "dek": "Classy Nightを10月20日から期間限定で発売",
+      "summary": [
+        "ショコラとナッティキャラメルの2品を展開",
+        "夜を意識した紺色基調の包装を採用",
+        "各94mlで希望小売価格は税込432円"
+      ],
+      "why": "食べる時間帯から容量や包装の世界観を設計する例として見たい",
+      "source": "ハーゲンダッツ ジャパン",
+      "url": "https://prtimes.jp/main/html/rd/p/000000444.000012760.html",
+      "publishedAt": "2026-10-19",
+      "addedAt": "2026-10-20",
+      "language": "ja",
+      "verificationNote": "企業配信の本文・公開日・商品情報を確認　今回は開発背景の追加紹介　香りや満足度は企業の説明"
+    },
+    {
+      "id": "news-20261020-food-inflation-supply",
+      "kind": "news",
+      "category": "food",
+      "title": "食品の調達に複合的な圧力　物流と天候が重なる",
+      "dek": "Reutersが原料・輸送コストと供給制約を取材",
+      "summary": [
+        "輸送の混乱や肥料費、干ばつが供給を圧迫",
+        "加工会社では契約更新時の原料高も課題に",
+        "専門家は2027年まで影響が続く可能性を指摘"
+      ],
+      "why": "見積の有効期限や調達代替案を確認する背景情報になる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/americas/global-food-inflation-is-expected-intensify-supply-shocks-pile-up-2026-10-19/",
+      "publishedAt": "2026-10-19",
+      "addedAt": "2026-10-20",
+      "language": "en",
+      "verificationNote": "記事本文を確認　将来の価格上昇は取材先の見通しであり、日本の個別商品の値上げを示すものではない"
+    },
+    {
+      "id": "news-20261020-india-scotch-classification",
+      "kind": "news",
+      "category": "food",
+      "title": "インドでスコッチ輸入の分類を調査と報道",
+      "dek": "Pernod RicardとDiageoは当局への協力を説明",
+      "summary": [
+        "Reutersはバルク輸入の関税上の分類が焦点と報道",
+        "両社は照会への協力や資料提供を説明",
+        "調査結果や違反の確定は示されていない"
+      ],
+      "why": "海外取引では製品形態と通関上の分類を担当者に確認したい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/india/india-probing-pernod-diageo-scotch-imports-under-india-uk-trade-pact-sources-say-2026-10-19/",
+      "publishedAt": "2026-10-19",
+      "addedAt": "2026-10-20",
+      "language": "en",
+      "verificationNote": "記事本文を確認　調査内容は情報源に基づく報道　違法性や適用税率についての専門判断は行わない"
+    },
+    {
+      "id": "news-20261020-nscale-anthropic-second-talks",
+      "kind": "news",
+      "category": "ai",
+      "title": "NscaleとAnthropicが追加契約を協議と報道",
+      "dek": "別のデータセンターを対象とする約450億ドル規模の交渉",
+      "summary": [
+        "Reutersはウェストバージニアの施設を巡る協議と報道",
+        "8月の契約とは別の追加案件として伝える",
+        "条件は交渉中で変更の可能性がある"
+      ],
+      "why": "AI基盤の需要では、協議と締結・稼働開始を分けて追いたい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/technology/nscale-anthropic-talks-45-billion-cloud-computing-deal-bloomberg-news-reports-2026-10-19/",
+      "publishedAt": "2026-10-19",
+      "addedAt": "2026-10-20",
+      "language": "en",
+      "verificationNote": "記事本文を確認　情報源に基づく交渉報道で、契約締結や設備完成を確認したものではない"
+    },
+    {
+      "id": "news-20261020-modal-vera-cpu-plan",
+      "kind": "news",
+      "category": "ai",
+      "title": "ModalがNvidia製CPUの採用を計画",
+      "dek": "AIエージェント向け処理で既存メーカーと併用する方針",
+      "summary": [
+        "ModalがVera CPUを使う計画をReutersに説明",
+        "IntelとAMDの提供も継続する混在構成を想定",
+        "処理に応じたハードウェア選択を重視する"
+      ],
+      "why": "導入先の拡大と、比較試験による性能主張は切り分けて見たい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/nvidia-wins-fast-growing-ai-startup-modal-new-central-processors-2026-10-19/",
+      "publishedAt": "2026-10-19",
+      "addedAt": "2026-10-20",
+      "language": "en",
+      "verificationNote": "記事本文を確認　採用計画の報道で、全面切替ではない　初期試験の性能値は一般化せず掲載していない"
+    },
+    {
+      "id": "news-20261020-apple-oct28-event",
+      "kind": "news",
+      "category": "ai",
+      "title": "Appleが10月28日に発表イベント　ロサンゼルスで開催",
+      "dek": "Pro and tellと題した催しの予定を公表",
+      "summary": [
+        "ReutersがAppleの開催案内を報道",
+        "開催日は現地時間10月28日",
+        "具体的な発表製品は正式には確認されていない"
+      ],
+      "why": "新製品の予測と正式発表を分けて確認するための予定メモ",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/retail-consumer/apple-host-pro-tell-event-oct-28-la-2026-10-19/",
+      "publishedAt": "2026-10-19",
+      "addedAt": "2026-10-20",
+      "language": "en",
+      "verificationNote": "記事本文を確認　開催予定のみを採用し、未発表製品の仕様は掲載していない"
+    },
+    {
+      "id": "news-20261020-norforge-ai-intrusions",
+      "kind": "news",
+      "category": "ai",
+      "title": "AIエージェントによる侵入事例をReutersが検証",
+      "dek": "研究者の観測を基に、被害企業への確認も実施",
+      "summary": [
+        "研究者は100超のサイトへの侵入を報告",
+        "Reutersは活動記録を調べ複数企業に照会",
+        "データ流出の程度までは確認できていない"
+      ],
+      "why": "自社サイトだけでなく委託先の公開システムも点検する契機にしたい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/government/how-one-hacker-used-ai-agents-few-thousand-dollars-break-into-scores-sites-2026-10-19/",
+      "publishedAt": "2026-10-19",
+      "addedAt": "2026-10-20",
+      "language": "en",
+      "verificationNote": "記事本文を確認　NorForge研究者の観測と企業回答に基づく報道　全被害の独立検証や流出規模の確定ではない"
+    },
+    {
+      "id": "news-20261020-china-q3-gdp",
+      "kind": "news",
+      "category": "world",
+      "title": "中国の7〜9月GDPは前年比4.5％増　国家統計局が速報",
+      "dek": "前期比は1.2％増、1〜9月累計は4.6％増",
+      "summary": [
+        "第3四半期の実質成長率を4.5％と公表",
+        "第2四半期の前年比4.3％から上昇",
+        "統計局は内需不足がなお課題と説明"
+      ],
+      "why": "景況の総平均と、顧客の業種別受注状況を分けて把握したい",
+      "source": "中国国家統計局",
+      "url": "https://www.stats.gov.cn/english/PressRelease/202610/t20261019_1965619.html",
+      "publishedAt": "2026-10-19",
+      "addedAt": "2026-10-20",
+      "language": "en",
+      "verificationNote": "国家統計局の英語発表本文と公開日を確認　GDPは初期推計で、実質・前年比と前期比を区別して掲載"
+    },
+    {
+      "id": "news-20261020-fed-ai-inflation-tradeoff",
+      "kind": "news",
+      "category": "world",
+      "title": "AI投資と物価圧力　米金融政策の波及に課題",
+      "dek": "ReutersがAI以外の企業や家計に及ぶ影響を分析",
+      "summary": [
+        "AI設備投資が需要や価格を押し上げるとの見方",
+        "借入依存の中小企業には金利負担が及びやすいと指摘",
+        "次回の政策会合は10月27〜28日の予定"
+      ],
+      "why": "設備需要が強い分野と、資金繰りに慎重な顧客を一括りにしないための視点",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/markets/wealth/fed-sees-ai-boom-adding-inflation-headache-others-may-pay-medicine-2026-10-19/",
+      "publishedAt": "2026-10-19",
+      "addedAt": "2026-10-20",
+      "language": "en",
+      "verificationNote": "記事本文を確認　当局者・専門家の見解をまとめた分析で、次回会合の政策決定を示すものではない"
+    },
+    {
+      "id": "news-20261020-americanas-proceedings-end",
+      "kind": "news",
+      "category": "world",
+      "title": "ブラジル小売Americanasが再建手続き終結を公表",
+      "dek": "裁判所の承認を受けたと証券開示で説明",
+      "summary": [
+        "リオデジャネイロの裁判所が手続き終結を承認",
+        "同社は2023年の会計問題後に保護を申請していた",
+        "今後の事業強化と成長を目指すと表明"
+      ],
+      "why": "取引先の再建は、法的手続きの節目と経営改善の実績を分けて追いたい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/litigation/brazils-americanas-exits-bankruptcy-proceedings-2026-10-19/",
+      "publishedAt": "2026-10-19",
+      "addedAt": "2026-10-20",
+      "language": "en",
+      "verificationNote": "記事本文を確認　同社開示に基づく手続きの報道で、個別の信用力や支払能力を評価するものではない"
+    },
+    {
+      "id": "news-20261020-chapea-one-year",
+      "kind": "news",
+      "category": "science",
+      "title": "火星を模した隔離生活が1年　NASAの地上実験",
+      "dek": "CHAPEA第2回の4人が通信遅延や資源制約下で生活",
+      "summary": [
+        "ヒューストンの居住施設で365日を経過",
+        "作物栽培や模擬船外活動などを継続",
+        "10月31日の退室後に評価と聞き取りを予定"
+      ],
+      "why": "長期運用では設備だけでなく、人の判断や制約への適応も検証対象になる",
+      "source": "NASA",
+      "url": "https://www.nasa.gov/humans-in-space/nasas-simulated-mars-crew-marks-one-year-inside-habitat/",
+      "publishedAt": "2026-10-19",
+      "addedAt": "2026-10-20",
+      "language": "en",
+      "verificationNote": "NASAの本文と公開日を確認　地上での模擬実験であり、火星での有人活動や研究結果の確定ではない"
+    },
+    {
+      "id": "news-20261020-chandra-cluster-collision",
+      "kind": "news",
+      "category": "science",
+      "title": "銀河団の衝突が電波構造を再び明るくした可能性",
+      "dek": "NASAがX線・電波・赤外線を組み合わせた研究を紹介",
+      "summary": [
+        "Chandraなどが高温ガスと電波構造を観測",
+        "ブラックホールの過去の活動と銀河団衝突を仮説に",
+        "衝突による圧縮や再加速が明るさを説明しうるという"
+      ],
+      "why": "複数の観測手段を重ね、形だけでは分からない原因を探る研究",
+      "source": "NASA",
+      "url": "https://science.nasa.gov/missions/chandra/nasas-chandra-breaks-down-treble-clefs-galaxy-cluster-collision/",
+      "publishedAt": "2026-10-14",
+      "addedAt": "2026-10-20",
+      "language": "en",
+      "verificationNote": "NASAの本文と公開日を確認　発光の成因は研究チームの解釈で、衝突過程を直接連続撮影したものではない"
+    },
+    {
+      "id": "news-20261020-hubble-ngc1827",
+      "kind": "news",
+      "category": "science",
+      "title": "ハッブルが横向きの渦巻銀河を撮影　塵の帯を捉える",
+      "dek": "NASAがNGC 1827の画像と観測の狙いを紹介",
+      "summary": [
+        "約3700万光年先の銀河を側面から捉えた画像",
+        "銀河円盤の明るい領域と暗い塵の帯が見える",
+        "小質量銀河の性質を調べる観測計画の一環"
+      ],
+      "why": "観測画像の公開と、そのデータを使う将来の分析を区別して読める",
+      "source": "NASA",
+      "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-spies-spirals-edge/",
+      "publishedAt": "2026-10-16",
+      "addedAt": "2026-10-20",
+      "language": "en",
+      "verificationNote": "NASAの本文と公開日を確認　画像と観測目的の紹介で、宇宙論モデルの決着を報告したものではない"
     },
     {
       "id": "column-20261019-acceptance-and-invoice",
@@ -80,25 +542,6 @@
       "addedAt": "2026-10-19",
       "language": "ja",
       "verificationNote": "共同発表PDF本文を確認　採択と研究開発計画の発表で、毎時100Lの性能達成や個別食品の安全性・期限延長が実証済みという意味ではない"
-    },
-    {
-      "id": "news-20261018-solarflex-fsp",
-      "kind": "news",
-      "category": "industry",
-      "title": "Sun Chemical、食品包装向けUVフレキソインキを更新",
-      "dek": "低マイグレーションと高速印刷の両立を訴求",
-      "summary": [
-        "SolarFlex FSPの改良品をラベル・スリーブ・包装向けに発表",
-        "毎分200m超で移行試験や臭気評価を行ったと説明",
-        "独・スイスのインキ規制への対応をうたう"
-      ],
-      "why": "インキ単体の説明と、実際の積層構成・硬化条件での評価を分けて確認したい",
-      "source": "Sun Chemical",
-      "url": "https://www.sunchemical.com/sun-chemical-launches-next-generation-gio-compliant-solarflex-fsp-uv-flexo-inks/",
-      "publishedAt": "2026-10-13",
-      "addedAt": "2026-10-18",
-      "language": "en",
-      "verificationNote": "メーカー公式発表を確認　性能・規制対応は同社説明で、最終包装の適合や食品安全を一律に保証するものではない"
     },
     {
       "id": "column-20261019-food-supplier-audit",
@@ -2653,367 +3096,6 @@
       "publishedAt": "2026-10-10",
       "language": "ja",
       "verificationNote": "Reuters本文とInfosysの説明を確認　影響評価は会社見解として扱った",
-      "addedAt": "2026-10-10T23:44:34.000Z"
-    },
-    {
-      "id": "news-20261011-rosatom-fennovoima-ruling",
-      "kind": "news",
-      "category": "industry",
-      "title": "フィンランド原発計画の紛争、双方が仲裁判断を説明",
-      "dek": "解約の適否と返金額を巡り当事者の説明が分かれ、単純な全面勝訴とは言い切れない",
-      "summary": [
-        "2022年に中止された70億ユーロ規模の原発計画を巡り仲裁判断",
-        "Rosatomは契約解除が認められなかった点を強調",
-        "Fennovoimaは利息を除く純額6億600万ユーロを受け取る判断だと説明"
-      ],
-      "why": "大型設備契約では、解約権と精算額を別の論点として読む必要がある",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/energy/rosatom-says-it-wins-tribunal-ruling-finnish-nuclear-plant-dispute-2026-10-10/",
-      "publishedAt": "2026-10-10",
-      "language": "ja",
-      "verificationNote": "Reuters本文で両社の説明を確認　ICCはコメントしておらず、当事者の主張が異なる点を明記",
-      "addedAt": "2026-10-10T23:44:34.000Z"
-    },
-    {
-      "id": "news-20261016-commercial-stations-rfp",
-      "kind": "news",
-      "category": "science",
-      "title": "NASA、商業宇宙ステーション計画を公募",
-      "dek": "12月8日締切、2027年春の契約を予定",
-      "summary": [
-        "低軌道拠点の開発・認証・サービスを対象に最終提案依頼を公表",
-        "初期開発は複数社を選び、その後の設計・試験などを競争発注する方針",
-        "ISS退役後の研究と有人活動の継続を目指す"
-      ],
-      "why": "単なる技術開発ではなく、運営費と他の顧客を含む事業計画が問われる段階になる",
-      "source": "NASA",
-      "url": "https://www.nasa.gov/news-release/nasa-seeks-us-industry-plans-for-commercial-space-stations/",
-      "publishedAt": "2026-10-09",
-      "addedAt": "2026-10-16",
-      "language": "en",
-      "verificationNote": "公式発表を確認　契約予定と調達方針で、拠点完成や運用開始の実績ではない"
-    },
-    {
-      "id": "news-20261012-seven-eleven-us-supply-chain",
-      "kind": "news",
-      "category": "food",
-      "title": "米7-Eleven、供給網の一部内製化を検討",
-      "dek": "インフレと物流費の上昇を受け、外部依存を見直して調達・配送能力を社内へ取り込む",
-      "summary": [
-        "北米事業が供給網業務の一部内製化を検討",
-        "燃料高で売上は増えても供給網コストは上昇",
-        "北米事業の上場計画は市場環境を理由に2027年度以降へ延期"
-      ],
-      "why": "食品小売の内製化は、メーカーや包材会社に求められる納入形態と情報連携を変える可能性がある",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/7-elevens-us-arm-looks-move-supply-chain-in-house-inflation-bites-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文とSeven & i Holdings経営陣の発言を確認　内製化は検討段階で範囲や実施時期は未確定",
-      "addedAt": "2026-10-11T23:20:00.000Z"
-    },
-    {
-      "id": "news-20261012-china-golden-week-transport",
-      "kind": "news",
-      "category": "travel",
-      "title": "中国大型連休、車移動減り鉄道とEVが増加",
-      "dek": "ガソリン高と高速鉄道網の拡大で、移動手段の構成が変わった",
-      "summary": [
-        "一日平均の地域間移動は3億600万人",
-        "自家用車移動は前年比1.4％減、鉄道は13％増",
-        "新エネルギー車の移動は35％増、高速道路充電量は51％増"
-      ],
-      "why": "燃料高が旅客流動と輸送インフラの使われ方をどう変えるかを示す材料になる",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/asia-pacific/fewer-cars-hit-road-during-chinas-golden-week-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文と中国政府統計を確認　移動量の変化は燃料価格だけが原因とは限らない",
-      "addedAt": "2026-10-11T23:20:00.000Z"
-    },
-    {
-      "id": "news-20261012-global-markets-ahead-earnings",
-      "kind": "news",
-      "category": "world",
-      "title": "世界株上昇、決算前も高金利と原油高を警戒",
-      "dek": "株価は持ち直したが、AI投資の資金調達コストと燃料価格が重荷となった",
-      "summary": [
-        "S&P500とNASDAQは約0.6％上昇",
-        "米10年債利回りは5.261％付近",
-        "Brent原油は1バレル約104ドルで推移"
-      ],
-      "why": "製造案件では需要の強さだけでなく、顧客の資金調達コストも見積回収へ影響する",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reutersの市場まとめを確認　数値は10月9日の取引時点",
-      "addedAt": "2026-10-11T23:20:00.000Z"
-    },
-    {
-      "id": "news-20261012-eu-market-supervision",
-      "kind": "news",
-      "category": "world",
-      "title": "EU市場監督の一元化、対象を絞る妥協案",
-      "dek": "加盟国の反対を受け、当初案より多くの取引所や事業者が国内監督に残る",
-      "summary": [
-        "EU財務相が資本市場監督案で合意",
-        "ESMAの直接監督対象は当初案から縮小",
-        "今後は欧州議会との協議へ進む"
-      ],
-      "why": "規制統一の範囲が変われば、域内で資金を調達する企業の手続きとコストに差が残る",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/government/eu-ministers-reach-watered-down-compromise-centralised-cap-markets-supervision-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文で財務相合意を確認　最終法ではなく欧州議会との交渉前",
-      "addedAt": "2026-10-11T23:20:00.000Z"
-    },
-    {
-      "id": "news-20261011-fed-household-finance",
-      "kind": "news",
-      "category": "world",
-      "title": "米家計、所得増の一方で債務ストレス上昇",
-      "dek": "FRB調査では実質所得と資産が増えた一方、返済負担や延滞も悪化した",
-      "summary": [
-        "2022年から2025年に実質ベースの世帯所得中央値は7％増え8万2200ドル",
-        "純資産中央値は2％増えたが、所得に占める債務返済比率は15.4％へ上昇",
-        "ローン延滞世帯は約12％から約20％へ増え、後払い利用も7％から12％へ拡大"
-      ],
-      "why": "消費の総額だけでなく、所得層別の返済余力を見る必要がある",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/finance/fed-says-household-income-wealth-debt-stress-rose-2022-2025-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文でFRBの家計金融調査を確認　約4300世帯の代表標本による調査値",
-      "addedAt": "2026-10-10T23:44:34.000Z"
-    },
-    {
-      "id": "news-20261011-us-consumer-sentiment-october",
-      "kind": "news",
-      "category": "food",
-      "title": "米消費者心理が10月も低下、節約行動広がる",
-      "dek": "低所得層を中心に高額商品の購入を控える動きが強まり、食品を含む消費提案にも影響する",
-      "summary": [
-        "ミシガン大学の10月速報指数は46.3で前月の48.1から低下",
-        "現況指数は44.7と調査開始以来の最低水準",
-        "回答者の54％が値上がりした商品の購入を減らしたと回答"
-      ],
-      "why": "食品メーカーは平均値だけでなく、容量や価格帯ごとの買われ方を確かめたい",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/us-consumer-sentiment-deteriorates-further-october-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文でミシガン大学の速報値を確認　10月の最終値ではなく速報調査",
-      "addedAt": "2026-10-10T23:44:34.000Z"
-    },
-    {
-      "id": "news-20261011-russia-us-diesel-supply",
-      "kind": "news",
-      "category": "industry",
-      "title": "ロシア産軽油の対米供給で合意と米大統領",
-      "dek": "供給量の説明は大統領発言に基づき、市場の不足を埋める効果は専門家が限定的とみている",
-      "summary": [
-        "トランプ米大統領はロシアが30万トン超を直ちに供給すると表明",
-        "米国は関連する一部制裁を一時的に緩和",
-        "市場関係者は示された量だけでは供給不足の解消に不十分と指摘"
-      ],
-      "why": "燃料価格は製造と物流の双方に波及するため、発表量と実需への効果を分けて見たい",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/energy/trump-big-announcement-coming-up-diesel-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文で大統領発言と市場関係者の評価を確認　今後の供給実績は未確認",
-      "addedAt": "2026-10-10T23:44:34.000Z"
-    },
-    {
-      "id": "news-20261011-amazon-alexa-leadership",
-      "kind": "news",
-      "category": "ai",
-      "title": "Amazon、Alexa部門の責任者を交代",
-      "dek": "新型端末の投入後に組織を入れ替え、Aidan Marcuss氏が音声アシスタント部門を引き継ぐ",
-      "summary": [
-        "Daniel Rausch氏が11月にAlexa部門を離れる",
-        "Aidan Marcuss氏が後任として製品組織を率いる",
-        "初のAlexa搭載タブレット発売後の交代で、事業は収益化が課題"
-      ],
-      "why": "生成AI製品は機能だけでなく、継続的な収益モデルと運営体制も重要になる",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/media-telecom/amazon-shuffles-alexa-leadership-following-high-end-tablet-release-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文とAmazonの確認内容を確認　組織変更であり、収益改善の実績ではない",
-      "addedAt": "2026-10-10T23:44:34.000Z"
-    },
-    {
-      "id": "news-20261011-ai-bull-market-four-years",
-      "kind": "news",
-      "category": "ai",
-      "title": "米株上昇相場、AI主導で4年目の節目へ",
-      "dek": "S&P500は2022年の安値から倍以上となったが、上昇が一部業種へ集中するリスクも残る",
-      "summary": [
-        "S&P500は2022年10月12日の安値から2倍超へ上昇",
-        "情報技術と通信サービスだけが指数全体を上回る",
-        "AI投資が利益を押し上げる一方、金利上昇や高い債券利回りがリスク"
-      ],
-      "why": "AI需要の強さを読むときは、設備投資の裾野と相場の集中度を分けて見たい",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/transactional/ai-centered-us-stock-bull-market-nears-four-year-anniversary-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reutersの市場分析を確認　将来の株価や投資成果を保証する内容ではない",
-      "addedAt": "2026-10-10T23:44:34.000Z"
-    },
-    {
-      "id": "news-20261011-character-ai-kentucky-lawsuit",
-      "kind": "news",
-      "category": "ai",
-      "title": "ケンタッキー州、Character.AIの安全対策を提訴",
-      "dek": "訴状はチャットボットが自傷行為を促したと主張し、会社は安全を最優先にしていると反論した",
-      "summary": [
-        "州が公開した訴状は、ボットが自傷や拒食などを促したと主張",
-        "現段階は原告側の申し立てで、裁判所の事実認定ではない",
-        "Character.AIは安全機能の整備を続けていると説明"
-      ],
-      "why": "業務で対話AIを使う際も、未成年者や高リスク相談への境界設計が欠かせない",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/litigation/characterai-chatbots-encouraged-users-cut-starve-themselves-kentucky-alleges-2026-10-08/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文でケンタッキー州の訴状と会社コメントを確認　 allegationsは未確定の主張として扱った",
-      "addedAt": "2026-10-10T23:44:34.000Z"
-    },
-    {
-      "id": "news-20261011-vvardis-ipo-filing",
-      "kind": "news",
-      "category": "industry",
-      "title": "歯科企業vVardis、増収を示して米IPO申請",
-      "dek": "初期虫歯向け治療製品の拡販を進める一方、赤字は続いている",
-      "summary": [
-        "2026年上期売上高は2860万ドルで前年同期の910万ドルから増加",
-        "純損失は2780万ドルで前年同期の3210万ドルから縮小",
-        "調達資金は運転資金や事業運営、設備投資に充てる計画"
-      ],
-      "why": "新技術企業を見るときは採用施設数だけでなく、収益性と資金用途も確かめたい",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/litigation/dental-firm-vvardis-reveals-revenue-surge-us-ipo-filing-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文とIPO届出の数値を確認　上場規模や実施時期は未確定",
-      "addedAt": "2026-10-10T23:44:34.000Z"
-    },
-    {
-      "id": "news-20261011-asahi-kasei-pritelivir-fda",
-      "kind": "news",
-      "category": "science",
-      "title": "米FDA、旭化成傘下の持続性ヘルペス治療薬を承認",
-      "dek": "既存の抗ウイルス薬が効かない一部の免疫不全患者が対象となる",
-      "summary": [
-        "FDAがpritelivirを特定の免疫不全患者向けに承認",
-        "対象は利用可能な抗ウイルス薬に反応しない持続性HSV病変",
-        "101人の後期試験で28日目の治癒率は62.7％、比較群は34％"
-      ],
-      "why": "承認対象と試験条件を限定して読むことで、研究結果を一般化し過ぎずに済む",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/us-fda-approves-asahi-kaseis-drug-persistent-herpes-infections-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文でFDA承認と試験結果を確認　対象患者が限定された医薬品であり医療判断は専門家が行う",
-      "addedAt": "2026-10-10T23:44:34.000Z"
-    },
-    {
-      "id": "news-20261011-uaw-fain-second-term",
-      "kind": "news",
-      "category": "industry",
-      "title": "UAW会長選、Fain氏が暫定集計で再選確実と宣言",
-      "dek": "最終結果前の集計だが、2028年の大手自動車交渉へ向けた体制が見え始めた",
-      "summary": [
-        "選挙監視人の暫定集計でShawn Fain氏が過半数を獲得",
-        "組合員は約40万人で、正式結果は今後確定",
-        "次期任期には2028年の大手自動車3社との労使交渉が控える"
-      ],
-      "why": "自動車向け製造業は需要だけでなく、労使交渉の日程も供給計画へ織り込みたい",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/uaw-president-shawn-fain-declares-victory-race-second-term-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文で監視人の暫定集計を確認　正式な最終結果ではない",
-      "addedAt": "2026-10-10T23:44:34.000Z"
-    },
-    {
-      "id": "news-20261011-ai-q3-earnings-estimates",
-      "kind": "news",
-      "category": "ai",
-      "title": "米企業の7〜9月期増益、AI関連が大半を占める見通し",
-      "dek": "予想値では半導体や大手プラットフォームが利益成長を牽引し、集中度が高い",
-      "summary": [
-        "S&P500企業の7〜9月期利益は前年同期比31％増の予想",
-        "増益の約3分の2を技術株とAlphabet、Amazon、Metaが占める見込み",
-        "半導体企業の利益は136％増と予想されている"
-      ],
-      "why": "設備需要の強さを見る材料だが、予想と確定決算を混同しないことが大切だ",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/ai-related-companies-drive-most-third-quarter-us-earnings-gains-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文とLSEG集計を確認　数値は決算発表前のアナリスト予想",
-      "addedAt": "2026-10-10T23:44:34.000Z"
-    },
-    {
-      "id": "news-20261011-ssp-profit-travel-food",
-      "kind": "news",
-      "category": "food",
-      "title": "空港飲食SSP、北米低迷で利益見通しを下方修正",
-      "dek": "英国とアイルランドは伸びた一方、北米の弱さと中東の航空混乱が重荷となった",
-      "summary": [
-        "年間営業利益を約2億3000万ポンドと予想",
-        "会社集計の市場予想2億3900万ポンドを下回る",
-        "第4四半期の既存店売上は英・アイルランド9％増、北米2％増"
-      ],
-      "why": "空港や駅向け食品は、旅客数だけでなく地域別の購買力と運航状況に左右される",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/upper-crust-owner-ssp-flags-lower-annual-operating-profit-weak-north-america-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文とSSPの見通しを確認　利益額は会社予想で確定実績ではない",
-      "addedAt": "2026-10-10T23:44:34.000Z"
-    },
-    {
-      "id": "news-20261011-panama-earthquake",
-      "kind": "news",
-      "category": "world",
-      "title": "パナマ沖でM7.7地震、運河と鉱山は通常稼働",
-      "dek": "建物被害は報告されたが、発表時点で死傷者はなく主要インフラの運用も続いた",
-      "summary": [
-        "米地質調査所はマグニチュード7.7、深さ12.6キロと観測",
-        "40回を超える余震があり、一部建物に被害",
-        "パナマ運河とCobre Panama鉱山は通常運用、空港も再開"
-      ],
-      "why": "災害時の物流評価では、人的被害と港湾・運河・空港の稼働を分けて確認したい",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/environment/strong-80-magnitude-earthquake-felt-panama-usgs-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reuters本文とUSGS発表を確認　マグニチュードは初報8.0から7.7へ更新された値を採用",
-      "addedAt": "2026-10-10T23:44:34.000Z"
-    },
-    {
-      "id": "news-20261011-flock-safety-job-cuts",
-      "kind": "news",
-      "category": "ai",
-      "title": "Flock Safety、約18％の人員削減を計画か",
-      "dek": "関係者情報では自主退職後も数百人を削減する見通しで、会社はコメントしていない",
-      "summary": [
-        "関係者によると月末までに約270人を削減する計画",
-        "全従業員の約18％に相当し、自主退職制度に続く措置",
-        "同社は全米49州で約12万台のAIカメラを展開し、約4800の警察機関が利用"
-      ],
-      "why": "AI監視分野では導入規模と同時に、社会的受容と事業継続性を見る必要がある",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/ai-surveillance-startup-flock-safety-cut-several-hundred-jobs-amid-backlash-2026-10-09/",
-      "publishedAt": "2026-10-09",
-      "language": "ja",
-      "verificationNote": "Reutersが複数関係者から確認した計画を参照　会社はコメントしておらず、実施前の情報として扱った",
       "addedAt": "2026-10-10T23:44:34.000Z"
     },
     {
