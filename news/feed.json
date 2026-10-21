@@ -1,7 +1,26 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-20T23:54:50.192Z",
+  "updatedAt": "2026-10-21T23:52:35.086Z",
   "articles": [
+    {
+      "id": "news-20261021-z1ro-nonwood-fibre-trial",
+      "kind": "news",
+      "category": "industry",
+      "title": "落ち葉や竹を成形トレーへ　Z1ROとKiefelが量産設備で試験",
+      "dek": "非木材繊維が自動成形ラインで扱えるかを検証し、商用化の準備を進める",
+      "summary": [
+        "竹・麻・落ち葉由来の繊維を使用",
+        "Kiefelの湿式繊維成形設備で試験",
+        "量産開始ではなく工業化に向けた検証段階"
+      ],
+      "why": "新素材の提案では、材料の環境性だけでなく既存設備での成形条件と量産性を確認したい",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/z1ro-and-kiefel-complete-industrial-trials-for-trays-made-from-fallen-leaves/",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-22",
+      "language": "en",
+      "verificationNote": "記事本文を確認　工業設備での試験完了は確認できるが、シリーズ生産は未開始で資金調達も進行中"
+    },
     {
       "id": "news-20261021-proampac-shelf-protect",
       "kind": "news",
@@ -20,6 +39,449 @@
       "addedAt": "2026-10-21",
       "language": "en",
       "verificationNote": "記事本文を確認　適合性や保存期間延長は企業側の説明で、対象食品ごとの採用可否は個別評価が必要"
+    },
+    {
+      "id": "20261022-column-quote-production-slot",
+      "kind": "column",
+      "category": "sales",
+      "title": "見積の有効期限は、価格だけでなく生産枠にもつける",
+      "dek": "単価の期限と加工枠の確保期限を分け、決裁が遅れた時の再確認点をそろえる",
+      "summary": [
+        "価格条件と生産枠の期限を分ける",
+        "確保の有無と解除時刻を記録する",
+        "期限後は納期を自動で約束しない"
+      ],
+      "why": "見積が有効でも、同じ納期で作れるとは限らないことを顧客と工場の双方に伝えるため",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-22",
+      "addedAt": "2026-10-22",
+      "language": "ja",
+      "body": [
+        {
+          "heading": "二つの期限を一行にまとめない",
+          "text": "見積書の有効期限は主に価格や取引条件の期限として使われる\n一方、生産枠は他案件の受注で埋まり、同じ日まで確保できるとは限らない\n価格の有効期限と、希望納期を再確認する期限を分けて書く"
+        },
+        {
+          "heading": "枠を押さえたのか、空きを見ただけか",
+          "text": "工場へ相談した時点で空きがあったことと、案件用に枠を確保したことは違う\n確保した場合は対象号機、時間帯、解除する日時、承認者を記録する\n仮押さえを無期限に続けず、解除前に顧客へ一度連絡する"
+        },
+        {
+          "heading": "仮の例で遅れを共有する",
+          "text": "仮に見積の価格期限が30日、生産枠の回答期限が7日だとする\n8日目に注文が来た場合、単価は有効でも納期は工場へ再確認する\nこれは説明用の仮の例で、実際の拘束力やキャンセル条件は契約と社内ルールを担当者が確認する"
+        },
+        {
+          "heading": "期限後の返事を定型化する",
+          "text": "期限後に注文を受けたら、受領、価格確認、材料確認、生産枠確認の順で返す\n営業が納期を先に断定せず、工場から得た最新条件を顧客へ戻す\n見積番号と変更点を残すと、次の再見積も速くなる"
+        }
+      ],
+      "questions": [
+        "今回の見積で、価格決裁と納期決裁はそれぞれいつ完了しますか",
+        "希望納期を維持するには、何日までに注文確定が必要ですか",
+        "生産枠を仮押さえする場合、解除の連絡先と時刻を誰にしますか"
+      ],
+      "verificationNote": "営業コラム　一般的な考え方と仮の例で、特定の顧客や工場の実績を示すものではない"
+    },
+    {
+      "id": "news-20261021-meiji-fruits-gummi-two-products",
+      "kind": "news",
+      "category": "food",
+      "title": "果汁グミに小分けアソートと冬限定味　明治が2商品を順次発売",
+      "dek": "ぶどう・マスカットのスマートパックと、りんご・ゆずの期間限定品を全国へ",
+      "summary": [
+        "スマートパックは10月27日発売予定",
+        "りんごゆずミックスは11月3日発売予定",
+        "果汁100は生果汁換算比で着色料不使用"
+      ],
+      "why": "小分け形態と季節限定味を同時に見ると、食品メーカーの商品刷新で包材が担う役割を考えやすい",
+      "source": "明治",
+      "url": "https://www.meiji.co.jp/corporate/pressrelease/2026/10_16/index.html",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-22",
+      "language": "ja",
+      "verificationNote": "明治の発表本文と公開日を確認　発売日は予定で、市場規模は同社が示した出典に基づく"
+    },
+    {
+      "id": "20261022-column-sensory-sample-order",
+      "kind": "column",
+      "category": "food",
+      "title": "官能評価は、サンプルを開ける順番まで決める",
+      "dek": "香りや味の比較で、温度・開封時刻・提示順のばらつきを減らす",
+      "summary": [
+        "比較目的と評価項目を先に決める",
+        "保管温度と開封時刻をそろえる",
+        "提示順と識別番号を記録する"
+      ],
+      "why": "包材や商品変更の評価で、サンプルの扱い方による差を結論と取り違えないため",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-22",
+      "addedAt": "2026-10-22",
+      "language": "ja",
+      "body": [
+        {
+          "heading": "合否の前に比較目的を決める",
+          "text": "香り移りを見たいのか、食感や外観も含めたいのかで準備は変わる\n評価項目、回答方法、誰が判定をまとめるかを先にそろえる\n営業だけで安全性や品質を保証せず、品質保証や開発の担当者が確認する論点として進める"
+        },
+        {
+          "heading": "開封条件を記録する",
+          "text": "同じ商品でも保管温度、開封から評価までの時間、容器への移し方で感じ方が変わる\nサンプルごとに受領日、保管場所、開封時刻を記録する\n包材変更品と現行品は、できるだけ同じ条件で扱う"
+        },
+        {
+          "heading": "提示順の偏りを減らす",
+          "text": "香りの強いサンプルを先に試すと、後の評価に影響する場合がある\n品名を伏せた識別番号を使い、提示順を評価者ごとに入れ替える方法も検討する\n具体的な試験設計は食品と目的に合わせ、社内の品質・開発担当者が決める"
+        },
+        {
+          "heading": "結果を一つの言葉で終わらせない",
+          "text": "良い、悪いだけでなく、どの項目で差を感じたかを残す\n再試験が必要なら、次回変える条件を一つずつ決める\n営業は結論を急がず、採用判断に必要な追加確認と期限を商談メモへ書く"
+        }
+      ],
+      "questions": [
+        "今回の官能評価で、最も確認したい項目は香り・味・食感のどれですか",
+        "現行品と変更品の保管温度、開封時刻、提示順をどうそろえますか",
+        "差が出た場合、再試験の条件と最終判定者を誰にしますか"
+      ],
+      "verificationNote": "営業コラム　一般的な評価準備の考え方で、食品安全や品質を保証するものではなく、試験条件は担当者が確認する"
+    },
+    {
+      "id": "news-20261021-aliplast-r3gid-modena",
+      "kind": "news",
+      "category": "industry",
+      "title": "硬質プラ再生の新工場　Aliplastが伊モデナで年3万トン体制",
+      "dek": "選別から再生材製造までを担うR3GID拠点が稼働を始めた",
+      "summary": [
+        "年間処理能力は3万トン",
+        "投資額は約4880万ユーロ",
+        "純度や排出削減値は企業側の説明"
+      ],
+      "why": "再生材の商談では、設備能力と実際の供給量、品質保証の範囲を分けて見る必要がある",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/aliplast-opens-new-rigid-plastics-recycling-plant-in-italy/",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-22",
+      "language": "en",
+      "verificationNote": "記事本文を確認　工場開設と公表能力を確認し、純度99%以上や排出削減効果は企業の算定として記載"
+    },
+    {
+      "id": "news-20261021-eu-ppwr-sme-position",
+      "kind": "news",
+      "category": "industry",
+      "title": "EU包装EPRの代理人義務　欧州議会が域内小規模企業の2035年までの免除案",
+      "dek": "従業員50人未満かつ売上高1000万ユーロ未満を対象に議会方針を採択",
+      "summary": [
+        "欧州議会は賛成616で方針を採択",
+        "対象はEU域内の一定規模未満の企業",
+        "理事会方針と三者協議が残り最終法ではない"
+      ],
+      "why": "包装規制の提案では、現在の義務と成立前の制度案を分けて顧客へ説明したい",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/eu-parliament-votes-to-exempt-smes-from-representative-rules-until-2035/",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-22",
+      "language": "en",
+      "verificationNote": "記事本文を確認　欧州議会の交渉方針であり、他のEPR義務を一括で免除する決定ではない"
+    },
+    {
+      "id": "news-20261021-babybel-paper-flowpack",
+      "kind": "news",
+      "category": "food",
+      "title": "Babybelの2個パックを紙フロー包装へ　既存ラインでの切替を訴求",
+      "dek": "BelがKoehlerのヒートシール紙を採用し、北米や欧州の一部で展開",
+      "summary": [
+        "商品名はBabybel 2 Go",
+        "KoehlerのNexPlus Seal Pureを使用",
+        "速度やリサイクル性は企業側の評価"
+      ],
+      "why": "食品包材の紙化では、店頭表示だけでなくシール条件と既存設備での速度を確認したい",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/koehler-wraps-babybel-two-packs-in-recyclable-paper-flowpack/",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-22",
+      "language": "en",
+      "verificationNote": "記事本文を確認　フランスの既存ラインでの採用は確認できるが、速度同等やリサイクル性は企業の説明"
+    },
+    {
+      "id": "news-20261021-samsung-sk-china-nand-upgrade",
+      "kind": "news",
+      "category": "industry",
+      "title": "SamsungとSK Hynix、中国NAND工場を高度化　米当局と調整",
+      "dek": "積層数を増やす設備更新を進める一方、輸出規制の許可範囲が焦点",
+      "summary": [
+        "Samsungは西安工場の更新を計画",
+        "SK Hynixは大連で設備を導入",
+        "具体的な生産計画の一部は関係者情報"
+      ],
+      "why": "設備投資の案件では、導入計画だけでなく輸出許可と実際の立上げ時期を分けて追いたい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/samsung-sk-hynix-upgrading-china-plants-make-more-advanced-chips-people-say-2026-10-21/",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-22",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　企業が更新を認めた範囲と、情報源が示した積層数や月産計画を区別"
+    },
+    {
+      "id": "news-20261021-php-security-patches-offline",
+      "kind": "news",
+      "category": "ai",
+      "title": "PHPの欠陥で行政サイトが一時停止　AI支援で見つかった問題に修正版",
+      "dek": "欧州の一部サイトが予防措置を取り、悪用の観測も報告された",
+      "summary": [
+        "PHPは10月21日に修正版を公開",
+        "欧州の行政サイトが一部停止",
+        "EU機関は更新と影響確認を促した"
+      ],
+      "why": "業務サイトの停止は営業や受発注にも響くため、利用基盤と更新担当を把握しておきたい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/eu-agency-warns-websites-may-need-be-taken-offline-php-prepares-patches-2026-10-21/",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-22",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　欠陥の発見にはAI支援が使われ、修正版公開と悪用観測を確認"
+    },
+    {
+      "id": "news-20261021-nvidia-europe-physical-ai",
+      "kind": "news",
+      "category": "ai",
+      "title": "Nvidiaが欧州でロボットと工場型データセンターを拡張　提携計画を発表",
+      "dek": "Agile Robotsは来年1000〜2000体の小型人型ロボット生産を計画",
+      "summary": [
+        "Nvidiaは欧州で約100億ドルを投資・約束",
+        "工場組立型DSX PODも紹介",
+        "ロボット台数は提携企業の計画値"
+      ],
+      "why": "AI投資では、デモ発表と実際の生産台数や導入時期を分けて商談材料にしたい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/germanys-agile-make-up-2000-humanoid-robots-with-nvidia-ceo-says-2026-10-21/",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-22",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　投資額と提携発表を確認し、ロボット生産数は来年の計画として記載"
+    },
+    {
+      "id": "news-20261021-legora-funding",
+      "kind": "news",
+      "category": "ai",
+      "title": "法務AIのLegoraが5.5億ドル調達　評価額88億ドル",
+      "dek": "法律業務向けAIサービスの拡大資金を確保した",
+      "summary": [
+        "資金調達額は5.5億ドル",
+        "企業評価額は88億ドル",
+        "評価額は今回の資金調達条件に基づく"
+      ],
+      "why": "AIサービスの成長を見る際は、資金調達時の評価と実際の利用成果を分けて考えたい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/transactional/legal-ai-startup-legora-valued-88-billion-new-550-million-funding-round-2026-10-21/",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-22",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　調達額と評価額を確認し、事業成果を保証する数字ではない"
+    },
+    {
+      "id": "news-20261021-aws-europe-startup-survey",
+      "kind": "news",
+      "category": "ai",
+      "title": "欧州スタートアップの移転懸念　AWSが規制・資金・人材の課題を指摘",
+      "dek": "調査対象の最大4割が拠点移転を検討しているとAWSが説明",
+      "summary": [
+        "AWSの調査と利用データに基づく主張",
+        "成長企業ほど域外移転を考える傾向を報告",
+        "政策影響の確定的な因果ではない"
+      ],
+      "why": "顧客の投資判断を読むときは、調査主体と対象範囲を確認して数字を使いたい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/retail-consumer/europe-risks-startup-exodus-regulation-funding-skill-gaps-hamper-ai-adoption-aws-2026-10-21/",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-22",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　数値はAWSの調査結果で、欧州企業全体を直接示す統計ではない"
+    },
+    {
+      "id": "news-20261021-sibelco-north-carolina-quartz",
+      "kind": "news",
+      "category": "industry",
+      "title": "半導体向け石英の米新工場計画　Sibelcoがノースカロライナへ投資",
+      "dek": "米商務長官が数億ドル規模の計画を公表した",
+      "summary": [
+        "半導体用シリコン工程を支える石英が対象",
+        "投資額は数億ドル規模と説明",
+        "操業時期や生産能力は未公表"
+      ],
+      "why": "大型投資の発表では、金額だけでなく能力・着工・量産開始の未確定部分を確認したい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/technology/lutnick-announces-investment-boost-semiconductor-production-north-carolina-2026-10-21/",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-22",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　政府発表で工場計画は確認できるが、具体的な投資額と能力は示されていない"
+    },
+    {
+      "id": "news-20261021-sandoz-penicillin-plant-pressure",
+      "kind": "news",
+      "category": "industry",
+      "title": "欧州ペニシリン一貫工場に価格圧力　中国製原薬との競争が焦点",
+      "dek": "Sandozのオーストリア拠点を通じ、域内供給網の維持課題を検証",
+      "summary": [
+        "Kundlは欧州の主要な一貫生産拠点",
+        "中国の低価格品が競争を強める",
+        "供給安全と製造コストの両立が課題"
+      ],
+      "why": "重要材料では購入単価だけでなく、供給源と継続生産の条件も商談で確認したい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/how-cheap-chinese-antibiotics-threaten-europes-last-major-penicillin-plant-2026-10-21/",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-22",
+      "language": "en",
+      "verificationNote": "Reutersの現地取材記事を確認　工場の位置付けと競争状況を整理し、将来の存続を断定していない"
+    },
+    {
+      "id": "news-20261021-france-bond-yield-five-percent",
+      "kind": "news",
+      "category": "world",
+      "title": "フランス10年債利回り5%　2002年以来の高水準",
+      "dek": "財政への懸念からドイツ国債との利回り差も拡大した",
+      "summary": [
+        "10年債利回りが5%に到達",
+        "ドイツ債との上乗せ幅も高水準",
+        "市場価格は今後も変動する"
+      ],
+      "why": "金利上昇は設備投資や在庫資金の判断に波及するため、顧客の投資時期を見る材料になる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/europe/french-10-year-bond-yields-hit-5-highest-since-2002-2026-10-21/",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-22",
+      "language": "en",
+      "verificationNote": "Reuters本文で10月21日の市場水準を確認　数値は取引中の値で固定的な金利ではない"
+    },
+    {
+      "id": "news-20261021-russia-ukraine-talks-plan",
+      "kind": "news",
+      "category": "world",
+      "title": "ロシアとウクライナの協議再開を調整　来月にも開催の可能性",
+      "dek": "米特使の訪露を受け、次回協議の日程が焦点になった",
+      "summary": [
+        "協議再開は調整段階",
+        "米国人拘束者の解放も発表",
+        "停戦合意が成立したわけではない"
+      ],
+      "why": "国際情勢は物流と原材料価格へ波及するため、協議開始と合意成立を分けて追いたい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/europe/putin-hosts-trump-envoy-new-ukraine-peace-talks-frees-us-citizen-held-russia-2026-10-21/",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-22",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　来月の協議は見通しで、具体的な合意内容は未確定"
+    },
+    {
+      "id": "news-20261021-us-saudi-ordered-departure",
+      "kind": "news",
+      "category": "travel",
+      "title": "米国がサウジ公館の一部職員・家族に退避命令　地域情勢を警戒",
+      "dek": "渡航判断に影響する安全措置として公館体制を縮小する",
+      "summary": [
+        "対象は一部の職員と家族",
+        "米当局者が準備状況を説明",
+        "一般旅行者は最新の公式勧告確認が必要"
+      ],
+      "why": "出張予定は航空便だけでなく、公館の安全情報と会社の渡航基準も直前に確認したい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/middle-east/us-preparing-issue-ordered-departure-some-personnel-gulf-embassies-us-officials-2026-10-21/",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-22",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　公館関係者への命令であり、すべての渡航者への一律退避命令ではない"
+    },
+    {
+      "id": "news-20261021-oil-middle-east-supply",
+      "kind": "news",
+      "category": "world",
+      "title": "原油相場が供給懸念で上昇　中東情勢と在庫を注視",
+      "dek": "エネルギー供給への不安が価格を支える一方、需要見通しも交錯",
+      "summary": [
+        "中東の供給不安が材料",
+        "原油先物は10月21日に上昇",
+        "価格は市場時間中に変動する"
+      ],
+      "why": "樹脂や物流費への影響を考える際は、原油価格と自社の価格改定時期を直接結び付けすぎないことが重要",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/energy/oil-rises-middle-east-supply-worries-2026-10-21/",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-22",
+      "language": "en",
+      "verificationNote": "Reuters本文で10月21日の相場と背景を確認　将来価格を予測するものではない"
+    },
+    {
+      "id": "news-20261021-ibm-software-outlook",
+      "kind": "news",
+      "category": "ai",
+      "title": "IBMがソフト売上見通しを引き上げ　遅れていた案件の成約が改善",
+      "dek": "通期成長率の予想レンジを約7〜8%へ修正した",
+      "summary": [
+        "従来予想は6〜8%",
+        "第3四半期決算は市場予想を上回る",
+        "数値は会社見通しで実績確定前"
+      ],
+      "why": "大型案件は需要が消えたのか、決裁が遅れたのかで次の営業行動が変わる",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/ibm-raises-annual-software-revenue-outlook-deal-delays-ease-2026-10-21/",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-22",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　見通し引上げは会社予想で、通期実績は未確定"
+    },
+    {
+      "id": "news-20261021-abbott-nutrition-spinoff",
+      "kind": "news",
+      "category": "food",
+      "title": "Abbottが栄養事業の分離を計画　2027年の独立上場を目指す",
+      "dek": "SimilacやEnsureを含む事業を切り出し、医療機器中心の本体と分ける",
+      "summary": [
+        "栄養事業の分離は2027年予定",
+        "2026年の売上成長見通しを引き下げ",
+        "分離完了には手続きと条件が残る"
+      ],
+      "why": "食品・栄養分野の顧客組織が変わる局面では、購買・品質・仕様決裁の窓口を再確認したい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/abbott-lowers-2026-sales-growth-forecast-medical-device-weakness-2026-10-21/",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-22",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　事業分離は会社計画で、完了済みではない"
+    },
+    {
+      "id": "news-20261021-eqt-qiagen-acquisition",
+      "kind": "news",
+      "category": "industry",
+      "title": "EQTがQiagenを約108億ドルで買収へ　分子検査事業を非公開化",
+      "dek": "取締役会が提案を支持し、2027年半ばの完了を見込む",
+      "summary": [
+        "株式価値は約96億ユーロ",
+        "負債込み評価は約121億ドル",
+        "規制承認などを経て完了予定"
+      ],
+      "why": "顧客の所有関係が変わる案件では、買収発表と取引完了、購買方針変更を分けて確認したい",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/transactional/buyout-firm-eqt-acquire-qiagen-108-billion-2026-10-21/",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-22",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　取締役会の支持は確認できるが、買収手続きは未完了"
+    },
+    {
+      "id": "news-20261021-tsmc-site-fatal-accident",
+      "kind": "news",
+      "category": "industry",
+      "title": "TSMCの台湾新工場建設現場で4人死亡　一部工事を停止",
+      "dek": "南部の建設現場で事故が起き、会社が作業停止と調査対応を発表",
+      "summary": [
+        "建設作業員4人の死亡を会社が確認",
+        "現場の一部工事を停止",
+        "原因は調査中で断定できない"
+      ],
+      "why": "設備計画では納期だけでなく、安全確認による停止や再開条件も工程管理に含める必要がある",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/tsmc-says-four-construction-workers-killed-taiwan-site-halting-work-2026-10-21/",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-22",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　死亡者数と工事停止は会社発表で、事故原因は未確定"
     },
     {
       "id": "news-20261020-reseal-fibre-tray",
@@ -41,47 +503,6 @@
       "verificationNote": "記事本文とOssid公式発信を照合　世界初や保存性能は企業側の説明で、個別食品での評価結果は未確認"
     },
     {
-      "id": "20261021-column-informal-order",
-      "kind": "column",
-      "category": "sales",
-      "title": "内示は注文書ではない　工場へ流す境界を決める",
-      "dek": "予定数量と確定数量を分け、営業・生産・購買の判断をそろえる",
-      "summary": [
-        "内示の確度と変更期限を確認する",
-        "材料手配と生産着手の承認を分ける",
-        "増減・延期・取消時の連絡と費用を整理する"
-      ],
-      "why": "急ぎ案件でも、誰の判断でどこまで進めたかを曖昧にしないため",
-      "source": "営業コラム",
-      "publishedAt": "2026-10-21",
-      "addedAt": "2026-10-21",
-      "language": "ja",
-      "body": [
-        {
-          "heading": "内示を一つの数字として受け取らない",
-          "text": "内示は需要の見込み、発注準備、社内承認待ちなど意味が案件ごとに違う\n数量だけでなく、確度、確定予定日、増減幅を聞く\n注文書と同じ効力があるとは決めつけず、自社の契約・受注ルールを担当者と確認する"
-        },
-        {
-          "heading": "材料手配と生産着手を分ける",
-          "text": "納期を守るために原材料だけ先に押さえる場合と、設備へ投入する場合では戻せる範囲が違う\n営業は資材、版や金型、加工枠のどこまでを先行させるかを分けて相談する\n工場には内示数量だけでなく、確定前に進めてよい工程を明記して渡す"
-        },
-        {
-          "heading": "仮の数量で負担を見える化する",
-          "text": "仮に月1万個の内示で材料を手配し、確定が7千個になったとする\n差分3千個を次回へ回せるか、専用品として残るかで判断は変わる\nこれは説明用の仮の例で、実際の費用や責任は契約と社内判断で確認する"
-        },
-        {
-          "heading": "変更時の連絡線を先に決める",
-          "text": "増量、延期、取消が起きたら誰が何時までに営業へ知らせるかを決める\n営業から工場・購買へ伝える書式もそろえる\n確定前に進める必要がある案件ほど、承認者と記録を残すと次の判断が速くなる"
-        }
-      ],
-      "questions": [
-        "今回の内示は、どの社内承認まで終わった数量ですか",
-        "材料手配と生産着手は、それぞれいつ確定できますか",
-        "数量変更や延期が出る場合、誰から何時までに連絡をもらえますか"
-      ],
-      "verificationNote": "営業コラム　一般的な考え方と仮の例で、特定の顧客や工場の実績を示すものではない"
-    },
-    {
       "id": "news-20261021-meiji-chocolate-drinks",
       "kind": "news",
       "category": "food",
@@ -99,47 +520,6 @@
       "addedAt": "2026-10-21",
       "language": "ja",
       "verificationNote": "明治の公式発表本文で発売日、容量、価格、販路を確認　販売実績ではなく発売計画"
-    },
-    {
-      "id": "20261021-column-food-inspection-material",
-      "kind": "column",
-      "category": "food",
-      "title": "包材変更の前に、異物検査機の条件を聞く",
-      "dek": "材質を替えてから検査工程で止まらないよう、品質と製造の確認順を整える",
-      "summary": [
-        "現在の検査方式と設定を確認する",
-        "包材材質が検出へ与える影響を試験する",
-        "品質担当と工場が判定する条件を記録する"
-      ],
-      "why": "バリア性や環境対応だけで包材を選ばず、食品工場の検査工程まで含めて提案するため",
-      "source": "営業コラム",
-      "publishedAt": "2026-10-21",
-      "addedAt": "2026-10-21",
-      "language": "ja",
-      "body": [
-        {
-          "heading": "最初に検査方式を聞く",
-          "text": "金属検出機、X線検査機、画像検査など、工場で使う方式によって確認点は変わる\n同じ方式でも商品温度、塩分、水分、厚み、搬送姿勢で条件が変わることがある\n営業はできる・できないを断定せず、現在の機種と設定、検査位置を品質・製造担当へ確認する"
-        },
-        {
-          "heading": "材質名だけで判断しない",
-          "text": "アルミ箔や蒸着層を含む構成から別素材へ替えると、検査条件の見直しが必要になる場合がある\n反対に素材を替えれば必ず検出性能が上がるとも限らない\n厚み、印刷、シール部、内容物を含む完成品で評価する前提をそろえる"
-        },
-        {
-          "heading": "試験品と判定基準を一組にする",
-          "text": "試験では量産と同じ充填量、温度、包装形状をできるだけ再現する\nどのテストピースをどの位置へ通し、誰が合否を判定するかを記録する\n品質・食品安全に関する最終判断は顧客と自社の担当者が根拠を確認して決める"
-        },
-        {
-          "heading": "包材の商談を工程の商談へ広げる",
-          "text": "新しい包材の見積だけでなく、試験日、必要数量、設備条件変更の有無まで確認する\n表示や法令適合、契約条件はそれぞれの専門担当へつなぐ\n営業が検査工程を早めに聞けば、試作後のやり直しを減らす相談がしやすい"
-        }
-      ],
-      "questions": [
-        "現在はどの検査機を、包装工程のどの位置で使っていますか",
-        "包材変更時の試験条件と合否判定者は決まっていますか",
-        "量産条件を再現するため、試験品は何個とどの温度帯が必要ですか"
-      ],
-      "verificationNote": "営業コラム　一般的な確認手順で、検査性能や食品安全を保証するものではなく、品質・製造担当者が個別に確認する論点"
     },
     {
       "id": "news-20261021-ppg-teslin-envos",
@@ -2555,384 +2935,86 @@
       "verificationNote": "Reuters本文で陪審評決を確認　Qualcommの声明と裁判結果を区別し、最終的な法的終結とは断定していない"
     },
     {
-      "id": "news-20261014-mumbai-airport-winter-slots",
-      "kind": "news",
-      "category": "travel",
-      "title": "ムンバイ空港、冬季便の削減を見送り　航空会社の反発受け",
-      "dek": "ターミナル工事に伴う国際便の一時削減案を撤回し、現行枠を維持",
+      "id": "20261021-column-informal-order",
+      "kind": "column",
+      "category": "sales",
+      "title": "内示は注文書ではない　工場へ流す境界を決める",
+      "dek": "予定数量と確定数量を分け、営業・生産・購買の判断をそろえる",
       "summary": [
-        "ムンバイ空港は冬季の発着枠を現状のまま維持すると航空会社へ通知した",
-        "ターミナル解体に伴う国際便の一時削減案に航空会社が反発していた",
-        "将来の工事進行や便別の時刻変更は航空会社と空港の最新案内で確認が必要"
+        "内示の確度と変更期限を確認する",
+        "材料手配と生産着手の承認を分ける",
+        "増減・延期・取消時の連絡と費用を整理する"
       ],
-      "why": "出張計画では路線の有無だけでなく、空港工事と発着枠の変更も追いたい",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/india/adanis-mumbai-airport-holds-off-winter-flight-cuts-after-airline-pushback-2026-10-13/",
-      "publishedAt": "2026-10-13",
-      "addedAt": "2026-10-14",
-      "language": "en",
-      "verificationNote": "Reuters本文を確認　記事時点の空港通知であり、個別便の運航保証ではない"
+      "why": "急ぎ案件でも、誰の判断でどこまで進めたかを曖昧にしないため",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-21",
+      "language": "ja",
+      "body": [
+        {
+          "heading": "内示を一つの数字として受け取らない",
+          "text": "内示は需要の見込み、発注準備、社内承認待ちなど意味が案件ごとに違う\n数量だけでなく、確度、確定予定日、増減幅を聞く\n注文書と同じ効力があるとは決めつけず、自社の契約・受注ルールを担当者と確認する"
+        },
+        {
+          "heading": "材料手配と生産着手を分ける",
+          "text": "納期を守るために原材料だけ先に押さえる場合と、設備へ投入する場合では戻せる範囲が違う\n営業は資材、版や金型、加工枠のどこまでを先行させるかを分けて相談する\n工場には内示数量だけでなく、確定前に進めてよい工程を明記して渡す"
+        },
+        {
+          "heading": "仮の数量で負担を見える化する",
+          "text": "仮に月1万個の内示で材料を手配し、確定が7千個になったとする\n差分3千個を次回へ回せるか、専用品として残るかで判断は変わる\nこれは説明用の仮の例で、実際の費用や責任は契約と社内判断で確認する"
+        },
+        {
+          "heading": "変更時の連絡線を先に決める",
+          "text": "増量、延期、取消が起きたら誰が何時までに営業へ知らせるかを決める\n営業から工場・購買へ伝える書式もそろえる\n確定前に進める必要がある案件ほど、承認者と記録を残すと次の判断が速くなる"
+        }
+      ],
+      "questions": [
+        "今回の内示は、どの社内承認まで終わった数量ですか",
+        "材料手配と生産着手は、それぞれいつ確定できますか",
+        "数量変更や延期が出る場合、誰から何時までに連絡をもらえますか"
+      ],
+      "verificationNote": "営業コラム　一般的な考え方と仮の例で、特定の顧客や工場の実績を示すものではない"
     },
     {
-      "id": "news-20261014-european-automakers-pressure",
-      "kind": "news",
-      "category": "industry",
-      "title": "欧州量販車メーカー、EV競争と需要低迷で支援を要請",
-      "dek": "中国勢との競争や高コストを背景に、政策の柔軟性を求める声",
-      "summary": [
-        "欧州の自動車メーカー幹部は量販車事業が強い圧力にあると訴えた",
-        "中国メーカーとのEV競争、需要の弱さ、コスト負担が重なっている",
-        "支援要請や再編策は各社・業界の主張で、政策決定や回復実績ではない"
-      ],
-      "why": "自動車向け営業では生産台数だけでなく、車種転換・原価圧力・拠点再編を顧客ごとに確認したい",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/autos-transportation/european-automakers-urge-support-vw-warns-enormous-pressure-2026-10-13/",
-      "publishedAt": "2026-10-13",
-      "addedAt": "2026-10-14",
-      "language": "en",
-      "verificationNote": "Reuters本文を確認　企業幹部の発言、販売データ、政策要請を分けて要約"
-    },
-    {
-      "id": "news-20261014-goldman-q3-equities",
-      "kind": "news",
-      "category": "world",
-      "title": "Goldman Sachs、株式取引が伸び四半期利益増",
-      "dek": "7～9月期の純利益は52.9億ドル、株式取引収入は72％増",
-      "summary": [
-        "Goldman Sachsの四半期純利益は52億9000万ドル、1株利益は17.01ドルだった",
-        "株式取引収入は前年同期比72％増の64億4000万ドル",
-        "投資銀行手数料も21％増えたが、数字は一四半期の実績で将来収益を保証しない"
-      ],
-      "why": "金融市場の好調が設備投資やM&Aへどう波及するかは、顧客の資金計画で確かめたい",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/finance/goldman-sachs-quarterly-profit-rises-equities-strength-2026-10-13/",
-      "publishedAt": "2026-10-13",
-      "addedAt": "2026-10-14",
-      "language": "en",
-      "verificationNote": "Reuters本文と決算数値を確認　市場予想との差と実績を区別"
-    },
-    {
-      "id": "news-20261014-jj-medtech-q3",
-      "kind": "news",
-      "category": "industry",
-      "title": "J&J医療機器売上は2.5％増　市場予想には届かず",
-      "dek": "中東情勢が販売に影響、DePuy Synthes分離は2027年半ばを予定",
-      "summary": [
-        "J&Jの医療機器売上は前年同期比2.5％増の86億ドルだった",
-        "市場予想の87億1000万ドルを下回り、会社は中東情勢の影響を挙げた",
-        "整形外科のDePuy Synthes分離は2027年半ばの計画で、まだ完了していない"
-      ],
-      "why": "医療向け製造の営業では全社成長率だけでなく、地域・部門・再編時期を分けて見る必要がある",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/litigation/jj-beats-earnings-estimates-middle-east-conflict-weighs-medical-device-sales-2026-10-13/",
-      "publishedAt": "2026-10-13",
-      "addedAt": "2026-10-14",
-      "language": "en",
-      "verificationNote": "Reuters本文と四半期決算を確認　分離は将来計画として記載"
-    },
-    {
-      "id": "news-20261014-luxury-market-value-drop",
-      "kind": "news",
-      "category": "world",
-      "title": "欧州高級品株、時価総額3500億ドル減　需要回復に不透明感",
-      "dek": "中国消費の弱さや為替を背景に、業界の評価が大きく調整",
-      "summary": [
-        "Reutersの分析では欧州高級品大手の時価総額がピークから約3500億ドル減少した",
-        "中国需要の弱さ、価格引き上げ余地、為替が業績への重荷となっている",
-        "時価総額は市場価格で変動し、減少額は企業の現金損失そのものではない"
-      ],
-      "why": "ブランド向け営業では過去の成長率を延長せず、数量・価格・地域別の前提を聞き直したい",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/retail-consumer/european-luxurys-350-billion-blowout-2026-10-13/",
-      "publishedAt": "2026-10-13",
-      "addedAt": "2026-10-14",
-      "language": "en",
-      "verificationNote": "Reutersの分析記事を確認　市場評価の変化と企業の事業実績を区別"
-    },
-    {
-      "id": "news-20261016-crs35-health",
-      "kind": "news",
-      "category": "science",
-      "title": "ISS補給便で脳モデル・植物病害の研究へ",
-      "dek": "CRS-35に健康関連の四つの実験を搭載予定",
-      "summary": [
-        "小型の培養脳モデルを地上試料と比較する研究を計画",
-        "微小重力下の植物病害や薬剤耐性菌も調べる",
-        "船内での健康指標測定を速める小型測定器の試験も行う"
-      ],
-      "why": "宇宙環境を使う研究の狙いと、地上応用がまだ将来の可能性である点を分けて読みたい",
-      "source": "NASA",
-      "url": "https://science.nasa.gov/missions/station/nasas-spacex-crs-35-mission-to-launch-health-research/",
-      "publishedAt": "2026-10-12",
-      "addedAt": "2026-10-16",
-      "language": "en",
-      "verificationNote": "NASA公式本文を確認　研究計画の紹介で、医療・農業への有効性が実証されたという発表ではない"
-    },
-    {
-      "id": "news-20261013-pregis-infinx-rightsizing",
-      "kind": "news",
-      "category": "industry",
-      "title": "注文ごとに袋を適正寸法へ　Pregisがオンデマンド包装を拡充",
-      "dek": "紙・ポリ・緩衝材付きのメーラーを注文単位で成形するInfinXを発表",
-      "summary": [
-        "PregisはSharp製品群にオンデマンド包装システムInfinXを追加した",
-        "個々の注文に合わせてメーラーを作り、紙・ポリ・緩衝材付きの形式に対応する",
-        "既存ラインへの統合と工具不要の材料切替を訴求するが、効果数値は利用現場ごとの検証が必要"
-      ],
-      "why": "多品種の通販現場では、包材単価だけでなく空隙・作業・輸送をまとめて見る提案材料になる",
-      "source": "Packaging Europe",
-      "url": "https://www.packagingeurope.com/pregis-launches-new-rightsizing-portfolio/",
-      "publishedAt": "2026-10-12",
-      "addedAt": "2026-10-13",
-      "language": "en",
-      "verificationNote": "公開記事本文を確認　省資材・省作業・総所有コストの効果はPregisの説明で、第三者試験値は記事に示されていない"
-    },
-    {
-      "id": "news-20261013-starbucks-chipotle-denial",
-      "kind": "news",
+      "id": "20261021-column-food-inspection-material",
+      "kind": "column",
       "category": "food",
-      "title": "Starbucks、Chipotle買収観測を明確に否定",
-      "dek": "大型外食再編の観測を打ち消し、自社の店舗運営改善へ焦点を戻した",
+      "title": "包材変更の前に、異物検査機の条件を聞く",
+      "dek": "材質を替えてから検査工程で止まらないよう、品質と製造の確認順を整える",
       "summary": [
-        "StarbucksはChipotleを買収しないと10月12日に表明した",
-        "観測はFinancial Timesの報道をきっかけに広がり、両社の株価も反応していた",
-        "Starbucksはメニュー簡素化や待ち時間短縮を含む既存の再建策を継続する"
+        "現在の検査方式と設定を確認する",
+        "包材材質が検出へ与える影響を試験する",
+        "品質担当と工場が判定する条件を記録する"
       ],
-      "why": "食品企業のニュースでは、報道された検討と会社が確定した方針を分けて読むことが大切",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/starbucks-says-it-is-not-buying-chipotle-mexican-grill-2026-10-12/",
-      "publishedAt": "2026-10-12",
-      "addedAt": "2026-10-13",
-      "language": "en",
-      "verificationNote": "Reuters本文を確認　買収観測の経緯と、同社の否定コメントを区別"
-    },
-    {
-      "id": "news-20261013-weavabel-polybag-loop",
-      "kind": "news",
-      "category": "industry",
-      "title": "衣料用ポリ袋を回収して再製膜　Weavabelが閉ループ構想",
-      "dek": "店舗・倉庫・工場を結び、使用済み袋を選別・再生して新しいポリ袋へ戻す仕組みを開始",
-      "summary": [
-        "Weavabelは衣料サプライチェーン向けのポリ袋回収・再生システムを立ち上げた",
-        "店舗から配送拠点へ戻した袋を選別・圧縮し、再生ペレットを同社工場で製膜する流れを示す",
-        "閉ループ化は企業の計画と運用設計で、回収率や再生量の実績値は記事で確認できない"
+      "why": "バリア性や環境対応だけで包材を選ばず、食品工場の検査工程まで含めて提案するため",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-21",
+      "addedAt": "2026-10-21",
+      "language": "ja",
+      "body": [
+        {
+          "heading": "最初に検査方式を聞く",
+          "text": "金属検出機、X線検査機、画像検査など、工場で使う方式によって確認点は変わる\n同じ方式でも商品温度、塩分、水分、厚み、搬送姿勢で条件が変わることがある\n営業はできる・できないを断定せず、現在の機種と設定、検査位置を品質・製造担当へ確認する"
+        },
+        {
+          "heading": "材質名だけで判断しない",
+          "text": "アルミ箔や蒸着層を含む構成から別素材へ替えると、検査条件の見直しが必要になる場合がある\n反対に素材を替えれば必ず検出性能が上がるとも限らない\n厚み、印刷、シール部、内容物を含む完成品で評価する前提をそろえる"
+        },
+        {
+          "heading": "試験品と判定基準を一組にする",
+          "text": "試験では量産と同じ充填量、温度、包装形状をできるだけ再現する\nどのテストピースをどの位置へ通し、誰が合否を判定するかを記録する\n品質・食品安全に関する最終判断は顧客と自社の担当者が根拠を確認して決める"
+        },
+        {
+          "heading": "包材の商談を工程の商談へ広げる",
+          "text": "新しい包材の見積だけでなく、試験日、必要数量、設備条件変更の有無まで確認する\n表示や法令適合、契約条件はそれぞれの専門担当へつなぐ\n営業が検査工程を早めに聞けば、試作後のやり直しを減らす相談がしやすい"
+        }
       ],
-      "why": "リサイクル適性だけでなく、回収場所・圧縮・輸送まで提案範囲に入れる必要が見える",
-      "source": "Packaging Europe",
-      "url": "https://www.packagingeurope.com/weavabel-designs-closed-loop-polybag-recycling-system-for-clothing-operations/",
-      "publishedAt": "2026-10-12",
-      "addedAt": "2026-10-13",
-      "language": "en",
-      "verificationNote": "公開記事本文を確認　回収・再生の工程は企業説明で、量的な運用実績は記載されていない"
-    },
-    {
-      "id": "news-20261013-tsmc-q3-preview",
-      "kind": "news",
-      "category": "industry",
-      "title": "TSMC、6四半期連続の最高益予想　先端実装も需要を支える",
-      "dek": "AI向け半導体とCoWoSの需要を背景に、アナリストは7～9月期利益の65％増を予想",
-      "summary": [
-        "TSMCは10月15日に2026年7～9月期決算を発表する予定",
-        "LSEGの推計では純利益は前年同期比65％増の7463億台湾ドルと見込まれる",
-        "3ナノ製品やCoWoSの需要が背景だが、記事は決算前の予想で確定実績ではない"
+      "questions": [
+        "現在はどの検査機を、包装工程のどの位置で使っていますか",
+        "包材変更時の試験条件と合否判定者は決まっていますか",
+        "量産条件を再現するため、試験品は何個とどの温度帯が必要ですか"
       ],
-      "why": "半導体製造では前工程だけでなく、先端パッケージング能力が供給力を左右する",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/tsmc-expected-report-sixth-straight-quarter-record-profit-thanks-ai-boom-2026-10-12/",
-      "publishedAt": "2026-10-12",
-      "addedAt": "2026-10-13",
-      "language": "en",
-      "verificationNote": "Reuters本文を確認　利益はLSEG SmartEstimateで、会社の確定決算は未発表"
-    },
-    {
-      "id": "news-20261013-byd-france-factory-study",
-      "kind": "news",
-      "category": "industry",
-      "title": "BYD、フランス工場の可能性を検討",
-      "dek": "欧州での追加生産拠点について幹部が調査中と説明し、決定済みではない",
-      "summary": [
-        "BYDのStella Li副社長はフランスでの工場設置を綿密に検討していると現地テレビに語った",
-        "同社は欧州市場での事業拡大を進めている",
-        "記事時点では候補調査の段階で、投資額・場所・稼働時期の確定発表ではない"
-      ],
-      "why": "大型設備案件は発表の強さを見極め、調査・計画・着工・量産を別々に追いたい",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/chinas-byd-studying-plans-factory-france-executive-tells-bfm-2026-10-12/",
-      "publishedAt": "2026-10-12",
-      "addedAt": "2026-10-13",
-      "language": "en",
-      "verificationNote": "Reuters本文で幹部発言を確認　工場建設の正式決定ではなく検討段階"
-    },
-    {
-      "id": "news-20261013-imf-ai-growth-jobs",
-      "kind": "news",
-      "category": "ai",
-      "title": "IMF、AI投資が成長を支える一方で雇用再編を警告",
-      "dek": "世界成長率を約3％に保つ投資効果と、仕事・教育・税制への大きな変化を同時に指摘",
-      "summary": [
-        "IMFのGeorgieva専務理事はAIインフラ投資が世界成長を支えていると述べた",
-        "アジアの先進国で成長率を0.5～1ポイント、新興国で0.2～0.8ポイント押し上げ得るとの推計を示した",
-        "先進国では仕事の最大60％が補完・格下げ・消失のいずれかの影響を受け得るとし、推計であって確定結果ではない"
-      ],
-      "why": "AI導入は省人化だけでなく、必要な技能と新人の仕事をどう組み直すかまで考えるテーマ",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/imf-says-ai-investment-keeps-global-growth-around-3-with-major-asia-benefits-2026-10-12/",
-      "publishedAt": "2026-10-12",
-      "addedAt": "2026-10-13",
-      "language": "en",
-      "verificationNote": "Reuters本文を確認　成長・雇用への数字はIMFの推計と発言で、実績値や保証ではない"
-    },
-    {
-      "id": "news-20261013-hcltech-anthropic-unit",
-      "kind": "news",
-      "category": "ai",
-      "title": "HCLTech、Anthropic専任部門を設置へ",
-      "dek": "企業のエージェントAI導入を安全性・サイバー対策・統治と合わせて支援する提携",
-      "summary": [
-        "HCLTechはAnthropicと提携し、エージェントAIの企業導入を進めると発表した",
-        "提携に合わせてAnthropic関連の専任事業部門を設置する",
-        "安全性・サイバーセキュリティ・ガバナンスを重点に掲げるが、導入成果は今後の案件で確認する段階"
-      ],
-      "why": "AIの販売はモデル紹介だけでなく、権限・監査・運用支援を一体で設計する方向に進んでいる",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/india/indias-hcltech-signs-pact-with-anthropic-set-up-business-unit-2026-10-12/",
-      "publishedAt": "2026-10-12",
-      "addedAt": "2026-10-13",
-      "language": "en",
-      "verificationNote": "Reuters本文を確認　提携と専任部門設置の発表で、顧客導入の実績数は示されていない"
-    },
-    {
-      "id": "news-20261013-microsoft-ai-regulation",
-      "kind": "news",
-      "category": "ai",
-      "title": "Microsoft社長、AIに独立評価と事故報告ルールを提案",
-      "dek": "緊急停止や被害通知を含む国際的な安全枠組みが必要だとBBC取材で主張",
-      "summary": [
-        "MicrosoftのBrad Smith社長はAI規制を急ぐ必要があると述べた",
-        "独立機関による評価、事故報告、被害通知、緊急停止の仕組みを提案した",
-        "英国の既存制度を評価したが、これは企業幹部の政策提案であり新法の成立ではない"
-      ],
-      "why": "業務AIを選ぶときは便利さと同時に、止め方・記録・事故時の連絡まで確認したい",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/litigation/microsoft-president-says-milk-faces-more-regulation-than-ai-2026-10-12/",
-      "publishedAt": "2026-10-12",
-      "addedAt": "2026-10-13",
-      "language": "en",
-      "verificationNote": "Reuters本文を確認　規制の必要性はMicrosoft社長の見解で、国際合意や施行済み規則ではない"
-    },
-    {
-      "id": "news-20261013-microsoft-maia300",
-      "kind": "news",
-      "category": "ai",
-      "title": "Microsoft、独自AIチップMaia 300を大規模展開へ",
-      "dek": "2027年に100万個超も視野に入れ、計算効率とNvidia依存の低減を狙う",
-      "summary": [
-        "Microsoftは第3世代の独自AIチップMaia 300を発表した",
-        "2ナノと3ナノのチップレットを組み合わせ、96基で1ラックを構成する",
-        "同社は主要GPUシステムより電力当たり有効計算量が40％高いと説明するが、比較対象名は開示していない"
-      ],
-      "why": "AI設備はチップ単体でなく、電力・メモリー・ラック設計を合わせて競う製造業になっている",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/microsoft-plans-huge-deployment-its-own-ai-chips-with-an-eye-saving-costs-2026-10-12/",
-      "publishedAt": "2026-10-12",
-      "addedAt": "2026-10-13",
-      "language": "en",
-      "verificationNote": "Reuters本文を確認　性能値と配備計画はMicrosoftの説明で、実運用の第三者比較ではない"
-    },
-    {
-      "id": "news-20261013-ionq-elisity-deal",
-      "kind": "news",
-      "category": "ai",
-      "title": "IonQ、サイバー企業Elisityを最大13億ドルで買収へ",
-      "dek": "量子技術の企業・政府向け販路と、将来の量子攻撃に備える事業を広げる",
-      "summary": [
-        "IonQはElisityを全株式取引で買収すると発表した",
-        "取引価値は最大13億ドルとされる",
-        "IonQは現在の脅威対策と将来の量子コンピューター攻撃への準備を狙うが、統合効果は将来計画"
-      ],
-      "why": "量子技術は計算性能だけでなく、既存システムをどう守るかという営業課題にもつながる",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/transactional/ionq-buy-cybersecurity-firm-elisity-up-13-billion-deal-2026-10-12/",
-      "publishedAt": "2026-10-12",
-      "addedAt": "2026-10-13",
-      "language": "en",
-      "verificationNote": "Reuters本文を確認　買収発表と狙いを区別し、統合後の効果は未実証"
-    },
-    {
-      "id": "news-20261013-zetwerk-ipo",
-      "kind": "news",
-      "category": "industry",
-      "title": "製造受託Zetwerk、インドIPOで約26億ドル評価を目指す",
-      "dek": "エネルギー機器と精密製品を手掛け、10月15～19日の公募を予定",
-      "summary": [
-        "Zetwerk Manufacturing BusinessesはIPOで2558億3000万ルピーの企業価値を目指す",
-        "公募額は約5億1800万ドルで、10月23日の上場を予定する",
-        "売上の約60％がエネルギー製品、約23％が電子機器・EV・ウェアラブル向け精密製品から成る"
-      ],
-      "why": "製造プラットフォームの成長分野と顧客分散は、加工会社の営業先を考える材料になる",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/india/indias-zetwerk-sets-price-band-143-151-rupees-per-share-518-million-ipo-2026-10-12/",
-      "publishedAt": "2026-10-12",
-      "addedAt": "2026-10-13",
-      "language": "en",
-      "verificationNote": "Reuters本文と会社提出資料に基づく記事を確認　評価額と日程は予定で、上場完了の実績ではない"
-    },
-    {
-      "id": "news-20261013-paris-food-market-fire",
-      "kind": "news",
-      "category": "food",
-      "title": "パリ最古の屋内食品市場、火災で大きな被害",
-      "dek": "観光客にも人気のMarché des Enfants Rougesで未明に火災が発生",
-      "summary": [
-        "パリのMarché des Enfants Rougesで10月12日未明に火災が起きた",
-        "当局は歴史ある屋内食品市場が焼失したと発表した",
-        "公開時点のReuters短報では原因や再開時期の詳しい情報は示されていない"
-      ],
-      "why": "食品販売の現場では、設備・在庫・営業再開を含む事業継続の備えも欠かせない",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/fire-destroys-french-capitals-enfants-rouges-covered-food-market-2026-10-12/",
-      "publishedAt": "2026-10-12",
-      "addedAt": "2026-10-13",
-      "language": "en",
-      "verificationNote": "Reutersの公開短報を確認　火災発生と被害は確認できるが、原因・損害額・再開時期は未確認"
-    },
-    {
-      "id": "news-20261013-delta-riyadh-delay",
-      "kind": "news",
-      "category": "travel",
-      "title": "Delta、アトランタ―リヤド線の就航を2027年3月へ延期",
-      "dek": "リヤド空港への攻撃と地政学リスクを受け、初のサウジ直行便計画を後ろ倒し",
-      "summary": [
-        "Deltaはアトランタ―リヤド線の開始を2027年3月まで延期すると発表した",
-        "同路線は同社初のサウジアラビア直行旅客便になる予定だった",
-        "リヤド空港は10月17日21時GMTまで閉鎖予定と航空情報で示された"
-      ],
-      "why": "海外出張では新規路線の販売情報だけでなく、就航変更と空域情報を直前まで確認したい",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/middle-east/delta-pushes-back-atlanta-riyadh-service-after-riyadh-airport-attacks-2026-10-12/",
-      "publishedAt": "2026-10-12",
-      "addedAt": "2026-10-13",
-      "language": "en",
-      "verificationNote": "Reuters本文を確認　就航延期はDelta発表、空港閉鎖予定は10月12日時点のNOTAM情報"
-    },
-    {
-      "id": "news-20261013-dollar-18month-high",
-      "kind": "news",
-      "category": "world",
-      "title": "ドル指数が18か月ぶり高値　中東緊張と物価統計を警戒",
-      "dek": "安全資産需要と米金融引き締め観測が重なり、ユーロや円に対してドルが上昇",
-      "summary": [
-        "ドル指数は10月12日に102.58へ上昇し、2025年4月以来の高値を付けた",
-        "中東での攻撃と原油高が安全資産需要を強めた",
-        "市場は10月14日の米消費者物価を注視し、政策金利の予想はデータで変わり得る"
-      ],
-      "why": "原材料や輸入設備の見積では、為替とエネルギー費の同時変化を前提条件に入れたい",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/asia-pacific/dollar-stays-near-18-month-high-mideast-conflict-inflation-data-focus-2026-10-12/",
-      "publishedAt": "2026-10-12",
-      "addedAt": "2026-10-13",
-      "language": "en",
-      "verificationNote": "Reuters本文を確認　相場値は記事時点で、将来の為替方向を示すものではない"
+      "verificationNote": "営業コラム　一般的な確認手順で、検査性能や食品安全を保証するものではなく、品質・製造担当者が個別に確認する論点"
     },
     {
       "id": "column-20261020-quotation-unit-basis",
