@@ -1,7 +1,26 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-21T23:52:35.086Z",
+  "updatedAt": "2026-10-22T23:40:28.557Z",
   "articles": [
+    {
+      "id": "news-20261022-innovia-high-barrier-bopp",
+      "kind": "news",
+      "category": "industry",
+      "title": "高バリア蒸着BOPPフィルム　Innoviaが単一素材包装向けに追加",
+      "dek": "酸素バリアと金属密着性を高め、食品パウチなどでの利用を想定",
+      "summary": [
+        "蒸着BOPPのPropafilm CHBMを発表",
+        "食品用の平袋やスタンドパウチを想定",
+        "性能値はメーカー説明で量産採用実績ではない"
+      ],
+      "why": "包装提案では、バリア性能に加えてシール条件や既存構成との適合確認が必要になるため",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/innovia-films-reveals-new-high-barrier-metallized-bopp-film/",
+      "publishedAt": "2026-10-22",
+      "addedAt": "2026-10-23",
+      "language": "en",
+      "verificationNote": "記事本文を確認　酸素バリア、金属密着性、熱安定性はInnoviaの説明で、個別製品での採用効果は未確認"
+    },
     {
       "id": "news-20261021-z1ro-nonwood-fibre-trial",
       "kind": "news",
@@ -20,6 +39,335 @@
       "addedAt": "2026-10-22",
       "language": "en",
       "verificationNote": "記事本文を確認　工業設備での試験完了は確認できるが、シリーズ生産は未開始で資金調達も進行中"
+    },
+    {
+      "id": "20261023-column-moq-order-cycle",
+      "kind": "column",
+      "category": "sales",
+      "title": "最低ロットは、年間使用量だけで決めない",
+      "dek": "一回の注文量、材料手配、段取り、在庫日数を分け、双方が続けられる発注単位を探る",
+      "summary": [
+        "年間数量と一回数量を分ける",
+        "最低ロットの発生源を確認する",
+        "在庫日数と段取り費を並べて比べる"
+      ],
+      "why": "数量交渉を単価だけで終わらせず、工場の制約と顧客の在庫負担を共通の数字にするため",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-23",
+      "addedAt": "2026-10-23",
+      "language": "ja",
+      "body": [
+        {
+          "heading": "年間数量は同じでも負荷は違う",
+          "text": "年間12万枚でも、毎月1万枚を注文する案件と、四半期ごとに3万枚を注文する案件では材料手配と段取り回数が違う\n営業は年間使用量だけで採算を見ず、一回の注文量、注文頻度、納入回数を分けて聞く"
+        },
+        {
+          "heading": "最低ロットの理由を工程へ戻す",
+          "text": "最低ロットは材料の購入単位、版や刃型の段取り、検査時間、外注先の条件など複数の要因から生まれる\nどの工程が下限を決めているかを確認すると、サイズ共通化や納入分割など別案を検討しやすい"
+        },
+        {
+          "heading": "仮の例で在庫と加工費を比べる",
+          "text": "仮に1回2万枚なら段取り費が10万円、1回5万枚なら段取り費が同じでも顧客在庫が60日増えるとする\n単価差だけでなく保管場所、資金負担、廃棄リスクを並べる\nこれは説明用の仮の例で、実際の費用と契約条件は各担当者が確認する"
+        },
+        {
+          "heading": "小ロット案にも期限を置く",
+          "text": "初回だけ小ロットにする場合は、評価期間、次回数量、再見積の条件を決める\n恒常条件へ自動移行させず、何回目の発注で標準ロットへ戻すかを顧客と工場で共有する"
+        }
+      ],
+      "questions": [
+        "年間使用量と、一回あたりの希望注文量はそれぞれいくつですか",
+        "現在の最低ロットは、材料手配と段取りのどちらが主な理由ですか",
+        "納入を分けた場合、顧客側で許容できる在庫日数は何日ですか"
+      ],
+      "verificationNote": "営業コラム　数字は説明用の仮の例で、特定の顧客や工場の実績を示すものではない"
+    },
+    {
+      "id": "news-20261022-kraft-pocket-parm",
+      "kind": "news",
+      "category": "food",
+      "title": "粉チーズを携帯サイズに　Kraftがクリップ付き限定容器",
+      "dek": "外食や持ち歩きの利用場面を、小容量と付属品で具体化した限定企画",
+      "summary": [
+        "粉チーズの小型ボトルを限定投入",
+        "バッグに付けるクリップとチャーム付き",
+        "ロサンゼルスとオーランドで10月末まで展開"
+      ],
+      "why": "小容量化では中身の量だけでなく、携帯方法と利用場面を包装仕様へ落とす着眼点になるため",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/kraft-natural-cheese-launches-limited-edition-pocket-sized-bottles/",
+      "publishedAt": "2026-10-22",
+      "addedAt": "2026-10-23",
+      "language": "en",
+      "verificationNote": "記事本文を確認　限定企画の紹介で、全国定番化や販売実績を示すものではない"
+    },
+    {
+      "id": "20261023-column-opening-notch-use-test",
+      "kind": "column",
+      "category": "food",
+      "title": "開封ノッチは、袋の図面だけで決めない",
+      "dek": "充填後の膨らみ、持つ向き、切れ方を実使用で確かめ、開けやすさと密封条件を両立する",
+      "summary": [
+        "充填後の形で持ち方を見る",
+        "ノッチからの裂け方向を試す",
+        "品質判断は担当部門と確認する"
+      ],
+      "why": "包装の使いやすさを図面寸法だけで判断せず、消費者の動作と製造条件を商談へつなげるため",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-23",
+      "addedAt": "2026-10-23",
+      "language": "ja",
+      "body": [
+        {
+          "heading": "平らな袋と充填後の袋は違う",
+          "text": "図面上で指が届く位置でも、中身が入ると袋が膨らみ、つまみにくくなることがある\nサンプルは空袋だけでなく、想定重量と形状に近い充填状態でも確認する"
+        },
+        {
+          "heading": "持つ向きから裂け方を見る",
+          "text": "右手で持つか左手で持つか、表面を手前にするかで力の方向が変わる\nノッチの位置だけでなく、裂けがシール部や印刷表示へ進まないかを複数の持ち方で試す"
+        },
+        {
+          "heading": "工程条件と一緒に記録する",
+          "text": "材質構成、厚み、シール幅、ノッチ加工条件、充填後の温度をサンプル番号とひも付ける\n開封性だけを変えたつもりでも密封性や輸送耐性へ影響する可能性があるため、品質と食品安全の判断は顧客と工場の担当部門が確認する"
+        },
+        {
+          "heading": "評価語を動作へ置き換える",
+          "text": "開けやすいという感想だけで終わらせず、つまめたか、最初の切れが入ったか、途中で止まったか、中身がこぼれたかを記録する\n採用条件と再試作条件を分けると次の商談が速くなる"
+        }
+      ],
+      "questions": [
+        "実際の売場で、消費者は袋をどちら向きに持つ想定ですか",
+        "充填後の厚みと温度を再現したサンプルで開封評価できますか",
+        "開封性を変える際、密封性と表示位置を誰が確認しますか"
+      ],
+      "verificationNote": "営業コラム　一般的な評価観点で、品質や食品安全を保証するものではなく各担当部門での確認が必要"
+    },
+    {
+      "id": "news-20261022-upm-starch-grease-barrier",
+      "kind": "news",
+      "category": "industry",
+      "title": "でんぷん系耐油層を紙包装へ　UPMなどがリサイクル適性を検証",
+      "dek": "食品向け紙構成で耐油性と回収工程への適合を両立できるかを試す",
+      "summary": [
+        "UPM、Ingredion、Parameltが共同開発",
+        "78グラム毎平方メートルの紙を基材に使用",
+        "西ミシガン大学の試験で初期段階の適性を確認"
+      ],
+      "why": "紙化案件では、耐油性だけでなく塗工、充填、回収工程を一つの仕様として見る必要があるため",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/upm-investigates-starch-based-grease-barriers-for-paper-food-packaging/",
+      "publishedAt": "2026-10-22",
+      "addedAt": "2026-10-23",
+      "language": "en",
+      "verificationNote": "記事本文を確認　試験結果は特定構成に対するPart 1評価で、全地域の回収可否を保証するものではない"
+    },
+    {
+      "id": "news-20261022-poco-vino-single-serve",
+      "kind": "news",
+      "category": "food",
+      "title": "178ミリリットルの1杯用ワイン　廃棄と飲み過ぎ回避を訴求",
+      "dek": "持ち運べる小瓶とねじ栓で、試し買いと一回量を分かりやすくする",
+      "summary": [
+        "Poco Vinoが1杯用ボトルを展開",
+        "ねじ栓で外出時の携帯性を訴求",
+        "消費者調査の数値は企業側の紹介"
+      ],
+      "why": "食品営業では、小容量の価格差だけでなく廃棄回避と試用機会を価値として示せるため",
+      "source": "Packaging Europe",
+      "url": "https://www.packagingeurope.com/single-serve-wine-bottles-fit-in-bags-avoid-waste-and-help-portion-drinks/",
+      "publishedAt": "2026-10-22",
+      "addedAt": "2026-10-23",
+      "language": "en",
+      "verificationNote": "記事本文を確認　英国消費者の意向値はAustralian Vintageの調査説明で、実際の廃棄削減量は未確認"
+    },
+    {
+      "id": "news-20261022-uk-factory-cbi",
+      "kind": "news",
+      "category": "industry",
+      "title": "英国工場の先行き指標は横ばい圏　受注判断は大幅悪化",
+      "dek": "CBI調査で今後3カ月の生産見通しは改善した一方、10月の受注残は弱まった",
+      "summary": [
+        "生産期待指数はマイナス1へ改善",
+        "受注残指数はマイナス32へ低下",
+        "公式統計ではなく企業調査の結果"
+      ],
+      "why": "設備や資材の提案では、稼働見通しと足元受注を分けて顧客の投資余力を読む材料になるため",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/uk/uk-factory-output-expected-stabilise-cbi-survey-shows-2026-10-22/",
+      "publishedAt": "2026-10-22",
+      "addedAt": "2026-10-23",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　CBIの企業調査で、英国の公式生産統計や確定見通しではない"
+    },
+    {
+      "id": "news-20261022-tsmc-equipment-alternatives",
+      "kind": "news",
+      "category": "industry",
+      "title": "TSMCが希土類依存を点検　製造装置の代替候補を調査と関係者",
+      "dek": "中国の輸出管理リスクを踏まえ、装置部材の供給網を見直す動き",
+      "summary": [
+        "製造装置の代替候補を調査",
+        "希土類の調達集中が背景",
+        "関係者情報で会社の確定計画ではない"
+      ],
+      "why": "半導体向け営業では、装置本体だけでなく交換部材と原材料の供給継続性が商談論点になるため",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/tsmc-seeks-factory-equipment-alternatives-thwart-chinas-rare-earths-grip-sources-2026-10-22/",
+      "publishedAt": "2026-10-22",
+      "addedAt": "2026-10-23",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　関係者に基づく報道で、候補装置や切替時期は公表されていない"
+    },
+    {
+      "id": "news-20261022-besi-ai-orders",
+      "kind": "news",
+      "category": "industry",
+      "title": "Besiの受注が市場予想超え　AI向け接合装置が下支え",
+      "dek": "積層チップを接続するハイブリッドボンディング需要が受注を押し上げた",
+      "summary": [
+        "第3四半期受注が市場予想を上回る",
+        "AIデータセンター向け需要が中心",
+        "需要継続は会社見通しで確定実績ではない"
+      ],
+      "why": "半導体設備では、最終用途と工程別の能力増強を結び付けて案件の持続性を見る材料になるため",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/besis-quarterly-orders-beat-expectations-ai-data-centre-demand-stays-strong-2026-10-22/",
+      "publishedAt": "2026-10-22",
+      "addedAt": "2026-10-23",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　受注実績と会社側の需要見通しを分けて整理"
+    },
+    {
+      "id": "news-20261022-imf-oecd-ai-divide",
+      "kind": "news",
+      "category": "ai",
+      "title": "AIが国の格差を広げる懸念　IMFとOECDが導入力の差を指摘",
+      "dek": "計算資源、人材、制度の差が生産性向上の偏りにつながるとの警告",
+      "summary": [
+        "先進国と新興国の導入差を問題視",
+        "人材育成と技術普及を政策課題に提示",
+        "影響規模は予測で確定結果ではない"
+      ],
+      "why": "AI提案では、導入機能だけでなく現場教育と運用能力まで含めた実装条件を見る必要があるため",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/finance/imf-oecd-warn-ai-could-widen-rich-poor-country-divide-2026-10-22/",
+      "publishedAt": "2026-10-22",
+      "addedAt": "2026-10-23",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　国際機関の分析と警告で、格差拡大が確定したとの報道ではない"
+    },
+    {
+      "id": "news-20261022-nippon-steel-us-steel-upgrade",
+      "kind": "news",
+      "category": "industry",
+      "title": "日本製鉄が米製鉄所へ30億ドル投資と報道　設備更新を計画",
+      "dek": "ペンシルベニア州の拠点を対象にした投資計画を日本経済新聞が報じた",
+      "summary": [
+        "投資額は約30億ドルと報道",
+        "米国拠点の設備更新が対象",
+        "日本製鉄の即時確認は得られていない"
+      ],
+      "why": "大型設備投資では、公表主体と確定度を見分けながら周辺設備や保全需要を先読みする必要があるため",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/asia-pacific/nippon-steel-spend-3-billion-us-steel-plant-pennsylvania-nikkei-reports-2026-10-22/",
+      "publishedAt": "2026-10-22",
+      "addedAt": "2026-10-23",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　日本経済新聞に基づく報道で、日本製鉄から即時コメントは得られていない"
+    },
+    {
+      "id": "news-20261022-palantir-nato-maven",
+      "kind": "news",
+      "category": "ai",
+      "title": "NATOのAIシステム停止権限を否定　Palantirが依存懸念へ説明",
+      "dek": "欧州側の米国技術依存への懸念に対し、契約上の運用権限を説明した",
+      "summary": [
+        "Maven Smart Systemが対象",
+        "一方的に停止できないと会社が説明",
+        "技術依存への懸念自体は残る"
+      ],
+      "why": "クラウドやAIの商談では、機能だけでなく停止権限、データ管理、代替手段を契約前に確認したいため",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/palantir-says-it-cannot-shut-off-nato-ai-system-europeans-fear-us-tech-2026-10-22/",
+      "publishedAt": "2026-10-22",
+      "addedAt": "2026-10-23",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　停止できないとの説明はPalantir側の主張で、契約全体の独立検証ではない"
+    },
+    {
+      "id": "news-20261022-pharma-ai-rd",
+      "kind": "news",
+      "category": "ai",
+      "title": "製薬各社が研究開発へAI投資　自動化ラボと候補探索を拡大",
+      "dek": "期間とコストの短縮を狙う一方、創薬成果は検証途上にある",
+      "summary": [
+        "候補物質探索と実験自動化に活用",
+        "複数社が投資を強化",
+        "臨床成功や費用削減は保証されない"
+      ],
+      "why": "技術営業では、導入件数ではなく工程時間や再現性を測る指標まで確認する視点が使えるため",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/pharma-sector-doubles-down-ai-amid-hopes-slashing-costs-timelines-2026-10-22/",
+      "publishedAt": "2026-10-22",
+      "addedAt": "2026-10-23",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　企業の投資事例と期待を扱い、臨床成果や削減額が確定したとの内容ではない"
+    },
+    {
+      "id": "news-20261022-esa-moon-crane",
+      "kind": "news",
+      "category": "science",
+      "title": "月面着陸船の荷下ろし用クレーン　ESAがArgonaut向け構想を紹介",
+      "dek": "最大1500キログラムの貨物を月面へ移す装置の検討を進める",
+      "summary": [
+        "ローバーや科学機器の荷下ろしを想定",
+        "Argonaut着陸船は最大1500キログラムを輸送",
+        "公開画像は開発構想の紹介"
+      ],
+      "why": "重量物搬送では、輸送能力だけでなく荷下ろしと設置の工程まで設計対象になるため",
+      "source": "ESA",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Moon_crane_to_take_a_load_off_lunar_landers",
+      "publishedAt": "2026-10-22",
+      "addedAt": "2026-10-23",
+      "language": "en",
+      "verificationNote": "ESA公式ページを確認　将来のArgonaut運用に向けた開発構想で、月面運用実績ではない"
+    },
+    {
+      "id": "news-20261022-meta-ai-market-drop",
+      "kind": "news",
+      "category": "world",
+      "title": "Meta報告でAI投資懸念が再燃　世界株安と国債買い",
+      "dek": "巨額投資への警戒と中東情勢が重なり、株式から安全資産へ資金が動いた",
+      "summary": [
+        "主要株価指数が下落",
+        "米国債に安全需要",
+        "市場反応は当日の動きで長期傾向とは限らない"
+      ],
+      "why": "顧客の投資環境を読む際、技術需要と資本負担の両面を分けて捉える材料になるため",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-22/",
+      "publishedAt": "2026-10-22",
+      "addedAt": "2026-10-23",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　10月22日の市場動向で、その後の価格推移は含まない"
+    },
+    {
+      "id": "news-20261022-france-protest-curbs",
+      "kind": "news",
+      "category": "world",
+      "title": "フランスが抗議活動の規制を強化　正規デモは経路変更も",
+      "dek": "暴動と略奪を受け、政府が禁止対象と事業者保護策を説明した",
+      "summary": [
+        "政府が一部抗議の禁止方針",
+        "労組主催デモは継続可能",
+        "店舗保護のため経路変更も検討"
+      ],
+      "why": "欧州出張や物流では、政治情勢だけでなく都市内の移動規制と営業継続への影響を確認したいため",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/world/europe/frances-macron-tightens-curbs-protests-blaming-hard-left-unrest-2026-10-22/",
+      "publishedAt": "2026-10-22",
+      "addedAt": "2026-10-23",
+      "language": "en",
+      "verificationNote": "Reuters本文を確認　政府発表を中心とした10月22日時点の情報で、具体的な規制範囲は今後変わり得る"
     },
     {
       "id": "news-20261021-proampac-shelf-protect",
@@ -41,47 +389,6 @@
       "verificationNote": "記事本文を確認　適合性や保存期間延長は企業側の説明で、対象食品ごとの採用可否は個別評価が必要"
     },
     {
-      "id": "20261022-column-quote-production-slot",
-      "kind": "column",
-      "category": "sales",
-      "title": "見積の有効期限は、価格だけでなく生産枠にもつける",
-      "dek": "単価の期限と加工枠の確保期限を分け、決裁が遅れた時の再確認点をそろえる",
-      "summary": [
-        "価格条件と生産枠の期限を分ける",
-        "確保の有無と解除時刻を記録する",
-        "期限後は納期を自動で約束しない"
-      ],
-      "why": "見積が有効でも、同じ納期で作れるとは限らないことを顧客と工場の双方に伝えるため",
-      "source": "営業コラム",
-      "publishedAt": "2026-10-22",
-      "addedAt": "2026-10-22",
-      "language": "ja",
-      "body": [
-        {
-          "heading": "二つの期限を一行にまとめない",
-          "text": "見積書の有効期限は主に価格や取引条件の期限として使われる\n一方、生産枠は他案件の受注で埋まり、同じ日まで確保できるとは限らない\n価格の有効期限と、希望納期を再確認する期限を分けて書く"
-        },
-        {
-          "heading": "枠を押さえたのか、空きを見ただけか",
-          "text": "工場へ相談した時点で空きがあったことと、案件用に枠を確保したことは違う\n確保した場合は対象号機、時間帯、解除する日時、承認者を記録する\n仮押さえを無期限に続けず、解除前に顧客へ一度連絡する"
-        },
-        {
-          "heading": "仮の例で遅れを共有する",
-          "text": "仮に見積の価格期限が30日、生産枠の回答期限が7日だとする\n8日目に注文が来た場合、単価は有効でも納期は工場へ再確認する\nこれは説明用の仮の例で、実際の拘束力やキャンセル条件は契約と社内ルールを担当者が確認する"
-        },
-        {
-          "heading": "期限後の返事を定型化する",
-          "text": "期限後に注文を受けたら、受領、価格確認、材料確認、生産枠確認の順で返す\n営業が納期を先に断定せず、工場から得た最新条件を顧客へ戻す\n見積番号と変更点を残すと、次の再見積も速くなる"
-        }
-      ],
-      "questions": [
-        "今回の見積で、価格決裁と納期決裁はそれぞれいつ完了しますか",
-        "希望納期を維持するには、何日までに注文確定が必要ですか",
-        "生産枠を仮押さえする場合、解除の連絡先と時刻を誰にしますか"
-      ],
-      "verificationNote": "営業コラム　一般的な考え方と仮の例で、特定の顧客や工場の実績を示すものではない"
-    },
-    {
       "id": "news-20261021-meiji-fruits-gummi-two-products",
       "kind": "news",
       "category": "food",
@@ -99,47 +406,6 @@
       "addedAt": "2026-10-22",
       "language": "ja",
       "verificationNote": "明治の発表本文と公開日を確認　発売日は予定で、市場規模は同社が示した出典に基づく"
-    },
-    {
-      "id": "20261022-column-sensory-sample-order",
-      "kind": "column",
-      "category": "food",
-      "title": "官能評価は、サンプルを開ける順番まで決める",
-      "dek": "香りや味の比較で、温度・開封時刻・提示順のばらつきを減らす",
-      "summary": [
-        "比較目的と評価項目を先に決める",
-        "保管温度と開封時刻をそろえる",
-        "提示順と識別番号を記録する"
-      ],
-      "why": "包材や商品変更の評価で、サンプルの扱い方による差を結論と取り違えないため",
-      "source": "営業コラム",
-      "publishedAt": "2026-10-22",
-      "addedAt": "2026-10-22",
-      "language": "ja",
-      "body": [
-        {
-          "heading": "合否の前に比較目的を決める",
-          "text": "香り移りを見たいのか、食感や外観も含めたいのかで準備は変わる\n評価項目、回答方法、誰が判定をまとめるかを先にそろえる\n営業だけで安全性や品質を保証せず、品質保証や開発の担当者が確認する論点として進める"
-        },
-        {
-          "heading": "開封条件を記録する",
-          "text": "同じ商品でも保管温度、開封から評価までの時間、容器への移し方で感じ方が変わる\nサンプルごとに受領日、保管場所、開封時刻を記録する\n包材変更品と現行品は、できるだけ同じ条件で扱う"
-        },
-        {
-          "heading": "提示順の偏りを減らす",
-          "text": "香りの強いサンプルを先に試すと、後の評価に影響する場合がある\n品名を伏せた識別番号を使い、提示順を評価者ごとに入れ替える方法も検討する\n具体的な試験設計は食品と目的に合わせ、社内の品質・開発担当者が決める"
-        },
-        {
-          "heading": "結果を一つの言葉で終わらせない",
-          "text": "良い、悪いだけでなく、どの項目で差を感じたかを残す\n再試験が必要なら、次回変える条件を一つずつ決める\n営業は結論を急がず、採用判断に必要な追加確認と期限を商談メモへ書く"
-        }
-      ],
-      "questions": [
-        "今回の官能評価で、最も確認したい項目は香り・味・食感のどれですか",
-        "現行品と変更品の保管温度、開封時刻、提示順をどうそろえますか",
-        "差が出た場合、再試験の条件と最終判定者を誰にしますか"
-      ],
-      "verificationNote": "営業コラム　一般的な評価準備の考え方で、食品安全や品質を保証するものではなく、試験条件は担当者が確認する"
     },
     {
       "id": "news-20261021-aliplast-r3gid-modena",
@@ -2669,270 +2935,86 @@
       "verificationNote": "公開記事本文を確認　外観・耐久性、エネルギーと排出削減の効果はBeiersdorfの説明で、第三者検証値は記事に示されていない"
     },
     {
-      "id": "news-20261014-nissin-black-pepper-crab",
-      "kind": "news",
-      "category": "food",
-      "title": "カップヌードルに黒胡椒クラブ　日清食品が10月26日発売",
-      "dek": "カニ風味の具材とバター風味オイルで、濃厚なスープを設計",
+      "id": "20261022-column-quote-production-slot",
+      "kind": "column",
+      "category": "sales",
+      "title": "見積の有効期限は、価格だけでなく生産枠にもつける",
+      "dek": "単価の期限と加工枠の確保期限を分け、決裁が遅れた時の再確認点をそろえる",
       "summary": [
-        "日清食品はカップヌードル ブラックペッパークラブを全国で10月26日に発売する",
-        "内容量78gで希望小売価格は税別248円、1ケース12食入り",
-        "カニ風味かまぼこ、たまご、ネギと別添バター風味オイルを組み合わせる"
+        "価格条件と生産枠の期限を分ける",
+        "確保の有無と解除時刻を記録する",
+        "期限後は納期を自動で約束しない"
       ],
-      "why": "新味提案では中身だけでなく、発売日・入数・別添品を含む生産と売場の条件まで確認したい",
-      "source": "日清食品",
-      "url": "https://www.nissin.com/jp/company/news/13950/",
-      "publishedAt": "2026-10-13",
-      "addedAt": "2026-10-14",
+      "why": "見積が有効でも、同じ納期で作れるとは限らないことを顧客と工場の双方に伝えるため",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-22",
+      "addedAt": "2026-10-22",
       "language": "ja",
-      "verificationNote": "2026年10月13日付の公式発表を確認　商品は発表済みで、発売は10月26日の予定"
-    },
-    {
-      "id": "news-20261014-shellworks-vivomer-collection",
-      "kind": "news",
-      "category": "industry",
-      "title": "植物由来パックを店頭回収　ShellworksとMYGroupが800店超に回収箱",
-      "dek": "使用済みVivomerを集め、英国ハルの施設で複合板へ加工する経路を整備",
-      "summary": [
-        "ShellworksとMYGroupはVivomer包装の専用回収箱を英国の800店超へ設置する",
-        "Vivomerは植物廃棄物の発酵由来素材で、回収品はMYboardへ加工する",
-        "3100万kgという回収量はMYGroupの広い持ち帰り事業の実績で、Vivomer単独の回収実績ではない"
+      "body": [
+        {
+          "heading": "二つの期限を一行にまとめない",
+          "text": "見積書の有効期限は主に価格や取引条件の期限として使われる\n一方、生産枠は他案件の受注で埋まり、同じ日まで確保できるとは限らない\n価格の有効期限と、希望納期を再確認する期限を分けて書く"
+        },
+        {
+          "heading": "枠を押さえたのか、空きを見ただけか",
+          "text": "工場へ相談した時点で空きがあったことと、案件用に枠を確保したことは違う\n確保した場合は対象号機、時間帯、解除する日時、承認者を記録する\n仮押さえを無期限に続けず、解除前に顧客へ一度連絡する"
+        },
+        {
+          "heading": "仮の例で遅れを共有する",
+          "text": "仮に見積の価格期限が30日、生産枠の回答期限が7日だとする\n8日目に注文が来た場合、単価は有効でも納期は工場へ再確認する\nこれは説明用の仮の例で、実際の拘束力やキャンセル条件は契約と社内ルールを担当者が確認する"
+        },
+        {
+          "heading": "期限後の返事を定型化する",
+          "text": "期限後に注文を受けたら、受領、価格確認、材料確認、生産枠確認の順で返す\n営業が納期を先に断定せず、工場から得た最新条件を顧客へ戻す\n見積番号と変更点を残すと、次の再見積も速くなる"
+        }
       ],
-      "why": "素材の環境性だけでなく、回収拠点・選別・再用途まで説明できる提案が求められる",
-      "source": "Packaging Europe",
-      "url": "https://www.packagingeurope.com/collection-points-established-for-shellworks-plant-based-compostable-packs/",
-      "publishedAt": "2026-10-13",
-      "addedAt": "2026-10-14",
-      "language": "en",
-      "verificationNote": "公開記事本文を確認　回収箱の設置は新たな取り組みで、Vivomerの回収量や再資源化率はまだ示されていない"
+      "questions": [
+        "今回の見積で、価格決裁と納期決裁はそれぞれいつ完了しますか",
+        "希望納期を維持するには、何日までに注文確定が必要ですか",
+        "生産枠を仮押さえする場合、解除の連絡先と時刻を誰にしますか"
+      ],
+      "verificationNote": "営業コラム　一般的な考え方と仮の例で、特定の顧客や工場の実績を示すものではない"
     },
     {
-      "id": "news-20261014-morinaga-otona-yasai-jelly",
-      "kind": "news",
+      "id": "20261022-column-sensory-sample-order",
+      "kind": "column",
       "category": "food",
-      "title": "常温保存できる野菜ゼリー　森永乳業が細身スパウト袋でAmazon先行",
-      "dek": "赤い果実を組み合わせた機能性表示食品を11月6日から販売",
+      "title": "官能評価は、サンプルを開ける順番まで決める",
+      "dek": "香りや味の比較で、温度・開封時刻・提示順のばらつきを減らす",
       "summary": [
-        "森永乳業はおとなのやさいゼリー＋赤い果実を11月6日にAmazonで先行発売する",
-        "ラクチュロースとサケ鼻軟骨由来プロテオグリカンを機能性関与成分として届け出ている",
-        "常温で長期保存しやすい細身のスパウト付きパウチを採用する"
+        "比較目的と評価項目を先に決める",
+        "保管温度と開封時刻をそろえる",
+        "提示順と識別番号を記録する"
       ],
-      "why": "食品営業では中身の機能だけでなく、保管温度・賞味期間・販売チャネル・飲み方を一緒に聞きたい",
-      "source": "森永乳業",
-      "url": "https://www.morinagamilk.co.jp/release/newsentry-4750.html",
-      "publishedAt": "2026-10-13",
-      "addedAt": "2026-10-14",
+      "why": "包材や商品変更の評価で、サンプルの扱い方による差を結論と取り違えないため",
+      "source": "営業コラム",
+      "publishedAt": "2026-10-22",
+      "addedAt": "2026-10-22",
       "language": "ja",
-      "verificationNote": "2026年10月13日付の森永乳業公式発表を確認　機能性表示は事業者の届出に基づき、国の個別審査を受けた特保とは異なる"
-    },
-    {
-      "id": "news-20261014-happy-avengers-coffee-cans",
-      "kind": "news",
-      "category": "industry",
-      "title": "缶を集めたくなる販促へ　HappyがAvengers限定デザイン8種",
-      "dek": "新作映画に合わせ、触感印刷を施した11オンス缶を米国で展開",
-      "summary": [
-        "Happy ProductsはMarvel Studiosの新作に合わせたRTDコーヒー缶8種類を発表した",
-        "高精細な触感印刷を用い、4種類の飲料を11オンス缶で展開する",
-        "米国内で順次販売するが、店頭の在庫と取扱商品は小売店ごとに異なる"
+      "body": [
+        {
+          "heading": "合否の前に比較目的を決める",
+          "text": "香り移りを見たいのか、食感や外観も含めたいのかで準備は変わる\n評価項目、回答方法、誰が判定をまとめるかを先にそろえる\n営業だけで安全性や品質を保証せず、品質保証や開発の担当者が確認する論点として進める"
+        },
+        {
+          "heading": "開封条件を記録する",
+          "text": "同じ商品でも保管温度、開封から評価までの時間、容器への移し方で感じ方が変わる\nサンプルごとに受領日、保管場所、開封時刻を記録する\n包材変更品と現行品は、できるだけ同じ条件で扱う"
+        },
+        {
+          "heading": "提示順の偏りを減らす",
+          "text": "香りの強いサンプルを先に試すと、後の評価に影響する場合がある\n品名を伏せた識別番号を使い、提示順を評価者ごとに入れ替える方法も検討する\n具体的な試験設計は食品と目的に合わせ、社内の品質・開発担当者が決める"
+        },
+        {
+          "heading": "結果を一つの言葉で終わらせない",
+          "text": "良い、悪いだけでなく、どの項目で差を感じたかを残す\n再試験が必要なら、次回変える条件を一つずつ決める\n営業は結論を急がず、採用判断に必要な追加確認と期限を商談メモへ書く"
+        }
       ],
-      "why": "包材は保護だけでなく、複数柄・印刷触感・店頭展開を組み合わせた販促資産にもなる",
-      "source": "Packaging Europe",
-      "url": "https://www.packagingeurope.com/collectable-coffee-cans-mark-release-of-marvels-new-avengers-film/",
-      "publishedAt": "2026-10-13",
-      "addedAt": "2026-10-14",
-      "language": "en",
-      "verificationNote": "公開記事本文を確認　販売効果や収集率の実績は記事に示されておらず、ブランド施策として要約"
-    },
-    {
-      "id": "news-20261014-meiji-meltykiss-2026",
-      "kind": "news",
-      "category": "food",
-      "title": "明治Meltykiss、箱3品と袋2品を10月20日発売",
-      "dek": "冬季チョコの定番を刷新し、濃いキャラメル味を発売時から加える",
-      "summary": [
-        "明治は2026年のMeltykiss計5品を10月20日に全国発売する",
-        "箱タイプ3品と袋タイプ2品をそろえ、濃いキャラメルを当初から投入する",
-        "発売前の公式商品発表であり、販売数量や消費者評価の実績はまだない"
+      "questions": [
+        "今回の官能評価で、最も確認したい項目は香り・味・食感のどれですか",
+        "現行品と変更品の保管温度、開封時刻、提示順をどうそろえますか",
+        "差が出た場合、再試験の条件と最終判定者を誰にしますか"
       ],
-      "why": "季節商品の包装提案では、SKU数・発売時期・店頭での見分けやすさを一体で考えたい",
-      "source": "明治",
-      "url": "https://www.meiji.co.jp/corporate/pressrelease/2026/10_09/index.html",
-      "publishedAt": "2026-10-13",
-      "addedAt": "2026-10-14",
-      "language": "ja",
-      "verificationNote": "2026年10月13日付の明治公式発表を確認　発売日と商品構成は予定として記載"
-    },
-    {
-      "id": "news-20261014-meiji-bulgaria-peach-lb81",
-      "kind": "news",
-      "category": "food",
-      "title": "120gの飲むヨーグルトに白桃　明治が特保の小容量品",
-      "dek": "LB81乳酸菌を使い、10月20日から全国で発売",
-      "summary": [
-        "明治は明治ブルガリアのむヨーグルト脂肪0白桃LB81を10月20日に全国発売する",
-        "120gのPET容器で希望小売価格は税込149円",
-        "特定保健用食品として許可された表示内容は公式発表に基づき、個別の効果を保証するものではない"
-      ],
-      "why": "小容量商品では、飲用場面・容器・健康表示を別々の担当者と確認する商談が必要になる",
-      "source": "明治",
-      "url": "https://www.meiji.co.jp/corporate/pressrelease/2026/10_07/index.html",
-      "publishedAt": "2026-10-13",
-      "addedAt": "2026-10-14",
-      "language": "ja",
-      "verificationNote": "2026年10月13日付の明治公式発表を確認　商品表示は許可内容を要約し、医療的な効果は断定していない"
-    },
-    {
-      "id": "news-20261014-independent-ai-evaluation-publication",
-      "kind": "news",
-      "category": "ai",
-      "title": "AIの独立評価、どこまで公開するか　企業と評価機関の綱引き",
-      "dek": "安全性の透明性と営業秘密の保護をめぐり、共通ルールはまだない",
-      "summary": [
-        "ReutersはAnthropicやOpenAIと外部評価機関の契約・交渉を取材した",
-        "評価結果の公表権を求める側と、機密や悪用リスクを管理したい企業側で条件が分かれる",
-        "公開方法を統一する法律や業界標準はなく、個別契約に依存している"
-      ],
-      "why": "AIを導入するときは性能値だけでなく、誰が何を試し、問題をどこまで開示できるかを確認したい",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/behind-ai-industrys-call-independent-reviews-fight-over-what-gets-made-public-2026-10-13/",
-      "publishedAt": "2026-10-13",
-      "addedAt": "2026-10-14",
-      "language": "en",
-      "verificationNote": "Reutersの調査記事を確認　契約交渉の一部は関係者証言に基づき、各社回答も併記されている"
-    },
-    {
-      "id": "news-20261014-scaleway-amd-sweden-supercomputer",
-      "kind": "news",
-      "category": "ai",
-      "title": "Scaleway、スウェーデンにAMD製AIスーパーコンピューター",
-      "dek": "MI355Xを採用し、フランス国外で初の大規模拠点を構築へ",
-      "summary": [
-        "ScalewayはスウェーデンにAMD MI355X搭載の商用AIスーパーコンピューターを建設すると発表した",
-        "Bullの組立、HPEのネットワーク、VAST Dataのストレージ、Motulの冷却技術を組み合わせる",
-        "完成時期や稼働実績ではなく、欧州での計算資源拡大に向けた建設計画"
-      ],
-      "why": "AI設備の案件はGPUだけでなく、冷却・通信・ストレージ・組立の供給網で見る必要がある",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/media-telecom/scaleway-build-amd-powered-ai-supercomputer-sweden-2026-10-13/",
-      "publishedAt": "2026-10-13",
-      "addedAt": "2026-10-14",
-      "language": "en",
-      "verificationNote": "Reuters本文を確認　欧州初などの位置付けはScalewayの説明で、稼働後の性能実績ではない"
-    },
-    {
-      "id": "news-20261014-omron-onlogic-acquisition",
-      "kind": "news",
-      "category": "industry",
-      "title": "オムロン、産業PCのOnLogicを6.75億ドルで買収へ",
-      "dek": "制御機器とエッジ計算を組み合わせ、製造現場のPhysical AIを強化",
-      "summary": [
-        "オムロンは米OnLogicと親会社InterLogicを6億7500万ドルで買収すると発表した",
-        "産業用コンピューターを自動化機器へ組み込み、データ処理と制御を近づける狙い",
-        "買収効果は会社の将来計画で、統合後の売上や生産性の実績ではない"
-      ],
-      "why": "設備提案では機械単体だけでなく、現場データをどこで処理し制御へ戻すかが論点になる",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/transactional/japans-omron-buy-us-industrial-pc-firm-onlogic-675-million-physical-ai-push-2026-10-13/",
-      "publishedAt": "2026-10-13",
-      "addedAt": "2026-10-14",
-      "language": "en",
-      "verificationNote": "Reuters本文と買収発表を確認　金額と狙いは公表内容で、取引完了後の成果は未確定"
-    },
-    {
-      "id": "news-20261014-imf-global-growth-ai-risks",
-      "kind": "news",
-      "category": "world",
-      "title": "IMF、2026年成長率を3.1％予想　AI投資が支える一方で下振れ警戒",
-      "dek": "戦争・原油・債務・AI収益性を世界経済の主要リスクに挙げた",
-      "summary": [
-        "IMFは2026年の世界成長率見通しを3.1％とし、従来の3.0％から引き上げた",
-        "AI関連投資が成長を支える一方、紛争や原油高、債務負担をリスクに挙げた",
-        "数値はWorld Economic Outlookの予測であり、確定した経済実績ではない"
-      ],
-      "why": "顧客の投資計画を見るときは、成長テーマと資金・エネルギーの下振れ条件を同時に置きたい",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/world/china/imf-says-ai-investment-propping-up-global-growth-war-debt-threaten-outlook-2026-10-13/",
-      "publishedAt": "2026-10-13",
-      "addedAt": "2026-10-14",
-      "language": "en",
-      "verificationNote": "Reuters本文とIMF見通しを確認　成長率は予測で、AIの寄与も確定実績ではない"
-    },
-    {
-      "id": "news-20261014-bank-regulators-agentic-ai",
-      "kind": "news",
-      "category": "ai",
-      "title": "銀行監督当局、エージェントAIの運用を詳しく点検",
-      "dek": "サイバー防御・復旧計画・外部依存を中心に米欧で監視を強める",
-      "summary": [
-        "Reutersによると米欧の監督当局は銀行のAI利用への質問を増やしている",
-        "自律性の高いエージェントAI、サイバー攻撃、障害時の復旧が主な論点",
-        "新しい一律規制が成立したわけではなく、現段階は監督と情報収集の強化"
-      ],
-      "why": "金融以外でもAI導入前に権限範囲・停止方法・復旧手順を聞くことが重要になる",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/litigation/banking-watchdogs-ramp-up-ai-scrutiny-stability-fears-mount-sources-say-2026-10-13/",
-      "publishedAt": "2026-10-13",
-      "addedAt": "2026-10-14",
-      "language": "en",
-      "verificationNote": "Reutersの関係者取材を確認　監督強化の動きであり、共通の新規制が施行されたという記事ではない"
-    },
-    {
-      "id": "news-20261014-google-gemini4-argon",
-      "kind": "news",
-      "category": "ai",
-      "title": "Google、Gemini 4 Argonを企業・開発者向けに投入",
-      "dek": "長時間の複雑作業を訴求し、期間限定のAPI価格を設定",
-      "summary": [
-        "Googleは旗艦AIモデルGemini 4 Argonを開発者と企業向けに発表した",
-        "11月30日までは入力100万トークン2ドル、出力10ドルで、その後は倍額になる",
-        "複雑な作業での性能はGoogleのベンチマーク主張で、利用現場ごとの検証が必要"
-      ],
-      "why": "AIサービスの比較ではデモ性能だけでなく、通常価格・処理量・検証条件をそろえたい",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/google-launches-flagship-ai-model-gemini-4-argon-developers-businesses-2026-10-13/",
-      "publishedAt": "2026-10-13",
-      "addedAt": "2026-10-14",
-      "language": "en",
-      "verificationNote": "Reuters本文を確認　性能比較はGoogleの発表に基づき、価格は期間限定条件と通常条件を区別"
-    },
-    {
-      "id": "news-20261014-nvidia-doctolib-genesis-stakes",
-      "kind": "news",
-      "category": "ai",
-      "title": "Nvidia、仏DoctolibとGenesis AIへ少数出資",
-      "dek": "医療予約とPhysical AIの欧州企業へ資本参加、金額は非公表",
-      "summary": [
-        "NvidiaはフランスのDoctolibとGenesis AIの少数株式を取得すると発表した",
-        "Doctolibは医療予約・業務ソフト、Genesis AIはPhysical AI基盤を手掛ける",
-        "出資額と持分比率は公表されず、提携による事業成果は今後の計画"
-      ],
-      "why": "AI投資ニュースでは出資の事実と、将来の製品・売上効果を分けて読む必要がある",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/nvidia-buy-minority-stake-frances-doctolib-2026-10-13/",
-      "publishedAt": "2026-10-13",
-      "addedAt": "2026-10-14",
-      "language": "en",
-      "verificationNote": "Reuters本文を確認　少数出資は発表済みだが、金額と成果指標は非公表"
-    },
-    {
-      "id": "news-20261014-qualcomm-arm-license-verdict",
-      "kind": "news",
-      "category": "ai",
-      "title": "Qualcomm、Armとのライセンス訴訟で陪審評決",
-      "dek": "Armの契約違反と事業関係への干渉を認定、損害額は2ドル",
-      "summary": [
-        "デラウェア州の陪審はArmがQualcommとのライセンス契約に違反したと認定した",
-        "QualcommとMetaの関係に不当に干渉したとの主張も認めた",
-        "損害額は2ドルで、評決後の法的手続きや上訴の可能性は別途確認が必要"
-      ],
-      "why": "技術供給の商談では性能だけでなく、知財ライセンスと取引関係の継続条件も重要になる",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/legal/litigation/qualcomm-says-jury-found-arm-breached-license-agreement-2026-10-13/",
-      "publishedAt": "2026-10-13",
-      "addedAt": "2026-10-14",
-      "language": "en",
-      "verificationNote": "Reuters本文で陪審評決を確認　Qualcommの声明と裁判結果を区別し、最終的な法的終結とは断定していない"
+      "verificationNote": "営業コラム　一般的な評価準備の考え方で、食品安全や品質を保証するものではなく、試験条件は担当者が確認する"
     },
     {
       "id": "20261021-column-informal-order",
